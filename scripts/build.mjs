@@ -48,8 +48,8 @@ function techTags(arr) {
 
 function buildNav() {
   const links = [
-    ['#thesis','Thesis'],
     ['#evidence','Evidence'],
+    ['#thesis','Thesis'],
     ['#projects','Work'],
     ['#delivery','Enterprise Delivery'],
     ['#commercialization','Commercialization'],
@@ -67,7 +67,7 @@ function buildNav() {
 <nav class="site-nav" aria-label="Main navigation">
   <div class="container nav-inner">
     <a href="/" class="nav-logo" aria-label="${esc(d.personal.name)} — home">
-      <span class="monogram" aria-hidden="true">TZ</span>
+      <img src="${esc(d.personal.photo)}" alt="" class="nav-photo" aria-hidden="true">
       <span>${esc(d.personal.nameShort)}</span>
     </a>
 
@@ -131,7 +131,9 @@ function buildHero() {
           <strong>${esc(d.moonshot.statement)}</strong>
         </div>
       </div>
-      <div class="hero-monogram" aria-hidden="true">TZ</div>
+      <div class="hero-photo-wrap">
+        <img src="${esc(d.personal.photo)}" alt="Portrait of ${esc(d.personal.name)}" class="hero-photo" loading="eager">
+      </div>
     </div>
   </div>
 </section>`;
@@ -147,8 +149,9 @@ function buildEvidence() {
     </div>
 
     <div class="evidence-grid">
-      ${d.evidence.map(card => `
+      ${d.evidence.map((card, i) => `
       <div class="evidence-card reveal">
+        <span class="evidence-num" aria-hidden="true">0${i + 1}</span>
         <h3>${esc(card.title)}</h3>
         <p>${esc(card.body)}</p>
       </div>`).join('')}
@@ -258,7 +261,7 @@ function buildProjects() {
         <div class="project-card-footer">
           <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
             <a href="${esc(p.repo)}" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub &rarr;</a>
-            <button class="btn-ghost" data-dialog-open="proj-${p.id}" type="button">Read case study</button>
+            <button class="btn-secondary" data-dialog-open="proj-${p.id}" type="button">Case study &rarr;</button>
           </div>
         </div>
       </article>`).join('')}
@@ -591,7 +594,7 @@ function buildJsonLd() {
     "url": d.meta.canonicalUrl,
     "email": p.email,
     "sameAs": [p.github],
-    "knowsLanguage": p.languages,
+    "knowsLanguage": p.languages.map(l => l.name),
     "address": { "@type": "PostalAddress", "addressLocality": p.location }
   };
   return `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`;
@@ -722,15 +725,30 @@ function buildCvHtml() {
 
 <main id="main" class="cv-document">
 
-  <h1 class="cv-name">${esc(d.personal.name)}</h1>
-  <p class="cv-title">${esc(d.personal.title)}</p>
-
-  <div class="cv-contact">
-    <span>${esc(d.personal.location)}</span>
-    <a href="mailto:${esc(d.personal.email)}">${esc(d.personal.email)}</a>
-    <a href="${esc(d.personal.github)}" target="_blank" rel="noopener noreferrer">${esc(d.personal.github)}</a>
-    <a href="${esc(d.personal.portfolio)}" target="_blank" rel="noopener noreferrer">${esc(d.personal.portfolio)}</a>
-    <span>Languages: ${d.personal.languages.map(esc).join(' · ')}</span>
+  <div class="cv-header">
+    <div class="cv-header-photo">
+      <img src="${esc(d.personal.photo)}" alt="Portrait of ${esc(d.personal.name)}" class="cv-photo">
+    </div>
+    <div class="cv-header-text">
+      <h1 class="cv-name">${esc(d.personal.name)}</h1>
+      <p class="cv-title">${esc(d.personal.title)}</p>
+      <div class="cv-contact">
+        <span>${esc(d.personal.location)}</span>
+        <span class="cv-sep">·</span>
+        <a href="tel:${esc(d.personal.phone)}">${esc(d.personal.phone)}</a>
+        <span class="cv-sep">·</span>
+        <a href="mailto:${esc(d.personal.email)}">${esc(d.personal.email)}</a>
+        <span class="cv-sep">·</span>
+        <a href="${esc(d.personal.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="cv-sep">·</span>
+        <a href="${esc(d.personal.portfolio)}" target="_blank" rel="noopener noreferrer">Portfolio</a>
+      </div>
+      <div class="cv-contact cv-contact-meta">
+        <span>Work permit: ${esc(d.personal.workPermit)}</span>
+        <span class="cv-sep">·</span>
+        <span>${d.personal.languages.map(l => `${esc(l.name)} (${esc(l.level)})`).join(' · ')}</span>
+      </div>
+    </div>
   </div>
 
   <div class="cv-section">
@@ -762,7 +780,13 @@ function buildCvHtml() {
 
   <div class="cv-section">
     <div class="cv-section-title">Languages</div>
-    <p style="font-size:0.9rem;color:var(--text-muted)">${d.personal.languages.map(esc).join(' · ')}</p>
+    <p style="font-size:0.9rem;color:var(--text-muted)">${d.personal.languages.map(l => `${esc(l.name)} (${esc(l.level)})`).join(' · ')}</p>
+  </div>
+
+  <div class="cv-bottom-actions">
+    <a href="assets/Thomas_Zijlstra_CV.pdf" class="btn-primary" download>&#8595; Download PDF</a>
+    <button class="btn-secondary" onclick="window.print()" type="button">Print / Save as PDF</button>
+    <a href="index.html" class="btn-ghost">&larr; Back to portfolio</a>
   </div>
 
 </main>

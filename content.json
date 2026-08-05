@@ -17,7 +17,12 @@
     "github": "https://github.com/tzijlstra-acn/",
     "portfolio": "https://tzijlstra-acn.github.io/CV/",
     "workPermit": "EU · Switzerland",
-    "languages": ["English", "German", "Dutch"]
+    "photo": "assets/profile.png",
+    "languages": [
+      { "name": "English", "level": "Fluent" },
+      { "name": "German", "level": "Fluent" },
+      { "name": "Dutch", "level": "Fluent" }
+    ]
   },
   "hero": {
     "headline": "I turn frontier AI into deployable enterprise workflows—and one-off implementations into repeatable commercial playbooks.",
@@ -324,31 +329,17 @@
       "company": "Accenture",
       "location": "Zurich",
       "role": "Financial Services AI & Digital Transformation",
-      "start": "Mar 2020",
+      "start": "Jun 2020",
       "end": "Present",
       "current": true,
       "items": [
-        "FINMA regulatory reporting and data adequacy for a large Swiss insurer.",
-        "Stream leadership for an OeNB central-bank audit at a European core banking provider.",
-        "LIBOR and interest-rate-transition delivery at a European GSIB.",
-        "AI architecture and economics work.",
-        "Developed and implemented AI-agent workflows for RCSA and third-party risk management.",
+        "Switzerland NFR Capabilities Team Lead: built and led the local practice, connecting CEE region capabilities and defining go-to-market for non-financial risk.",
+        "NFR practice leadership and go-to-market contribution for the DACH region within the CFO&EV division.",
+        "Originated and led the largest Swiss insurer deal of the year — FINMA regulatory reporting and data adequacy programme.",
+        "Stream Lead for an OeNB central-bank audit at a European core banking provider.",
+        "LIBOR and interest-rate-transition delivery at a European GSIB, applying capital-markets knowledge across derivatives, valuation, and trading-desk structures.",
+        "Developed and implemented AI-agent workflows for RCSA and third-party risk management; built the AI Maturity Assessment for the NFR practice.",
         "Coordination across business, risk, data, technology, governance, and senior stakeholders."
-      ]
-    },
-    {
-      "company": "Single Family Office",
-      "location": "Prior to Accenture",
-      "role": "Investment & Finance Manager",
-      "start": "Aug 2018",
-      "end": "Mar 2020",
-      "current": false,
-      "items": [
-        "Company valuation and cash-flow modelling.",
-        "Direct-investment and financing analysis.",
-        "Debt, asset-backed, and equity-financing discussions.",
-        "Engagement with investors, portfolio companies, and financing counterparties.",
-        "Work in an entrepreneurial growth environment."
       ]
     },
     {
@@ -356,7 +347,7 @@
       "location": "London",
       "role": "Debt Capital Markets Analyst, FIG",
       "start": "Jun 2015",
-      "end": "Jul 2018",
+      "end": "Mar 2020",
       "current": false,
       "coverage": "DACH and Benelux (selected UK/Ireland)",
       "items": [
@@ -491,6 +482,6 @@
     "text": "This is a personal portfolio. Views are my own. Public demonstrations use synthetic, anonymized, mock, or illustrative data and do not represent client systems. No confidential client or employer information is presented."
   },
   "cv": {
-    "summary": "AI commercialization and financial-services professional with 10+ years of experience. Investment banking background until March 2020, spanning Debt Capital Markets at Société Générale and direct investment and financing at a single family office. Since 2020, enterprise AI and digital transformation at Accenture across regulated financial-services clients. Combines commercial judgment, executive stakeholder management, regulated-industry expertise, and working technical capability across agentic workflows, integrations, AI economics, and human-control design."
+    "summary": "AI commercialization and financial-services professional with 10+ years of experience. Investment banking background until March 2020 in Debt Capital Markets at Société Générale, covering DACH and Benelux FIG clients across senior, covered, and structured products. Since 2020, enterprise AI and digital transformation at Accenture across regulated financial-services clients. Combines commercial judgment, executive stakeholder management, regulated-industry expertise, and working technical capability across agentic workflows, integrations, AI economics, and human-control design."
   }
 }

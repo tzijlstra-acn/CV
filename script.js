@@ -311,6 +311,57 @@
     if (viewBtn) viewBtn.addEventListener('click', toggleView);
   }
 
+  // --- Scroll Spy (active nav highlighting) ----------------
+  function initScrollSpy() {
+    var navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    if (!navLinks.length || !window.IntersectionObserver) return;
+
+    // Map section id → nav link element
+    var sectionMap = {};
+    navLinks.forEach(function (link) {
+      var id = link.getAttribute('href').slice(1);
+      if (document.getElementById(id)) {
+        sectionMap[id] = link;
+      }
+    });
+
+    var activeSectionId = null;
+    var visibleSections = new Set();
+
+    function updateActive() {
+      // Pick the first visible section (document order)
+      var ids = Object.keys(sectionMap);
+      var active = null;
+      for (var i = 0; i < ids.length; i++) {
+        if (visibleSections.has(ids[i])) { active = ids[i]; break; }
+      }
+      if (active === activeSectionId) return;
+      activeSectionId = active;
+      navLinks.forEach(function (l) { l.classList.remove('nav-active'); });
+      if (active && sectionMap[active]) {
+        sectionMap[active].classList.add('nav-active');
+      }
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          visibleSections.add(entry.target.id);
+        } else {
+          visibleSections.delete(entry.target.id);
+        }
+      });
+      updateActive();
+    }, {
+      rootMargin: '0px 0px -60% 0px',
+      threshold: 0
+    });
+
+    Object.keys(sectionMap).forEach(function (id) {
+      observer.observe(document.getElementById(id));
+    });
+  }
+
   // --- Init ------------------------------------------------
   function init() {
     initTheme();
@@ -324,6 +375,7 @@
     initScrollReveal();
     initSmoothScroll();
     initControls();
+    initScrollSpy();
   }
 
   if (document.readyState === 'loading') {
