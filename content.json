@@ -25,8 +25,8 @@
     ]
   },
   "hero": {
-    "headline": "Ten years across capital markets, regulatory transformation, and enterprise AI—building systems that integrate into real regulated organisations, not just demonstrate concepts.",
-    "sub": "CFA charterholder. Started in investment banking in London, moved through regulatory transformation work across Europe, and spent the past five years designing and implementing AI in regulated financial services.",
+    "headline": "A decade in financial services—from investment banking in London to programme delivery and AI implementation for regulated organisations across Europe.",
+    "sub": "CFA charterholder. Career spans capital markets at Société Générale, regulatory transformation work across European financial institutions, and AI implementation in regulated financial services since 2020.",
     "processLine": "Identify the problem → establish the economics → design the architecture → integrate the systems → keep humans in control → embed and adopt → package for next time.",
     "ctas": {
       "primary": { "label": "Explore the evidence", "href": "#evidence" },
@@ -59,7 +59,7 @@
   ],
   "evidenceLabel": "Evidence, not self-ratings.",
   "thesis": {
-    "title": "How I approach AI implementation in enterprise environments",
+    "title": "Approach to AI implementation in regulated enterprise environments",
     "stages": [
       {
         "number": 1,
@@ -75,7 +75,7 @@
         "question": "Who experiences the pain, who has the authority to act, and who must approve?",
         "method": "Stakeholder mapping from executive sponsor down through the process owner to the technology team. The key question is whether the person with the problem controls the budget or needs to build a case upward.",
         "output": "A clear picture of who needs to say yes and what each of them needs to see",
-        "example": "In regulated financial services, the CRO often sponsors, operations owns delivery, and the CIO gates the integration. Getting all three aligned on the same framing is usually more of the work than building the technology."
+        "example": "In regulated financial services, the CRO often sponsors, operations owns delivery, and the CIO gates the integration. Alignment across all three is usually a precondition for successful delivery."
       },
       {
         "number": 3,
@@ -89,9 +89,9 @@
         "number": 4,
         "title": "Build the hard part first",
         "question": "Can a working demonstrator show that the most difficult piece actually functions?",
-        "method": "Prototype the core workflow using realistic data. The temptation is to build something that looks impressive. The more useful thing is to prove the hardest part—agent orchestration, integration, edge-case handling—not to demo the easy parts.",
-        "output": "A working demonstrator with an honest evaluation of what it does and does not handle",
-        "example": "The NFR platform and DORA control-line builds follow this: real agent orchestration, real integration patterns, real human-approval gates—evaluated against specific criteria rather than general impressiveness."
+        "method": "Prototype the core workflow using realistic synthetic data. The most valuable demonstrators focus on the technically difficult parts—agent orchestration, integration, edge-case handling—and include an honest evaluation of what works and what does not.",
+        "output": "A working demonstrator with an evaluation of capabilities and limitations",
+        "example": "The NFR platform and DORA control-line builds are structured around this: real agent orchestration, real integration patterns, real human-approval gates—evaluated against defined criteria."
       },
       {
         "number": 5,
@@ -132,17 +132,17 @@
       "id": "dora-control",
       "title": "DORA Article 12 AI Control Line",
       "repo": "https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow",
-      "evidenceType": "Real client AI implementation",
+      "evidenceType": "Enterprise workflow demonstrator",
       "status": "Published",
       "tags": ["Governance", "Agentic AI", "Integration"],
-      "problem": "Regulatory change (DORA Article 12) is commonly translated manually through policy, controls, infrastructure, verification, documentation, and audit evidence — a process that spans weeks and multiple teams.",
-      "summary": "A working AI workflow built as a client deliverable, not a demo. Takes a live regulatory requirement (DORA Article 12) through AI-generated control updates, infrastructure proposals, policy-engine verification, compliance documentation, human approval gates, and produces a complete traceable evidence chain.",
+      "problem": "Regulatory change (DORA Article 12) is typically translated manually through policy, controls, infrastructure, verification, documentation, and audit evidence — a process that spans weeks and multiple teams.",
+      "summary": "A fully functional AI workflow demonstrator built around a real regulatory requirement (DORA Article 12). Uses synthetic and anonymized data throughout. Takes a regulatory input through AI-generated control updates, infrastructure proposals, policy-engine verification, compliance documentation, human approval gates, and a complete traceable evidence chain.",
       "tech": ["Next.js", "React", "TypeScript", "SQLite", "Drizzle ORM", "OpenAI o3 / GPT-4o", "AI-provider abstraction", "State machine", "Policy engine", "Human approval gates", "Vitest"],
       "techNote": "technical",
-      "commercial": "This is what implemented enterprise AI looks like in practice: real model integration (OpenAI o3 for regulatory reasoning, GPT-4o for infrastructure, GPT-4o-mini for documentation), an 11-state machine for end-to-end traceability, and human approval gates embedded at every consequential step.",
+      "commercial": "Demonstrates the full architecture of an enterprise AI workflow: model integration (OpenAI o3 for regulatory reasoning, GPT-4o for infrastructure, GPT-4o-mini for documentation), an 11-state machine for end-to-end traceability, and human approval gates at every consequential step. Built using only synthetic and anonymized data.",
       "diagram": "Regulation → AI guideline proposal → AI control design → AI infrastructure change → policy verification → compliance work product → AI documentation → evidence package",
-      "limitations": "Published with anonymized client context · integration patterns reflect real enterprise architecture",
-      "caseStudy": "Built for a client engagement. Starting from a DORA Article 12 regulatory requirement, the workflow routes through OpenAI o3 for regulatory reasoning and control design, GPT-4o for infrastructure code generation, and GPT-4o-mini for documentation. An 11-state machine provides full traceability from regulatory requirement to audit-ready artefact. Human approval gates are embedded at each consequential decision point. The AI provider layer is abstracted so the system is not locked to any single model. Tests cover the full workflow including edge cases and human-override paths."
+      "limitations": "Demonstrator using synthetic and anonymized data · no client systems, credentials, or confidential information · integration patterns are illustrative",
+      "caseStudy": "Built around a DORA Article 12 regulatory requirement using synthetic and anonymized data only. The workflow routes through OpenAI o3 for regulatory reasoning and control design, GPT-4o for infrastructure code generation, and GPT-4o-mini for documentation. An 11-state machine provides full traceability from regulatory input to artefact. Human approval gates are embedded at each consequential decision point. The AI provider layer is abstracted so the architecture is not locked to any single model. Tests cover the full workflow including edge cases and human-override paths. The architecture reflects patterns from enterprise delivery experience."
     },
     {
       "id": "ai-economics",
@@ -155,7 +155,7 @@
       "summary": "Interactive tool for modelling the full economics of an enterprise AI platform—model selection and routing, token costs, cloud vs. sovereign vs. on-premise hosting, shared infrastructure costs, governance overhead, and net value projections. Built for executive decision-making and proposal development.",
       "tech": ["JavaScript", "HTML/CSS"],
       "techNote": "executive",
-      "commercial": "Most AI business cases focus on capability without modelling what it actually costs to run at scale. This tool lets a buyer or solution architect work through the complete picture, including what shared infrastructure and governance overhead do to unit economics.",
+      "commercial": "Useful for buyers and architects who need to model the full economics of an AI platform investment—not only capability but also what shared infrastructure and governance overhead do to unit economics.",
       "diagram": "Model selection → usage assumptions → hosting scenario → shared platform costs → governance overhead → net economics",
       "limitations": "All prices, benchmarks, gains, and allocation values are illustrative planning assumptions.",
       "caseStudy": "Built for enterprise buyers and architects who need to make defensible investment decisions about AI platforms. Covers model selection and routing strategy, token-cost modelling across providers, hosting scenario comparison (cloud, sovereign, on-premise), shared-platform cost amortization, governance overhead allocation, and projected value gains. Outputs are scenario-comparable and designed to support structured proposal development."
@@ -207,22 +207,22 @@
     ]
   },
   "commercialization": {
-    "title": "How I approach a first commercial engagement",
+    "title": "Approach to a first commercial engagement",
     "label": "Commercial engagement hypothesis",
     "icp": "Bank, insurer, or regulated financial institution · significant operational-risk, compliance, or regulatory function · data distributed across documents, GRC systems, service-management platforms, and spreadsheets · active transformation around DORA, AI governance, RCSA, TPRM, or regulatory change · CRO, COO, or Head of NFR with sponsorship authority",
     "wedge": "Start with one specific, measurable workflow—DORA evidence generation, RCSA refresh, control-gap analysis, or third-party-risk change triage—where the current cost is documentable and the improvement is demonstrable.",
     "offer": "A six-to-eight-week paid engagement covering baseline measurement, data readiness, workflow design, a working integrated demonstrator, human approval gates, evaluation criteria, economic modelling, and a production roadmap.",
     "path": [
-      "Confirm the pain and measure the baseline",
-      "Establish sandbox access and data availability",
+      "Confirm the problem and measure the baseline",
+      "Establish data access and environment readiness",
       "Integrate one system of record",
       "Design and build the core workflow",
       "Add human approval gates",
       "Measure against the baseline",
-      "Convert to a production proposal",
+      "Develop a production proposal",
       "Expand to adjacent workflows",
       "Package the pattern as a reusable asset",
-      "Build ecosystem motion"
+      "Develop ecosystem relationships"
     ],
     "structures": [
       "Fixed-fee discovery",
@@ -268,9 +268,9 @@
         "heading": "Engage and test",
         "items": [
           "Run customer discovery conversations with target accounts",
-          "Develop and pressure-test initial commercial proposals",
+          "Develop and refine initial commercial proposals",
           "Build or adapt a demonstrator that speaks to buyer priorities",
-          "Move toward first paid engagement commitments",
+          "Progress toward initial engagement commitments",
           "Document blockers and open questions transparently"
         ]
       },
@@ -335,7 +335,7 @@
       "items": [
         "Switzerland NFR Capabilities Team Lead: built and led the local practice, connecting CEE region capabilities and defining go-to-market for non-financial risk.",
         "NFR practice leadership and go-to-market contribution for the DACH region within the CFO&EV division.",
-        "Originated and led the largest Swiss insurer deal of the year — FINMA regulatory reporting and data adequacy programme (Databricks).",
+        "Led origination and end-to-end delivery of a major FINMA regulatory reporting and data adequacy programme at a leading Swiss insurer (Databricks).",
         "Stream Lead for an OeNB central-bank audit at a European core banking provider.",
         "LIBOR and interest-rate-transition delivery at a European GSIB, applying capital-markets knowledge across derivatives, valuation, and trading-desk structures.",
         "Developed and implemented AI-agent workflows for RCSA and third-party risk management; built the AI Maturity Assessment for the NFR practice.",
@@ -490,13 +490,13 @@
   },
   "contact": {
     "headline": "Happy to discuss how this applies to your context.",
-    "copy": "Particularly interested in roles that combine customer engagement, technical work, ecosystem development, and genuine commercial accountability.",
+    "copy": "Particularly interested in roles that combine customer engagement, technical work, ecosystem development, and commercial accountability.",
     "availability": "Available within 3 months of confirmation."
   },
   "footer": {
     "text": "This is a personal portfolio. Views are my own. Public demonstrations use synthetic, anonymized, mock, or illustrative data and do not represent client systems. No confidential client or employer information is presented."
   },
   "cv": {
-    "summary": "Financial services professional with a decade of international experience across London, Zurich, and Paris. Spent the first half of my career in investment banking—Debt Capital Markets at Société Générale in London covering DACH and Benelux financial institutions, then investment and finance work at a London family office. Since 2020, based in Zurich and focused on enterprise AI and digital transformation for regulated financial-services clients—designing and implementing agentic workflows, building AI economics frameworks, and leading programme delivery across FINMA, OeNB, and DORA-related mandates. CFA charterholder."
+    "summary": "Financial services professional with a decade of international experience across London, Zurich, and Paris. Early career in investment banking: Debt Capital Markets at Société Générale in London covering DACH and Benelux financial institutions, followed by investment and financing work at a London family office. Since 2020, based in Zurich and working on enterprise AI and digital transformation for regulated financial-services organisations—agentic workflows, AI economics frameworks, and programme delivery across FINMA, OeNB, and DORA-related mandates. CFA charterholder."
   }
 }
