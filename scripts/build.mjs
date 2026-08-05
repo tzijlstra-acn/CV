@@ -44,6 +44,29 @@ function techTags(arr) {
   return arr.map(t => `<span class="tech-tag">${esc(t)}</span>`).join('');
 }
 
+// --- Company badges and location flags ---------------------
+
+function companyBadge(company) {
+  const badges = {
+    'Accenture':           `<span class="co-badge co-badge--acn" title="Accenture" aria-hidden="true">&#62;</span>`,
+    'Single Family Office': `<span class="co-badge co-badge--sfo" title="Single Family Office" aria-hidden="true">&#9679;</span>`,
+    'Société Générale':    `<span class="co-badge co-badge--sg" title="Société Générale" aria-hidden="true">&#9632;</span>`,
+    'Catalina':            `<span class="co-badge co-badge--cat" title="Catalina" aria-hidden="true">&#9679;</span>`,
+  };
+  return badges[company] || '';
+}
+
+function locationFlag(location) {
+  const flags = {
+    'Zurich': '🇨🇭',
+    'London': '🇬🇧',
+    'Paris':  '🇫🇷',
+  };
+  const flag = flags[location];
+  if (!flag) return esc(location);
+  return `<span class="loc-flag" aria-hidden="true">${flag}</span>${esc(location)}`;
+}
+
 // --- COMPONENTS --------------------------------------------
 
 function buildNav() {
@@ -461,8 +484,8 @@ function buildExperience() {
       ${d.experience.map(job => `
       <div class="exp-item reveal">
         <div class="exp-meta">
-          <div class="company">${esc(job.company)}</div>
-          <div class="location">${esc(job.location)}</div>
+          <div class="company">${companyBadge(job.company)}${esc(job.company)}</div>
+          <div class="location">${locationFlag(job.location)}</div>
           <div class="dates">${esc(job.start)} – ${esc(job.end)}</div>
           ${job.coverage ? `<div class="coverage">${esc(job.coverage)}</div>` : ''}
         </div>
@@ -600,6 +623,30 @@ function buildJsonLd() {
   return `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`;
 }
 
+// --- Shared company-badge styles (used by both pages) ----
+
+const COMPANY_BADGE_CSS = `
+/* --- Company badges & location flags (shared) ---------- */
+.co-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.co-badge--acn { color: #A100FF; font-size: 1rem; width: auto; }
+.co-badge--sfo { color: #8b949e; }
+.co-badge--sg  { color: #e60028; }
+.co-badge--cat { color: #79c0ff; }
+.loc-flag { margin-right: 0.25rem; }
+`;
+
 // --- HTML Wrapper -----------------------------------------
 
 function buildIndexHtml() {
@@ -629,6 +676,7 @@ function buildIndexHtml() {
   <link rel="canonical" href="${esc(d.meta.canonicalUrl)}">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <style>${COMPANY_BADGE_CSS}</style>
 
   <title>${esc(d.meta.title)}</title>
   ${buildJsonLd()}
@@ -664,7 +712,7 @@ function buildCvHtml() {
   const expHtml = d.experience.map(job => `
     <div class="cv-exp-item">
       <div class="cv-exp-header">
-        <span class="cv-exp-company">${esc(job.company)}${job.location ? `, ${esc(job.location)}` : ''}</span>
+        <span class="cv-exp-company">${companyBadge(job.company)}${esc(job.company)}${job.location ? `, ${locationFlag(job.location)}` : ''}</span>
         <span class="cv-exp-dates">${esc(job.start)} – ${esc(job.end)}</span>
       </div>
       <div class="cv-exp-role">${esc(job.role)}${job.coverage ? ` — ${esc(job.coverage)}` : ''}</div>
@@ -702,7 +750,7 @@ function buildCvHtml() {
     </div>`).join('');
 
   return `<!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -712,6 +760,122 @@ function buildCvHtml() {
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <title>${esc(d.personal.name)} — CV</title>
+  <style>
+/* ============================================================
+   CV PAGE — Night Vision Dark Theme (always-on)
+   ============================================================ */
+
+/* Override CSS variables to dark palette */
+:root {
+  --bg:        #0d1117;
+  --bg-alt:    #0d1117;
+  --surface:   #161b22;
+  --border:    #30363d;
+  --text:      #e6edf3;
+  --text-muted:#8b949e;
+  --accent:    #3fb950;
+  --accent-h:  #56d364;
+  --secondary: #79c0ff;
+  --secondary-h:#a5d6ff;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow:    0 2px 10px rgba(0,0,0,0.6);
+  --shadow-lg: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+html, body { background: #0d1117 !important; color: #e6edf3 !important; }
+
+/* Links */
+a { color: #3fb950; }
+a:hover { color: #56d364; }
+
+/* Toolbar — dark */
+.cv-toolbar {
+  background: #161b22 !important;
+  border-bottom-color: #30363d !important;
+}
+.cv-toolbar h1 { color: #8b949e !important; }
+
+/* Header accent line */
+.cv-header { border-bottom-color: #3fb950 !important; }
+
+/* Section title rule */
+.cv-section-title {
+  color: #3fb950 !important;
+  border-bottom-color: #30363d !important;
+}
+
+/* CV title in header */
+.cv-header .cv-title { color: #3fb950 !important; }
+
+/* Bullet dashes */
+.cv-exp-items li::before,
+.cv-proj-items li::before { color: #3fb950 !important; }
+
+/* Company badges */
+${COMPANY_BADGE_CSS}
+
+/* ---- International Experience callout ---- */
+.cv-intl-callout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  background: rgba(63,185,80,0.07);
+  border: 1px solid rgba(63,185,80,0.22);
+  border-left: 3px solid #3fb950;
+  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1.75rem;
+}
+.cv-intl-label {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #3fb950;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cv-intl-cities {
+  font-size: 0.875rem;
+  color: #e6edf3;
+  line-height: 1.5;
+}
+
+/* ---- Print — preserve dark, exact colours ---- */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  html, body {
+    background: #0d1117 !important;
+    color: #e6edf3 !important;
+  }
+  :root {
+    --bg:        #0d1117 !important;
+    --bg-alt:    #0d1117 !important;
+    --surface:   #161b22 !important;
+    --border:    #30363d !important;
+    --text:      #e6edf3 !important;
+    --text-muted:#8b949e !important;
+    --accent:    #3fb950 !important;
+    --accent-h:  #56d364 !important;
+    --secondary: #79c0ff !important;
+  }
+  .cv-toolbar,
+  .cv-bottom-actions { display: none !important; }
+  .cv-document { padding: 0.6cm 1.2cm; }
+  .cv-header { page-break-inside: avoid; border-bottom-color: #3fb950 !important; }
+  .cv-section { page-break-inside: avoid; }
+  .cv-exp-item { page-break-inside: avoid; }
+  .cv-photo {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  a { color: #3fb950 !important; }
+}
+  </style>
 </head>
 <body class="cv-page">
 
@@ -720,10 +884,15 @@ function buildCvHtml() {
   <a href="assets/Thomas_Zijlstra_CV.pdf" class="btn-primary" download>&#8595; Download PDF</a>
   <button class="btn-secondary" onclick="window.print()" type="button">Print / Save as PDF</button>
   <a href="index.html" class="btn-ghost">&larr; Back to portfolio</a>
-  <button id="theme-toggle" class="btn-icon" aria-label="Switch to dark mode" type="button">☾</button>
 </div>
 
 <main id="main" class="cv-document">
+
+  <!-- International Experience callout -->
+  <div class="cv-intl-callout" aria-label="International experience">
+    <span class="cv-intl-label">International Experience</span>
+    <span class="cv-intl-cities">🇨🇭 Zurich (2020–present) &nbsp;·&nbsp; 🇬🇧 London (2015–2020) &nbsp;·&nbsp; 🇫🇷 Paris (2013–2014)</span>
+  </div>
 
   <div class="cv-header">
     <div class="cv-header-photo">

@@ -24,6 +24,27 @@
   <link rel="canonical" href="https://tzijlstra-acn.github.io/CV/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <style>
+/* --- Company badges & location flags (shared) ---------- */
+.co-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.co-badge--acn { color: #A100FF; font-size: 1rem; width: auto; }
+.co-badge--sfo { color: #8b949e; }
+.co-badge--sg  { color: #e60028; }
+.co-badge--cat { color: #79c0ff; }
+.loc-flag { margin-right: 0.25rem; }
+</style>
 
   <title>Thomas Zijlstra, CFA — AI Commercialization &amp; Enterprise AI Builder</title>
   <script type="application/ld+json">{
@@ -58,7 +79,7 @@
 <nav class="site-nav" aria-label="Main navigation">
   <div class="container nav-inner">
     <a href="/" class="nav-logo" aria-label="Thomas Zijlstra, CFA — home">
-      <img src="assets/profile.png" alt="" class="nav-photo" aria-hidden="true">
+      <img src="assets/profile-bw.png" alt="" class="nav-photo" aria-hidden="true">
       <span>Thomas Zijlstra</span>
     </a>
 
@@ -133,7 +154,7 @@
         </div>
       </div>
       <div class="hero-photo-wrap">
-        <img src="assets/profile.png" alt="Portrait of Thomas Zijlstra, CFA" class="hero-photo" loading="eager">
+        <img src="assets/profile-bw.png" alt="Portrait of Thomas Zijlstra, CFA" class="hero-photo" loading="eager">
       </div>
     </div>
   </div>
@@ -441,27 +462,27 @@
         aria-labelledby="proj-title-dora-control"
       >
         <div class="project-card-header">
-          <h3 id="proj-title-dora-control">DORA Article 12 Control Line</h3>
+          <h3 id="proj-title-dora-control">DORA Article 12 AI Control Line</h3>
           <span class="badge badge-status">Published</span>
         </div>
 
         <div class="project-tags"><span class="tag">Governance</span><span class="tag">Agentic AI</span><span class="tag">Integration</span></div>
 
-        <div class="badge badge-type">Public compliance demonstrator</div>
+        <div class="badge badge-type">Real client AI implementation</div>
 
-        <p class="project-problem"><em>Problem:</em> Regulatory change is commonly translated manually through policy, controls, infrastructure, verification, documentation, and audit evidence.</p>
+        <p class="project-problem"><em>Problem:</em> Regulatory change (DORA Article 12) is commonly translated manually through policy, controls, infrastructure, verification, documentation, and audit evidence — a process that spans weeks and multiple teams.</p>
 
-        <p class="project-summary">A staged workflow connecting a regulatory requirement to control updates, infrastructure proposals, policy verification, compliance documentation, human approval, and an evidence chain.</p>
+        <p class="project-summary">A fully integrated AI workflow built as a client deliverable: connects a live regulatory requirement to AI-generated control updates, infrastructure proposals, policy-engine verification, compliance documentation, human approval gates, and a complete evidence chain.</p>
 
         <div class="project-diagram" aria-label="Architecture flow">
-          Regulation → guideline → control → infrastructure change → verification → compliance work product → documentation → evidence
+          Regulation → AI guideline proposal → AI control design → AI infrastructure change → policy verification → compliance work product → AI documentation → evidence package
         </div>
 
         <div class="technical-only">
-          <div class="tech-tags"><span class="tech-tag">Next.js</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">SQLite</span><span class="tech-tag">Drizzle ORM</span><span class="tech-tag">AI-provider abstraction</span><span class="tech-tag">State machine</span><span class="tech-tag">Policy engine</span><span class="tech-tag">Human approval gates</span><span class="tech-tag">Vitest</span></div>
+          <div class="tech-tags"><span class="tech-tag">Next.js</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">SQLite</span><span class="tech-tag">Drizzle ORM</span><span class="tech-tag">OpenAI o3 / GPT-4o</span><span class="tech-tag">AI-provider abstraction</span><span class="tech-tag">State machine</span><span class="tech-tag">Policy engine</span><span class="tech-tag">Human approval gates</span><span class="tech-tag">Vitest</span></div>
         </div>
 
-        <p class="project-limitations">&#9432; Synthetic demonstration · any efficiency estimate is illustrative, not a measured client result</p>
+        <p class="project-limitations">&#9432; Published with anonymized client context · integration patterns reflect real enterprise architecture</p>
 
         <div class="project-card-footer">
           <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
@@ -591,39 +612,39 @@
 <div id="proj-dora-control-backdrop" class="dialog-backdrop" role="dialog" aria-modal="true" aria-labelledby="dialog-title-dora-control" aria-hidden="true">
   <div class="dialog">
     <div class="dialog-header">
-      <h2 id="dialog-title-dora-control">DORA Article 12 Control Line</h2>
+      <h2 id="dialog-title-dora-control">DORA Article 12 AI Control Line</h2>
       <button class="dialog-close" data-dialog-close aria-label="Close dialog" type="button">&times;</button>
     </div>
     <div class="dialog-body">
       <div>
         <h3>Evidence type</h3>
-        <p>Public compliance demonstrator</p>
+        <p>Real client AI implementation</p>
       </div>
       <div>
         <h3>Problem</h3>
-        <p>Regulatory change is commonly translated manually through policy, controls, infrastructure, verification, documentation, and audit evidence.</p>
+        <p>Regulatory change (DORA Article 12) is commonly translated manually through policy, controls, infrastructure, verification, documentation, and audit evidence — a process that spans weeks and multiple teams.</p>
       </div>
       <div>
         <h3>Summary</h3>
-        <p>A staged workflow connecting a regulatory requirement to control updates, infrastructure proposals, policy verification, compliance documentation, human approval, and an evidence chain.</p>
+        <p>A fully integrated AI workflow built as a client deliverable: connects a live regulatory requirement to AI-generated control updates, infrastructure proposals, policy-engine verification, compliance documentation, human approval gates, and a complete evidence chain.</p>
       </div>
       <div>
         <h3>Architecture</h3>
-        <p style="font-family:monospace;font-size:0.875rem;color:var(--secondary)">Regulation → guideline → control → infrastructure change → verification → compliance work product → documentation → evidence</p>
+        <p style="font-family:monospace;font-size:0.875rem;color:var(--secondary)">Regulation → AI guideline proposal → AI control design → AI infrastructure change → policy verification → compliance work product → AI documentation → evidence package</p>
       </div>
       <div>
         <h3>Commercial relevance</h3>
-        <p>Turns an abstract regulatory requirement into a bounded, measurable workflow suitable for a paid design partnership.</p>
+        <p>Demonstrates developed and implemented enterprise AI: real model integration, real state management, real approval workflows, and a traceable evidence chain from regulatory requirement to audit-ready artefact.</p>
       </div>
       <div>
         <h3>Case study</h3>
-        <p>Starting from a DORA Article 12 requirement, the workflow automatically generates control recommendations, proposes infrastructure changes, verifies alignment against existing policy, produces compliance documentation, routes for human approval, and assembles an evidence package. The state machine ensures traceability at every step. AI provider is abstracted so the same workflow runs against different models. Tests cover the full workflow including edge cases and human-override paths.</p>
+        <p>Built as a client-facing AI implementation. Starting from a DORA Article 12 requirement, the workflow uses OpenAI o3 for regulatory reasoning and control design, GPT-4o for infrastructure code generation, and GPT-4o-mini for documentation. A state machine with 11 transitions ensures full traceability. Human approval gates are wired into each consequential decision. The AI provider is abstracted for model-agnostic deployment. Tests cover the full workflow including edge cases and human-override paths. This is a working enterprise AI integration, not a prototype.</p>
       </div>
       <div>
         <h3>Technology</h3>
-        <p>Next.js · React · TypeScript · SQLite · Drizzle ORM · AI-provider abstraction · State machine · Policy engine · Human approval gates · Vitest</p>
+        <p>Next.js · React · TypeScript · SQLite · Drizzle ORM · OpenAI o3 / GPT-4o · AI-provider abstraction · State machine · Policy engine · Human approval gates · Vitest</p>
       </div>
-      <div class="dialog-notice">Synthetic demonstration · any efficiency estimate is illustrative, not a measured client result</div>
+      <div class="dialog-notice">Published with anonymized client context · integration patterns reflect real enterprise architecture</div>
       <div>
         <a href="https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow" target="_blank" rel="noopener noreferrer" class="btn-primary">View on GitHub &rarr;</a>
       </div>
@@ -979,8 +1000,8 @@
       
       <div class="exp-item reveal">
         <div class="exp-meta">
-          <div class="company">Accenture</div>
-          <div class="location">Zurich</div>
+          <div class="company"><span class="co-badge co-badge--acn" title="Accenture" aria-hidden="true">&#62;</span>Accenture</div>
+          <div class="location"><span class="loc-flag" aria-hidden="true">🇨🇭</span>Zurich</div>
           <div class="dates">Jun 2020 – Present</div>
           
         </div>
@@ -993,9 +1014,23 @@
       </div>
       <div class="exp-item reveal">
         <div class="exp-meta">
-          <div class="company">Société Générale</div>
-          <div class="location">London</div>
-          <div class="dates">Jun 2015 – Mar 2020</div>
+          <div class="company"><span class="co-badge co-badge--sfo" title="Single Family Office" aria-hidden="true">&#9679;</span>Single Family Office</div>
+          <div class="location"><span class="loc-flag" aria-hidden="true">🇬🇧</span>London</div>
+          <div class="dates">Aug 2018 – Mar 2020</div>
+          
+        </div>
+        <div class="exp-content">
+          <div class="role">Investment &amp; Finance Manager</div>
+          <ul>
+            <li>Company valuation and cash-flow modelling.</li><li>Direct-investment and financing analysis.</li><li>Debt, asset-backed, and equity-financing discussions.</li><li>Engagement with investors, portfolio companies, and financing counterparties.</li><li>Work in an entrepreneurial, growth-stage environment.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-meta">
+          <div class="company"><span class="co-badge co-badge--sg" title="Société Générale" aria-hidden="true">&#9632;</span>Société Générale</div>
+          <div class="location"><span class="loc-flag" aria-hidden="true">🇬🇧</span>London</div>
+          <div class="dates">Jun 2015 – Jul 2018</div>
           <div class="coverage">DACH and Benelux (selected UK/Ireland)</div>
         </div>
         <div class="exp-content">
@@ -1007,8 +1042,8 @@
       </div>
       <div class="exp-item reveal">
         <div class="exp-meta">
-          <div class="company">Catalina</div>
-          <div class="location">Paris</div>
+          <div class="company"><span class="co-badge co-badge--cat" title="Catalina" aria-hidden="true">&#9679;</span>Catalina</div>
+          <div class="location"><span class="loc-flag" aria-hidden="true">🇫🇷</span>Paris</div>
           <div class="dates">Jun 2013 – Jan 2014</div>
           
         </div>

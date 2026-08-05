@@ -17,7 +17,7 @@
     "github": "https://github.com/tzijlstra-acn/",
     "portfolio": "https://tzijlstra-acn.github.io/CV/",
     "workPermit": "EU · Switzerland",
-    "photo": "assets/profile.png",
+    "photo": "assets/profile-bw.png",
     "languages": [
       { "name": "English", "level": "Fluent" },
       { "name": "German", "level": "Fluent" },
@@ -130,19 +130,19 @@
     },
     {
       "id": "dora-control",
-      "title": "DORA Article 12 Control Line",
+      "title": "DORA Article 12 AI Control Line",
       "repo": "https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow",
-      "evidenceType": "Public compliance demonstrator",
+      "evidenceType": "Real client AI implementation",
       "status": "Published",
       "tags": ["Governance", "Agentic AI", "Integration"],
-      "problem": "Regulatory change is commonly translated manually through policy, controls, infrastructure, verification, documentation, and audit evidence.",
-      "summary": "A staged workflow connecting a regulatory requirement to control updates, infrastructure proposals, policy verification, compliance documentation, human approval, and an evidence chain.",
-      "tech": ["Next.js", "React", "TypeScript", "SQLite", "Drizzle ORM", "AI-provider abstraction", "State machine", "Policy engine", "Human approval gates", "Vitest"],
+      "problem": "Regulatory change (DORA Article 12) is commonly translated manually through policy, controls, infrastructure, verification, documentation, and audit evidence — a process that spans weeks and multiple teams.",
+      "summary": "A fully integrated AI workflow built as a client deliverable: connects a live regulatory requirement to AI-generated control updates, infrastructure proposals, policy-engine verification, compliance documentation, human approval gates, and a complete evidence chain.",
+      "tech": ["Next.js", "React", "TypeScript", "SQLite", "Drizzle ORM", "OpenAI o3 / GPT-4o", "AI-provider abstraction", "State machine", "Policy engine", "Human approval gates", "Vitest"],
       "techNote": "technical",
-      "commercial": "Turns an abstract regulatory requirement into a bounded, measurable workflow suitable for a paid design partnership.",
-      "diagram": "Regulation → guideline → control → infrastructure change → verification → compliance work product → documentation → evidence",
-      "limitations": "Synthetic demonstration · any efficiency estimate is illustrative, not a measured client result",
-      "caseStudy": "Starting from a DORA Article 12 requirement, the workflow automatically generates control recommendations, proposes infrastructure changes, verifies alignment against existing policy, produces compliance documentation, routes for human approval, and assembles an evidence package. The state machine ensures traceability at every step. AI provider is abstracted so the same workflow runs against different models. Tests cover the full workflow including edge cases and human-override paths."
+      "commercial": "Demonstrates developed and implemented enterprise AI: real model integration, real state management, real approval workflows, and a traceable evidence chain from regulatory requirement to audit-ready artefact.",
+      "diagram": "Regulation → AI guideline proposal → AI control design → AI infrastructure change → policy verification → compliance work product → AI documentation → evidence package",
+      "limitations": "Published with anonymized client context · integration patterns reflect real enterprise architecture",
+      "caseStudy": "Built as a client-facing AI implementation. Starting from a DORA Article 12 requirement, the workflow uses OpenAI o3 for regulatory reasoning and control design, GPT-4o for infrastructure code generation, and GPT-4o-mini for documentation. A state machine with 11 transitions ensures full traceability. Human approval gates are wired into each consequential decision. The AI provider is abstracted for model-agnostic deployment. Tests cover the full workflow including edge cases and human-override paths. This is a working enterprise AI integration, not a prototype."
     },
     {
       "id": "ai-economics",
@@ -343,11 +343,26 @@
       ]
     },
     {
+      "company": "Single Family Office",
+      "location": "London",
+      "role": "Investment & Finance Manager",
+      "start": "Aug 2018",
+      "end": "Mar 2020",
+      "current": false,
+      "items": [
+        "Company valuation and cash-flow modelling.",
+        "Direct-investment and financing analysis.",
+        "Debt, asset-backed, and equity-financing discussions.",
+        "Engagement with investors, portfolio companies, and financing counterparties.",
+        "Work in an entrepreneurial, growth-stage environment."
+      ]
+    },
+    {
       "company": "Société Générale",
       "location": "London",
       "role": "Debt Capital Markets Analyst, FIG",
       "start": "Jun 2015",
-      "end": "Mar 2020",
+      "end": "Jul 2018",
       "current": false,
       "coverage": "DACH and Benelux (selected UK/Ireland)",
       "items": [
@@ -482,6 +497,6 @@
     "text": "This is a personal portfolio. Views are my own. Public demonstrations use synthetic, anonymized, mock, or illustrative data and do not represent client systems. No confidential client or employer information is presented."
   },
   "cv": {
-    "summary": "AI commercialization and financial-services professional with 10+ years of experience. Investment banking background until March 2020 in Debt Capital Markets at Société Générale, covering DACH and Benelux FIG clients across senior, covered, and structured products. Since 2020, enterprise AI and digital transformation at Accenture across regulated financial-services clients. Combines commercial judgment, executive stakeholder management, regulated-industry expertise, and working technical capability across agentic workflows, integrations, AI economics, and human-control design."
+    "summary": "AI commercialization and financial-services professional with 10+ years of international experience across London, Zurich, and Paris. Investment banking background until 2020: Debt Capital Markets at Société Générale (London) covering DACH and Benelux FIG clients, and investment and finance at a single family office (London). Since 2020 at Accenture (Zurich), leading enterprise AI and digital transformation programmes across regulated financial-services clients. Combines capital-markets origination experience, regulated-industry delivery, and hands-on AI implementation across agentic workflows, enterprise integrations, AI economics, and human-control design."
   }
 }

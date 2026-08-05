@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,142 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <title>Thomas Zijlstra, CFA — CV</title>
+  <style>
+/* ============================================================
+   CV PAGE — Night Vision Dark Theme (always-on)
+   ============================================================ */
+
+/* Override CSS variables to dark palette */
+:root {
+  --bg:        #0d1117;
+  --bg-alt:    #0d1117;
+  --surface:   #161b22;
+  --border:    #30363d;
+  --text:      #e6edf3;
+  --text-muted:#8b949e;
+  --accent:    #3fb950;
+  --accent-h:  #56d364;
+  --secondary: #79c0ff;
+  --secondary-h:#a5d6ff;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow:    0 2px 10px rgba(0,0,0,0.6);
+  --shadow-lg: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+html, body { background: #0d1117 !important; color: #e6edf3 !important; }
+
+/* Links */
+a { color: #3fb950; }
+a:hover { color: #56d364; }
+
+/* Toolbar — dark */
+.cv-toolbar {
+  background: #161b22 !important;
+  border-bottom-color: #30363d !important;
+}
+.cv-toolbar h1 { color: #8b949e !important; }
+
+/* Header accent line */
+.cv-header { border-bottom-color: #3fb950 !important; }
+
+/* Section title rule */
+.cv-section-title {
+  color: #3fb950 !important;
+  border-bottom-color: #30363d !important;
+}
+
+/* CV title in header */
+.cv-header .cv-title { color: #3fb950 !important; }
+
+/* Bullet dashes */
+.cv-exp-items li::before,
+.cv-proj-items li::before { color: #3fb950 !important; }
+
+/* Company badges */
+
+/* --- Company badges & location flags (shared) ---------- */
+.co-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.co-badge--acn { color: #A100FF; font-size: 1rem; width: auto; }
+.co-badge--sfo { color: #8b949e; }
+.co-badge--sg  { color: #e60028; }
+.co-badge--cat { color: #79c0ff; }
+.loc-flag { margin-right: 0.25rem; }
+
+
+/* ---- International Experience callout ---- */
+.cv-intl-callout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  background: rgba(63,185,80,0.07);
+  border: 1px solid rgba(63,185,80,0.22);
+  border-left: 3px solid #3fb950;
+  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1.75rem;
+}
+.cv-intl-label {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #3fb950;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cv-intl-cities {
+  font-size: 0.875rem;
+  color: #e6edf3;
+  line-height: 1.5;
+}
+
+/* ---- Print — preserve dark, exact colours ---- */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  html, body {
+    background: #0d1117 !important;
+    color: #e6edf3 !important;
+  }
+  :root {
+    --bg:        #0d1117 !important;
+    --bg-alt:    #0d1117 !important;
+    --surface:   #161b22 !important;
+    --border:    #30363d !important;
+    --text:      #e6edf3 !important;
+    --text-muted:#8b949e !important;
+    --accent:    #3fb950 !important;
+    --accent-h:  #56d364 !important;
+    --secondary: #79c0ff !important;
+  }
+  .cv-toolbar,
+  .cv-bottom-actions { display: none !important; }
+  .cv-document { padding: 0.6cm 1.2cm; }
+  .cv-header { page-break-inside: avoid; border-bottom-color: #3fb950 !important; }
+  .cv-section { page-break-inside: avoid; }
+  .cv-exp-item { page-break-inside: avoid; }
+  .cv-photo {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  a { color: #3fb950 !important; }
+}
+  </style>
 </head>
 <body class="cv-page">
 
@@ -17,14 +153,19 @@
   <a href="assets/Thomas_Zijlstra_CV.pdf" class="btn-primary" download>&#8595; Download PDF</a>
   <button class="btn-secondary" onclick="window.print()" type="button">Print / Save as PDF</button>
   <a href="index.html" class="btn-ghost">&larr; Back to portfolio</a>
-  <button id="theme-toggle" class="btn-icon" aria-label="Switch to dark mode" type="button">☾</button>
 </div>
 
 <main id="main" class="cv-document">
 
+  <!-- International Experience callout -->
+  <div class="cv-intl-callout" aria-label="International experience">
+    <span class="cv-intl-label">International Experience</span>
+    <span class="cv-intl-cities">🇨🇭 Zurich (2020–present) &nbsp;·&nbsp; 🇬🇧 London (2015–2020) &nbsp;·&nbsp; 🇫🇷 Paris (2013–2014)</span>
+  </div>
+
   <div class="cv-header">
     <div class="cv-header-photo">
-      <img src="assets/profile.png" alt="Portrait of Thomas Zijlstra, CFA" class="cv-photo">
+      <img src="assets/profile-bw.png" alt="Portrait of Thomas Zijlstra, CFA" class="cv-photo">
     </div>
     <div class="cv-header-text">
       <h1 class="cv-name">Thomas Zijlstra, CFA</h1>
@@ -50,7 +191,7 @@
 
   <div class="cv-section">
     <div class="cv-section-title">Professional Summary</div>
-    <p class="cv-summary">AI commercialization and financial-services professional with 10+ years of experience. Investment banking background until March 2020 in Debt Capital Markets at Société Générale, covering DACH and Benelux FIG clients across senior, covered, and structured products. Since 2020, enterprise AI and digital transformation at Accenture across regulated financial-services clients. Combines commercial judgment, executive stakeholder management, regulated-industry expertise, and working technical capability across agentic workflows, integrations, AI economics, and human-control design.</p>
+    <p class="cv-summary">AI commercialization and financial-services professional with 10+ years of international experience across London, Zurich, and Paris. Investment banking background until 2020: Debt Capital Markets at Société Générale (London) covering DACH and Benelux FIG clients, and investment and finance at a single family office (London). Since 2020 at Accenture (Zurich), leading enterprise AI and digital transformation programmes across regulated financial-services clients. Combines capital-markets origination experience, regulated-industry delivery, and hands-on AI implementation across agentic workflows, enterprise integrations, AI economics, and human-control design.</p>
   </div>
 
   <div class="cv-section">
@@ -58,7 +199,7 @@
     
     <div class="cv-exp-item">
       <div class="cv-exp-header">
-        <span class="cv-exp-company">Accenture, Zurich</span>
+        <span class="cv-exp-company"><span class="co-badge co-badge--acn" title="Accenture" aria-hidden="true">&#62;</span>Accenture, <span class="loc-flag" aria-hidden="true">🇨🇭</span>Zurich</span>
         <span class="cv-exp-dates">Jun 2020 – Present</span>
       </div>
       <div class="cv-exp-role">Financial Services AI &amp; Digital Transformation</div>
@@ -68,8 +209,18 @@
     </div>
     <div class="cv-exp-item">
       <div class="cv-exp-header">
-        <span class="cv-exp-company">Société Générale, London</span>
-        <span class="cv-exp-dates">Jun 2015 – Mar 2020</span>
+        <span class="cv-exp-company"><span class="co-badge co-badge--sfo" title="Single Family Office" aria-hidden="true">&#9679;</span>Single Family Office, <span class="loc-flag" aria-hidden="true">🇬🇧</span>London</span>
+        <span class="cv-exp-dates">Aug 2018 – Mar 2020</span>
+      </div>
+      <div class="cv-exp-role">Investment &amp; Finance Manager</div>
+      <ul class="cv-exp-items">
+        <li>Company valuation and cash-flow modelling.</li><li>Direct-investment and financing analysis.</li><li>Debt, asset-backed, and equity-financing discussions.</li><li>Engagement with investors, portfolio companies, and financing counterparties.</li><li>Work in an entrepreneurial, growth-stage environment.</li>
+      </ul>
+    </div>
+    <div class="cv-exp-item">
+      <div class="cv-exp-header">
+        <span class="cv-exp-company"><span class="co-badge co-badge--sg" title="Société Générale" aria-hidden="true">&#9632;</span>Société Générale, <span class="loc-flag" aria-hidden="true">🇬🇧</span>London</span>
+        <span class="cv-exp-dates">Jun 2015 – Jul 2018</span>
       </div>
       <div class="cv-exp-role">Debt Capital Markets Analyst, FIG — DACH and Benelux (selected UK/Ireland)</div>
       <ul class="cv-exp-items">
@@ -78,7 +229,7 @@
     </div>
     <div class="cv-exp-item">
       <div class="cv-exp-header">
-        <span class="cv-exp-company">Catalina, Paris</span>
+        <span class="cv-exp-company"><span class="co-badge co-badge--cat" title="Catalina" aria-hidden="true">&#9679;</span>Catalina, <span class="loc-flag" aria-hidden="true">🇫🇷</span>Paris</span>
         <span class="cv-exp-dates">Jun 2013 – Jan 2014</span>
       </div>
       <div class="cv-exp-role">Data Scientist (Traineeship)</div>
@@ -101,12 +252,12 @@
       </ul>
     </div>
     <div class="cv-proj-item">
-      <div class="cv-proj-title">DORA Article 12 Control Line</div>
-      <div class="cv-proj-meta">Public compliance demonstrator · <a href="https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow">https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow</a></div>
+      <div class="cv-proj-title">DORA Article 12 AI Control Line</div>
+      <div class="cv-proj-meta">Real client AI implementation · <a href="https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow">https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow</a></div>
       <ul class="cv-proj-items">
-        <li>A staged workflow connecting a regulatory requirement to control updates, infrastructure proposals, policy verification, compliance documentation, human approval, and an evidence chain.</li>
-        <li>Commercial relevance: Turns an abstract regulatory requirement into a bounded, measurable workflow suitable for a paid design partnership.</li>
-        <li>Note: Synthetic demonstration · any efficiency estimate is illustrative, not a measured client result</li>
+        <li>A fully integrated AI workflow built as a client deliverable: connects a live regulatory requirement to AI-generated control updates, infrastructure proposals, policy-engine verification, compliance documentation, human approval gates, and a complete evidence chain.</li>
+        <li>Commercial relevance: Demonstrates developed and implemented enterprise AI: real model integration, real state management, real approval workflows, and a traceable evidence chain from regulatory requirement to audit-ready artefact.</li>
+        <li>Note: Published with anonymized client context · integration patterns reflect real enterprise architecture</li>
       </ul>
     </div>
     <div class="cv-proj-item">

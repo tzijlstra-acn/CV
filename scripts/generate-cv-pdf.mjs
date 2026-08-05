@@ -74,17 +74,17 @@ async function tryPlaywright(url, outPath) {
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: 'networkidle' });
 
-  // Inject PDF metadata via JS before printing
+  // Hide toolbar and action buttons; keep dark background
   await page.addStyleTag({ content: `
     .cv-toolbar { display: none !important; }
-    body { background: white !important; }
+    .cv-bottom-actions { display: none !important; }
   ` });
 
   await page.pdf({
     path: outPath,
     format: 'A4',
     printBackground: true,
-    margin: { top: '1.5cm', bottom: '1.5cm', left: '2cm', right: '2cm' },
+    margin: { top: '1.2cm', bottom: '1.2cm', left: '1.8cm', right: '1.8cm' },
     displayHeaderFooter: false,
   });
 
@@ -114,16 +114,17 @@ async function tryPuppeteer(url, outPath) {
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: 'networkidle2' });
 
+  // Hide toolbar and action buttons; keep dark background
   await page.addStyleTag({ content: `
     .cv-toolbar { display: none !important; }
-    body { background: white !important; }
+    .cv-bottom-actions { display: none !important; }
   ` });
 
   await page.pdf({
     path: outPath,
     format: 'A4',
     printBackground: true,
-    margin: { top: '1.5cm', bottom: '1.5cm', left: '2cm', right: '2cm' },
+    margin: { top: '1.2cm', bottom: '1.2cm', left: '1.8cm', right: '1.8cm' },
     displayHeaderFooter: false,
   });
 
