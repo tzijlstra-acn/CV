@@ -1,0 +1,16 @@
+{
+  "name": "thomas-zijlstra-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio and CV for Thomas Zijlstra, CFA",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs && node scripts/generate-cv-pdf.mjs",
+    "build:html": "node scripts/build.mjs",
+    "build:pdf": "node scripts/generate-cv-pdf.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
+}

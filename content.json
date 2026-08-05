@@ -1,0 +1,493 @@
+{
+  "meta": {
+    "title": "Thomas Zijlstra, CFA — AI Commercialization & Enterprise AI Builder",
+    "description": "AI commercialization and enterprise AI portfolio spanning financial services, agentic workflows, AI economics, governance, and end-to-end integration.",
+    "canonicalUrl": "https://tzijlstra-acn.github.io/CV/",
+    "ogImage": "assets/og-card.svg",
+    "keywords": "AI commercialization, enterprise AI, business builder, ecosystem, solution architecture, financial services, agentic AI, CFA"
+  },
+  "personal": {
+    "name": "Thomas Zijlstra, CFA",
+    "nameShort": "Thomas Zijlstra",
+    "credential": "CFA",
+    "title": "AI Commercialization & Enterprise AI Builder",
+    "location": "Zurich, Switzerland",
+    "email": "zijlstra.thomas@gmail.com",
+    "github": "https://github.com/tzijlstra-acn/",
+    "portfolio": "https://tzijlstra-acn.github.io/CV/",
+    "languages": ["English", "German", "Dutch"]
+  },
+  "hero": {
+    "headline": "I turn frontier AI into deployable enterprise workflows—and one-off implementations into repeatable commercial playbooks.",
+    "sub": "CFA charterholder with 10+ years across capital markets, financial services, regulatory transformation, and hands-on AI implementation.",
+    "processLine": "Opportunity → economics → architecture → integration → human judgment → adoption → reusable playbook.",
+    "ctas": {
+      "primary": { "label": "Explore the evidence", "href": "#evidence" },
+      "secondary": { "label": "Download CV", "href": "assets/Thomas_Zijlstra_CV.pdf", "download": true },
+      "tertiary": [
+        { "label": "View web CV", "href": "cv.html" },
+        { "label": "GitHub", "href": "https://github.com/tzijlstra-acn/", "external": true },
+        { "label": "Email", "href": "mailto:zijlstra.thomas@gmail.com" }
+      ]
+    },
+    "chips": ["Zurich", "Financial Services", "Agentic AI", "Enterprise Integration", "AI Economics", "English / German / Dutch"]
+  },
+  "evidence": [
+    {
+      "title": "Commercial judgment",
+      "body": "Capital-markets origination, investment and financing analysis, financial modelling, and executive stakeholder engagement."
+    },
+    {
+      "title": "Regulated enterprise delivery",
+      "body": "Work across regulatory reporting, data adequacy, central-bank audit, interest-rate transition, non-financial risk, RCSA, and TPRM."
+    },
+    {
+      "title": "AI-native implementation",
+      "body": "Agentic workflows, knowledge graphs, document intelligence, enterprise integrations, human approvals, and AI cost modelling."
+    },
+    {
+      "title": "Executive-to-technical translation",
+      "body": "Business cases, proposals, architecture, implementation roadmaps, workflow design, controls, and technical demonstrations."
+    }
+  ],
+  "evidenceLabel": "Evidence, not self-ratings.",
+  "thesis": {
+    "title": "How I turn AI technology into enterprise value",
+    "stages": [
+      {
+        "number": 1,
+        "title": "Find an expensive or constrained workflow",
+        "question": "What is the most painful manual process in this business?",
+        "method": "Stakeholder interviews, process observation, workload analysis, and pain-point mapping to identify workflows where time cost, error rate, or capacity constraint is highest.",
+        "output": "Opportunity score and prioritised shortlist",
+        "example": "Non-financial-risk workflows—RCSA, TPRM, control testing—typically involve high analyst time, document fragmentation, and repetitive evidence gathering across multiple systems."
+      },
+      {
+        "number": 2,
+        "title": "Identify buyer, process owner, decision chain",
+        "question": "Who owns this problem and controls the budget?",
+        "method": "Stakeholder mapping from executive sponsor to process owner to technology gatekeeper. Identifying where purchasing authority sits and how transformation budget is released.",
+        "output": "Ideal customer profile and qualification criteria",
+        "example": "CRO, COO, or Head of NFR typically sponsors; risk technology or operations owns delivery; CIO controls integration budget. All three must be aligned."
+      },
+      {
+        "number": 3,
+        "title": "Establish economic and operational baseline",
+        "question": "What does this cost today in time, effort, and risk?",
+        "method": "Baseline measurement of analyst hours, cycle times, error rates, and downstream rework. Translate into a business case framing that connects current cost to investment threshold.",
+        "output": "Baseline measurement and investment case",
+        "example": "A DORA evidence-generation cycle that takes weeks and multiple analysts has a measurable baseline—and a clear value proposition for automation."
+      },
+      {
+        "number": 4,
+        "title": "Design and build a credible technical proof",
+        "question": "Can a working demonstrator validate the hypothesis?",
+        "method": "Rapid prototype of the core workflow using realistic synthetic data. Focus on the hardest part of the problem—agent orchestration, document extraction, integration handoff—not the easy parts.",
+        "output": "Working demonstrator and evaluation scorecard",
+        "example": "The public NFR agent platform and DORA control-line builds demonstrate this pattern: real agent orchestration, real integration patterns, real human-approval gates."
+      },
+      {
+        "number": 5,
+        "title": "Integrate enterprise systems and human controls",
+        "question": "Where does data come from and where do humans stay in control?",
+        "method": "Map data flows from source systems (GRC, service management, document stores) through agent processing to write-back destinations. Design human approval gates at every consequential decision.",
+        "output": "Integration architecture and control framework",
+        "example": "Enterprise patterns include ServiceNow integration, Teams/Power Automate approval flows, policy-engine verification, and audit evidence generation."
+      },
+      {
+        "number": 6,
+        "title": "Measure, package, and expand",
+        "question": "What metrics prove value, and how do we replicate this?",
+        "method": "Define success metrics before deployment. Measure cycle-time, analyst effort, output acceptance rate, and human-override rate. Package the pattern into a reusable architecture and commercial template.",
+        "output": "Metrics dashboard, reference architecture, and expansion playbook",
+        "example": "A single paid design partnership produces baselines, an integrated demonstrator, a production roadmap, and a reusable template for the next workflow or client."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "nfr-platform",
+      "title": "Enterprise NFR Agent Platform",
+      "repo": "https://github.com/tzijlstra-acn/RealAIInfrastrucure",
+      "evidenceType": "Public technical demonstrator",
+      "status": "Published",
+      "tags": ["Agentic AI", "Integration", "Governance"],
+      "problem": "Non-financial-risk work is fragmented across service-management records, controls, policies, regulatory information, documents, and manual analyst workflows.",
+      "summary": "An enterprise-oriented platform combining multiple specialized agent workflows, a knowledge graph, document intelligence, regulatory analysis, human approvals, enterprise integration patterns, and an MCP layer.",
+      "tech": ["Python", "FastAPI", "LangChain", "LangGraph", "NetworkX", "SQLite", "ServiceNow patterns", "Teams/Power Automate approval patterns", "MCP", "Vanilla HTML/CSS/JS"],
+      "techNote": "executive",
+      "commercial": "Shows how isolated AI use cases can become a reusable platform and expansion path rather than a collection of disconnected pilots.",
+      "diagram": "Systems of record → documents & data → knowledge graph → agent orchestration → human approval → enterprise write-back",
+      "limitations": "Synthetic demonstration · no client data · not a production deployment",
+      "caseStudy": "The platform demonstrates a full enterprise AI stack: specialized agents handle different NFR domains (RCSA, TPRM, regulatory change), a knowledge graph maintains relationships between controls, policies, and obligations, document intelligence processes unstructured content, and human approval gates ensure consequential decisions remain under human control. Integration patterns reflect real enterprise environments (ServiceNow, Teams, Power Automate) without using any client credentials or data."
+    },
+    {
+      "id": "dora-control",
+      "title": "DORA Article 12 Control Line",
+      "repo": "https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow",
+      "evidenceType": "Public compliance demonstrator",
+      "status": "Published",
+      "tags": ["Governance", "Agentic AI", "Integration"],
+      "problem": "Regulatory change is commonly translated manually through policy, controls, infrastructure, verification, documentation, and audit evidence.",
+      "summary": "A staged workflow connecting a regulatory requirement to control updates, infrastructure proposals, policy verification, compliance documentation, human approval, and an evidence chain.",
+      "tech": ["Next.js", "React", "TypeScript", "SQLite", "Drizzle ORM", "AI-provider abstraction", "State machine", "Policy engine", "Human approval gates", "Vitest"],
+      "techNote": "technical",
+      "commercial": "Turns an abstract regulatory requirement into a bounded, measurable workflow suitable for a paid design partnership.",
+      "diagram": "Regulation → guideline → control → infrastructure change → verification → compliance work product → documentation → evidence",
+      "limitations": "Synthetic demonstration · any efficiency estimate is illustrative, not a measured client result",
+      "caseStudy": "Starting from a DORA Article 12 requirement, the workflow automatically generates control recommendations, proposes infrastructure changes, verifies alignment against existing policy, produces compliance documentation, routes for human approval, and assembles an evidence package. The state machine ensures traceability at every step. AI provider is abstracted so the same workflow runs against different models. Tests cover the full workflow including edge cases and human-override paths."
+    },
+    {
+      "id": "ai-economics",
+      "title": "Enterprise AI Economics Simulator",
+      "repo": "https://github.com/tzijlstra-acn/AICostSimulator",
+      "evidenceType": "Public executive decision tool",
+      "status": "Published",
+      "tags": ["AI Economics"],
+      "problem": "Enterprise buyers struggle to connect model usage, hosting, shared-platform costs, governance, and expected gains to an all-in AI business case.",
+      "summary": "An interactive cost and scenario tool for estimating the economics of a shared enterprise AI platform, covering industry assumptions, model routing, cloud/sovereign/on-premise scenarios, and cost-vs-gain projections.",
+      "tech": ["JavaScript", "HTML/CSS"],
+      "techNote": "executive",
+      "commercial": "Demonstrates the ability to translate technical architecture into buyer-facing economics and proposal content.",
+      "diagram": "Model selection → usage assumptions → hosting scenario → shared platform costs → governance overhead → net economics",
+      "limitations": "All prices, benchmarks, gains, and allocation values are illustrative planning assumptions.",
+      "caseStudy": "The simulator allows an enterprise buyer or solution architect to model the full economics of an AI platform investment: model selection and routing strategy, token-cost estimates, cloud vs. sovereign vs. on-premise hosting, shared infrastructure amortization, governance overhead, and projected value gains. Outputs are scenario-comparable, exportable, and designed to support executive decision-making and proposal development."
+    },
+    {
+      "id": "personal-story",
+      "title": "Interactive Personal Story",
+      "repo": "https://github.com/tzijlstra-acn/Selfcare",
+      "evidenceType": "Personal side project",
+      "status": "Published",
+      "tags": ["Product Design"],
+      "problem": "Translating a personal narrative into an engaging, accessible single-page experience.",
+      "summary": "An interactive single-page experience combining personal storytelling, data visualization, accessibility, and lightweight product design.",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "techNote": "executive",
+      "commercial": "Demonstrates product thinking, design sensibility, and the ability to work across the full stack independently.",
+      "diagram": "Content design → visual layout → interaction design → accessibility → deployment",
+      "limitations": "Personal project · no enterprise application",
+      "caseStudy": "A personal side project exploring the intersection of storytelling and product design. Built entirely in vanilla web technologies with attention to accessibility, motion, and visual hierarchy. Demonstrates independent product thinking outside of an enterprise context."
+    }
+  ],
+  "delivery": {
+    "title": "Enterprise delivery in regulated environments",
+    "items": [
+      {
+        "title": "FINMA regulatory reporting and data adequacy",
+        "client": "Large Swiss insurer",
+        "body": "Delivery-team responsibility for end-to-end execution and regulatory compliance within a FINMA reporting and data-adequacy framework.",
+        "badge": "Anonymized client delivery"
+      },
+      {
+        "title": "Central-bank audit delivery stream",
+        "client": "European core banking provider",
+        "body": "Stream Lead for an OeNB central-bank audit, coordinating regulatory interaction and delivery across risk management and governance.",
+        "badge": "Anonymized client delivery"
+      },
+      {
+        "title": "LIBOR and interest-rate transition",
+        "client": "European global systemically important bank",
+        "body": "Delivery work on LIBOR and interest-rate transition, applying FIG capital-markets knowledge and an understanding of derivatives, valuation, and trading-desk structures.",
+        "badge": "Anonymized client delivery"
+      },
+      {
+        "title": "AI-enabled risk and control workflows",
+        "client": "Regulated financial-services environments",
+        "body": "Implementation work involving AI architecture, AI economics, and AI-agent workflows for RCSA and third-party risk management.",
+        "badge": "Anonymized client delivery"
+      }
+    ]
+  },
+  "commercialization": {
+    "title": "Where I would open the first commercial breakthrough",
+    "label": "Proposed commercialization hypothesis",
+    "icp": "European bank or insurer · significant operational-risk or compliance function · data across documents, GRC, service-management, spreadsheets · active DORA/AI-governance/RCSA/TPRM transformation · CRO/COO/CIO/Head of NFR sponsorship",
+    "wedge": "One narrow workflow such as DORA evidence generation, RCSA refresh, control-gap analysis, or third-party-risk change triage.",
+    "offer": "A six-to-eight-week paid design partnership covering baseline measurement, data readiness, workflow design, an integrated demonstrator, human approvals, evaluation criteria, business economics, and a production roadmap.",
+    "path": [
+      "Confirm the pain and measure the baseline",
+      "Establish sandbox access and data availability",
+      "Integrate one system of record",
+      "Design and build the core workflow",
+      "Add human approval gates",
+      "Measure against the baseline",
+      "Convert to a production proposal",
+      "Expand to adjacent workflows",
+      "Package the pattern as a reusable asset",
+      "Build ecosystem motion"
+    ],
+    "structures": [
+      "Fixed-fee discovery",
+      "Paid design partnership",
+      "Production implementation",
+      "API/platform consumption",
+      "Integration services",
+      "Annual support",
+      "Expansion",
+      "Partner delivery"
+    ],
+    "metrics": [
+      { "name": "Cycle-time reduction", "note": "per workflow" },
+      { "name": "Analyst effort", "note": "hours per output" },
+      { "name": "Output acceptance rate", "note": "human review" },
+      { "name": "Human override rate", "note": "control signal" },
+      { "name": "Evidence completeness", "note": "audit readiness" },
+      { "name": "Exception detection", "note": "vs. manual" },
+      { "name": "Active-user adoption", "note": "weekly actives" },
+      { "name": "Time to production", "note": "weeks from pilot" },
+      { "name": "Pilot-to-production conversion", "note": "rate" },
+      { "name": "Expansion pipeline", "note": "adjacent workflows" },
+      { "name": "Annual contract value", "note": "ACV" }
+    ],
+    "metricsLabel": "Proposed measurement dimensions, not historical performance claims"
+  },
+  "ninetyDays": {
+    "title": "First 90 days",
+    "periods": [
+      {
+        "label": "Days 1–30",
+        "heading": "Understand and select",
+        "items": [
+          "Map product boundaries and positioning",
+          "Build a customer and ecosystem map",
+          "Define an initial ICP and qualification criteria",
+          "Identify the clearest commercial wedge",
+          "Agree on what success looks like in 90 days"
+        ]
+      },
+      {
+        "label": "Days 31–60",
+        "heading": "Co-design and validate",
+        "items": [
+          "Run first-round customer discovery sessions",
+          "Develop and test initial commercial proposals",
+          "Build or iterate a demonstrator aligned to buyer needs",
+          "Target first paid commitments",
+          "Record and share blockers and open questions"
+        ]
+      },
+      {
+        "label": "Days 61–90",
+        "heading": "Close, measure, and package",
+        "items": [
+          "Close first paid design partnership",
+          "Establish workflow baselines",
+          "Produce first reusable commercial and technical templates",
+          "Publish reference architecture",
+          "Build first expansion map"
+        ]
+      }
+    ]
+  },
+  "roleFit": {
+    "title": "Evidence for Business Builder & Ecosystem",
+    "rows": [
+      {
+        "requirement": "AI-native",
+        "evidence": "Hands-on public builds: agents, knowledge graphs, workflow orchestration, AI economics, document processing, human approvals, integrations"
+      },
+      {
+        "requirement": "Business sense",
+        "evidence": "Capital-markets, investment, financing, financial-modelling, buyer-facing business-case experience"
+      },
+      {
+        "requirement": "Enterprise credibility",
+        "evidence": "Delivery work in regulated banks, insurers, and financial-services technology environments"
+      },
+      {
+        "requirement": "Customer decision chains",
+        "evidence": "Experience engaging regulators, executives, risk owners, technology teams, and delivery stakeholders"
+      },
+      {
+        "requirement": "Technical credibility",
+        "evidence": "Working implementation experience across Python, FastAPI, LangGraph, LangChain, NetworkX, MCP, REST APIs, TypeScript, React, Next.js, workflow state machines"
+      },
+      {
+        "requirement": "Proposal capability",
+        "evidence": "Architecture frameworks, implementation roadmaps, solution specifications, economic tools, executive demonstrations"
+      },
+      {
+        "requirement": "Commercial ownership",
+        "evidence": "Intended next step; supported by origination, financing, stakeholder-management, and end-to-end delivery experience"
+      },
+      {
+        "requirement": "Results orientation",
+        "evidence": "Use of baselines, workflow metrics, evaluation criteria, delivery milestones, conversion steps"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Accenture",
+      "location": "Zurich",
+      "role": "Financial Services AI & Digital Transformation",
+      "start": "Start date in NEEDS_CONFIRMATION.md",
+      "end": "Present",
+      "current": true,
+      "items": [
+        "FINMA regulatory reporting and data adequacy for a large Swiss insurer.",
+        "Stream leadership for an OeNB central-bank audit at a European core banking provider.",
+        "LIBOR and interest-rate-transition delivery at a European GSIB.",
+        "AI architecture and economics work.",
+        "AI-agent workflows for RCSA and third-party risk management.",
+        "Coordination across business, risk, data, technology, governance, and senior stakeholders."
+      ]
+    },
+    {
+      "company": "Single Family Office",
+      "location": "Prior to Accenture",
+      "role": "Investment & Finance Manager",
+      "start": "Aug 2018",
+      "end": "See NEEDS_CONFIRMATION.md",
+      "current": false,
+      "items": [
+        "Company valuation and cash-flow modelling.",
+        "Direct-investment and financing analysis.",
+        "Debt, asset-backed, and equity-financing discussions.",
+        "Engagement with investors, portfolio companies, and financing counterparties.",
+        "Work in an entrepreneurial growth environment."
+      ]
+    },
+    {
+      "company": "Société Générale",
+      "location": "London",
+      "role": "Debt Capital Markets Analyst, FIG",
+      "start": "Jun 2015",
+      "end": "Jul 2018",
+      "current": false,
+      "coverage": "DACH and Benelux (selected UK/Ireland)",
+      "items": [
+        "DCM origination, structuring, and execution.",
+        "Senior, Tier 2, covered, RMBS, subordinated, and green-bond products.",
+        "Capital-markets reporting, credit work, liquidity analysis, capacity analysis.",
+        "Coordination with M&A, ECM, Legal, Syndication.",
+        "Derivatives, structured products, IRS, FX options, structured notes."
+      ]
+    },
+    {
+      "company": "Catalina",
+      "location": "Paris",
+      "role": "Data Scientist (Traineeship)",
+      "start": "Jun 2013",
+      "end": "Jan 2014",
+      "current": false,
+      "items": [
+        "Consumer and purchasing-behaviour analysis.",
+        "Statistical analysis of transaction data.",
+        "Price-elasticity and product-portfolio analysis.",
+        "Translation of analytical findings into client recommendations."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "credential": "CFA Charterholder",
+      "institution": "CFA Institute",
+      "year": null,
+      "note": null
+    },
+    {
+      "credential": "MSc Finance and Investments",
+      "institution": "Rotterdam School of Management, Erasmus University",
+      "start": "2014",
+      "end": "2015",
+      "distinction": "Cum laude",
+      "gpa": "8.5/10",
+      "thesis": "Credit rating changes and their effect on asymmetric information"
+    },
+    {
+      "credential": "BSc International Business Administration",
+      "institution": "Rotterdam School of Management",
+      "start": "2011",
+      "end": "2014",
+      "distinction": "Honours",
+      "gpa": "8.1/10"
+    }
+  ],
+  "capabilities": [
+    {
+      "category": "Commercial & Strategic",
+      "items": [
+        "AI commercialization",
+        "opportunity qualification",
+        "customer discovery",
+        "buyer/stakeholder mapping",
+        "executive communication",
+        "financial modelling",
+        "AI economics",
+        "proposal development",
+        "paid-pilot design",
+        "program delivery",
+        "commercial hypothesis testing",
+        "expansion-playbook design"
+      ]
+    },
+    {
+      "category": "AI & Architecture",
+      "items": [
+        "agentic workflows",
+        "LangGraph",
+        "LangChain",
+        "human-in-the-loop",
+        "knowledge graphs",
+        "document intelligence",
+        "model-provider abstraction",
+        "evaluation design",
+        "AI governance",
+        "model-routing and cost models"
+      ]
+    },
+    {
+      "category": "Engineering & Integration",
+      "items": [
+        "Python",
+        "FastAPI",
+        "REST APIs",
+        "ServiceNow integration patterns",
+        "MCP",
+        "NetworkX",
+        "SQLite",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "HTML/CSS",
+        "workflow state machines"
+      ]
+    },
+    {
+      "category": "Financial Services",
+      "items": [
+        "Non-Financial Risk",
+        "RCSA",
+        "TPRM",
+        "DORA",
+        "AI risk management",
+        "regulatory reporting",
+        "data adequacy",
+        "LIBOR transition",
+        "capital markets",
+        "FIG",
+        "derivatives/valuation concepts"
+      ]
+    }
+  ],
+  "moonshot": {
+    "targetParam": "moonshot",
+    "applicationLabel": "Application focus: Business Builder & Ecosystem",
+    "headline": "From frontier model capability to repeatable enterprise revenue.",
+    "sub": "I combine regulated-industry credibility, commercial judgment, and hands-on AI implementation—from customer problem and business case through architecture, integration, human controls, and an expansion playbook.",
+    "statement": "Primary role interest: Business Builder & Ecosystem. Closely related capability: Solution Architecture."
+  },
+  "contact": {
+    "headline": "Let's discuss where AI can create measurable enterprise value.",
+    "copy": "I am particularly interested in roles combining customer discovery, technical credibility, ecosystem building, and commercial ownership."
+  },
+  "footer": {
+    "text": "This is a personal portfolio. Views are my own. Public demonstrations use synthetic, anonymized, mock, or illustrative data and do not represent client systems. No confidential client or employer information is presented."
+  },
+  "cv": {
+    "summary": "AI commercialization and financial-services professional with 10+ years across capital markets, investment and finance, regulatory transformation, and hands-on enterprise AI implementation. Combines commercial judgment, executive stakeholder management, regulated-industry expertise, and working technical capability across agentic workflows, integrations, AI economics, and human-control design."
+  }
+}
