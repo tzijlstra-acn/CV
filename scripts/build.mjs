@@ -57,14 +57,14 @@ function companyBadge(company) {
 }
 
 function locationFlag(location) {
-  const flags = {
-    'Zurich': '🇨🇭',
-    'London': '🇬🇧',
-    'Paris':  '🇫🇷',
+  const codes = {
+    'Zurich': 'CH',
+    'London': 'GB',
+    'Paris':  'FR',
   };
-  const flag = flags[location];
-  if (!flag) return esc(location);
-  return `<span class="loc-flag" aria-hidden="true">${flag}</span>${esc(location)}`;
+  const code = codes[location];
+  if (!code) return esc(location);
+  return `<span class="loc-code" aria-hidden="true">${code}</span>${esc(location)}`;
 }
 
 // --- COMPONENTS --------------------------------------------
@@ -644,7 +644,19 @@ const COMPANY_BADGE_CSS = `
 .co-badge--sfo { color: #8b949e; }
 .co-badge--sg  { color: #e60028; }
 .co-badge--cat { color: #79c0ff; }
-.loc-flag { margin-right: 0.25rem; }
+.loc-code {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #c8973a;
+  border: 1px solid rgba(200,151,58,0.4);
+  border-radius: 3px;
+  padding: 0px 3px;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+  line-height: 1.5;
+}
 `;
 
 // --- HTML Wrapper -----------------------------------------
@@ -773,8 +785,8 @@ function buildCvHtml() {
   --border:    #30363d;
   --text:      #e6edf3;
   --text-muted:#8b949e;
-  --accent:    #3fb950;
-  --accent-h:  #56d364;
+  --accent:    #c8973a;
+  --accent-h:  #dba94e;
   --secondary: #79c0ff;
   --secondary-h:#a5d6ff;
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
@@ -785,8 +797,8 @@ function buildCvHtml() {
 html, body { background: #0d1117 !important; color: #e6edf3 !important; }
 
 /* Links */
-a { color: #3fb950; }
-a:hover { color: #56d364; }
+a { color: #c8973a; }
+a:hover { color: #dba94e; }
 
 /* Toolbar — dark */
 .cv-toolbar {
@@ -796,20 +808,20 @@ a:hover { color: #56d364; }
 .cv-toolbar h1 { color: #8b949e !important; }
 
 /* Header accent line */
-.cv-header { border-bottom-color: #3fb950 !important; }
+.cv-header { border-bottom-color: #c8973a !important; }
 
 /* Section title rule */
 .cv-section-title {
-  color: #3fb950 !important;
+  color: #c8973a !important;
   border-bottom-color: #30363d !important;
 }
 
 /* CV title in header */
-.cv-header .cv-title { color: #3fb950 !important; }
+.cv-header .cv-title { color: #c8973a !important; }
 
 /* Bullet dashes */
 .cv-exp-items li::before,
-.cv-proj-items li::before { color: #3fb950 !important; }
+.cv-proj-items li::before { color: #c8973a !important; }
 
 /* Company badges */
 ${COMPANY_BADGE_CSS}
@@ -820,9 +832,9 @@ ${COMPANY_BADGE_CSS}
   align-items: center;
   flex-wrap: wrap;
   gap: 0.75rem 1.25rem;
-  background: rgba(63,185,80,0.07);
-  border: 1px solid rgba(63,185,80,0.22);
-  border-left: 3px solid #3fb950;
+  background: rgba(200,151,58,0.08);
+  border: 1px solid rgba(200,151,58,0.28);
+  border-left: 3px solid #c8973a;
   border-radius: 6px;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1.75rem;
@@ -832,7 +844,7 @@ ${COMPANY_BADGE_CSS}
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #3fb950;
+  color: #c8973a;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -859,21 +871,21 @@ ${COMPANY_BADGE_CSS}
     --border:    #30363d !important;
     --text:      #e6edf3 !important;
     --text-muted:#8b949e !important;
-    --accent:    #3fb950 !important;
-    --accent-h:  #56d364 !important;
+    --accent:    #c8973a !important;
+    --accent-h:  #dba94e !important;
     --secondary: #79c0ff !important;
   }
   .cv-toolbar,
   .cv-bottom-actions { display: none !important; }
   .cv-document { padding: 0.6cm 1.2cm; }
-  .cv-header { page-break-inside: avoid; border-bottom-color: #3fb950 !important; }
+  .cv-header { page-break-inside: avoid; border-bottom-color: #c8973a !important; }
   .cv-section { page-break-inside: avoid; }
   .cv-exp-item { page-break-inside: avoid; }
   .cv-photo {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
-  a { color: #3fb950 !important; }
+  a { color: #c8973a !important; }
 }
   </style>
 </head>
