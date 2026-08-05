@@ -13,8 +13,10 @@
     "title": "AI Commercialization & Enterprise AI Builder",
     "location": "Zurich, Switzerland",
     "email": "zijlstra.thomas@gmail.com",
+    "phone": "+41 797685745",
     "github": "https://github.com/tzijlstra-acn/",
     "portfolio": "https://tzijlstra-acn.github.io/CV/",
+    "workPermit": "EU · Switzerland",
     "languages": ["English", "German", "Dutch"]
   },
   "hero": {
@@ -194,7 +196,7 @@
       {
         "title": "AI-enabled risk and control workflows",
         "client": "Regulated financial-services environments",
-        "body": "Implementation work involving AI architecture, AI economics, and AI-agent workflows for RCSA and third-party risk management.",
+        "body": "Developed and implemented AI architecture, AI economics frameworks, and AI-agent workflows for RCSA and third-party risk management.",
         "badge": "Anonymized client delivery"
       }
     ]
@@ -322,7 +324,7 @@
       "company": "Accenture",
       "location": "Zurich",
       "role": "Financial Services AI & Digital Transformation",
-      "start": "Start date in NEEDS_CONFIRMATION.md",
+      "start": "Mar 2020",
       "end": "Present",
       "current": true,
       "items": [
@@ -330,7 +332,7 @@
         "Stream leadership for an OeNB central-bank audit at a European core banking provider.",
         "LIBOR and interest-rate-transition delivery at a European GSIB.",
         "AI architecture and economics work.",
-        "AI-agent workflows for RCSA and third-party risk management.",
+        "Developed and implemented AI-agent workflows for RCSA and third-party risk management.",
         "Coordination across business, risk, data, technology, governance, and senior stakeholders."
       ]
     },
@@ -339,7 +341,7 @@
       "location": "Prior to Accenture",
       "role": "Investment & Finance Manager",
       "start": "Aug 2018",
-      "end": "See NEEDS_CONFIRMATION.md",
+      "end": "Mar 2020",
       "current": false,
       "items": [
         "Company valuation and cash-flow modelling.",
@@ -482,12 +484,13 @@
   },
   "contact": {
     "headline": "Let's discuss where AI can create measurable enterprise value.",
-    "copy": "I am particularly interested in roles combining customer discovery, technical credibility, ecosystem building, and commercial ownership."
+    "copy": "I am particularly interested in roles combining customer discovery, technical credibility, ecosystem building, and commercial ownership.",
+    "availability": "Available within 3 months of confirmation."
   },
   "footer": {
     "text": "This is a personal portfolio. Views are my own. Public demonstrations use synthetic, anonymized, mock, or illustrative data and do not represent client systems. No confidential client or employer information is presented."
   },
   "cv": {
-    "summary": "AI commercialization and financial-services professional with 10+ years across capital markets, investment and finance, regulatory transformation, and hands-on enterprise AI implementation. Combines commercial judgment, executive stakeholder management, regulated-industry expertise, and working technical capability across agentic workflows, integrations, AI economics, and human-control design."
+    "summary": "AI commercialization and financial-services professional with 10+ years of experience. Investment banking background until March 2020, spanning Debt Capital Markets at Société Générale and direct investment and financing at a single family office. Since 2020, enterprise AI and digital transformation at Accenture across regulated financial-services clients. Combines commercial judgment, executive stakeholder management, regulated-industry expertise, and working technical capability across agentic workflows, integrations, AI economics, and human-control design."
   }
 }
