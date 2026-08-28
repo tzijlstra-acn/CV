@@ -428,7 +428,7 @@
 
     <div class="filter-tabs" role="tablist" aria-label="Filter projects by tag">
       <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true" type="button">All</button>
-      <button class="filter-tab" data-filter="AI Economics" role="tab" aria-selected="false" type="button">AI Economics</button><button class="filter-tab" data-filter="Agentic AI" role="tab" aria-selected="false" type="button">Agentic AI</button><button class="filter-tab" data-filter="Governance" role="tab" aria-selected="false" type="button">Governance</button><button class="filter-tab" data-filter="Integration" role="tab" aria-selected="false" type="button">Integration</button><button class="filter-tab" data-filter="Product Design" role="tab" aria-selected="false" type="button">Product Design</button>
+      <button class="filter-tab" data-filter="AI Economics" role="tab" aria-selected="false" type="button">AI Economics</button><button class="filter-tab" data-filter="AI Governance" role="tab" aria-selected="false" type="button">AI Governance</button><button class="filter-tab" data-filter="Agentic AI" role="tab" aria-selected="false" type="button">Agentic AI</button><button class="filter-tab" data-filter="Governance" role="tab" aria-selected="false" type="button">Governance</button><button class="filter-tab" data-filter="Integration" role="tab" aria-selected="false" type="button">Integration</button><button class="filter-tab" data-filter="Product Design" role="tab" aria-selected="false" type="button">Product Design</button><button class="filter-tab" data-filter="Risk Management" role="tab" aria-selected="false" type="button">Risk Management</button>
     </div>
 
     <div class="projects-grid">
@@ -535,6 +535,111 @@
           <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
             <a href="https://github.com/tzijlstra-acn/AICostSimulator" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub &rarr;</a>
             <button class="btn-secondary" data-dialog-open="proj-ai-economics" type="button">Case study &rarr;</button>
+          </div>
+        </div>
+      </article>
+      <article
+        class="project-card reveal"
+        data-tags="AI Governance, Risk Management"
+        aria-labelledby="proj-title-ai-risk-dashboard"
+      >
+        <div class="project-card-header">
+          <h3 id="proj-title-ai-risk-dashboard">AI Model Risk Dashboard</h3>
+          <span class="badge badge-status">Published</span>
+        </div>
+
+        <div class="project-tags"><span class="tag">AI Governance</span><span class="tag">Risk Management</span></div>
+
+        <div class="badge badge-type">Public technical demonstrator</div>
+
+        <p class="project-problem"><em>Problem:</em> Enterprises adopting AI lack a structured way to inventory, monitor, and govern AI models across regulatory frameworks—NIST AI RMF, DORA, SR 11-7, GDPR—leaving risk invisible until it surfaces in an audit.</p>
+
+        <p class="project-summary">Production-ready dashboard for AI model risk management structured around the NIST AI RMF phases (Govern / Map / Measure / Manage). Covers model inventory, shadow AI detection, regulatory heat-mapping across multiple frameworks, vendor risk assessment, and an immutable audit trail.</p>
+
+        <div class="project-diagram" aria-label="Architecture flow">
+          Model inventory → regulatory heat-map → shadow AI detection → vendor risk → audit trail
+        </div>
+
+        <div class="technical-only">
+          <div class="tech-tags"><span class="tech-tag">React 18</span><span class="tech-tag">React Router</span><span class="tech-tag">Recharts</span><span class="tech-tag">TanStack Query</span><span class="tech-tag">Radix UI</span><span class="tech-tag">Tailwind CSS</span><span class="tech-tag">Vite</span></div>
+        </div>
+
+        <p class="project-limitations">&#9432; Demonstrator using synthetic data · no client models, credentials, or production data</p>
+
+        <div class="project-card-footer">
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <a href="https://github.com/tzijlstra-acn/ai-risk-dashboard" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub &rarr;</a>
+            <button class="btn-secondary" data-dialog-open="proj-ai-risk-dashboard" type="button">Case study &rarr;</button>
+          </div>
+        </div>
+      </article>
+      <article
+        class="project-card reveal"
+        data-tags="Agentic AI, Governance, Integration"
+        aria-labelledby="proj-title-autonomous-ops"
+      >
+        <div class="project-card-header">
+          <h3 id="proj-title-autonomous-ops">Autonomous Operations Control Center</h3>
+          <span class="badge badge-status">Published</span>
+        </div>
+
+        <div class="project-tags"><span class="tag">Agentic AI</span><span class="tag">Governance</span><span class="tag">Integration</span></div>
+
+        <div class="badge badge-type">Public technical demonstrator</div>
+
+        <p class="project-problem"><em>Problem:</em> Autonomous AI-driven operations are difficult to demonstrate credibly—the governance layer, real-time state transitions, and human approval gates are invisible in static slides or disconnected prototypes.</p>
+
+        <p class="project-summary">Full-stack demonstrator of autonomous AI-driven IT operations. A 3-minute guided scenario runs a real backend state machine with SSE-driven live UI updates and a human-in-the-loop governance gate at consequential decision points.</p>
+
+        <div class="project-diagram" aria-label="Architecture flow">
+          Event ingestion → autonomous triage → state machine → human approval gate → action execution → audit log
+        </div>
+
+        <div class="technical-only">
+          <div class="tech-tags"><span class="tech-tag">TypeScript</span><span class="tech-tag">Node.js 20</span><span class="tech-tag">pnpm monorepo</span></div>
+        </div>
+
+        <p class="project-limitations">&#9432; Demonstrator using synthetic events · no production system credentials or client data</p>
+
+        <div class="project-card-footer">
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <a href="https://github.com/tzijlstra-acn/Autonomous-Operations-Control-Center" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub &rarr;</a>
+            <button class="btn-secondary" data-dialog-open="proj-autonomous-ops" type="button">Case study &rarr;</button>
+          </div>
+        </div>
+      </article>
+      <article
+        class="project-card reveal"
+        data-tags="Agentic AI, Governance, Integration"
+        aria-labelledby="proj-title-airlock"
+      >
+        <div class="project-card-header">
+          <h3 id="proj-title-airlock">AIRLOCK: AWS Regulated AI Workload Foundry</h3>
+          <span class="badge badge-status">Published</span>
+        </div>
+
+        <div class="project-tags"><span class="tag">Agentic AI</span><span class="tag">Governance</span><span class="tag">Integration</span></div>
+
+        <div class="badge badge-type">Reference architecture and demonstrator</div>
+
+        <p class="project-problem"><em>Problem:</em> Regulated enterprises need AI agent workflows that are fully auditable, have human approval at every consequential decision, and can be deployed on compliant cloud infrastructure—but no credible reference architecture exists for this combination.</p>
+
+        <p class="project-summary">Reference implementation for building auditable, human-approved AI agent workflows on AWS for regulated industries. Demo workload is a Primary Markets bond structuring assistant using synthetic data. Includes a fully functional local-mode implementation and Terraform infrastructure modules for AWS deployment.</p>
+
+        <div class="project-diagram" aria-label="Architecture flow">
+          Workflow trigger → agent orchestration → human approval gate → audit record → AWS deployment layer
+        </div>
+
+        <div class="technical-only">
+          <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">SQLAlchemy</span><span class="tech-tag">SQLite</span><span class="tech-tag">Terraform</span><span class="tech-tag">AWS architecture patterns</span></div>
+        </div>
+
+        <p class="project-limitations">&#9432; Demo workload uses synthetic data only · AWS/Terraform mode is reference architecture, not a deployed production environment</p>
+
+        <div class="project-card-footer">
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <a href="https://github.com/tzijlstra-acn/AIRLOCK" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub &rarr;</a>
+            <button class="btn-secondary" data-dialog-open="proj-airlock" type="button">Case study &rarr;</button>
           </div>
         </div>
       </article>
@@ -701,6 +806,132 @@
       <div class="dialog-notice">All prices, benchmarks, gains, and allocation values are illustrative planning assumptions.</div>
       <div>
         <a href="https://github.com/tzijlstra-acn/AICostSimulator" target="_blank" rel="noopener noreferrer" class="btn-primary">View on GitHub &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="proj-ai-risk-dashboard-backdrop" class="dialog-backdrop" role="dialog" aria-modal="true" aria-labelledby="dialog-title-ai-risk-dashboard" aria-hidden="true">
+  <div class="dialog">
+    <div class="dialog-header">
+      <h2 id="dialog-title-ai-risk-dashboard">AI Model Risk Dashboard</h2>
+      <button class="dialog-close" data-dialog-close aria-label="Close dialog" type="button">&times;</button>
+    </div>
+    <div class="dialog-body">
+      <div>
+        <h3>Evidence type</h3>
+        <p>Public technical demonstrator</p>
+      </div>
+      <div>
+        <h3>Problem</h3>
+        <p>Enterprises adopting AI lack a structured way to inventory, monitor, and govern AI models across regulatory frameworks—NIST AI RMF, DORA, SR 11-7, GDPR—leaving risk invisible until it surfaces in an audit.</p>
+      </div>
+      <div>
+        <h3>Summary</h3>
+        <p>Production-ready dashboard for AI model risk management structured around the NIST AI RMF phases (Govern / Map / Measure / Manage). Covers model inventory, shadow AI detection, regulatory heat-mapping across multiple frameworks, vendor risk assessment, and an immutable audit trail.</p>
+      </div>
+      <div>
+        <h3>Architecture</h3>
+        <p style="font-family:monospace;font-size:0.875rem;color:var(--secondary)">Model inventory → regulatory heat-map → shadow AI detection → vendor risk → audit trail</p>
+      </div>
+      <div>
+        <h3>Commercial relevance</h3>
+        <p>AI governance is becoming a board-level topic, but most organisations lack the tooling to operationalise it. This dashboard translates regulatory frameworks—NIST, DORA, SR 11-7—into a manageable inventory with live risk signals, useful for CROs and AI governance functions establishing structured oversight.</p>
+      </div>
+      <div>
+        <h3>Case study</h3>
+        <p>Structured around the NIST AI RMF lifecycle phases. Regulatory mapping covers DORA, SR 11-7, GDPR, and the EU AI Act. Shadow AI detection flags ungoverned model usage across the organisation. Vendor risk module covers third-party model dependencies. Audit trail is append-only and timestamped, supporting audit-readiness requirements.</p>
+      </div>
+      <div>
+        <h3>Technology</h3>
+        <p>React 18 · React Router · Recharts · TanStack Query · Radix UI · Tailwind CSS · Vite</p>
+      </div>
+      <div class="dialog-notice">Demonstrator using synthetic data · no client models, credentials, or production data</div>
+      <div>
+        <a href="https://github.com/tzijlstra-acn/ai-risk-dashboard" target="_blank" rel="noopener noreferrer" class="btn-primary">View on GitHub &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="proj-autonomous-ops-backdrop" class="dialog-backdrop" role="dialog" aria-modal="true" aria-labelledby="dialog-title-autonomous-ops" aria-hidden="true">
+  <div class="dialog">
+    <div class="dialog-header">
+      <h2 id="dialog-title-autonomous-ops">Autonomous Operations Control Center</h2>
+      <button class="dialog-close" data-dialog-close aria-label="Close dialog" type="button">&times;</button>
+    </div>
+    <div class="dialog-body">
+      <div>
+        <h3>Evidence type</h3>
+        <p>Public technical demonstrator</p>
+      </div>
+      <div>
+        <h3>Problem</h3>
+        <p>Autonomous AI-driven operations are difficult to demonstrate credibly—the governance layer, real-time state transitions, and human approval gates are invisible in static slides or disconnected prototypes.</p>
+      </div>
+      <div>
+        <h3>Summary</h3>
+        <p>Full-stack demonstrator of autonomous AI-driven IT operations. A 3-minute guided scenario runs a real backend state machine with SSE-driven live UI updates and a human-in-the-loop governance gate at consequential decision points.</p>
+      </div>
+      <div>
+        <h3>Architecture</h3>
+        <p style="font-family:monospace;font-size:0.875rem;color:var(--secondary)">Event ingestion → autonomous triage → state machine → human approval gate → action execution → audit log</p>
+      </div>
+      <div>
+        <h3>Commercial relevance</h3>
+        <p>Demonstrates what a credible autonomous-operations build looks like in practice: a real state machine driving live UI updates, with a human approval gate embedded at decisions that matter. Structured to be walkthroughable in three minutes for an executive audience.</p>
+      </div>
+      <div>
+        <h3>Case study</h3>
+        <p>Backend state machine tracks every transition with a full audit log. SSE pushes real-time state to the UI without polling. Human approval gate intercepts consequential decisions before execution, maintaining a clear record of what was approved, by whom, and when. The three-minute guided scenario is designed to make the governance layer visible and credible to a non-technical buyer.</p>
+      </div>
+      <div>
+        <h3>Technology</h3>
+        <p>TypeScript · Node.js 20 · pnpm monorepo</p>
+      </div>
+      <div class="dialog-notice">Demonstrator using synthetic events · no production system credentials or client data</div>
+      <div>
+        <a href="https://github.com/tzijlstra-acn/Autonomous-Operations-Control-Center" target="_blank" rel="noopener noreferrer" class="btn-primary">View on GitHub &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="proj-airlock-backdrop" class="dialog-backdrop" role="dialog" aria-modal="true" aria-labelledby="dialog-title-airlock" aria-hidden="true">
+  <div class="dialog">
+    <div class="dialog-header">
+      <h2 id="dialog-title-airlock">AIRLOCK: AWS Regulated AI Workload Foundry</h2>
+      <button class="dialog-close" data-dialog-close aria-label="Close dialog" type="button">&times;</button>
+    </div>
+    <div class="dialog-body">
+      <div>
+        <h3>Evidence type</h3>
+        <p>Reference architecture and demonstrator</p>
+      </div>
+      <div>
+        <h3>Problem</h3>
+        <p>Regulated enterprises need AI agent workflows that are fully auditable, have human approval at every consequential decision, and can be deployed on compliant cloud infrastructure—but no credible reference architecture exists for this combination.</p>
+      </div>
+      <div>
+        <h3>Summary</h3>
+        <p>Reference implementation for building auditable, human-approved AI agent workflows on AWS for regulated industries. Demo workload is a Primary Markets bond structuring assistant using synthetic data. Includes a fully functional local-mode implementation and Terraform infrastructure modules for AWS deployment.</p>
+      </div>
+      <div>
+        <h3>Architecture</h3>
+        <p style="font-family:monospace;font-size:0.875rem;color:var(--secondary)">Workflow trigger → agent orchestration → human approval gate → audit record → AWS deployment layer</p>
+      </div>
+      <div>
+        <h3>Commercial relevance</h3>
+        <p>Bridges the gap between an AI proof-of-concept and a production-grade regulated deployment. Shows the full stack: auditable agent orchestration, human approval gates, and the Terraform modules for a compliant AWS deployment—structured as a reusable foundry pattern rather than a one-off build.</p>
+      </div>
+      <div>
+        <h3>Case study</h3>
+        <p>Local mode is fully functional and runnable without cloud infrastructure. AWS/Terraform modules define the compliant deployment pattern with the necessary controls for a regulated environment. Every agent action is logged with full provenance. Human approval gates are embedded at consequential steps. Structured as a reusable foundry pattern: a second workload reuses the same orchestration, approval, and audit infrastructure.</p>
+      </div>
+      <div>
+        <h3>Technology</h3>
+        <p>Python · FastAPI · SQLAlchemy · SQLite · Terraform · AWS architecture patterns</p>
+      </div>
+      <div class="dialog-notice">Demo workload uses synthetic data only · AWS/Terraform mode is reference architecture, not a deployed production environment</div>
+      <div>
+        <a href="https://github.com/tzijlstra-acn/AIRLOCK" target="_blank" rel="noopener noreferrer" class="btn-primary">View on GitHub &rarr;</a>
       </div>
     </div>
   </div>
@@ -1013,7 +1244,7 @@
       <div class="exp-item reveal">
         <div class="exp-meta">
           <div class="company"><span class="co-badge co-badge--acn" title="Accenture" aria-hidden="true">&#62;</span>Accenture</div>
-          <div class="location"><span class="loc-code" aria-hidden="true">CH</span>Zurich</div>
+          <div class="location"><span aria-hidden="true">🇨🇭</span> Zurich</div>
           <div class="dates">Jun 2020 – Present</div>
           
         </div>
@@ -1027,7 +1258,7 @@
       <div class="exp-item reveal">
         <div class="exp-meta">
           <div class="company"><span class="co-badge co-badge--sfo" title="Single Family Office" aria-hidden="true">&#9679;</span>Single Family Office</div>
-          <div class="location"><span class="loc-code" aria-hidden="true">GB</span>London</div>
+          <div class="location"><span aria-hidden="true">🇬🇧</span> London</div>
           <div class="dates">Aug 2018 – Mar 2020</div>
           
         </div>
@@ -1041,7 +1272,7 @@
       <div class="exp-item reveal">
         <div class="exp-meta">
           <div class="company"><span class="co-badge co-badge--sg" title="Société Générale" aria-hidden="true">&#9632;</span>Société Générale</div>
-          <div class="location"><span class="loc-code" aria-hidden="true">GB</span>London</div>
+          <div class="location"><span aria-hidden="true">🇬🇧</span> London</div>
           <div class="dates">Jun 2015 – Jul 2018</div>
           <div class="coverage">DACH and Benelux (selected UK/Ireland)</div>
         </div>
@@ -1055,7 +1286,7 @@
       <div class="exp-item reveal">
         <div class="exp-meta">
           <div class="company"><span class="co-badge co-badge--cat" title="Catalina" aria-hidden="true">&#9679;</span>Catalina</div>
-          <div class="location"><span class="loc-code" aria-hidden="true">FR</span>Paris</div>
+          <div class="location"><span aria-hidden="true">🇫🇷</span> Paris</div>
           <div class="dates">Jun 2013 – Jan 2014</div>
           
         </div>
@@ -1135,13 +1366,13 @@
       <div class="cap-card reveal">
         <h3>AI &amp; Architecture</h3>
         <div class="cap-items">
-          <span class="cap-item">agentic workflows</span><span class="cap-item">LangGraph</span><span class="cap-item">LangChain</span><span class="cap-item">human-in-the-loop</span><span class="cap-item">knowledge graphs</span><span class="cap-item">document intelligence</span><span class="cap-item">model-provider abstraction</span><span class="cap-item">evaluation design</span><span class="cap-item">AI governance</span><span class="cap-item">model-routing and cost models</span>
+          <span class="cap-item">agentic workflows</span><span class="cap-item">LangGraph</span><span class="cap-item">LangChain</span><span class="cap-item">human-in-the-loop</span><span class="cap-item">knowledge graphs</span><span class="cap-item">document intelligence</span><span class="cap-item">model-provider abstraction</span><span class="cap-item">evaluation design</span><span class="cap-item">AI governance</span><span class="cap-item">model-routing and cost models</span><span class="cap-item">NIST AI RMF</span><span class="cap-item">shadow AI detection</span><span class="cap-item">autonomous operations</span>
         </div>
       </div>
       <div class="cap-card reveal">
         <h3>Engineering &amp; Integration</h3>
         <div class="cap-items">
-          <span class="cap-item">Python</span><span class="cap-item">FastAPI</span><span class="cap-item">REST APIs</span><span class="cap-item">ServiceNow integration patterns</span><span class="cap-item">MCP</span><span class="cap-item">NetworkX</span><span class="cap-item">SQLite</span><span class="cap-item">TypeScript</span><span class="cap-item">JavaScript</span><span class="cap-item">React</span><span class="cap-item">Next.js</span><span class="cap-item">HTML/CSS</span><span class="cap-item">workflow state machines</span>
+          <span class="cap-item">Python</span><span class="cap-item">FastAPI</span><span class="cap-item">REST APIs</span><span class="cap-item">ServiceNow integration patterns</span><span class="cap-item">MCP</span><span class="cap-item">NetworkX</span><span class="cap-item">SQLite</span><span class="cap-item">TypeScript</span><span class="cap-item">JavaScript</span><span class="cap-item">React</span><span class="cap-item">Next.js</span><span class="cap-item">HTML/CSS</span><span class="cap-item">workflow state machines</span><span class="cap-item">Terraform</span><span class="cap-item">AWS architecture</span><span class="cap-item">Recharts</span><span class="cap-item">Vite</span><span class="cap-item">TanStack Query</span><span class="cap-item">Radix UI</span><span class="cap-item">Tailwind CSS</span><span class="cap-item">pnpm</span>
         </div>
       </div>
       <div class="cap-card reveal">

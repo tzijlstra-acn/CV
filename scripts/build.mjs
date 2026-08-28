@@ -57,14 +57,14 @@ function companyBadge(company) {
 }
 
 function locationFlag(location) {
-  const codes = {
-    'Zurich': 'CH',
-    'London': 'GB',
-    'Paris':  'FR',
+  const flags = {
+    'Zurich': '🇨🇭',
+    'London': '🇬🇧',
+    'Paris':  '🇫🇷',
   };
-  const code = codes[location];
-  if (!code) return esc(location);
-  return `<span class="loc-code" aria-hidden="true">${code}</span>${esc(location)}`;
+  const flag = flags[location];
+  if (!flag) return esc(location);
+  return `<span aria-hidden="true">${flag}</span> ${esc(location)}`;
 }
 
 // --- COMPONENTS --------------------------------------------
