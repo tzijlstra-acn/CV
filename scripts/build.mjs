@@ -47,7 +47,7 @@ function techTags(arr) {
 // --- Company badges and location flags ---------------------
 
 function flagImg(code, w = 20, h = 15) {
-  return `<img src="https://flagcdn.com/${code}.svg" alt="" class="loc-flag" aria-hidden="true" width="${w}" height="${h}">`;
+  return `<img src="assets/flags/${code}.svg" alt="" class="loc-flag" aria-hidden="true" width="${w}" height="${h}">`;
 }
 
 function companyBadge(company) {
