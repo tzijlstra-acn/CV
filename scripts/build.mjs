@@ -46,6 +46,10 @@ function techTags(arr) {
 
 // --- Company badges and location flags ---------------------
 
+function flagImg(code, w = 20, h = 15) {
+  return `<img src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/${code}.svg" alt="" class="loc-flag" aria-hidden="true" width="${w}" height="${h}">`;
+}
+
 function companyBadge(company) {
   const badges = {
     'Accenture':           `<span class="co-badge co-badge--acn" title="Accenture" aria-hidden="true">&#62;</span>`,
@@ -57,14 +61,31 @@ function companyBadge(company) {
 }
 
 function locationFlag(location) {
-  const codes = {
-    'Zurich': 'ch',
-    'London': 'gb',
-    'Paris':  'fr',
-  };
+  const codes = { 'Zurich': 'ch', 'London': 'gb', 'Paris': 'fr' };
   const code = codes[location];
   if (!code) return esc(location);
-  return `<img src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/${code}.svg" alt="" class="loc-flag" aria-hidden="true" width="20" height="15"> ${esc(location)}`;
+  return `${flagImg(code)} ${esc(location)}`;
+}
+
+function buildFootprint() {
+  const p = d.personal;
+  if (!p.internationalExperience && !p.clientCoverage) return '';
+
+  const expHtml = (p.internationalExperience || []).map((loc, i) =>
+    `${i > 0 ? '<span class="fp-dot" aria-hidden="true">·</span>' : ''}` +
+    `<span class="fp-item">${flagImg(loc.code)} ${esc(loc.city)} <span class="fp-period">(${esc(loc.period)})</span></span>`
+  ).join('');
+
+  const covHtml = (p.clientCoverage || []).map((group, i) =>
+    `${i > 0 ? '<span class="fp-sep" aria-hidden="true">|</span>' : ''}` +
+    `<span class="fp-group" title="${esc(group.label)}">${group.codes.map(c => flagImg(c, 16, 12)).join(' ')}</span>`
+  ).join('');
+
+  return `
+<div class="hero-footprint">
+  ${expHtml ? `<div class="fp-row"><span class="fp-label">International&nbsp;experience</span><div class="fp-cities">${expHtml}</div></div>` : ''}
+  ${covHtml ? `<div class="fp-row"><span class="fp-label">Client&nbsp;coverage</span><div class="fp-flags">${covHtml}</div></div>` : ''}
+</div>`;
 }
 
 // --- COMPONENTS --------------------------------------------
@@ -149,6 +170,8 @@ function buildHero() {
         </div>
 
         <div class="hero-chips" aria-label="Context">${chips(h.chips)}</div>
+
+        ${buildFootprint()}
 
         <div id="moonshot-statement" class="moonshot-statement" hidden>
           <strong>${esc(d.moonshot.statement)}</strong>
@@ -653,6 +676,16 @@ const COMPANY_BADGE_CSS = `
   margin-right: 0.3rem;
   border-radius: 2px;
 }
+.hero-footprint { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.55rem; }
+.fp-row { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+.fp-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6e7681; min-width: 9.5rem; flex-shrink: 0; }
+.fp-cities { display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap; font-size: 0.8rem; color: #8b949e; }
+.fp-item { display: inline-flex; align-items: center; gap: 0.3rem; }
+.fp-period { font-size: 0.72rem; opacity: 0.7; }
+.fp-dot { opacity: 0.35; }
+.fp-flags { display: flex; align-items: center; gap: 0.1rem; flex-wrap: wrap; }
+.fp-group { display: inline-flex; align-items: center; gap: 0.1rem; }
+.fp-sep { opacity: 0.2; margin: 0 0.4rem; font-size: 0.9rem; }
 `;
 
 // --- HTML Wrapper -----------------------------------------

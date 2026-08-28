@@ -22,11 +22,22 @@
       { "name": "English", "level": "Fluent" },
       { "name": "German", "level": "Fluent" },
       { "name": "Dutch", "level": "Fluent" }
+    ],
+    "internationalExperience": [
+      { "code": "ch", "city": "Zurich", "period": "2020–present" },
+      { "code": "gb", "city": "London", "period": "2015–2020" },
+      { "code": "fr", "city": "Paris", "period": "2013–2014" }
+    ],
+    "clientCoverage": [
+      { "label": "Alps", "codes": ["ch", "at", "de", "li", "it", "si"] },
+      { "label": "Benelux", "codes": ["be", "nl", "lu"] },
+      { "label": "Nordics", "codes": ["dk", "se", "no", "fi"] },
+      { "label": "GIPS", "codes": ["gr", "it", "pt", "es"] }
     ]
   },
   "hero": {
-    "headline": "A decade in financial services—from investment banking in London to programme delivery and AI implementation for regulated organisations across Europe.",
-    "sub": "CFA charterholder. Career spans capital markets at Société Générale, regulatory transformation work across European financial institutions, and AI implementation in regulated financial services since 2020.",
+    "headline": "A decade in financial services—from investment banking in London to strategy, economics, and hands-on AI implementation for regulated organisations across Europe.",
+    "sub": "CFA charterholder. Currently leading the end-to-end AI-automated compliance workflow at a major European reinsurer—covering strategy, roadmap, and agentic AI implementation across the full regulatory change lifecycle. Career also spans capital markets at Société Générale, regulatory transformation across European financial institutions, and NFR AI practice leadership in Zurich since 2020.",
     "processLine": "Identify the problem → establish the economics → design the architecture → integrate the systems → keep humans in control → embed and adopt → package for next time.",
     "ctas": {
       "primary": { "label": "Explore the evidence", "href": "#evidence" },
@@ -229,6 +240,12 @@
     "title": "Delivery in regulated environments",
     "items": [
       {
+        "title": "End-to-end AI compliance workflow",
+        "client": "Major European reinsurer",
+        "body": "Full ownership from strategy and economics through roadmap and implementation: agentic AI workflow automating the regulatory change lifecycle across DORA, NIS2, EU AI Act, and Solvency II. Covers regulatory ingestion, AI-generated control and policy updates, human approval gates, evidence generation, and audit packaging.",
+        "badge": "Anonymized client delivery"
+      },
+      {
         "title": "AI-enabled risk and control workflows",
         "client": "Regulated financial-services environments",
         "body": "Designed and built AI-agent workflows for RCSA and third-party risk management. Also developed the AI Maturity Assessment framework used across the practice.",
@@ -381,13 +398,13 @@
       "end": "Present",
       "current": true,
       "items": [
-        "Switzerland NFR Capabilities Team Lead: built and led the local practice, connecting CEE region capabilities and defining go-to-market for non-financial risk.",
-        "NFR practice leadership and go-to-market contribution for the DACH region within the CFO&EV division.",
-        "Led origination and end-to-end delivery of a major FINMA regulatory reporting and data adequacy programme at a leading Swiss insurer (Databricks).",
+        "End-to-end ownership of an AI-automated compliance workflow at a leading European reinsurer: strategy, economics, roadmap, and hands-on implementation of agentic AI across the full regulatory change lifecycle.",
+        "Architecture and delivery of AI-agent workflows for RCSA, TPRM, DORA, and regulatory change — covering LLM orchestration, knowledge graphs, document intelligence, enterprise system integrations, and human-in-the-loop approval gates.",
+        "Switzerland NFR Capabilities Team Lead: built and led the local AI and NFR practice, defining go-to-market for the DACH region within the CFO&EV division.",
+        "Led origination and end-to-end delivery of a FINMA regulatory reporting and data adequacy programme at a leading Swiss insurer, including Databricks data-platform implementation.",
         "Stream Lead for an OeNB central-bank audit at a European core banking provider.",
-        "LIBOR and interest-rate-transition delivery at a European GSIB, applying capital-markets knowledge across derivatives, valuation, and trading-desk structures.",
-        "Developed and implemented AI-agent workflows for RCSA and third-party risk management; built the AI Maturity Assessment for the NFR practice.",
-        "Coordination across business, risk, data, technology, governance, and senior stakeholders."
+        "LIBOR and interest-rate-transition delivery at a European GSIB, drawing on capital-markets experience across derivatives, valuation, and trading-desk structures.",
+        "Coordination across CRO, COO, risk, data, technology, governance, and regulatory stakeholders in regulated financial-services environments."
       ]
     },
     {
@@ -556,6 +573,6 @@
     "text": "This is a personal portfolio. Views are my own. Public demonstrations use synthetic, anonymized, mock, or illustrative data and do not represent client systems. No confidential client or employer information is presented."
   },
   "cv": {
-    "summary": "Financial services professional with a decade of international experience across London, Zurich, and Paris. Early career in investment banking: Debt Capital Markets at Société Générale in London covering DACH and Benelux financial institutions, followed by investment and financing work at a London family office. Since 2020, based in Zurich and working on enterprise AI and digital transformation for regulated financial-services organisations—agentic workflows, AI economics frameworks, and programme delivery across FINMA, OeNB, and DORA-related mandates. CFA charterholder."
+    "summary": "Financial services professional with a decade of international experience across London, Zurich, and Paris. Early career in investment banking: Debt Capital Markets at Société Générale covering DACH and Benelux financial institutions, followed by investment and financing work at a London family office. Since 2020, based in Zurich delivering enterprise AI for regulated financial-services organisations. Currently leading the end-to-end AI-automated compliance workflow at a major European reinsurer—strategy, economics, roadmap, and agentic AI implementation across the full regulatory change lifecycle. Prior delivery spans FINMA regulatory reporting, OeNB central-bank audit, and NFR AI practice leadership across the DACH region. CFA charterholder."
   }
 }
