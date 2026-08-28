@@ -47,7 +47,7 @@ function techTags(arr) {
 // --- Company badges and location flags ---------------------
 
 function flagImg(code, w = 20, h = 15) {
-  return `<img src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/${code}.svg" alt="" class="loc-flag" aria-hidden="true" width="${w}" height="${h}">`;
+  return `<img src="https://flagcdn.com/${code}.svg" alt="" class="loc-flag" aria-hidden="true" width="${w}" height="${h}">`;
 }
 
 function companyBadge(company) {
@@ -667,10 +667,11 @@ const COMPANY_BADGE_CSS = `
 .co-badge--sfo { color: #8b949e; }
 .co-badge--sg  { color: #e60028; }
 .co-badge--cat { color: #79c0ff; }
-.loc-flag {
+img.loc-flag {
   display: inline-block;
   width: 20px;
   height: 15px;
+  max-width: none;
   object-fit: cover;
   vertical-align: middle;
   margin-right: 0.3rem;
