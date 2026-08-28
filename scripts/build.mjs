@@ -57,14 +57,14 @@ function companyBadge(company) {
 }
 
 function locationFlag(location) {
-  const flags = {
-    'Zurich': '🇨🇭',
-    'London': '🇬🇧',
-    'Paris':  '🇫🇷',
+  const codes = {
+    'Zurich': 'ch',
+    'London': 'gb',
+    'Paris':  'fr',
   };
-  const flag = flags[location];
-  if (!flag) return esc(location);
-  return `<span aria-hidden="true">${flag}</span> ${esc(location)}`;
+  const code = codes[location];
+  if (!code) return esc(location);
+  return `<img src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/${code}.svg" alt="" class="loc-flag" aria-hidden="true" width="20" height="15"> ${esc(location)}`;
 }
 
 // --- COMPONENTS --------------------------------------------
@@ -644,18 +644,14 @@ const COMPANY_BADGE_CSS = `
 .co-badge--sfo { color: #8b949e; }
 .co-badge--sg  { color: #e60028; }
 .co-badge--cat { color: #79c0ff; }
-.loc-code {
+.loc-flag {
   display: inline-block;
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: #c8973a;
-  border: 1px solid rgba(200,151,58,0.4);
-  border-radius: 3px;
-  padding: 0px 3px;
-  margin-right: 0.3rem;
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
   vertical-align: middle;
-  line-height: 1.5;
+  margin-right: 0.3rem;
+  border-radius: 2px;
 }
 `;
 
