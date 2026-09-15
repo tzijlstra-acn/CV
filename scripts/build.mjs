@@ -110,7 +110,7 @@ function buildNav() {
 
 <nav class="site-nav" aria-label="Main navigation">
   <div class="container nav-inner">
-    <a href="/" class="nav-logo" aria-label="${esc(d.personal.name)} — home">
+    <a href="/" class="nav-logo" aria-label="${esc(d.personal.name)} portfolio home">
       <img src="${esc(d.personal.photo)}" alt="" class="nav-photo" aria-hidden="true">
       <span>${esc(d.personal.nameShort)}</span>
     </a>
@@ -156,7 +156,7 @@ function buildHero() {
         <span id="moonshot-headline" hidden>${esc(d.moonshot.headline)}</span>
         <span id="moonshot-sub" hidden>${esc(d.moonshot.sub)}</span>
 
-        <h1 id="hero-heading" class="hero-headline" id="hero-headline">${esc(h.headline)}</h1>
+        <h1 id="hero-heading" class="hero-headline">${esc(h.headline)}</h1>
         <p class="hero-sub" id="hero-sub">${esc(h.sub)}</p>
         <div class="hero-process" aria-label="Process overview">${esc(h.processLine)}</div>
 
@@ -265,7 +265,7 @@ function buildProjects() {
   <div class="container">
     <div class="section-header">
       <span class="section-label">Selected Public Work</span>
-      <h2 id="projects-heading">Public builds — working implementations, not slide concepts</h2>
+      <h2 id="projects-heading">Public builds: working implementations, not slide concepts</h2>
       <p>Every project uses synthetic, mock, anonymized, or illustrative data.</p>
     </div>
 
@@ -558,7 +558,7 @@ function buildCapabilities() {
     <div class="section-header">
       <span class="section-label">Skills</span>
       <h2 id="capabilities-heading">Capabilities</h2>
-      <p>No ratings or bars — capabilities are demonstrated through the work above.</p>
+      <p>No ratings or bars. Capabilities are demonstrated through the work above.</p>
     </div>
 
     <div class="cap-grid">
@@ -757,7 +757,7 @@ function buildCvHtml() {
         <span class="cv-exp-company">${companyBadge(job.company)}${esc(job.company)}${job.location ? `, ${locationFlag(job.location)}` : ''}</span>
         <span class="cv-exp-dates">${esc(job.start)} – ${esc(job.end)}</span>
       </div>
-      <div class="cv-exp-role">${esc(job.role)}${job.coverage ? ` — ${esc(job.coverage)}` : ''}</div>
+      <div class="cv-exp-role">${esc(job.role)}${job.coverage ? ` | ${esc(job.coverage)}` : ''}</div>
       <ul class="cv-exp-items">
         ${job.items.map(item => `<li>${esc(item)}</li>`).join('')}
       </ul>
@@ -796,12 +796,12 @@ function buildCvHtml() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CV for ${esc(d.personal.name)} — ${esc(d.personal.title)}">
+  <meta name="description" content="CV for ${esc(d.personal.name)} | ${esc(d.personal.title)}">
   <meta name="author" content="${esc(d.personal.name)}">
   <meta name="robots" content="index, follow">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <title>${esc(d.personal.name)} — CV</title>
+  <title>${esc(d.personal.name)} | CV</title>
   <style>
 /* ============================================================
    CV PAGE — Night Vision Dark Theme (always-on)
@@ -922,7 +922,7 @@ ${COMPANY_BADGE_CSS}
 <body class="cv-page">
 
 <div class="cv-toolbar">
-  <h1>${esc(d.personal.name)} — CV</h1>
+  <h1>${esc(d.personal.name)} | CV</h1>
   <a href="assets/Thomas_Zijlstra_CV.pdf" class="btn-primary" download>&#8595; Download PDF</a>
   <button class="btn-secondary" onclick="window.print()" type="button">Print / Save as PDF</button>
   <a href="index.html" class="btn-ghost">&larr; Back to portfolio</a>

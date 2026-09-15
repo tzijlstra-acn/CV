@@ -17,7 +17,7 @@ const CV_HTML = resolve(ROOT, 'cv.html');
 const PDF_OUT = resolve(ROOT, 'assets', 'Thomas_Zijlstra_CV.pdf');
 
 const PDF_META = {
-  title: 'Thomas Zijlstra, CFA — CV',
+  title: 'Thomas Zijlstra, CFA | CV',
   author: 'Thomas Zijlstra',
   subject: 'AI Commercialization, Enterprise AI, Financial Services',
   keywords: 'AI commercialization, enterprise AI, business builder, ecosystem, solution architecture, financial services, agentic AI, CFA',
@@ -195,7 +195,7 @@ startxref
     const stat = statSync(PDF_OUT);
     console.log(`  PDF generated: ${(stat.size / 1024).toFixed(1)} KB`);
     if (stat.size < 10240) {
-      console.warn('  WARNING: PDF is very small — check cv.html renders correctly.');
+      console.warn('  WARNING: PDF is very small; check cv.html renders correctly.');
     } else {
       console.log('  PDF size check passed (>10 KB).');
     }

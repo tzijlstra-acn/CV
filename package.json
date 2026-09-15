@@ -8,6 +8,7 @@
     "build": "node scripts/build.mjs && node scripts/generate-cv-pdf.mjs",
     "build:html": "node scripts/build.mjs",
     "build:pdf": "node scripts/generate-cv-pdf.mjs",
+    "check:copy": "node scripts/check-copy.mjs",
     "serve": "node scripts/serve.mjs"
   },
   "devDependencies": {

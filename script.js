@@ -62,7 +62,7 @@
       const banner = document.getElementById('moonshot-banner');
       if (banner) { banner.hidden = false; }
       // Override hero content
-      const headline = document.getElementById('hero-headline');
+      const headline = document.getElementById('hero-heading');
       const sub = document.getElementById('hero-sub');
       const moonshotHL = document.getElementById('moonshot-headline');
       const moonshotSub = document.getElementById('moonshot-sub');
@@ -72,7 +72,7 @@
       const stmt = document.getElementById('moonshot-statement');
       if (stmt) { stmt.hidden = false; }
       // Update page title
-      document.title = 'Thomas Zijlstra, CFA — Business Builder & Ecosystem';
+      document.title = 'Thomas Zijlstra, CFA | Business Builder & Ecosystem';
     }
   }
 
