@@ -803,119 +803,44 @@ function buildCvHtml() {
   <link rel="stylesheet" href="styles.css">
   <title>${esc(d.personal.name)} | CV</title>
   <style>
-/* ============================================================
-   CV PAGE: Night Vision Dark Theme (always-on)
-   ============================================================ */
-
-/* Override CSS variables to dark palette */
+/* CV PAGE: Light executive document */
 :root {
-  --bg:        #0d1117;
-  --bg-alt:    #0d1117;
-  --surface:   #161b22;
-  --border:    #30363d;
-  --text:      #e6edf3;
-  --text-muted:#8b949e;
-  --accent:    #c8973a;
-  --accent-h:  #dba94e;
-  --secondary: #79c0ff;
-  --secondary-h:#a5d6ff;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
-  --shadow:    0 2px 10px rgba(0,0,0,0.6);
-  --shadow-lg: 0 4px 20px rgba(0,0,0,0.8);
+  --bg:        #ffffff;
+  --bg-alt:    #f2ede7;
+  --surface:   #f8f6f3;
+  --border:    #d4cdc4;
+  --text:      #1a1a18;
+  --text-muted:#5a5450;
+  --accent:    #7a4d1e;
+  --secondary: #4a6fa5;
 }
 
-html, body { background: #0d1117 !important; color: #e6edf3 !important; }
-
-/* Links */
-a { color: #c8973a; }
-a:hover { color: #dba94e; }
-
-/* Toolbar (dark) */
-.cv-toolbar {
-  background: #161b22 !important;
-  border-bottom-color: #30363d !important;
+body.cv-page { background: var(--bg-alt); }
+.cv-document {
+  background: #fff;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0 0 1px var(--border);
 }
-.cv-toolbar h1 { color: #8b949e !important; }
-
-/* Header accent line */
-.cv-header { border-bottom-color: #c8973a !important; }
-
-/* Section title rule */
-.cv-section-title {
-  color: #c8973a !important;
-  border-bottom-color: #30363d !important;
-}
-
-/* CV title in header */
-.cv-header .cv-title { color: #c8973a !important; }
-
-/* Bullet dashes */
-.cv-exp-items li::before,
-.cv-proj-items li::before { color: #c8973a !important; }
 
 /* Company badges */
 ${COMPANY_BADGE_CSS}
 
-/* ---- International Experience callout ---- */
-.cv-intl-callout {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.75rem 1.25rem;
-  background: rgba(200,151,58,0.08);
-  border: 1px solid rgba(200,151,58,0.28);
-  border-left: 3px solid #c8973a;
-  border-radius: 6px;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1.75rem;
-}
-.cv-intl-label {
-  font-size: 0.6875rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #c8973a;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.cv-intl-cities {
-  font-size: 0.875rem;
-  color: #e6edf3;
-  line-height: 1.5;
-}
-
-/* Print: preserve dark, exact colours */
 @media print {
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-  html, body {
-    background: #0d1117 !important;
-    color: #e6edf3 !important;
-  }
-  :root {
-    --bg:        #0d1117 !important;
-    --bg-alt:    #0d1117 !important;
-    --surface:   #161b22 !important;
-    --border:    #30363d !important;
-    --text:      #e6edf3 !important;
-    --text-muted:#8b949e !important;
-    --accent:    #c8973a !important;
-    --accent-h:  #dba94e !important;
-    --secondary: #79c0ff !important;
-  }
-  .cv-toolbar,
-  .cv-bottom-actions { display: none !important; }
-  .cv-document { padding: 0.6cm 1.2cm; }
-  .cv-header { page-break-inside: avoid; border-bottom-color: #c8973a !important; }
-  .cv-section { page-break-inside: avoid; }
-  .cv-exp-item { page-break-inside: avoid; }
-  .cv-photo {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-  a { color: #c8973a !important; }
+  @page { size: A4; margin: 1.5cm 1.8cm; }
+  body.cv-page { background: #fff; }
+  .cv-document { box-shadow: none; padding: 0; max-width: none; }
+  .cv-toolbar, .cv-bottom-actions { display: none !important; }
+  body { font-size: 0.8125rem; }
+  .cv-section      { break-inside: auto; page-break-inside: auto; }
+  .cv-section-title { break-after: avoid; page-break-after: avoid; }
+  .cv-header       { break-inside: avoid; page-break-inside: avoid; }
+  .cv-exp-item     { break-inside: avoid; page-break-inside: avoid; }
+  .cv-edu-item     { break-inside: avoid; page-break-inside: avoid; }
+  .cv-proj-item    { break-inside: avoid; page-break-inside: avoid; }
+  a { color: #1a3a6e !important; text-decoration: underline; }
+  .cv-section-title { color: #7a4d1e !important; border-bottom-color: #7a4d1e !important; }
 }
   </style>
 </head>
@@ -929,12 +854,6 @@ ${COMPANY_BADGE_CSS}
 </div>
 
 <main id="main" class="cv-document">
-
-  <!-- International Experience callout -->
-  <div class="cv-intl-callout" aria-label="International experience">
-    <span class="cv-intl-label">International Experience</span>
-    <span class="cv-intl-cities">🇨🇭 Zurich (2020–present) &nbsp;·&nbsp; 🇬🇧 London (2015–2020) &nbsp;·&nbsp; 🇫🇷 Paris (2013–2014)</span>
-  </div>
 
   <div class="cv-header">
     <div class="cv-header-photo">
@@ -958,6 +877,12 @@ ${COMPANY_BADGE_CSS}
         <span>Work permit: ${esc(d.personal.workPermit)}</span>
         <span class="cv-sep">·</span>
         <span>${d.personal.languages.map(l => `${esc(l.name)} (${esc(l.level)})`).join(' · ')}</span>
+      </div>
+      <div class="cv-contact cv-contact-intl">
+        ${(p.internationalExperience || []).map((loc, i) =>
+          (i > 0 ? '<span class="cv-sep">·</span>' : '') +
+          `${flagImg(loc.code)} <span>${esc(loc.city)} (${esc(loc.period)})</span>`
+        ).join('')}
       </div>
     </div>
   </div>
@@ -987,11 +912,6 @@ ${COMPANY_BADGE_CSS}
     <div class="cv-caps-grid">
       ${capsHtml}
     </div>
-  </div>
-
-  <div class="cv-section">
-    <div class="cv-section-title">Languages</div>
-    <p style="font-size:0.9rem;color:var(--text-muted)">${d.personal.languages.map(l => `${esc(l.name)} (${esc(l.level)})`).join(' · ')}</p>
   </div>
 
   <div class="cv-bottom-actions">
