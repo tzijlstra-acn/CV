@@ -1,39 +1,36 @@
 /**
  * scripts/generate-cv-pdf.mjs
- * Generates assets/Thomas_Zijlstra_CV.pdf from cv.html
- * Tries playwright first, falls back to puppeteer.
+ * Generates assets/Thomas_Zijlstra_CV.pdf from cv.html via Playwright.
+ *
+ * Atomic: writes to a .tmp file, validates it, then renames to final path.
+ * If validation fails the original PDF is untouched and the script exits 1.
+ * No placeholder fallback — if Playwright is unavailable, the script exits
+ * non-zero with a clear message so the last good committed PDF is preserved.
  */
 
-import { existsSync, statSync } from 'fs';
+import { existsSync, statSync, readFileSync, renameSync, unlinkSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { createServer } from 'http';
-import { readFileSync } from 'fs';
 import { extname } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const CV_HTML = resolve(ROOT, 'cv.html');
 const PDF_OUT = resolve(ROOT, 'assets', 'Thomas_Zijlstra_CV.pdf');
+const PDF_TMP = PDF_OUT + '.tmp';
 
-const PDF_META = {
-  title: 'Thomas Zijlstra, CFA | CV',
-  author: 'Thomas Zijlstra',
-  subject: 'AI Commercialization, Enterprise AI, Financial Services',
-  keywords: 'AI commercialization, enterprise AI, business builder, ecosystem, solution architecture, financial services, agentic AI, CFA',
-};
-
-// --- Local HTTP server to serve static files ----------------
+// --- Local HTTP server --------------------------------------
 function startServer(root, port) {
   const MIME = {
     '.html': 'text/html',
-    '.css': 'text/css',
-    '.js': 'application/javascript',
-    '.svg': 'image/svg+xml',
+    '.css':  'text/css',
+    '.js':   'application/javascript',
+    '.svg':  'image/svg+xml',
     '.json': 'application/json',
-    '.pdf': 'application/pdf',
-    '.png': 'image/png',
-    '.ico': 'image/x-icon',
+    '.pdf':  'application/pdf',
+    '.png':  'image/png',
+    '.ico':  'image/x-icon',
   };
 
   const server = createServer((req, res) => {
@@ -60,76 +57,65 @@ function startServer(root, port) {
   });
 }
 
-// --- Try playwright -----------------------------------------
-async function tryPlaywright(url, outPath) {
+// --- Validate the generated PDF -----------------------------
+function validatePdf(path) {
+  const errors = [];
+
+  if (!existsSync(path)) {
+    errors.push('File does not exist after generation');
+    return errors;
+  }
+
+  const stat = statSync(path);
+  if (stat.size < 50000) {
+    errors.push(`PDF too small: ${stat.size} bytes (expected > 50 000)`);
+  }
+
+  const buf = readFileSync(path);
+  const header = buf.slice(0, 4).toString('ascii');
+  if (header !== '%PDF') {
+    errors.push(`Missing PDF signature (got: ${JSON.stringify(header)})`);
+  }
+
+  const text = buf.toString('latin1');
+  if (!text.includes('Thomas') && !text.includes('Zijlstra')) {
+    errors.push('PDF content does not appear to contain CV text (neither "Thomas" nor "Zijlstra" found)');
+  }
+
+  return errors;
+}
+
+// --- Generate via Playwright --------------------------------
+async function generateWithPlaywright(url) {
   let pw;
   try {
     pw = await import('playwright');
   } catch {
-    return false;
+    console.error(`
+  ERROR: Playwright is not installed.
+  The PDF cannot be generated automatically.
+  To install: npm install playwright && npx playwright install chromium
+  The last committed PDF at assets/Thomas_Zijlstra_CV.pdf is untouched.`);
+    process.exit(1);
   }
 
-  console.log('  Using playwright...');
+  console.log('  Using Playwright (Chromium)...');
   const browser = await pw.chromium.launch();
   const page = await browser.newPage();
+
   await page.goto(url, { waitUntil: 'networkidle' });
-
-  // Hide toolbar and action buttons; keep dark background
-  await page.addStyleTag({ content: `
-    .cv-toolbar { display: none !important; }
-    .cv-bottom-actions { display: none !important; }
-  ` });
+  await page.emulateMedia({ media: 'print' });
+  await page.waitForFunction(() => document.fonts.ready);
 
   await page.pdf({
-    path: outPath,
+    path: PDF_TMP,
     format: 'A4',
-    printBackground: true,
-    margin: { top: '1.2cm', bottom: '1.2cm', left: '1.8cm', right: '1.8cm' },
+    printBackground: false,
+    preferCSSPageSize: true,
     displayHeaderFooter: false,
   });
 
   await browser.close();
-  return true;
-}
-
-// --- Try puppeteer ------------------------------------------
-async function tryPuppeteer(url, outPath) {
-  let puppeteer;
-  try {
-    puppeteer = await import('puppeteer');
-    puppeteer = puppeteer.default || puppeteer;
-  } catch {
-    try {
-      puppeteer = await import('puppeteer-core');
-      puppeteer = puppeteer.default || puppeteer;
-    } catch {
-      return false;
-    }
-  }
-
-  console.log('  Using puppeteer...');
-  const browser = await puppeteer.launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-  });
-  const page = await browser.newPage();
-  await page.goto(url, { waitUntil: 'networkidle2' });
-
-  // Hide toolbar and action buttons; keep dark background
-  await page.addStyleTag({ content: `
-    .cv-toolbar { display: none !important; }
-    .cv-bottom-actions { display: none !important; }
-  ` });
-
-  await page.pdf({
-    path: outPath,
-    format: 'A4',
-    printBackground: true,
-    margin: { top: '1.2cm', bottom: '1.2cm', left: '1.8cm', right: '1.8cm' },
-    displayHeaderFooter: false,
-  });
-
-  await browser.close();
-  return true;
 }
 
 // --- Main ---------------------------------------------------
@@ -143,67 +129,31 @@ async function main() {
   console.log(`  Input:  ${CV_HTML}`);
   console.log(`  Output: ${PDF_OUT}`);
 
-  // Start a local server to serve the files so CSS loads correctly
   const PORT = 18080;
   const server = await startServer(ROOT, PORT);
   const cvUrl = `http://127.0.0.1:${PORT}/cv.html`;
 
-  let success = false;
   try {
-    success = await tryPlaywright(cvUrl, PDF_OUT);
-    if (!success) {
-      console.log('  playwright not available, trying puppeteer...');
-      success = await tryPuppeteer(cvUrl, PDF_OUT);
-    }
+    await generateWithPlaywright(cvUrl);
   } finally {
     server.close();
   }
 
-  if (!success) {
-    console.warn(`
-  WARNING: Neither playwright nor puppeteer is installed.
-  PDF could not be generated automatically.
-  To generate the PDF:
-    npm install playwright
-    npx playwright install chromium
-    npm run build:pdf
-  Or open cv.html in a browser and use File > Print > Save as PDF.
-  Creating a placeholder PDF...`);
+  console.log('  Validating PDF...');
+  const errors = validatePdf(PDF_TMP);
 
-    // Create a placeholder so the build doesn't fail
-    const { writeFileSync } = await import('fs');
-    writeFileSync(PDF_OUT, `%PDF-1.4
-1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj
-2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj
-3 0 obj<</Type/Page/MediaBox[0 0 595 842]/Parent 2 0 R/Resources<<>>>>endobj
-xref
-0 4
-0000000000 65535 f
-0000000009 00000 n
-0000000058 00000 n
-0000000115 00000 n
-trailer<</Size 4/Root 1 0 R>>
-startxref
-190
-%%EOF`);
-    console.log('  Placeholder PDF created. Replace with real PDF before publishing.');
-    process.exit(0);
-  }
-
-  // Verify
-  if (existsSync(PDF_OUT)) {
-    const stat = statSync(PDF_OUT);
-    console.log(`  PDF generated: ${(stat.size / 1024).toFixed(1)} KB`);
-    if (stat.size < 10240) {
-      console.warn('  WARNING: PDF is very small; check cv.html renders correctly.');
-    } else {
-      console.log('  PDF size check passed (>10 KB).');
-    }
-  } else {
-    console.error('  ERROR: PDF not found after generation.');
+  if (errors.length > 0) {
+    try { unlinkSync(PDF_TMP); } catch { /* ignore */ }
+    console.error('  PDF validation failed:');
+    for (const e of errors) console.error(`    - ${e}`);
+    console.error('  The original PDF at assets/Thomas_Zijlstra_CV.pdf is untouched.');
     process.exit(1);
   }
 
+  renameSync(PDF_TMP, PDF_OUT);
+
+  const stat = statSync(PDF_OUT);
+  console.log(`  PDF validated and written: ${(stat.size / 1024).toFixed(1)} KB`);
   console.log('Done.');
 }
 

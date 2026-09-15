@@ -9,6 +9,8 @@
     "build:html": "node scripts/build.mjs",
     "build:pdf": "node scripts/generate-cv-pdf.mjs",
     "check:copy": "node scripts/check-copy.mjs",
+    "verify": "node scripts/verify.mjs",
+    "build:all": "npm run build:html && npm run check:copy && npm run build:pdf && npm run verify",
     "serve": "node scripts/serve.mjs"
   },
   "devDependencies": {
