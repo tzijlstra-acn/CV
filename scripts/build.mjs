@@ -202,7 +202,7 @@ function buildEvidence() {
       </div>`).join('')}
     </div>
 
-    <p class="evidence-footnote">${esc(d.evidenceLabel)}</p>
+    ${d.evidenceLabel ? `<p class="evidence-footnote">${esc(d.evidenceLabel)}</p>` : ''}
   </div>
 </section>`;
 }
@@ -213,7 +213,7 @@ function buildThesis() {
 <section id="thesis" aria-labelledby="thesis-heading">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">Operator Thesis</span>
+      <span class="section-label">How I work</span>
       <h2 id="thesis-heading">${esc(t.title)}</h2>
     </div>
 
@@ -405,7 +405,7 @@ function buildDelivery() {
 function buildCommercialization() {
   const c = d.commercialization;
   return `
-<section id="commercialization" aria-labelledby="comm-heading">
+<section id="commercialisation" aria-labelledby="comm-heading">
   <div class="container">
     <div class="section-header">
       <span class="section-label">${esc(c.label)}</span>
@@ -531,6 +531,7 @@ function buildExperience() {
         </div>
         <div class="exp-content">
           <div class="role">${esc(job.role)}</div>
+          ${job.lead ? `<p class="exp-lead">${esc(job.lead)}</p>` : ''}
           <ul>
             ${job.items.map(item => `<li>${esc(item)}</li>`).join('')}
           </ul>
@@ -822,7 +823,9 @@ function buildCvHtml() {
   <link rel="stylesheet" href="styles.css">
   <title>${esc(d.personal.name)} | CV</title>
   <style>
-/* CV PAGE: Light executive document */
+/* CV PAGE: Light executive document.
+   Inline :root intentionally overrides external .dark tokens;
+   cv.html is always rendered light for print consistency. */
 :root {
   --bg:        #ffffff;
   --bg-alt:    #f2ede7;
@@ -853,13 +856,12 @@ ${COMPANY_BADGE_CSS}
   .cv-toolbar, .cv-bottom-actions { display: none !important; }
   body { font-size: 0.8125rem; orphans: 3; widows: 3; }
   .cv-section      { break-inside: auto; page-break-inside: auto; }
-  .cv-section-title { break-after: avoid; page-break-after: avoid; }
+  .cv-section-title { break-after: avoid; page-break-after: avoid; color: #7a4d1e !important; border-bottom-color: #7a4d1e !important; }
   .cv-header       { break-inside: avoid; page-break-inside: avoid; }
   .cv-exp-item     { break-inside: auto; page-break-inside: auto; }
   .cv-edu-item     { break-inside: avoid; page-break-inside: avoid; }
   .cv-proj-item    { break-inside: avoid; page-break-inside: avoid; }
   a { color: #1a3a6e !important; text-decoration: underline; }
-  .cv-section-title { color: #7a4d1e !important; border-bottom-color: #7a4d1e !important; }
 }
   </style>
 </head>

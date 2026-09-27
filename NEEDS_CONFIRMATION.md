@@ -8,7 +8,10 @@ Items below cannot be resolved from repository evidence alone. Edit this file wi
 
 - [x] **Accenture start date** — "Jun 2020" is populated in content.json.
 - [x] **Single Family Office end date** — "Mar 2020" is populated in content.json.
-- [x] **Phone number format** — formatted as "+41 79 768 57 45" in content.json. Confirm this is the preferred display format and that it is correct.
+- [x] **Phone number format** — formatted as "+41 79 768 57 45" in content.json. ✓
+- [x] **TECH VIEW removed** — removed from nav, JS, CSS. No visual or accessibility residue.
+- [x] **Three evidence pillars** — "Commercial and C-suite", "Enterprise AI adoption", "European financial-services credibility."
+- [x] **"Operator Thesis" section label** — changed to "How I work" in build.mjs.
 
 ---
 
@@ -34,6 +37,10 @@ Items below cannot be resolved from repository evidence alone. Edit this file wi
 
 ### Wording and accuracy
 
+- [ ] **"Leading European reinsurer" in cv.summary** (BLOCKING for CV) — the professional summary visible on cv.html and in the PDF download reads "...AI-enabled regulatory-change workflow at a leading European reinsurer." There are relatively few global reinsurers of this description. Three options: (a) keep as-is if the client would not object; (b) replace with "a major European financial institution"; (c) replace with "a regulated European enterprise." Confirm preferred wording before the CV is publicly accessible.
+
+- [ ] **Accenture lead sentence** (IMPORTANT) — a new one-line framing sentence for the Accenture role is proposed: "Leading AI strategy, economics, workflow design and pilot delivery in European financial services, with a focus on regulatory change programmes and go-to-market development." Confirm this is accurate and appropriate before adding it to content.json.
+
 - [ ] **Accenture engagement descriptions** (BLOCKING) — each bullet under the Accenture role has been revised to remove "hands-on implementation" and "Architecture and delivery" framing. Confirm the revised wording accurately reflects your contribution and is consistent with any applicable employer communications policy.
 
 - [ ] **"Moonshot" target mode** — the ?target=moonshot URL parameter shows a different headline, sub, and target-role statement. The "Solution Architecture" reference has been removed from moonshot.statement. Confirm the remaining moonshot copy is accurate and appropriate.
@@ -58,4 +65,30 @@ Items below cannot be resolved from repository evidence alone. Edit this file wi
 
 ---
 
-_Last updated: 2026-09-27._
+### Pending content.json edits (blocked in auto mode — apply manually)
+
+The following changes to content.json require elevated permissions. Apply manually in your editor:
+
+1. **Remove `techNote` fields** — delete `"techNote": "executive"` and `"techNote": "technical"` lines from all 7 project entries and all experience entries (lines 139, 161, 183, 204, 222, 248, 271). These are residual TECH VIEW data fields no longer read by build.mjs.
+
+2. **Clear `evidenceLabel`** — change line 68 from `"evidenceLabel": "Evidence, not self-ratings."` to `"evidenceLabel": ""`. The buildEvidence() function is now conditional and will suppress the footer paragraph when the value is empty.
+
+3. **Update `projectsMethodologyNote`** (line 278) — shorten to: `"Independently developed, AI-assisted public prototypes using synthetic or illustrative data. Problem framing, requirements, workflow design, commercial logic, review and deployment owned by me. These demonstrate translating enterprise requirements into testable artefacts — they are not production client systems."`
+
+4. **Change capability item** — in `capabilities[1].items` (line 542), change `"production-readiness planning"` to `"deployment and rollout planning"`.
+
+5. **Update contact heading** — in `contact.headline` (line 578), change `"Happy to discuss how this applies to your context."` to `"Open to conversations in these areas."`
+
+6. **Clean personal-story commercial field** — in `projects[6].commercial` (line 272), change `"the ability to work across the full stack independently"` to `"end-to-end workflow design independently"`.
+
+7. **Add Accenture lead field** — in the first experience entry (Accenture), add after `"current": true,` on a new line: `"lead": "Leading AI strategy, economics, workflow design and pilot delivery in European financial services, with a focus on regulatory change programmes and go-to-market development."` — but **confirm with Thomas first** (see item above about Accenture lead sentence).
+
+After making these edits, run: `npm run build:all`
+
+### Pending package.json edit (blocked in auto mode)
+
+Add to `devDependencies`: `"pdf-parse": "^1.1.1"` — then run `npm install`. The verify.mjs script already uses it gracefully (falls back to raw binary scan if not installed).
+
+---
+
+_Last updated: 2026-09-27 (Phase 2 refinement)._
