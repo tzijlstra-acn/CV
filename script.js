@@ -7,7 +7,6 @@
 
   // --- Theme -----------------------------------------------
   const THEME_KEY = 'tz-theme';
-  const VIEW_KEY  = 'tz-view';
 
   function applyTheme(theme) {
     document.documentElement.classList.toggle('dark', theme === 'dark');
@@ -32,29 +31,6 @@
     applyTheme(next);
   }
 
-  // --- View Toggle (Executive / Technical) -----------------
-  function applyView(view) {
-    document.body.classList.toggle('body--tech-view', view === 'technical');
-    const btn = document.getElementById('view-toggle');
-    if (btn) {
-      btn.textContent = view === 'technical' ? 'EXEC VIEW' : 'TECH VIEW';
-      btn.classList.toggle('active', view === 'technical');
-      btn.setAttribute('aria-label', view === 'technical' ? 'Switch to executive view' : 'Switch to technical view');
-    }
-  }
-
-  function initView() {
-    const stored = localStorage.getItem(VIEW_KEY) || 'executive';
-    applyView(stored);
-  }
-
-  function toggleView() {
-    const current = document.body.classList.contains('body--tech-view') ? 'technical' : 'executive';
-    const next = current === 'technical' ? 'executive' : 'technical';
-    localStorage.setItem(VIEW_KEY, next);
-    applyView(next);
-  }
-
   // --- Moonshot Mode ----------------------------------------
   function initMoonshot() {
     const params = new URLSearchParams(window.location.search);
@@ -71,6 +47,15 @@
       // Show moonshot statement
       const stmt = document.getElementById('moonshot-statement');
       if (stmt) { stmt.hidden = false; }
+      // Show target-specific sections (Delivery, Commercialisation, 90 Days, Role Fit)
+      const targetSections = document.getElementById('target-sections');
+      if (targetSections) {
+        targetSections.hidden = false;
+        targetSections.removeAttribute('aria-hidden');
+        // Move target sections before the footer so they appear after main content
+        const footer = document.querySelector('footer');
+        if (footer) footer.parentNode.insertBefore(targetSections, footer);
+      }
       // Update page title
       document.title = 'Thomas Zijlstra, CFA | Business Builder & Ecosystem';
     }
@@ -302,13 +287,10 @@
     });
   }
 
-  // --- Wire up theme / view buttons ----------------------
+  // --- Wire up theme button --------------------------------
   function initControls() {
     var themeBtn = document.getElementById('theme-toggle');
     if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
-
-    var viewBtn = document.getElementById('view-toggle');
-    if (viewBtn) viewBtn.addEventListener('click', toggleView);
   }
 
   // --- Scroll Spy (active nav highlighting) ----------------
@@ -365,7 +347,6 @@
   // --- Init ------------------------------------------------
   function init() {
     initTheme();
-    initView();
     initMoonshot();
     initMobileNav();
     initThesisAccordion();

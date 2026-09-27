@@ -17,6 +17,7 @@ const SOURCE_FILES = [
   'scripts/build.mjs',
   'scripts/generate-cv-pdf.mjs',
   'script.js',
+  'styles.css',
 ];
 
 const GENERATED_FILES = [

@@ -5,3 +5,7 @@ node_modules/
 *.env.local
 .cache/
 dist/
+
+# Internal documents — not for public repo
+CLAIM_LEDGER.md
+Profile Foto/

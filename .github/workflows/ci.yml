@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Build HTML
+        run: npm run build:html
+
+      - name: Check copy (no em dashes)
+        run: npm run check:copy
+
+      - name: Generate PDF
+        run: npm run build:pdf
+
+      - name: Verify outputs
+        run: npm run verify
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: build-outputs-${{ github.sha }}
+          path: |
+            index.html
+            cv.html
+            assets/Thomas_Zijlstra_CV.pdf
+          retention-days: 14

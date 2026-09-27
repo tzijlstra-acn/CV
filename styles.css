@@ -5,16 +5,16 @@
 
 /* --- Custom Properties -------------------------------- */
 :root {
-  --bg:        #faf9f7;
-  --bg-alt:    #f2ede7;
-  --surface:   #eee9e2;
-  --border:    #ddd8d0;
-  --text:      #1a1a1a;
-  --text-muted:#5c5650;
-  --accent:    #b5651d;
-  --accent-h:  #8f4e17;
-  --secondary: #4a6fa5;
-  --secondary-h:#3a5a90;
+  --bg:        #f8f5f0;
+  --bg-alt:    #f0ebe3;
+  --surface:   #e8e2d8;
+  --border:    #d4cdc2;
+  --text:      #1a1510;
+  --text-muted:#5a5248;
+  --accent:    #8B6914;
+  --accent-h:  #6d520f;
+  --secondary: #4a6070;
+  --secondary-h:#3a5060;
   --radius-sm: 3px;
   --radius:    6px;
   --radius-lg: 10px;
@@ -29,16 +29,16 @@
 }
 
 .dark {
-  --bg:        #141413;
-  --bg-alt:    #1c1b19;
-  --surface:   #242320;
-  --border:    #2e2c29;
-  --text:      #f0ede8;
-  --text-muted:#9e9892;
-  --accent:    #d4863a;
-  --accent-h:  #e89a50;
-  --secondary: #6b8fc2;
-  --secondary-h:#85aadb;
+  --bg:        #141210;
+  --bg-alt:    #1c1814;
+  --surface:   #242018;
+  --border:    #2e2a22;
+  --text:      #f0ece5;
+  --text-muted:#9e9890;
+  --accent:    #c49a30;
+  --accent-h:  #d4aa40;
+  --secondary: #6a8090;
+  --secondary-h:#80a0b0;
 }
 
 /* --- Reset & Base ------------------------------------ */
@@ -241,25 +241,6 @@ section {
 }
 .btn-icon:hover { background: var(--surface); color: var(--text); }
 .btn-icon:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
-.view-toggle {
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0 0.75rem;
-  height: 34px;
-  width: auto;
-  white-space: nowrap;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: background var(--transition), color var(--transition), border-color var(--transition);
-}
-.view-toggle.active { background: var(--secondary); border-color: var(--secondary); color: #fff; }
-.view-toggle:hover:not(.active) { background: var(--surface); color: var(--text); }
 
 /* Hamburger */
 .hamburger {
@@ -768,10 +749,6 @@ section {
   padding: 0.1rem 0.4rem;
   border-radius: var(--radius-sm);
 }
-
-/* Technical view hidden elements */
-.technical-only { display: none; }
-.body--tech-view .technical-only { display: block; }
 
 /* --- Delivery ----------------------------------------- */
 .delivery-grid {
@@ -1291,6 +1268,114 @@ footer {
 .mt-1 { margin-top: 0.5rem; }
 .mt-2 { margin-top: 1rem; }
 .gap-1 { gap: 0.5rem; }
+
+/* --- Hero target-role line ----------------------------- */
+.hero-target-role {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* --- Projects methodology note ------------------------ */
+.projects-methodology-note {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.875rem 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.projects-methodology-note p {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* --- Featured vs additional project cards ------------- */
+.project-card--featured {
+  border-left: 3px solid var(--accent);
+}
+
+.project-card--additional {
+  opacity: 0.85;
+}
+
+.project-card--additional:hover { opacity: 1; }
+
+.projects-additional-heading {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects-grid--additional {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* --- Project business question and demonstrates ------- */
+.project-bq {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.project-demonstrates {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+/* --- Implementation notes accordion ------------------- */
+.impl-notes {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.impl-notes-toggle {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.875rem;
+  background: var(--surface);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+.impl-notes-toggle::-webkit-details-marker { display: none; }
+.impl-notes-toggle::marker { display: none; }
+.impl-notes-toggle:hover { color: var(--text); background: var(--bg-alt); }
+
+.impl-notes-body {
+  padding: 0.625rem 0.875rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  line-height: 1.6;
+}
+
+/* --- CV project link ---------------------------------- */
+.cv-proj-link {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.cv-proj-link a {
+  color: var(--secondary);
+}
 
 /* ===================================================
    CV PAGE STYLES (cv.html)

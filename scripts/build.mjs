@@ -92,12 +92,10 @@ function buildFootprint() {
 
 function buildNav() {
   const links = [
-    ['#evidence','Evidence'],
-    ['#thesis','Thesis'],
-    ['#projects','Work'],
-    ['#delivery','Enterprise Delivery'],
-    ['#commercialization','Commercialization'],
+    ['#evidence','Profile'],
     ['#experience','Experience'],
+    ['#projects','Selected Work'],
+    ['#thesis','Approach'],
     ['cv.html','CV'],
     ['#contact','Contact'],
   ];
@@ -105,7 +103,7 @@ function buildNav() {
 <a class="skip-link" href="#main">Skip to content</a>
 
 <div id="moonshot-banner" class="moonshot-banner" hidden>
-  <span>Application focus: Business Builder &amp; Ecosystem</span>
+  <span>${esc(d.moonshot.applicationLabel)}</span>
 </div>
 
 <nav class="site-nav" aria-label="Main navigation">
@@ -120,7 +118,6 @@ function buildNav() {
     </ul>
 
     <div class="nav-controls">
-      <button id="view-toggle" class="view-toggle btn-icon" aria-label="Switch to technical view" type="button">TECH VIEW</button>
       <button id="theme-toggle" class="btn-icon" aria-label="Switch to dark mode" type="button">☾</button>
       <button
         id="hamburger"
@@ -171,6 +168,8 @@ function buildHero() {
 
         <div class="hero-chips" aria-label="Context">${chips(h.chips)}</div>
 
+        ${h.targetRoleLine ? `<p class="hero-target-role">${esc(h.targetRoleLine)}</p>` : ''}
+
         ${buildFootprint()}
 
         <div id="moonshot-statement" class="moonshot-statement" hidden>
@@ -190,8 +189,8 @@ function buildEvidence() {
 <section id="evidence" aria-labelledby="evidence-heading">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">Evidence</span>
-      <h2 id="evidence-heading">Evidence in 60 seconds</h2>
+      <span class="section-label">Profile</span>
+      <h2 id="evidence-heading">The case, not the claim</h2>
     </div>
 
     <div class="evidence-grid">
@@ -258,26 +257,11 @@ function buildThesis() {
 </section>`;
 }
 
-function buildProjects() {
-  const allTags = [...new Set(d.projects.flatMap(p => p.tags))].sort();
+function buildProjectCard(p, featured) {
+  const notesId = `impl-notes-${p.id}`;
   return `
-<section id="projects" aria-labelledby="projects-heading">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">Selected Public Work</span>
-      <h2 id="projects-heading">Public builds: working implementations, not slide concepts</h2>
-      <p>Every project uses synthetic, mock, anonymized, or illustrative data.</p>
-    </div>
-
-    <div class="filter-tabs" role="tablist" aria-label="Filter projects by tag">
-      <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true" type="button">All</button>
-      ${allTags.map(tag => `<button class="filter-tab" data-filter="${esc(tag)}" role="tab" aria-selected="false" type="button">${esc(tag)}</button>`).join('')}
-    </div>
-
-    <div class="projects-grid">
-      ${d.projects.map(p => `
       <article
-        class="project-card reveal"
+        class="project-card${featured ? ' project-card--featured' : ' project-card--additional'} reveal"
         data-tags="${esc(p.tags.join(', '))}"
         aria-labelledby="proj-title-${p.id}"
       >
@@ -290,33 +274,65 @@ function buildProjects() {
 
         <div class="badge badge-type">${esc(p.evidenceType)}</div>
 
-        <p class="project-problem"><em>Problem:</em> ${esc(p.problem)}</p>
+        ${featured && p.businessQuestion ? `<p class="project-bq"><em>Question:</em> ${esc(p.businessQuestion)}</p>` : ''}
 
         <p class="project-summary">${esc(p.summary)}</p>
 
-        <div class="project-diagram" aria-label="Architecture flow">
-          ${esc(p.diagram)}
-        </div>
+        ${featured && p.demonstrates ? `<p class="project-demonstrates"><em>Demonstrates:</em> ${esc(p.demonstrates)}</p>` : ''}
 
-        <div class="technical-only">
-          <div class="tech-tags">${techTags(p.tech)}</div>
-        </div>
+        <p class="project-limitations">&#9432; ${esc(p.scopeBoundary || p.limitations)}</p>
 
-        <p class="project-limitations">&#9432; ${esc(p.limitations)}</p>
+        ${p.implementationNotes ? `
+        <details class="impl-notes">
+          <summary class="impl-notes-toggle" aria-controls="${notesId}">Implementation notes</summary>
+          <div class="impl-notes-body" id="${notesId}">${esc(p.implementationNotes)}</div>
+        </details>` : ''}
 
         <div class="project-card-footer">
           <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
-            <a href="${esc(p.repo)}" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub &rarr;</a>
-            <button class="btn-secondary" data-dialog-open="proj-${p.id}" type="button">Case study &rarr;</button>
+            <a href="${esc(p.repo)}" target="_blank" rel="noopener noreferrer" class="btn-ghost">View repository &rarr;</a>
+            ${featured ? `<button class="btn-secondary" data-dialog-open="proj-${p.id}" type="button">Case study &rarr;</button>` : ''}
           </div>
         </div>
-      </article>`).join('')}
+      </article>`;
+}
+
+function buildProjects() {
+  const featured = d.projects.filter(p => p.featured);
+  const additional = d.projects.filter(p => !p.featured);
+  const allTags = [...new Set(d.projects.flatMap(p => p.tags))].sort();
+
+  return `
+<section id="projects" aria-labelledby="projects-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Selected Public Work</span>
+      <h2 id="projects-heading">Selected public work</h2>
     </div>
+
+    <div class="projects-methodology-note">
+      <p>${esc(d.projectsMethodologyNote)}</p>
+    </div>
+
+    <div class="filter-tabs" role="tablist" aria-label="Filter projects by tag">
+      <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true" type="button">All</button>
+      ${allTags.map(tag => `<button class="filter-tab" data-filter="${esc(tag)}" role="tab" aria-selected="false" type="button">${esc(tag)}</button>`).join('')}
+    </div>
+
+    <div class="projects-grid">
+      ${featured.map(p => buildProjectCard(p, true)).join('')}
+    </div>
+
+    ${additional.length > 0 ? `
+    <h3 class="projects-additional-heading">Additional public experiments</h3>
+    <div class="projects-grid projects-grid--additional">
+      ${additional.map(p => buildProjectCard(p, false)).join('')}
+    </div>` : ''}
   </div>
 </section>
 
-<!-- Project dialogs -->
-${d.projects.map(p => `
+<!-- Project dialogs (featured only) -->
+${featured.map(p => `
 <div id="proj-${p.id}-backdrop" class="dialog-backdrop" role="dialog" aria-modal="true" aria-labelledby="dialog-title-${p.id}" aria-hidden="true">
   <div class="dialog">
     <div class="dialog-header">
@@ -324,13 +340,14 @@ ${d.projects.map(p => `
       <button class="dialog-close" data-dialog-close aria-label="Close dialog" type="button">&times;</button>
     </div>
     <div class="dialog-body">
+      ${p.businessQuestion ? `<div><h3>Business question</h3><p>${esc(p.businessQuestion)}</p></div>` : ''}
       <div>
-        <h3>Evidence type</h3>
-        <p>${esc(p.evidenceType)}</p>
+        <h3>My contribution</h3>
+        <p>${esc(p.contribution)}</p>
       </div>
       <div>
-        <h3>Problem</h3>
-        <p>${esc(p.problem)}</p>
+        <h3>What it demonstrates</h3>
+        <p>${esc(p.demonstrates)}</p>
       </div>
       <div>
         <h3>Summary</h3>
@@ -349,12 +366,12 @@ ${d.projects.map(p => `
         <p>${esc(p.caseStudy)}</p>
       </div>
       <div>
-        <h3>Technology</h3>
-        <p>${p.tech.map(t => esc(t)).join(' · ')}</p>
+        <h3>Scope boundary</h3>
+        <p>${esc(p.scopeBoundary)}</p>
       </div>
-      <div class="dialog-notice">${esc(p.limitations)}</div>
+      ${p.implementationNotes ? `<div><h3>Implementation notes</h3><p>${esc(p.implementationNotes)}</p></div>` : ''}
       <div>
-        <a href="${esc(p.repo)}" target="_blank" rel="noopener noreferrer" class="btn-primary">View on GitHub &rarr;</a>
+        <a href="${esc(p.repo)}" target="_blank" rel="noopener noreferrer" class="btn-primary">View repository &rarr;</a>
       </div>
     </div>
   </div>
@@ -728,17 +745,19 @@ ${buildNav()}
 <main id="main">
 ${buildHero()}
 ${buildEvidence()}
-${buildThesis()}
+${buildExperience()}
 ${buildProjects()}
+${buildThesis()}
+${buildCapabilities()}
+${buildEducation()}
+${buildContact()}
+</main>
+<div id="target-sections" hidden aria-hidden="true">
 ${buildDelivery()}
 ${buildCommercialization()}
 ${buildNinetyDays()}
 ${buildRoleFit()}
-${buildExperience()}
-${buildEducation()}
-${buildCapabilities()}
-${buildContact()}
-</main>
+</div>
 ${buildFooter()}
 <script src="script.js"></script>
 </body>
@@ -763,14 +782,14 @@ function buildCvHtml() {
       </ul>
     </div>`).join('');
 
-  const projHtml = d.projects.slice(0, 3).map(proj => `
+  const projHtml = d.projects.filter(p => p.featured).slice(0, 3).map(proj => `
     <div class="cv-proj-item">
-      <div class="cv-proj-title">${esc(proj.title)}</div>
-      <div class="cv-proj-meta">${esc(proj.evidenceType)} · <a href="${esc(proj.repo)}">${esc(proj.repo)}</a></div>
+      <div class="cv-proj-title">${esc(proj.title)} <span class="cv-proj-link">| <a href="${esc(proj.repo)}" target="_blank" rel="noopener noreferrer">View repository</a></span></div>
+      <div class="cv-proj-meta">${esc(proj.evidenceType)}</div>
       <ul class="cv-proj-items">
         <li>${esc(proj.summary)}</li>
         <li>Commercial relevance: ${esc(proj.commercial)}</li>
-        <li>Note: ${esc(proj.limitations)}</li>
+        <li>${esc(proj.scopeBoundary)}</li>
       </ul>
     </div>`).join('');
 
@@ -832,11 +851,11 @@ ${COMPANY_BADGE_CSS}
   body.cv-page { background: #fff; }
   .cv-document { box-shadow: none; padding: 0; max-width: none; }
   .cv-toolbar, .cv-bottom-actions { display: none !important; }
-  body { font-size: 0.8125rem; }
+  body { font-size: 0.8125rem; orphans: 3; widows: 3; }
   .cv-section      { break-inside: auto; page-break-inside: auto; }
   .cv-section-title { break-after: avoid; page-break-after: avoid; }
   .cv-header       { break-inside: avoid; page-break-inside: avoid; }
-  .cv-exp-item     { break-inside: avoid; page-break-inside: avoid; }
+  .cv-exp-item     { break-inside: auto; page-break-inside: auto; }
   .cv-edu-item     { break-inside: avoid; page-break-inside: avoid; }
   .cv-proj-item    { break-inside: avoid; page-break-inside: avoid; }
   a { color: #1a3a6e !important; text-decoration: underline; }
