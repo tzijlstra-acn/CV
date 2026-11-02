@@ -1,0 +1,114 @@
+{
+  "sources": [
+    {
+      "id": "cv-content",
+      "kind": "cv-content",
+      "title": "CV content (content.json)",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/CV/blob/main/content.json",
+      "description": "Confirmed professional history, education and project descriptions. Single source for the web CV and the PDF."
+    },
+    {
+      "id": "repo-ai-economics",
+      "kind": "public-repo",
+      "title": "AICostSimulator repository",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/AICostSimulator",
+      "description": "Public source of the Enterprise AI Economics Simulator."
+    },
+    {
+      "id": "repo-dora",
+      "kind": "public-repo",
+      "title": "ProReinsuranceAIWorkflow repository",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow",
+      "description": "Public source of the DORA Article 12 AI Control Line."
+    },
+    {
+      "id": "repo-nfr-agent-platform",
+      "kind": "public-repo",
+      "title": "RealAIInfrastructure repository",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/RealAIInfrastructure",
+      "description": "Public source of the Enterprise NFR Agent Platform."
+    },
+    {
+      "id": "repo-airlock",
+      "kind": "public-repo",
+      "title": "AIRLOCK repository",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/AIRLOCK",
+      "description": "Public source of the AIRLOCK regulated AI workload foundry."
+    },
+    {
+      "id": "repo-ai-risk-dashboard",
+      "kind": "public-repo",
+      "title": "ai-risk-dashboard repository",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/ai-risk-dashboard",
+      "description": "Public source of the AI Model Risk Dashboard."
+    },
+    {
+      "id": "repo-autonomous-ops",
+      "kind": "public-repo",
+      "title": "Autonomous-Operations-Control-Center repository",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/Autonomous-Operations-Control-Center",
+      "description": "Public source of the Autonomous Operations Control Center."
+    },
+    {
+      "id": "repo-selfcare",
+      "kind": "public-repo",
+      "title": "Selfcare repository",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/Selfcare",
+      "description": "Public source of the interactive personal story."
+    },
+    {
+      "id": "dataset-nfr-processes",
+      "kind": "public-dataset",
+      "title": "Reference NFR process dataset",
+      "visibility": "private",
+      "commit": "1ed5903fc9767049cad3570322fe99c9ed695510",
+      "description": "Reference eight-process NFR dataset. Only derived structure (processes, step counts and links) is used, at a pinned commit. Not linked."
+    },
+    {
+      "id": "private-work-fabric-brief",
+      "kind": "private-blueprint",
+      "title": "Private Work Fabric blueprint brief",
+      "visibility": "private",
+      "description": "Private strategic, operating-model, architecture and experience brief. Client context removed; not published. The public case uses abstracted concepts and synthetic examples only."
+    },
+    {
+      "id": "private-work-fabric-build",
+      "kind": "private-blueprint",
+      "title": "Private Work Fabric interactive build and QA record",
+      "visibility": "private",
+      "description": "Private interactive build with its acceptance tests, end-to-end tests, accessibility and performance reports and decision log. Not published. Figures quoted on this site are taken from its final verification record."
+    },
+    {
+      "id": "portfolio-build",
+      "kind": "portfolio-build",
+      "title": "This portfolio",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/CV",
+      "description": "The portfolio source, data, tests and QA reports. Statistics shown about it are derived at build time."
+    },
+    {
+      "id": "thomas-clarification",
+      "kind": "clarification",
+      "title": "Thomas's clarifications (DECISIONS.md and NEEDS_CONFIRMATION.md)",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/CV/blob/main/DECISIONS.md",
+      "description": "Recorded decisions and open confirmations that shape public wording."
+    },
+    {
+      "id": "market-signals",
+      "kind": "market-signal",
+      "title": "Market role research (research/market-role-map.md)",
+      "visibility": "public",
+      "url": "https://github.com/tzijlstra-acn/CV/blob/main/research/market-role-map.md",
+      "description": "Representative official role descriptions used to validate the capability and lens model. Not quoted on the site."
+    }
+  ]
+}

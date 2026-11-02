@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-11-02",
+  "budget": {
+    "initialJsGzip": 179200,
+    "initialCssGzip": 20480,
+    "largestLazyGzip": 61440
+  },
+  "initial": {
+    "jsGzip": 174974,
+    "cssGzip": 5650,
+    "files": [
+      "app/index-CC0BKS4h.js",
+      "app/rolldown-runtime-WkwZ5CU-.js",
+      "app/react-BbggMMhK.js",
+      "app/dist-2EwItRGx.js",
+      "app/site-BW4Ga9Wg.js",
+      "app/arrow-right-CX8ca0HY.js",
+      "app/icons-BbUn2JFs.js",
+      "app/useRouterState-CikROeaB.js",
+      "app/useNavigate-05WwzR-c.js",
+      "app/index-BBai29o_.css"
+    ]
+  },
+  "lazy": [
+    {
+      "name": "motion-features",
+      "file": "app/motion-features-BCZmKmtV.js",
+      "gzip": 17424
+    },
+    {
+      "name": "S08Economics",
+      "file": "app/S08Economics-BrM58C8O.js",
+      "gzip": 11696
+    },
+    {
+      "name": "dist",
+      "file": "app/dist-Bjt85TaI.js",
+      "gzip": 5289
+    },
+    {
+      "name": "Overlays",
+      "file": "app/Overlays-BM-Qhw4Q.js",
+      "gzip": 4149
+    },
+    {
+      "name": "Evidence",
+      "file": "app/Evidence-DAbAf0DQ.js",
+      "gzip": 4107
+    },
+    {
+      "name": "NfrBlueprint",
+      "file": "app/NfrBlueprint-CmovvM8m.js",
+      "gzip": 3154
+    },
+    {
+      "name": "ProcessNetwork",
+      "file": "app/ProcessNetwork-lEwALtml.js",
+      "gzip": 2391
+    },
+    {
+      "name": "Case",
+      "file": "app/Case-Bm-v1scU.js",
+      "gzip": 2271
+    },
+    {
+      "name": "WorkFabricCompare",
+      "file": "app/WorkFabricCompare-DuQBvFvQ.js",
+      "gzip": 1919
+    },
+    {
+      "name": "FabricGraph",
+      "file": "app/FabricGraph-f3bWdDVd.js",
+      "gzip": 1676
+    },
+    {
+      "name": "Cascade",
+      "file": "app/Cascade-vhVV-jLx.js",
+      "gzip": 1443
+    },
+    {
+      "name": "Capabilities",
+      "file": "app/Capabilities-Bo8lG531.js",
+      "gzip": 1205
+    },
+    {
+      "name": "S07ControlledAi",
+      "file": "app/S07ControlledAi-IeTZn3tt.js",
+      "gzip": 1116
+    },
+    {
+      "name": "S12RoleFit",
+      "file": "app/S12RoleFit-CHzzZSNs.js",
+      "gzip": 916
+    },
+    {
+      "name": "S09Execution",
+      "file": "app/S09Execution-BqCsQjAh.js",
+      "gzip": 910
+    },
+    {
+      "name": "S11Selected",
+      "file": "app/S11Selected-BH76U90J.js",
+      "gzip": 765
+    },
+    {
+      "name": "S10Discipline",
+      "file": "app/S10Discipline-VU1YDgMg.js",
+      "gzip": 573
+    },
+    {
+      "name": "S04WorkFabric",
+      "file": "app/S04WorkFabric-D9zcFUsx.js",
+      "gzip": 520
+    },
+    {
+      "name": "S03Fabric",
+      "file": "app/S03Fabric-XJN1BjdZ.js",
+      "gzip": 513
+    },
+    {
+      "name": "S05Network",
+      "file": "app/S05Network-G5DlZBsA.js",
+      "gzip": 201
+    },
+    {
+      "name": "search",
+      "file": "app/search-7FHyPU_M.js",
+      "gzip": 184
+    },
+    {
+      "name": "S06Blueprint",
+      "file": "app/S06Blueprint-uut4_fKm.js",
+      "gzip": 184
+    },
+    {
+      "name": "x",
+      "file": "app/x-Dz2pqx5X.js",
+      "gzip": 168
+    }
+  ],
+  "problems": []
+}

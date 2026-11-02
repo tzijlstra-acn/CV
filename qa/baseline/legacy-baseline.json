@@ -1,0 +1,122 @@
+[
+  {
+    "viewport": "1920x1080",
+    "loadMs": 1142,
+    "errors": [],
+    "scrollHeight": 8279,
+    "overflowX": false,
+    "sections": [
+      "hero",
+      "evidence",
+      "experience",
+      "projects",
+      "thesis",
+      "capabilities",
+      "education",
+      "contact"
+    ],
+    "chips": 52,
+    "flags": 24,
+    "words": 2381
+  },
+  {
+    "viewport": "1440x900",
+    "loadMs": 814,
+    "errors": [],
+    "scrollHeight": 8279,
+    "overflowX": false,
+    "sections": [
+      "hero",
+      "evidence",
+      "experience",
+      "projects",
+      "thesis",
+      "capabilities",
+      "education",
+      "contact"
+    ],
+    "chips": 52,
+    "flags": 24,
+    "words": 2381
+  },
+  {
+    "viewport": "1366x768",
+    "loadMs": 722,
+    "errors": [],
+    "scrollHeight": 8279,
+    "overflowX": false,
+    "sections": [
+      "hero",
+      "evidence",
+      "experience",
+      "projects",
+      "thesis",
+      "capabilities",
+      "education",
+      "contact"
+    ],
+    "chips": 52,
+    "flags": 24,
+    "words": 2381
+  },
+  {
+    "viewport": "1024x768",
+    "loadMs": 683,
+    "errors": [],
+    "scrollHeight": 8611,
+    "overflowX": false,
+    "sections": [
+      "hero",
+      "evidence",
+      "experience",
+      "projects",
+      "thesis",
+      "capabilities",
+      "education",
+      "contact"
+    ],
+    "chips": 52,
+    "flags": 24,
+    "words": 2381
+  },
+  {
+    "viewport": "768x1024",
+    "loadMs": 726,
+    "errors": [],
+    "scrollHeight": 10046,
+    "overflowX": false,
+    "sections": [
+      "hero",
+      "evidence",
+      "experience",
+      "projects",
+      "thesis",
+      "capabilities",
+      "education",
+      "contact"
+    ],
+    "chips": 52,
+    "flags": 24,
+    "words": 2381
+  },
+  {
+    "viewport": "390x844",
+    "loadMs": 694,
+    "errors": [],
+    "scrollHeight": 14567,
+    "overflowX": false,
+    "sections": [
+      "hero",
+      "evidence",
+      "experience",
+      "projects",
+      "thesis",
+      "capabilities",
+      "education",
+      "contact"
+    ],
+    "chips": 52,
+    "flags": 24,
+    "words": 2303
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "stages": [
+    {
+      "id": "analytics",
+      "label": "Transaction data and analytics",
+      "experience": ["catalina"],
+      "capabilityAdded": "Statistical analysis of transaction data, and turning the findings into client recommendations.",
+      "strand": "Data and analysis",
+      "evidence": ["catalina-analytics"]
+    },
+    {
+      "id": "capital-markets",
+      "label": "FIG capital markets",
+      "experience": ["societe-generale"],
+      "capabilityAdded": "Origination, structuring and execution for banks and insurers, with credit, liquidity and capital analysis behind every mandate.",
+      "strand": "Financial and commercial judgement",
+      "evidence": ["sg-dcm-fig"]
+    },
+    {
+      "id": "investment",
+      "label": "Investment and financing",
+      "experience": ["single-family-office"],
+      "capabilityAdded": "Valuation, cash-flow modelling and financing decisions, working directly with investors and portfolio companies.",
+      "strand": "Investment discipline",
+      "evidence": ["sfo-investment"]
+    },
+    {
+      "id": "regulated-transformation",
+      "label": "Regulated enterprise transformation",
+      "experience": ["accenture"],
+      "capabilityAdded": "Regulatory reporting, data adequacy, central-bank audit and benchmark-transition delivery across risk, data and technology teams.",
+      "strand": "Delivery in regulated environments",
+      "evidence": ["acn-finma-reporting", "acn-oenb-audit", "acn-ibor"]
+    },
+    {
+      "id": "enterprise-ai",
+      "label": "Enterprise AI strategy and workflows",
+      "experience": ["accenture"],
+      "capabilityAdded": "AI use-case qualification and workflow shaping for risk and regulatory change, from economics and roadmap to pilot delivery with human controls.",
+      "strand": "Applied AI with controls",
+      "evidence": ["acn-reg-change-ai", "acn-nfr-workflows", "wf-blueprint"]
+    },
+    {
+      "id": "commercialisation",
+      "label": "Commercialisation, deployment and market building",
+      "experience": ["accenture"],
+      "capabilityAdded": "Building and leading a local NFR and AI team with its DACH go-to-market, and turning delivery lessons into reusable assets and working prototypes.",
+      "strand": "Market building",
+      "evidence": ["acn-nfr-practice", "acn-ai-maturity", "pb-ai-economics"]
+    }
+  ]
+}

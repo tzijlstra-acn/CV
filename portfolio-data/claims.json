@@ -1,0 +1,468 @@
+{
+  "claims": [
+    {
+      "id": "profile-title",
+      "locator": "profile.title",
+      "wording": "Enterprise AI Strategy, Deployment & Commercialisation",
+      "evidence": [
+        "acn-reg-change-ai",
+        "acn-nfr-practice",
+        "pb-ai-economics"
+      ],
+      "depth": "professional-delivery",
+      "personal": "AI strategy and pilot delivery at Accenture; go-to-market for the Swiss NFR and AI team; public economics and workflow builds.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "profile-headline",
+      "locator": "profile.headline",
+      "wording": "I turn complex AI opportunities into decisions, governed workflows, and repeatable enterprise value.",
+      "evidence": [
+        "acn-reg-change-ai",
+        "acn-nfr-workflows",
+        "wf-blueprint",
+        "pb-dora-control-line"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Use-case qualification, economics and roadmap for AI workflows; governed workflow design in professional work and public builds.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "profile-supporting",
+      "locator": "profile.supporting",
+      "wording": "Ten years across FIG capital markets, investment, regulated transformation, and enterprise AI. I work from the original problem and economics through workflow design, stakeholder alignment, governance, delivery, adoption, and the next scalable opportunity.",
+      "evidence": [
+        "sg-dcm-fig",
+        "sfo-investment",
+        "acn-finma-reporting",
+        "acn-reg-change-ai"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Ten years: Societe Generale 2015 to 2018, family office 2018 to 2020, Accenture 2020 to present.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "proof-line-1",
+      "locator": "profile.proofLine[0]",
+      "wording": "Strategy to execution",
+      "evidence": [
+        "acn-reg-change-ai",
+        "wf-blueprint"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Strategy and economics through to pilot delivery.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "proof-line-2",
+      "locator": "profile.proofLine[1]",
+      "wording": "C-suite to engineering",
+      "evidence": [
+        "acn-stakeholders",
+        "pb-dora-control-line"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Senior stakeholder coordination and hands-on direction of AI-assisted builds.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "proof-line-3",
+      "locator": "profile.proofLine[2]",
+      "wording": "Financial Services to enterprise AI",
+      "evidence": [
+        "sg-dcm-fig",
+        "acn-reg-change-ai"
+      ],
+      "depth": "professional-delivery",
+      "personal": "FIG capital markets, then enterprise AI in financial services.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "proof-line-4",
+      "locator": "profile.proofLine[3]",
+      "wording": "Delivery across Europe",
+      "evidence": [
+        "acn-finma-reporting",
+        "acn-oenb-audit",
+        "acn-ibor"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Delivery for Swiss, Austrian-supervised and pan-European clients; cities London, Zurich, Paris.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "target-roles",
+      "locator": "profile.targetRoles",
+      "wording": "Relevant to strategy and transformation, AI deployment, value engineering, customer adoption, strategic partnerships, product and programme leadership, risk and resilience, and market-building roles.",
+      "evidence": [
+        "acn-nfr-practice",
+        "acn-reg-change-ai",
+        "pb-ai-economics"
+      ],
+      "depth": "professional-delivery",
+      "personal": "A statement of fit, not a claim of having held these titles.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "thesis",
+      "locator": "profile.thesis",
+      "wording": "Complex AI only creates value when the economics, workflow, authority, and adoption connect.",
+      "evidence": [
+        "wf-blueprint",
+        "pb-ai-economics"
+      ],
+      "depth": "designed-specified",
+      "personal": "Point of view, evidenced by the blueprint and economics work.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "conclusion",
+      "locator": "profile.conclusion",
+      "wording": "I am most useful where a complex enterprise problem needs commercial judgement, technical translation, governed execution, and an accountable route to adoption.",
+      "evidence": [
+        "acn-reg-change-ai",
+        "wf-blueprint",
+        "pb-ai-economics"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Self-assessment of fit; supported by the evidence trail.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "lens-consulting-opening",
+      "locator": "lenses[id=consulting].opening",
+      "wording": "Regulated transformation delivery in European financial services, from regulatory reporting and central-bank audit to enterprise AI workflows, with the strategy carried through to an operating model.",
+      "evidence": [
+        "acn-finma-reporting",
+        "wf-blueprint",
+        "acn-reg-change-ai"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Lens opening statement; emphasis only, no new facts.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "lens-deployment-opening",
+      "locator": "lenses[id=deployment].opening",
+      "wording": "I take AI from a qualified use case to a controlled workflow, and define the baseline and measures that show whether it worked.",
+      "evidence": [
+        "acn-reg-change-ai",
+        "pb-dora-control-line",
+        "wf-blueprint"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Lens opening statement; emphasis only, no new facts.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "lens-value-engineering-opening",
+      "locator": "lenses[id=value-engineering].opening",
+      "wording": "Investment-grade financial judgement applied to AI decisions: cost of inaction, all-in platform economics, routing and rollout logic.",
+      "evidence": [
+        "pb-ai-economics",
+        "acn-reg-change-ai",
+        "sg-dcm-fig"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Lens opening statement; emphasis only, no new facts.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "lens-partnerships-opening",
+      "locator": "lenses[id=partnerships].opening",
+      "wording": "Proposition and go-to-market building inside a global firm, with capital-markets coordination across banking, legal and syndication teams behind it.",
+      "evidence": [
+        "acn-nfr-practice",
+        "sg-dcm-fig",
+        "acn-ai-maturity"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Lens opening statement; emphasis only, no new facts.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "lens-builder-opening",
+      "locator": "lenses[id=builder].opening",
+      "wording": "I have built a local team and its regional go-to-market, and I build working prototypes to test a market hypothesis before asking anyone to scale it.",
+      "evidence": [
+        "acn-nfr-practice",
+        "pb-ai-economics",
+        "sfo-investment"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Lens opening statement; emphasis only, no new facts.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "lens-risk-opening",
+      "locator": "lenses[id=risk].opening",
+      "wording": "Non-financial risk, regulatory change and AI governance: RCSA, TPRM, DORA and model risk, with human authority designed in from the start.",
+      "evidence": [
+        "pb-dora-control-line",
+        "acn-reg-change-ai",
+        "wf-blueprint"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Lens opening statement; emphasis only, no new facts.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "lens-solution-design-opening",
+      "locator": "lenses[id=solution-design].opening",
+      "wording": "Agentic workflows, model routing, evidence lineage and approval gates, designed and built as inspectable prototypes on synthetic data.",
+      "evidence": [
+        "pb-nfr-agent-platform",
+        "pb-dora-control-line",
+        "pb-airlock-local"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Lens opening statement; emphasis only, no new facts.",
+      "decision": "qualify",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "career-analytics",
+      "locator": "career[id=analytics].capabilityAdded",
+      "wording": "Statistical analysis of transaction data, and turning the findings into client recommendations.",
+      "evidence": [
+        "catalina-analytics"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Taken from the CV entries for this stage.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "career-capital-markets",
+      "locator": "career[id=capital-markets].capabilityAdded",
+      "wording": "Origination, structuring and execution for banks and insurers, with credit, liquidity and capital analysis behind every mandate.",
+      "evidence": [
+        "sg-dcm-fig"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Taken from the CV entries for this stage.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "career-investment",
+      "locator": "career[id=investment].capabilityAdded",
+      "wording": "Valuation, cash-flow modelling and financing decisions, working directly with investors and portfolio companies.",
+      "evidence": [
+        "sfo-investment"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Taken from the CV entries for this stage.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "career-regulated-transformation",
+      "locator": "career[id=regulated-transformation].capabilityAdded",
+      "wording": "Regulatory reporting, data adequacy, central-bank audit and benchmark-transition delivery across risk, data and technology teams.",
+      "evidence": [
+        "acn-finma-reporting",
+        "acn-oenb-audit",
+        "acn-ibor"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Taken from the CV entries for this stage.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "career-enterprise-ai",
+      "locator": "career[id=enterprise-ai].capabilityAdded",
+      "wording": "AI use-case qualification and workflow shaping for risk and regulatory change, from economics and roadmap to pilot delivery with human controls.",
+      "evidence": [
+        "acn-reg-change-ai",
+        "acn-nfr-workflows",
+        "wf-blueprint"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Taken from the CV entries for this stage.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "career-commercialisation",
+      "locator": "career[id=commercialisation].capabilityAdded",
+      "wording": "Building and leading a local NFR and AI team with its DACH go-to-market, and turning delivery lessons into reusable assets and working prototypes.",
+      "evidence": [
+        "acn-nfr-practice",
+        "acn-ai-maturity",
+        "pb-ai-economics"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Taken from the CV entries for this stage.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-nfr-work-fabric-subtitle",
+      "locator": "cases[slug=nfr-work-fabric].subtitle",
+      "wording": "A strategic, operating-model, architecture, and experience blueprint for connected non-financial-risk work.",
+      "evidence": [
+        "wf-blueprint",
+        "wf-experience",
+        "wf-delivery-plan"
+      ],
+      "depth": "designed-specified",
+      "personal": "Author of the blueprint and product owner of the interactive experience: the thesis, process and work-object model, architecture, security and governance model, operating model, value framework and plan, and the acceptance tests the build had to pass.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-nfr-work-fabric-boundary",
+      "locator": "cases[slug=nfr-work-fabric].scopeBoundary",
+      "wording": "Sanitised enterprise solution and experience blueprint using synthetic scenarios. Client identity, internal materials, and confidential implementation details are excluded. The case demonstrates Thomas's strategic framing, process architecture, operating-model design, technical blueprinting, and executive experience design.",
+      "evidence": [
+        "wf-blueprint",
+        "wf-experience",
+        "wf-delivery-plan"
+      ],
+      "depth": "designed-specified",
+      "personal": "Scope boundary; must stay visible.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-ai-economics-subtitle",
+      "locator": "cases[slug=ai-economics].subtitle",
+      "wording": "An executive decision tool that turns a shared AI platform into one all-in annual figure, and shows which choices actually move it.",
+      "evidence": [
+        "pb-ai-economics"
+      ],
+      "depth": "built-verified",
+      "personal": "Product owner and model designer: problem framing, cost and benefit logic, scenario design and interface, with AI-assisted implementation that I reviewed and deployed.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-ai-economics-boundary",
+      "locator": "cases[slug=ai-economics].scopeBoundary",
+      "wording": "Interactive prototype using illustrative planning assumptions and placeholder benchmarks. Not a client tool, a proposal or a production system.",
+      "evidence": [
+        "pb-ai-economics"
+      ],
+      "depth": "built-verified",
+      "personal": "Scope boundary; must stay visible.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-dora-control-line-subtitle",
+      "locator": "cases[slug=dora-control-line].subtitle",
+      "wording": "A working prototype that takes one regulatory obligation through guideline, control, infrastructure, verification, documentation and evidence, with human approval gates.",
+      "evidence": [
+        "pb-dora-control-line"
+      ],
+      "depth": "built-verified",
+      "personal": "Workflow architect and product owner: regulatory framing, state-machine and approval design, model assignment, verification and evidence design, with AI-assisted implementation that I reviewed and tested.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-dora-control-line-boundary",
+      "locator": "cases[slug=dora-control-line].scopeBoundary",
+      "wording": "Working prototype on synthetic fixtures. Cloud, deployment and register integrations are simulated. Client context is excluded.",
+      "evidence": [
+        "pb-dora-control-line"
+      ],
+      "depth": "built-verified",
+      "personal": "Scope boundary; must stay visible.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-nfr-agent-platform-subtitle",
+      "locator": "cases[slug=nfr-agent-platform].subtitle",
+      "wording": "Eighteen NFR domain agents on one orchestrator, sharing a run lifecycle, an approval step, a write-back path and an audit record.",
+      "evidence": [
+        "pb-nfr-agent-platform"
+      ],
+      "depth": "built-verified",
+      "personal": "Platform architect: orchestration model, approval and write-back design, knowledge graph and observability, with AI-assisted implementation that I reviewed and deployed.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-nfr-agent-platform-boundary",
+      "locator": "cases[slug=nfr-agent-platform].scopeBoundary",
+      "wording": "Prototype on synthetic data and a ServiceNow developer instance. No client data or credentials. Not a production deployment.",
+      "evidence": [
+        "pb-nfr-agent-platform"
+      ],
+      "depth": "built-verified",
+      "personal": "Scope boundary; must stay visible.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-airlock-subtitle",
+      "locator": "cases[slug=airlock].subtitle",
+      "wording": "A pattern for auditable, policy-gated AI workloads, runnable locally, with the AWS layer kept as unapplied reference architecture.",
+      "evidence": [
+        "pb-airlock-local",
+        "pb-airlock-reference"
+      ],
+      "depth": "built-verified",
+      "personal": "Pattern designer: workflow, policy and approval design, the finance-engine boundary and the reference architecture, with AI-assisted implementation that I reviewed.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-airlock-boundary",
+      "locator": "cases[slug=airlock].scopeBoundary",
+      "wording": "Local prototype on synthetic data with a scripted model. The AWS and Terraform layer is reference architecture that has never been applied. No compliance claim.",
+      "evidence": [
+        "pb-airlock-local",
+        "pb-airlock-reference"
+      ],
+      "depth": "built-verified",
+      "personal": "Scope boundary; must stay visible.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-data-reporting-transformation-subtitle",
+      "locator": "cases[slug=data-reporting-transformation].subtitle",
+      "wording": "Anonymised professional delivery: a FINMA reporting and data-adequacy programme on a Databricks data platform.",
+      "evidence": [
+        "acn-finma-reporting"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Originated the programme and held end-to-end delivery responsibility: execution, regulatory compliance, and coordination across risk, data and technology workstreams.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    },
+    {
+      "id": "case-data-reporting-transformation-boundary",
+      "locator": "cases[slug=data-reporting-transformation].scopeBoundary",
+      "wording": "Anonymised professional delivery. No client name, data, reporting content or results are published. Further detail is available in conversation.",
+      "evidence": [
+        "acn-finma-reporting"
+      ],
+      "depth": "professional-delivery",
+      "personal": "Scope boundary; must stay visible.",
+      "decision": "retain",
+      "publication": "needs-confirmation"
+    }
+  ]
+}

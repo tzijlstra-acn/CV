@@ -5,7 +5,21 @@ node_modules/
 *.env.local
 .cache/
 dist/
+release/
+test-results/
+coverage/
+.lighthouseci/
+qa/playwright-report/
+qa/screenshots/full/
 
-# Internal documents — not for public repo
+# Internal documents and private inputs: never committed to this public repo
 CLAIM_LEDGER.md
 Profile Foto/
+private/
+
+# Regenerable QA output: summaries are committed, raw reports are not
+qa/bundle/bundle-modules.json
+qa/bundle/bundle-treemap.html
+qa/lighthouse/*.html
+qa/lighthouse/*.json
+qa/baseline/*-full.png

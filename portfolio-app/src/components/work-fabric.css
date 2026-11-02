@@ -1,0 +1,124 @@
+.wfc__toggle {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+}
+.wfc__opt {
+  min-height: 38px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.wfc__opt[aria-checked='true'] {
+  background: var(--ink);
+  color: var(--surface);
+}
+.wfc__state {
+  margin: 14px 0 6px;
+  min-height: 3em;
+  max-width: 76ch;
+  color: var(--ink-2);
+}
+.wfc__svg {
+  width: 100%;
+  height: auto;
+}
+.wfc__list {
+  margin: 12px 0 0;
+  padding-left: 22px;
+  columns: 2;
+}
+.wfc__plane {
+  stroke-width: 1;
+}
+.wfc__plane--0 {
+  fill: var(--violet-soft);
+  stroke: #cfc9f7;
+}
+.wfc__plane--1 {
+  fill: var(--cyan-soft);
+  stroke: #b5e2e2;
+}
+.wfc__plane-label {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+.wfc__plane-item {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  fill: var(--ink-2);
+}
+.wfc__handover {
+  stroke: var(--red);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 6;
+}
+.wfc__line {
+  stroke: var(--ink);
+  stroke-width: 3;
+}
+.wfc__station {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+.wfc__station.is-passed {
+  fill: var(--violet);
+  stroke: var(--violet);
+}
+.wfc__station-label {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  fill: var(--ink);
+}
+.wfc__connector {
+  stroke: var(--line-strong);
+  stroke-width: 1;
+  stroke-dasharray: 2 4;
+}
+.wfc__caption {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  fill: var(--muted);
+}
+.wfc__frag {
+  fill: var(--surface);
+  stroke: var(--line-strong);
+}
+.wfc__frag--channel {
+  stroke-dasharray: 4 3;
+}
+.wfc__frag-label {
+  font-size: 13.5px;
+  font-weight: 500;
+  fill: var(--ink);
+}
+.wfc__analyst {
+  fill: var(--amber-soft);
+  stroke: var(--amber);
+  stroke-width: 2;
+}
+.wfc__analyst-label {
+  font-size: 14px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+.wfc__analyst-sub {
+  font-size: 12px;
+  fill: var(--amber-text);
+}
+.wfc__object {
+  fill: var(--ink);
+}
+.wfc__object.is-done {
+  fill: var(--green);
+}

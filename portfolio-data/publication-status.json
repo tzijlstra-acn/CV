@@ -1,0 +1,130 @@
+{
+  "repositories": [
+    {
+      "id": "realaiinfrastructure",
+      "repository": "tzijlstra-acn/RealAIInfrastructure",
+      "url": "https://github.com/tzijlstra-acn/RealAIInfrastructure",
+      "recommendation": "approved after cleanup",
+      "status": "blocked pending Thomas decision",
+      "decision": "pending",
+      "notes": "Began as an employer-branded practice asset; confirm ownership. Remove seeded credentials and the production-quality wording from the README.",
+      "auditedCommit": "e76a013"
+    },
+    {
+      "id": "proreinsuranceaiworkflow",
+      "repository": "tzijlstra-acn/ProReinsuranceAIWorkflow",
+      "url": "https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow",
+      "recommendation": "private",
+      "status": "private",
+      "decision": "pending",
+      "notes": "Names a real client at HEAD and contains material prepared for that client. Make private; do not link.",
+      "auditedCommit": "b607dbf"
+    },
+    {
+      "id": "aicostsimulator",
+      "repository": "tzijlstra-acn/AICostSimulator",
+      "url": "https://github.com/tzijlstra-acn/AICostSimulator",
+      "recommendation": "approved after cleanup",
+      "status": "blocked pending Thomas decision",
+      "decision": "pending",
+      "notes": "Delete the stray public branch and recreate the repository from main; remove employer branding and the access code; align the README.",
+      "auditedCommit": "3bb08e2"
+    },
+    {
+      "id": "ai-risk-dashboard",
+      "repository": "tzijlstra-acn/ai-risk-dashboard",
+      "url": "https://github.com/tzijlstra-acn/ai-risk-dashboard",
+      "recommendation": "private",
+      "status": "private",
+      "decision": "pending",
+      "notes": "Contains an employer sales proposal and production-ready claims. Make private; withheld from this site.",
+      "auditedCommit": "eb09cef"
+    },
+    {
+      "id": "autonomous-operations-control-center",
+      "repository": "tzijlstra-acn/Autonomous-Operations-Control-Center",
+      "url": "https://github.com/tzijlstra-acn/Autonomous-Operations-Control-Center",
+      "recommendation": "public but unlinked",
+      "status": "public but unlinked",
+      "decision": "pending",
+      "notes": "The GitHub repository is empty; the code was never pushed. Withheld from this site."
+    },
+    {
+      "id": "airlock",
+      "repository": "tzijlstra-acn/AIRLOCK",
+      "url": "https://github.com/tzijlstra-acn/AIRLOCK",
+      "recommendation": "approved after cleanup",
+      "status": "blocked pending Thomas decision",
+      "decision": "pending",
+      "notes": "Needs fresh history (employer authorship in the first commit) and removal of a client reference in one ADR. Reword production and internal-use labels.",
+      "auditedCommit": "ff0e25c"
+    },
+    {
+      "id": "selfcare",
+      "repository": "tzijlstra-acn/Selfcare",
+      "url": "https://github.com/tzijlstra-acn/Selfcare",
+      "recommendation": "public but unlinked",
+      "status": "blocked pending Thomas decision",
+      "decision": "pending",
+      "notes": "Personal content with health details and identifiable third parties. Withheld from this site.",
+      "auditedCommit": "256a041"
+    },
+    {
+      "id": "nfrprocesses",
+      "repository": "tzijlstra-acn/NFRProcesses",
+      "url": "https://github.com/tzijlstra-acn/NFRProcesses",
+      "recommendation": "private",
+      "status": "private",
+      "decision": "pending",
+      "notes": "Employer branding throughout; provenance of the process data unconfirmed. The site uses only derived structure and does not name or link it.",
+      "auditedCommit": "1ed5903"
+    },
+    {
+      "id": "nfraiassets",
+      "repository": "tzijlstra-acn/NFRAIAssets",
+      "url": "https://github.com/tzijlstra-acn/NFRAIAssets",
+      "recommendation": "private",
+      "status": "private",
+      "decision": "pending",
+      "notes": "Publishes colleague photos and work emails, an internal-use catalogue and a public endpoint on a paid model key. Make private urgently.",
+      "auditedCommit": "8e67dd6"
+    },
+    {
+      "id": "cv",
+      "repository": "tzijlstra-acn/CV",
+      "url": "https://github.com/tzijlstra-acn/CV",
+      "recommendation": "approved and linked",
+      "status": "approved and linked",
+      "decision": "approved",
+      "decidedAt": "2026-11-02",
+      "notes": "The repository of this site. It is published whenever the site is deployed."
+    }
+  ],
+  "privateInputs": [
+    {
+      "id": "work-fabric-brief",
+      "description": "Private Work Fabric execution brief with client context",
+      "handling": "Excluded. Concepts are abstracted and rewritten; the file is not copied, linked or quoted."
+    },
+    {
+      "id": "work-fabric-build",
+      "description": "Private Work Fabric interactive build, its screenshots, slide exports and QA reports",
+      "handling": "Excluded. Screenshots are not reused because they carry client context; this site renders its own sanitised visuals. Only aggregate QA figures are quoted."
+    },
+    {
+      "id": "client-presentation-materials",
+      "description": "Client presentation materials referenced by the private brief",
+      "handling": "Excluded. Not read for this site."
+    },
+    {
+      "id": "claim-ledger",
+      "description": "CLAIM_LEDGER.md with interview preparation notes",
+      "handling": "Kept locally and gitignored. The public claim register is portfolio-data/claims.json."
+    },
+    {
+      "id": "confidential-terms",
+      "description": "Plain-text list of confidential client and internal names",
+      "handling": "Kept in private/ (gitignored). The repository stores salted hashes only."
+    }
+  ]
+}

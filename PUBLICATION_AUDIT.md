@@ -1,150 +1,55 @@
-# Repository publication audit checklist
+# Repository publication audit
 
-Before making any linked repository publicly visible or linking to it from a live portfolio site, complete this audit for each repository. Items marked with **FLAG** require immediate review before the repository can be safely linked.
+Status of every repository the portfolio links to, or might link to. Audited on 2026-11-02 against fresh clones of what is public on GitHub (all branches, full history). No audited repository was changed.
 
-**Repositories referenced in this portfolio (7 total):**
-- https://github.com/tzijlstra-acn/RealAIInfrastrucure _(confirm spelling — possible typo for "RealAIInfrastructure")_
-- https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow
-- https://github.com/tzijlstra-acn/AICostSimulator
-- https://github.com/tzijlstra-acn/ai-risk-dashboard
-- https://github.com/tzijlstra-acn/Autonomous-Operations-Control-Center
-- https://github.com/tzijlstra-acn/AIRLOCK
-- https://github.com/tzijlstra-acn/Selfcare
+This public file records statuses and categories only. File paths, branch names, line numbers and other specifics are kept in a private, gitignored audit file so that this repository does not point readers at problems before they are fixed.
 
----
+## Rule
 
-## Specific flags by repository
+A repository is linked from the portfolio only when `portfolio-data/publication-status.json` records `"decision": "approved"` with a date. Until then the build removes its links, its source URLs and its name from the shipped bundle, and the Pages deployment fails its release gate. No repository was approved automatically.
 
-### RealAIInfrastrucure
+## Status
 
-**FLAG — repo name spelling:** The URL uses "Infrastrucure" (missing one 'u'). Confirm whether this is the actual GitHub repository name or a typo. A misspelled URL will silently 404 for portfolio visitors. If misspelled, correct the URL in content.json and rebuild.
+| Repository | Audited HEAD | Recommendation | Status | Finding categories |
+|---|---|---|---|---|
+| RealAIInfrastructure | `e76a013` | approved after cleanup | blocked pending Thomas decision | Employer provenance of the first commit; demo credentials in seed data; README wording |
+| ProReinsuranceAIWorkflow | `b607dbf` | private | private | Client-identifying content at HEAD; material prepared for a client |
+| AICostSimulator | `3bb08e2` | approved after cleanup | blocked pending Thomas decision | A stray public branch with unrelated material; employer branding in history; access-code gate; README wording |
+| ai-risk-dashboard | `eb09cef` | private | private | Employer sales material; production-readiness wording |
+| Autonomous-Operations-Control-Center | empty | public but unlinked | public but unlinked | The repository has no commits; the code was never pushed |
+| AIRLOCK | `ff0e25c` | approved after cleanup | blocked pending Thomas decision | Employer attribution in the first commit; one client reference in a design record; wording |
+| Selfcare | `256a041` | public but unlinked | blocked pending Thomas decision | Personal content not suited to a professional portfolio |
+| NFRProcesses | `1ed5903` | private | private | Employer branding; provenance of the process content unconfirmed |
+| NFRAIAssets | `8e67dd6` | private | private | Personal data of third parties; internal-use material |
+| CV | this repository | approved and linked | approved and linked | The portfolio's own source |
 
-**FLAG — NFR practice methodology:** This repo covers RCSA, TPRM, regulatory change workflows. Check for any references to Accenture NFR methodology names, internal framework names, or client-engagement wording ("for [client name]", "as delivered at", "internal engagement use only").
+Clean across all repositories: no real API keys, tokens, private keys or connection strings in any commit, no committed `.env` files, and only placeholders in infrastructure code.
 
-**FLAG — Accenture references:** Search for any Accenture branding, project codes, engagement IDs, or internal system names.
+## What the portfolio does meanwhile
 
-Other checks: credentials/API keys in code and git history, synthetic data only, no client system names.
+- Shows no repository links. Case pages describe the work and its limits without linking.
+- Withholds three archive items entirely (ai-risk-dashboard, Autonomous-Operations-Control-Center, Selfcare).
+- Uses only derived structure (process names, step counts, links) from the reference process dataset, and does not name or link it.
+- Describes the public prototypes as AI-assisted prototypes, not as independent production software, and states each one's implemented and reference parts.
 
----
+## Steps for Thomas
 
-### ProReinsuranceAIWorkflow
+1. Act on the private action list first; several items concern material that is already public.
+2. For each repository you want linked: complete its clean-up, re-run the audit procedure below, then set `decision` to `approved` with `decidedAt` in `portfolio-data/publication-status.json`.
+3. Confirm ownership: several repositories began as employer-branded practice assets. Check your employment terms before presenting them as personal work.
 
-**FLAG — client-identifying repo name:** The repository name includes "Reinsurance" which could be interpreted as a reference to a specific client engagement. Confirm that the name was chosen for generic industry context and is not identifiable as a specific client project.
-
-**FLAG — client names in history:** Run `git log --all --full-history -p | grep -i "reinsur"` and check for any client-identifiable names in commit messages, file content, or removed files.
-
-**FLAG — DORA engagement content:** This repo is linked to the DORA Article 12 demonstrator. Check that all data used is genuinely synthetic and anonymised, and that no real regulatory submission documents, internal policy drafts, or client-engagement materials are present.
-
-Other checks: credentials/API keys in code and git history, no internal system references.
-
----
-
-### AICostSimulator
-
-**FLAG — mixed content:** This repository contains two separate applications: (1) the NFR static tool (AI Cost Simulator) which is a legitimate portfolio demonstrator, and (2) a separate Kimi Europe Expansion OS Next.js application which is a strategy planning document and should not be publicly discoverable from the portfolio. Before linking this repo, either:
-  - Remove the Kimi/Moonshot Next.js application from the public repo (move to a separate private repo), or
-  - Make the AICostSimulator repo private and host only the static NFR tool separately.
-
-**FLAG — brag-output directory:** The `brag-output/` directory (if present in git history) may contain strategy content ("production-grade strategy command center" language has been observed). Confirm what is in this directory and whether it is tracked in git.
-
-**FLAG — Kimi/Moonshot branding:** The Next.js app contains references to Kimi AI and Moonshot. This should not be publicly discoverable from a professional portfolio that doesn't reference these.
-
-Other checks: no API keys (check for `KIMI_API_KEY`, `MOONSHOT_API_KEY`, `OPENAI_API_KEY` in git history).
-
----
-
-### ai-risk-dashboard
-
-**FLAG — not previously audited.** This repository has not been reviewed. Required checks:
-
-- Confirm all data is synthetic (no real model names, client organisation names, or real governance records)
-- Check for NIST AI RMF, DORA, SR 11-7 references — confirm these are general regulatory framework references, not specific client audit materials
-- Check for Accenture branding or internal methodology names (AI risk assessment methodology, internal scoring frameworks)
-- Check for any "for internal engagement use only" markers
-
----
-
-### Autonomous-Operations-Control-Center
-
-**FLAG — not previously audited.** This repository has not been reviewed. Required checks:
-
-- Confirm all events and state transitions are synthetic (no real production system names, real incident data, or real ITSM records)
-- Check for production system credentials, API keys, or real endpoint URLs in code or git history
-- Check for Accenture branding or client-identifiable content in demo scenarios
-
----
-
-### AIRLOCK
-
-**FLAG — not previously audited.** This repository has not been reviewed. Required checks:
-
-- **Terraform modules:** Check `*.tf` files for real AWS account IDs, ARNs, region-specific identifiers that could identify a production environment, or real IAM user/role names
-- **AWS configuration:** Check for any real AWS credentials, access keys, or secret keys in code, `.env` files, or git history
-- Confirm the demo workload uses only synthetic data (the portfolio states "primary markets bond structuring assistant using synthetic data")
-- Check for Accenture branding, client names, or internal deployment environment names
-- The phrase "compliant deployment" in portfolio copy is intentionally qualified as reference architecture — confirm the repo itself does not claim production deployment status
-
----
-
-### Selfcare
-
-Lowest assessed risk — personal project with no enterprise or client data. Still requires:
-
-- Credential check in code and git history
-- Confirm no personal data or third-party copyrighted content is present without permission
-
----
-
-## Standard audit procedure (run for each repository)
+## Audit procedure (repeat before approving)
 
 ```bash
-# Check current files for common secret patterns
-grep -rE "(api_key|apikey|api_secret|password|passwd|token|secret|credential|private_key|sk-|Bearer )" . \
-  --include="*.py" --include="*.js" --include="*.ts" \
-  --include="*.env" --include="*.json" --include="*.yaml" --include="*.yml" \
-  --include="*.tf" --include="*.tfvars"
-
-# Check git history (every commit, every file)
-git log --all --full-history -p | grep -iE "(api_key|secret|token|password|Bearer sk-|OPENAI|KIMI|MOONSHOT)"
-
-# Check for .env files tracked in git
-git ls-files | grep -i "\.env"
-
-# Check for tracked binary documents
-git ls-files | grep -iE "\.(pdf|docx|xlsx|pptx|doc|xls)"
-
-# Check for internal wording
-grep -ri "accenture\|for internal engagement use only\|large european bank\|production-ready\|client engagement" .
-
-# Check for Terraform/cloud credentials
-grep -rE "(account_id|aws_access_key|aws_secret|subscription_id|tenant_id)" . --include="*.tf" --include="*.yaml"
+# Fresh mirror of what is public, every branch and every commit
+git clone --mirror https://github.com/tzijlstra-acn/<repo>.git
+cd <repo>.git
+git log --all --format='%H %an <%ae> %s'                 # authors, emails, commit messages
+git log --all --name-only --format='' | sort -u          # every path ever committed
+git log --all -p | grep -iE 'api[_-]?key|secret|token|password|BEGIN .*PRIVATE KEY|sk-|AKIA|ghp_'
+git log --all -p | grep -iE 'confidential|internal use|client|as delivered'
+# Then: search for organisation names (client, prospect, employer), personal data and
+# production claims; open a sample of committed images; check README and Pages output.
 ```
 
----
-
-## Audit status
-
-| Repository | Audit completed | Approved for public linking | Specific flags |
-|---|---|---|---|
-| RealAIInfrastrucure | Not yet | Not yet | Repo name spelling; NFR methodology references; Accenture references |
-| ProReinsuranceAIWorkflow | Not yet | Not yet | Client-identifying repo name; DORA content check |
-| AICostSimulator | Not yet | Not yet | Mixed content (Kimi app must be separated or removed before linking) |
-| ai-risk-dashboard | Not yet | Not yet | Not previously audited |
-| Autonomous-Operations-Control-Center | Not yet | Not yet | Not previously audited |
-| AIRLOCK | Not yet | Not yet | Not previously audited; Terraform/AWS check required |
-| Selfcare | Not yet | Not yet | Lowest risk; standard audit required |
-
----
-
-## Immediate actions required
-
-1. **AICostSimulator:** Separate or remove the Kimi Europe Expansion OS app before this repo is publicly linked from the portfolio.
-2. **RealAIInfrastrucure:** Confirm the repo name spelling — if misspelled, the portfolio link is broken.
-3. **AIRLOCK:** Run Terraform file audit for real AWS identifiers before any public linking.
-4. All repositories: complete the standard audit procedure above before the portfolio goes live.
-
----
-
-**Warning:** Repositories containing internal or employer-specific material are unsuitable for public linking until independently sanitised. Publishing a repository with client data, credentials, or confidential employer content can have legal and professional consequences. Complete this audit before the portfolio goes live.
-
-_Last updated: 2026-09-27._
+Record findings in the private audit file, update the table above at category level, and never write a client, prospect or colleague name into this repository. `npm run qa:confidential` checks the repository against hashed confidential terms.

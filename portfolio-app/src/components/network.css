@@ -1,0 +1,212 @@
+.net {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(300px, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.net__svg {
+  width: 100%;
+  height: auto;
+}
+.net__link {
+  fill: none;
+  stroke: var(--line-strong);
+  stroke-width: 1.4;
+}
+.net__link--dashed {
+  stroke-dasharray: 5 5;
+}
+.net__link.is-touch {
+  stroke: var(--ink-2);
+  stroke-width: 2;
+}
+.net__link.is-event {
+  stroke: var(--violet);
+  stroke-width: 3;
+  stroke-dasharray: none;
+}
+.net__pulse {
+  fill: none;
+  stroke: var(--violet);
+  stroke-width: 6;
+  stroke-opacity: 0.25;
+}
+.net__arrowhead {
+  fill: var(--line-strong);
+}
+.net__arrowhead.is-on {
+  fill: var(--violet);
+}
+.net__node {
+  cursor: pointer;
+  outline: none;
+}
+.net__circle {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  transition: fill var(--dur), stroke var(--dur);
+}
+.net__node.is-hub .net__circle {
+  stroke-width: 3;
+}
+.net__node.is-selected .net__circle {
+  fill: var(--ink);
+}
+.net__node.is-selected .net__abbr {
+  fill: var(--surface);
+}
+.net__node.is-event .net__circle {
+  stroke: var(--violet);
+  stroke-width: 4;
+}
+.net__node.is-event:not(.is-selected) .net__circle {
+  fill: var(--violet-soft);
+}
+.net__node:focus-visible .net__circle {
+  stroke: var(--violet-text);
+  stroke-width: 4;
+}
+.net__abbr {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  fill: var(--ink);
+  pointer-events: none;
+}
+.net__node.is-hub .net__abbr {
+  font-size: 19px;
+}
+.net__name {
+  font-size: 13px;
+  fill: var(--ink-2);
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: var(--canvas);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+.net__abbr--long {
+  font-size: 12.5px;
+}
+.net__side {
+  display: grid;
+  gap: 14px;
+}
+.net__panel,
+.net__event {
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+.net__title {
+  font-size: 20px;
+  margin: 4px 0 10px;
+}
+.net__facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 0 0 10px;
+}
+.net__facts div {
+  display: grid;
+}
+.net__facts dt {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.25;
+  order: 2;
+}
+.net__facts dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+}
+.net__links-h {
+  margin-top: 8px;
+}
+.net__links {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 3px;
+  font-size: 14px;
+}
+.net__links b {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  margin-right: 4px;
+}
+.net__event-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.net__event-title {
+  font-weight: 600;
+}
+.net__event-head .btn {
+  white-space: nowrap;
+  flex: none;
+}
+.net__steps {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+  counter-reset: s;
+}
+.net__steps li {
+  padding: 4px 8px;
+  border-left: 3px solid var(--line);
+  color: var(--muted);
+}
+.net__steps li.is-on {
+  border-left-color: var(--violet);
+  color: var(--ink);
+}
+.net__steps .t-mono {
+  font-size: 12px;
+  margin-right: 4px;
+}
+.net__source {
+  font-size: 12px;
+  color: var(--muted);
+}
+.net__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.net__chip {
+  min-height: 44px;
+  min-width: 64px;
+  padding: 0 12px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--surface);
+  font-weight: 600;
+}
+.net__chip.is-selected {
+  background: var(--ink);
+  color: var(--surface);
+}
+.net__chip.is-event {
+  border-color: var(--violet);
+  box-shadow: inset 0 0 0 2px var(--violet);
+}
+@media (max-width: 1100px) {
+  .net {
+    grid-template-columns: 1fr;
+  }
+}

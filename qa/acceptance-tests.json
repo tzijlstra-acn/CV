@@ -1,0 +1,390 @@
+{
+  "$comment": "Acceptance tests derived from the brief, each mapped to the automated check that proves it. Statuses come from the final verification run; pending-thomas items need a decision only Thomas can make.",
+  "updated": "2026-11-02",
+  "tests": [
+    {
+      "id": "AT-01",
+      "area": "Positioning",
+      "requirement": "Name, title and headline legible in the first viewport",
+      "brief": "section 31",
+      "check": "e2e/guided.spec.ts \"is legible at first glance\"",
+      "status": "pass"
+    },
+    {
+      "id": "AT-02",
+      "area": "Positioning",
+      "requirement": "Default title and headline from the brief, alternative kept",
+      "brief": "section 6",
+      "check": "portfolio-data/profile.json; tests/data.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-03",
+      "area": "Positioning",
+      "requirement": "No single-role preference; target-role statement covers all families",
+      "brief": "section 6, 22",
+      "check": "profile.targetRoles; target mode removed (tests/boundaries.test.ts)",
+      "status": "pass"
+    },
+    {
+      "id": "AT-04",
+      "area": "Scope",
+      "requirement": "Web CV and PDF unchanged: cv.html and PDF byte-identical to baseline",
+      "brief": "section 2",
+      "check": "tests/boundaries.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-05",
+      "area": "Scope",
+      "requirement": "/CV/, /CV/cv.html and /CV/assets/Thomas_Zijlstra_CV.pdf resolve from one artifact",
+      "brief": "section 2, 27",
+      "check": "e2e/urls.spec.ts; scripts/check-dist.mjs",
+      "status": "pass"
+    },
+    {
+      "id": "AT-06",
+      "area": "Confidentiality",
+      "requirement": "No client name in data, files, built output or branch commits",
+      "brief": "section 4",
+      "check": "npm run qa:confidential; tests/data.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-07",
+      "area": "Confidentiality",
+      "requirement": "Private inputs not copied, linked or quoted; list recorded",
+      "brief": "section 4, 30",
+      "check": "research/private-inputs.md; publication-status.json privateInputs",
+      "status": "pass"
+    },
+    {
+      "id": "AT-08",
+      "area": "Confidentiality",
+      "requirement": "No private locator or local path in the shipped data",
+      "brief": "section 26",
+      "check": "tests/data.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-09",
+      "area": "Evidence",
+      "requirement": "Every evidence item has a depth label, contribution and scope boundary",
+      "brief": "section 8.2, 21",
+      "check": "tests/data.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-10",
+      "area": "Evidence",
+      "requirement": "A capability appears only when evidence links to it",
+      "brief": "section 8, 16.1",
+      "check": "portfolio-data/build.ts; tests/data.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-11",
+      "area": "Evidence",
+      "requirement": "Frameworks named only inside patterns linked to evidence with a depth",
+      "brief": "section 16.1",
+      "check": "tests/data.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-12",
+      "area": "Evidence",
+      "requirement": "Professional, public-build and private-blueprint evidence distinguishable",
+      "brief": "section 31",
+      "check": "tests/data.test.ts; type tags",
+      "status": "pass"
+    },
+    {
+      "id": "AT-13",
+      "area": "Evidence",
+      "requirement": "Blocked evidence never shipped",
+      "brief": "section 26",
+      "check": "tests/data.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-14",
+      "area": "Evidence",
+      "requirement": "Repository links only after Thomas approves each repository",
+      "brief": "section 24",
+      "check": "tests/data.test.ts; build.ts gateLinks",
+      "status": "pass"
+    },
+    {
+      "id": "AT-15",
+      "area": "Evidence",
+      "requirement": "Claim register matches the site word for word and covers every headline",
+      "brief": "section 21",
+      "check": "npm run qa:claims; tests/data.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-16",
+      "area": "Evidence",
+      "requirement": "Every case has limitations and a scope boundary; no empty sections",
+      "brief": "section 15, 26",
+      "check": "tests/data.test.ts; e2e/cases.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-17",
+      "area": "Evidence",
+      "requirement": "Public-build cases describe only verified facts and state implemented versus reference",
+      "brief": "section 14",
+      "check": "research/case-evidence.md; case-studies.json",
+      "status": "pass"
+    },
+    {
+      "id": "AT-18",
+      "area": "Experience",
+      "requirement": "Guided mode: twelve scenes in the brief order",
+      "brief": "section 12",
+      "check": "e2e/guided.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-19",
+      "area": "Experience",
+      "requirement": "Explorer mode: evidence and capabilities from the same data",
+      "brief": "section 10, 16",
+      "check": "e2e/explorer.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-20",
+      "area": "Experience",
+      "requirement": "Seven role lenses reorder and emphasise without changing facts",
+      "brief": "section 11",
+      "check": "tests/lenses-search.test.ts; e2e/guided.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-21",
+      "area": "Experience",
+      "requirement": "Lens in the URL, validated, kept across pages",
+      "brief": "section 11",
+      "check": "e2e/guided.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-22",
+      "area": "Experience",
+      "requirement": "Capability graph derived from evidence",
+      "brief": "section 12, 16.1",
+      "check": "FabricGraph; e2e/guided.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-23",
+      "area": "Experience",
+      "requirement": "Eight-process network derived from source, with the source hubs",
+      "brief": "section 12, 13",
+      "check": "scripts/import-nfr-network.mjs; tests/data.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-24",
+      "area": "Experience",
+      "requirement": "One synthetic cross-process event along source links",
+      "brief": "section 13.3",
+      "check": "tests/data.test.ts; e2e/guided.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-25",
+      "area": "Experience",
+      "requirement": "Work Fabric case: role switch keeps the work object unchanged",
+      "brief": "section 13.3",
+      "check": "e2e/cases.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-26",
+      "area": "Experience",
+      "requirement": "Work Fabric case: layers, contract, value and cost lenses, route toggles",
+      "brief": "section 13.3",
+      "check": "e2e/cases.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-27",
+      "area": "Experience",
+      "requirement": "Economics scene consistent with the simulator model",
+      "brief": "section 12",
+      "check": "tests/economics.test.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-28",
+      "area": "Experience",
+      "requirement": "Plain-language local search for the six example queries",
+      "brief": "section 16.3",
+      "check": "tests/lenses-search.test.ts; e2e/explorer.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-29",
+      "area": "Experience",
+      "requirement": "Explorer filters in the URL; back and forward restore them",
+      "brief": "section 16.2, 26",
+      "check": "e2e/explorer.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-30",
+      "area": "Experience",
+      "requirement": "Keyboard model: arrows, G, E, L, M, C, P, ?, Escape",
+      "brief": "section 18.2",
+      "check": "e2e/keyboard.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-31",
+      "area": "Experience",
+      "requirement": "Command palette commands from the brief",
+      "brief": "section 18.3",
+      "check": "portfolio-app/src/app/Overlays.tsx; e2e/keyboard.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-32",
+      "area": "Experience",
+      "requirement": "Mobile: no horizontal overflow, drawer without hover, touch targets",
+      "brief": "section 18.1, 25",
+      "check": "e2e/mobile.spec.ts; qa:visual",
+      "status": "pass"
+    },
+    {
+      "id": "AT-33",
+      "area": "Accessibility",
+      "requirement": "axe: zero violations on every route and overlay",
+      "brief": "section 25",
+      "check": "e2e/a11y.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-34",
+      "area": "Accessibility",
+      "requirement": "Reduced motion keeps every final state",
+      "brief": "section 17.4, 25",
+      "check": "e2e/a11y.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-35",
+      "area": "Accessibility",
+      "requirement": "Forced colours, accessible names, skip link, visible focus",
+      "brief": "section 25",
+      "check": "e2e/a11y.spec.ts; e2e/keyboard.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-36",
+      "area": "Accessibility",
+      "requirement": "No text below 12 px at any target viewport",
+      "brief": "section 25",
+      "check": "npm run qa:visual",
+      "status": "pass"
+    },
+    {
+      "id": "AT-37",
+      "area": "Performance",
+      "requirement": "Lighthouse performance 90+, accessibility 95+, best practices 95+",
+      "brief": "section 25",
+      "check": "npm run qa:lighthouse",
+      "status": "pass"
+    },
+    {
+      "id": "AT-38",
+      "area": "Performance",
+      "requirement": "Initial JS within budget; explorer, cases, charts and blueprint lazy",
+      "brief": "section 20.5, 25",
+      "check": "scripts/bundle-report.mjs",
+      "status": "pass"
+    },
+    {
+      "id": "AT-39",
+      "area": "Performance",
+      "requirement": "No console errors on any route at any viewport",
+      "brief": "section 25",
+      "check": "npm run qa:visual; e2e",
+      "status": "pass"
+    },
+    {
+      "id": "AT-40",
+      "area": "Writing",
+      "requirement": "No en or em dash in data, prerendered pages or visible text",
+      "brief": "section 23",
+      "check": "qa:data; qa:content; qa:visual",
+      "status": "pass"
+    },
+    {
+      "id": "AT-41",
+      "area": "Writing",
+      "requirement": "No inflated phrases (AI-powered, cutting-edge, production-grade, and others)",
+      "brief": "section 23",
+      "check": "portfolio-data/lib/text-rules.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-42",
+      "area": "Deployment",
+      "requirement": "Prerendered route entries with titles, canonical URLs and social tags",
+      "brief": "section 27, 28",
+      "check": "scripts/check-dist.mjs; e2e/urls.spec.ts",
+      "status": "pass"
+    },
+    {
+      "id": "AT-43",
+      "area": "Deployment",
+      "requirement": "All internal links resolve in the artifact",
+      "brief": "section 26",
+      "check": "npm run qa:links",
+      "status": "pass"
+    },
+    {
+      "id": "AT-44",
+      "area": "Deployment",
+      "requirement": "Pages workflow fails on lint, tests, claims, content, confidentiality, links or Lighthouse",
+      "brief": "section 27",
+      "check": ".github/workflows/pages.yml",
+      "status": "pass"
+    },
+    {
+      "id": "AT-45",
+      "area": "Deployment",
+      "requirement": "Release gate: nothing awaiting confirmation can be deployed",
+      "brief": "section 32",
+      "check": "npm run qa:release-gate",
+      "status": "pending-thomas"
+    },
+    {
+      "id": "AT-46",
+      "area": "Trust",
+      "requirement": "Human authority explicit in regulated AI cases; systems of record authoritative",
+      "brief": "section 31",
+      "check": "case-studies.json; blueprint securityChain",
+      "status": "pass"
+    },
+    {
+      "id": "AT-47",
+      "area": "Trust",
+      "requirement": "Repository decisions recorded; none approved automatically",
+      "brief": "section 24",
+      "check": "publication-status.json; PUBLICATION_AUDIT.md",
+      "status": "pending-thomas"
+    },
+    {
+      "id": "AT-48",
+      "area": "Trust",
+      "requirement": "Live deployment and repository metadata",
+      "brief": "section 27, 28",
+      "check": "NEEDS_CONFIRMATION.md section 5",
+      "status": "pending-thomas"
+    }
+  ]
+}

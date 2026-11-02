@@ -1,0 +1,99 @@
+{
+  "scenes": [
+    {
+      "id": "thesis",
+      "chapter": "Opening",
+      "short": "Thesis",
+      "title": "Complex AI only creates value when the economics, workflow, authority, and adoption connect.",
+      "caption": "One ambiguous opportunity becomes a decision-ready, governed work object, seen through six professional views.",
+      "budget": 40
+    },
+    {
+      "id": "career",
+      "chapter": "Profile",
+      "short": "Career arc",
+      "title": "Each role added a capability the next one needed",
+      "subhead": "Transaction data, capital markets, investment, regulated transformation, then enterprise AI.",
+      "budget": 30
+    },
+    {
+      "id": "fabric",
+      "chapter": "Profile",
+      "short": "Capability fabric",
+      "title": "Every capability on this site traces back to evidence",
+      "subhead": "Pick a role family to follow its trail. Labels show what I delivered, built, designed or applied.",
+      "budget": 34
+    },
+    {
+      "id": "work-fabric",
+      "chapter": "Flagship case",
+      "short": "NFR Work Fabric",
+      "title": "One work object. Many role views. One governed flow.",
+      "subhead": "A sanitised blueprint for connected non-financial-risk work, built as an interactive executive experience.",
+      "budget": 30
+    },
+    {
+      "id": "process-network",
+      "chapter": "Flagship case",
+      "short": "Eight processes",
+      "title": "Eight NFR processes form one connected network",
+      "subhead": "Derived from a reference process dataset. Trigger one synthetic event to see work cross process boundaries.",
+      "budget": 32
+    },
+    {
+      "id": "blueprint",
+      "chapter": "Flagship case",
+      "short": "Strategy to architecture",
+      "title": "One enterprise problem, carried through to an operating model",
+      "subhead": "Nine artefacts. Each one is the input to the next.",
+      "budget": 26
+    },
+    {
+      "id": "controlled-ai",
+      "chapter": "Technical depth",
+      "short": "Controlled AI",
+      "title": "Controlled AI is designed in layers, from routing to release gates",
+      "subhead": "Each layer links to where I built, designed or applied the pattern.",
+      "budget": 30
+    },
+    {
+      "id": "economics",
+      "chapter": "Commercial judgement",
+      "short": "Economics",
+      "title": "Architecture choices are commercial choices",
+      "subhead": "An illustrative model in the logic of my AI Economics Simulator. In a regulated division, platform and governance costs outweigh tokens by far.",
+      "budget": 30
+    },
+    {
+      "id": "execution",
+      "chapter": "Commercial judgement",
+      "short": "Customer and partner",
+      "title": "From first conversation to repeatable adoption",
+      "subhead": "Where my evidence comes from at each stage, including where it is thinner.",
+      "budget": 28
+    },
+    {
+      "id": "discipline",
+      "chapter": "Delivery",
+      "short": "Delivery discipline",
+      "title": "I plan the gates that come after the demonstration",
+      "subhead": "Ten gates between a working demo and something an enterprise can adopt.",
+      "budget": 28
+    },
+    {
+      "id": "selected-evidence",
+      "chapter": "Evidence",
+      "short": "Selected evidence",
+      "title": "Five primary cases, each with its boundary stated",
+      "subhead": "A private blueprint and four public builds. Each one says what it does not show.",
+      "budget": 28
+    },
+    {
+      "id": "role-fit",
+      "chapter": "Contact",
+      "short": "Role fit",
+      "title": "The fit, in one sentence",
+      "budget": 45
+    }
+  ]
+}

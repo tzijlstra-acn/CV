@@ -1,0 +1,655 @@
+{
+  "generatedAt": "2026-11-02",
+  "renders": 72,
+  "failing": 0,
+  "results": [
+    {
+      "route": "home",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "home-lens-risk",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "evidence",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "evidence-graph",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "capabilities",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": [
+        "13px a.chip \"Strategy and value\"",
+        "13px a.chip \"Transformation\"",
+        "13px a.chip \"AI solution design\"",
+        "13px a.chip \"Risk and control\"",
+        "13px a.chip \"Data and platform\"",
+        "13px a.chip \"Customer and market\"",
+        "13px a.chip \"Product and experience\"",
+        "13px a.chip \"Engineering and quality\""
+      ]
+    },
+    {
+      "route": "case-nfr-work-fabric",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"Guided scenes\"",
+        "13px dt. \"Explorer deep dives\"",
+        "13px dt. \"Processes and source steps\"",
+        "13px dt. \"Acceptance tests passing\""
+      ]
+    },
+    {
+      "route": "case-ai-economics",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-dora-control-line",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-nfr-agent-platform",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-airlock",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-data-reporting-transformation",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "not-found",
+      "viewport": "1920x1080",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "home",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "home-lens-risk",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "evidence",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "evidence-graph",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "capabilities",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": [
+        "13px a.chip \"Strategy and value\"",
+        "13px a.chip \"Transformation\"",
+        "13px a.chip \"AI solution design\"",
+        "13px a.chip \"Risk and control\"",
+        "13px a.chip \"Data and platform\"",
+        "13px a.chip \"Customer and market\"",
+        "13px a.chip \"Product and experience\"",
+        "13px a.chip \"Engineering and quality\""
+      ]
+    },
+    {
+      "route": "case-nfr-work-fabric",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"Guided scenes\"",
+        "13px dt. \"Explorer deep dives\"",
+        "13px dt. \"Processes and source steps\"",
+        "13px dt. \"Acceptance tests passing\""
+      ]
+    },
+    {
+      "route": "case-ai-economics",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-dora-control-line",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-nfr-agent-platform",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-airlock",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-data-reporting-transformation",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "not-found",
+      "viewport": "1440x900",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "home",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "home-lens-risk",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "evidence",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "evidence-graph",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "capabilities",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": [
+        "13px a.chip \"Strategy and value\"",
+        "13px a.chip \"Transformation\"",
+        "13px a.chip \"AI solution design\"",
+        "13px a.chip \"Risk and control\"",
+        "13px a.chip \"Data and platform\"",
+        "13px a.chip \"Customer and market\"",
+        "13px a.chip \"Product and experience\"",
+        "13px a.chip \"Engineering and quality\""
+      ]
+    },
+    {
+      "route": "case-nfr-work-fabric",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"Guided scenes\"",
+        "13px dt. \"Explorer deep dives\"",
+        "13px dt. \"Processes and source steps\"",
+        "13px dt. \"Acceptance tests passing\""
+      ]
+    },
+    {
+      "route": "case-ai-economics",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-dora-control-line",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-nfr-agent-platform",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-airlock",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-data-reporting-transformation",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "not-found",
+      "viewport": "1366x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "home",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "home-lens-risk",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "evidence",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "evidence-graph",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "capabilities",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": [
+        "13px a.chip \"Strategy and value\"",
+        "13px a.chip \"Transformation\"",
+        "13px a.chip \"AI solution design\"",
+        "13px a.chip \"Risk and control\"",
+        "13px a.chip \"Data and platform\"",
+        "13px a.chip \"Customer and market\"",
+        "13px a.chip \"Product and experience\"",
+        "13px a.chip \"Engineering and quality\""
+      ]
+    },
+    {
+      "route": "case-nfr-work-fabric",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"Guided scenes\"",
+        "13px dt. \"Explorer deep dives\"",
+        "13px dt. \"Processes and source steps\"",
+        "13px dt. \"Acceptance tests passing\""
+      ]
+    },
+    {
+      "route": "case-ai-economics",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-dora-control-line",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-nfr-agent-platform",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-airlock",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-data-reporting-transformation",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "not-found",
+      "viewport": "1024x768",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "home",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "home-lens-risk",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "evidence",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "evidence-graph",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "capabilities",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": [
+        "13px a.chip \"Strategy and value\"",
+        "13px a.chip \"Transformation\"",
+        "13px a.chip \"AI solution design\"",
+        "13px a.chip \"Risk and control\"",
+        "13px a.chip \"Data and platform\"",
+        "13px a.chip \"Customer and market\"",
+        "13px a.chip \"Product and experience\"",
+        "13px a.chip \"Engineering and quality\""
+      ]
+    },
+    {
+      "route": "case-nfr-work-fabric",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"Guided scenes\"",
+        "13px dt. \"Explorer deep dives\"",
+        "13px dt. \"Processes and source steps\"",
+        "13px dt. \"Acceptance tests passing\""
+      ]
+    },
+    {
+      "route": "case-ai-economics",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-dora-control-line",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-nfr-agent-platform",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-airlock",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-data-reporting-transformation",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "not-found",
+      "viewport": "768x1024",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "home",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "home-lens-risk",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"All-in, year one\"",
+        "13px dt. \"Benefit a year, full adoption\"",
+        "13px dt. \"Break-even\"",
+        "13px dt. \"Ten-year return\""
+      ]
+    },
+    {
+      "route": "evidence",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "evidence-graph",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "capabilities",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": [
+        "13px a.chip \"Strategy and value\"",
+        "13px a.chip \"Transformation\"",
+        "13px a.chip \"AI solution design\"",
+        "13px a.chip \"Risk and control\"",
+        "13px a.chip \"Data and platform\"",
+        "13px a.chip \"Customer and market\"",
+        "13px a.chip \"Product and experience\"",
+        "13px a.chip \"Engineering and quality\""
+      ]
+    },
+    {
+      "route": "case-nfr-work-fabric",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": [
+        "12px dt. \"Steps\"",
+        "12px dt. \"Decisions\"",
+        "12px dt. \"Role lanes\"",
+        "12px dt. \"Regulatory touchpoints\"",
+        "13px dt. \"Guided scenes\"",
+        "13px dt. \"Explorer deep dives\"",
+        "13px dt. \"Processes and source steps\"",
+        "13px dt. \"Acceptance tests passing\""
+      ]
+    },
+    {
+      "route": "case-ai-economics",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-dora-control-line",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-nfr-agent-platform",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-airlock",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "case-data-reporting-transformation",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": []
+    },
+    {
+      "route": "not-found",
+      "viewport": "390x844",
+      "problems": [],
+      "smallBodyText": []
+    }
+  ]
+}

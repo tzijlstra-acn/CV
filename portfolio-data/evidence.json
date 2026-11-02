@@ -1,0 +1,1130 @@
+{
+  "items": [
+    {
+      "id": "acn-reg-change-ai",
+      "title": "AI-enabled regulatory-change workflow",
+      "summary": "Strategy, economics, roadmap and pilot delivery for an AI-enabled regulatory-change workflow covering DORA, NIS2, EU AI Act and Solvency II.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Shaped the strategy, economics and roadmap, and led pilot delivery with the technical team.",
+      "organisation": "European reinsurer, through Accenture",
+      "period": "Accenture, current",
+      "experience": "accenture",
+      "capabilities": [
+        "problem-framing",
+        "investment-cases",
+        "transformation-roadmaps",
+        "use-case-qualification",
+        "human-approval",
+        "regulatory-frameworks",
+        "regulatory-compliance",
+        "rollout-planning",
+        "stakeholder-alignment",
+        "ai-economics"
+      ],
+      "roleFamilies": [
+        "consulting",
+        "deployment",
+        "risk",
+        "value-engineering"
+      ],
+      "domains": [
+        "insurance",
+        "regulatory-change",
+        "ai-governance",
+        "enterprise-ai",
+        "non-financial-risk"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/0/items/0"
+        },
+        {
+          "source": "cv-content",
+          "locator": "/delivery/items/0"
+        }
+      ],
+      "confidentiality": "anonymised",
+      "scopeBoundary": "Anonymised client engagement. No client name, materials or results are published.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "acn-nfr-workflows",
+      "title": "AI use-case and workflow shaping for RCSA, TPRM and regulatory change",
+      "summary": "Translating business and control requirements into executable pilot designs with technical teams.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Qualified the use cases and translated business and control requirements into pilot designs. Technical teams built them.",
+      "organisation": "Regulated financial-services clients, through Accenture",
+      "period": "Accenture, current",
+      "experience": "accenture",
+      "capabilities": [
+        "use-case-qualification",
+        "rcsa-tprm",
+        "non-financial-risk",
+        "product-specification",
+        "customer-discovery",
+        "stakeholder-alignment"
+      ],
+      "roleFamilies": [
+        "deployment",
+        "risk",
+        "solution-design",
+        "consulting"
+      ],
+      "domains": [
+        "financial-services",
+        "non-financial-risk",
+        "enterprise-ai"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/0/items/1"
+        },
+        {
+          "source": "cv-content",
+          "locator": "/delivery/items/1"
+        }
+      ],
+      "confidentiality": "anonymised",
+      "scopeBoundary": "Anonymised client work. I shaped and specified the workflows; I do not claim the engineering.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "acn-ai-maturity",
+      "title": "AI Maturity Assessment framework",
+      "summary": "Developed an AI maturity assessment framework used across the practice.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Developed the framework and its use in client conversations.",
+      "organisation": "Accenture practice asset",
+      "period": "Accenture",
+      "experience": "accenture",
+      "capabilities": [
+        "reusable-playbooks",
+        "use-case-qualification",
+        "strategic-options"
+      ],
+      "roleFamilies": [
+        "consulting",
+        "deployment",
+        "builder",
+        "partnerships"
+      ],
+      "domains": [
+        "enterprise-ai",
+        "financial-services"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/delivery/items/1"
+        }
+      ],
+      "confidentiality": "anonymised",
+      "scopeBoundary": "Internal practice asset. Its content is not published.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "acn-nfr-practice",
+      "title": "Swiss NFR and AI capabilities team",
+      "summary": "Built and led the local AI and non-financial-risk team, and defined its go-to-market for the DACH region.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Built and led the team and defined the regional go-to-market.",
+      "organisation": "Accenture, Zurich",
+      "period": "Accenture",
+      "experience": "accenture",
+      "capabilities": [
+        "go-to-market",
+        "proposition-development",
+        "market-hypotheses",
+        "opportunity-qualification",
+        "team-raci-design",
+        "reusable-playbooks"
+      ],
+      "roleFamilies": [
+        "builder",
+        "partnerships",
+        "consulting",
+        "deployment"
+      ],
+      "domains": [
+        "financial-services",
+        "non-financial-risk",
+        "customer-and-gtm"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/0/items/2"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Team size, revenue and pipeline figures are not published.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "acn-finma-reporting",
+      "title": "FINMA regulatory reporting and data-adequacy programme",
+      "summary": "Led origination and end-to-end delivery of a regulatory reporting and data-adequacy programme, including a Databricks data-platform implementation.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Originated the programme and held delivery responsibility across risk, data and technology workstreams.",
+      "organisation": "Swiss insurer, through Accenture",
+      "period": "Accenture",
+      "experience": "accenture",
+      "case": "data-reporting-transformation",
+      "capabilities": [
+        "opportunity-qualification",
+        "workstream-leadership",
+        "databricks-transformation",
+        "regulatory-reporting-data",
+        "data-readiness",
+        "data-quality-reporting",
+        "regulatory-compliance",
+        "cross-functional-coordination"
+      ],
+      "roleFamilies": [
+        "consulting",
+        "risk",
+        "deployment"
+      ],
+      "domains": [
+        "insurance",
+        "regulatory-reporting",
+        "data-platforms"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/0/items/3"
+        },
+        {
+          "source": "cv-content",
+          "locator": "/delivery/items/2"
+        }
+      ],
+      "confidentiality": "anonymised",
+      "scopeBoundary": "Anonymised client programme. The client, data and reporting content are not published.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "acn-oenb-audit",
+      "title": "Central-bank audit delivery stream",
+      "summary": "Stream lead for an OeNB central-bank audit, responsible for regulatory interaction and coordination across risk management and governance.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Led the stream and the regulatory interaction.",
+      "organisation": "European core banking provider, through Accenture",
+      "period": "Accenture",
+      "experience": "accenture",
+      "capabilities": [
+        "workstream-leadership",
+        "regulatory-compliance",
+        "audit-traceability",
+        "executive-governance",
+        "cross-functional-coordination"
+      ],
+      "roleFamilies": [
+        "consulting",
+        "risk"
+      ],
+      "domains": [
+        "banking",
+        "regulatory-change",
+        "non-financial-risk"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/0/items/4"
+        },
+        {
+          "source": "cv-content",
+          "locator": "/delivery/items/3"
+        }
+      ],
+      "confidentiality": "anonymised",
+      "scopeBoundary": "Anonymised client engagement. Audit content is not published.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "acn-ibor",
+      "title": "LIBOR and interest-rate transition",
+      "summary": "Delivery work on benchmark transition, drawing on capital-markets experience across derivatives, valuation and trading-desk structures.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Contributed capital-markets and valuation knowledge to transition delivery.",
+      "organisation": "European global systemically important bank, through Accenture",
+      "period": "Accenture",
+      "experience": "accenture",
+      "capabilities": [
+        "financial-analysis",
+        "regulatory-compliance",
+        "dependency-management"
+      ],
+      "roleFamilies": [
+        "consulting",
+        "risk"
+      ],
+      "domains": [
+        "banking",
+        "capital-markets",
+        "regulatory-change"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/0/items/5"
+        },
+        {
+          "source": "cv-content",
+          "locator": "/delivery/items/4"
+        }
+      ],
+      "confidentiality": "anonymised",
+      "scopeBoundary": "Anonymised client engagement.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "acn-stakeholders",
+      "title": "Senior stakeholder coordination in regulated environments",
+      "summary": "Coordination across CRO, COO, risk, data, technology, governance and regulatory stakeholders.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Ran the coordination and alignment across these groups on client programmes.",
+      "organisation": "Accenture clients in European financial services",
+      "period": "Accenture",
+      "experience": "accenture",
+      "capabilities": [
+        "c-suite-engagement",
+        "stakeholder-alignment",
+        "executive-governance",
+        "cross-functional-coordination"
+      ],
+      "roleFamilies": [
+        "consulting",
+        "deployment",
+        "value-engineering",
+        "partnerships",
+        "risk"
+      ],
+      "domains": [
+        "financial-services",
+        "customer-and-gtm"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/0/items/6"
+        }
+      ],
+      "confidentiality": "anonymised",
+      "scopeBoundary": "Roles only. No people or clients are named.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "sfo-investment",
+      "title": "Investment and financing analysis",
+      "summary": "Company valuation, cash-flow modelling, direct-investment and financing analysis, and engagement with investors, portfolio companies and financing counterparties.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Built the valuations and models and worked directly with investors and counterparties.",
+      "organisation": "Single family office, London",
+      "period": "2018 to 2020",
+      "experience": "single-family-office",
+      "capabilities": [
+        "investment-cases",
+        "financial-analysis",
+        "roi-tco-modelling",
+        "strategic-options",
+        "c-suite-engagement"
+      ],
+      "roleFamilies": [
+        "value-engineering",
+        "builder"
+      ],
+      "domains": [
+        "investment",
+        "financial-services"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/1"
+        }
+      ],
+      "confidentiality": "anonymised",
+      "scopeBoundary": "The family office and its investments are not named.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "sg-dcm-fig",
+      "title": "FIG debt capital markets",
+      "summary": "Origination, structuring and execution for financial institutions across DACH and Benelux: senior, Tier 2, covered, RMBS, subordinated and green bonds.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Origination, structuring and execution support, with credit, liquidity and capacity analysis and coordination across M&A, ECM, legal and syndication.",
+      "organisation": "Societe Generale, London",
+      "period": "2015 to 2018",
+      "experience": "societe-generale",
+      "capabilities": [
+        "opportunity-qualification",
+        "financial-analysis",
+        "proposition-development",
+        "cross-functional-coordination",
+        "commercial-model-design"
+      ],
+      "roleFamilies": [
+        "value-engineering",
+        "partnerships",
+        "consulting"
+      ],
+      "domains": [
+        "capital-markets",
+        "banking",
+        "insurance"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/2"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Individual mandates and issuers are not named.",
+      "status": "approved"
+    },
+    {
+      "id": "catalina-analytics",
+      "title": "Transaction data analytics",
+      "summary": "Statistical analysis of consumer transaction data, price elasticity and product-portfolio analysis, translated into client recommendations.",
+      "evidenceType": "professional",
+      "depth": "professional-delivery",
+      "contribution": "Ran the analyses and translated them into recommendations.",
+      "organisation": "Catalina, Paris (traineeship)",
+      "period": "2013 to 2014",
+      "experience": "catalina",
+      "capabilities": [
+        "quantitative-analysis",
+        "technical-storytelling"
+      ],
+      "roleFamilies": [
+        "value-engineering",
+        "solution-design"
+      ],
+      "domains": [
+        "customer-and-gtm"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/3"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Traineeship. Client data is not published.",
+      "status": "approved"
+    },
+    {
+      "id": "edu-cfa",
+      "title": "CFA charterholder",
+      "summary": "CFA Institute charter: investment analysis, valuation, portfolio management and ethics.",
+      "evidenceType": "education",
+      "depth": "explored",
+      "contribution": "Completed the CFA programme and holds the charter.",
+      "organisation": "CFA Institute",
+      "capabilities": [
+        "financial-analysis",
+        "investment-cases"
+      ],
+      "roleFamilies": [
+        "value-engineering"
+      ],
+      "domains": [
+        "investment",
+        "financial-services"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/education/0"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Credential. Shown as supporting evidence next to professional delivery.",
+      "status": "approved"
+    },
+    {
+      "id": "edu-msc",
+      "title": "MSc Finance and Investments, cum laude",
+      "summary": "Rotterdam School of Management. Thesis on credit rating changes and their effect on asymmetric information.",
+      "evidenceType": "education",
+      "depth": "explored",
+      "contribution": "Completed the degree with distinction and wrote the thesis.",
+      "organisation": "Rotterdam School of Management, Erasmus University",
+      "period": "2014 to 2015",
+      "capabilities": [
+        "financial-analysis",
+        "quantitative-analysis"
+      ],
+      "roleFamilies": [
+        "value-engineering"
+      ],
+      "domains": [
+        "capital-markets",
+        "investment"
+      ],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/education/1"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Academic credential.",
+      "status": "approved"
+    },
+    {
+      "id": "wf-blueprint",
+      "title": "Enterprise NFR Work Fabric blueprint",
+      "summary": "Strategic, operating-model and architecture blueprint for connected non-financial-risk work across eight process families.",
+      "evidenceType": "private-blueprint",
+      "depth": "designed-specified",
+      "contribution": "Authored the strategic thesis, work-object model, three-plane architecture, security and governance model, operating model, value lenses and roadmap.",
+      "organisation": "Private blueprint, client identity removed",
+      "case": "nfr-work-fabric",
+      "capabilities": [
+        "problem-framing",
+        "strategic-options",
+        "operating-model-design",
+        "transformation-roadmaps",
+        "phase-gates",
+        "benefit-ownership",
+        "customer-adoption",
+        "agentic-workflow-architecture",
+        "human-approval",
+        "evaluation-release-gates",
+        "observability-failure-handling",
+        "api-integration-design",
+        "systems-of-record",
+        "evidence-lineage",
+        "integration-events",
+        "contextual-authority",
+        "segregation-of-duties",
+        "operational-risk",
+        "business-continuity",
+        "policy-standards",
+        "model-risk",
+        "information-security-risk",
+        "rcsa-tprm",
+        "non-financial-risk",
+        "executive-governance",
+        "role-based-experiences",
+        "product-specification",
+        "cost-of-inaction"
+      ],
+      "roleFamilies": [
+        "consulting",
+        "deployment",
+        "risk",
+        "solution-design",
+        "partnerships"
+      ],
+      "domains": [
+        "non-financial-risk",
+        "enterprise-ai",
+        "ai-governance",
+        "financial-services"
+      ],
+      "patterns": [
+        {
+          "pattern": "contextual-access"
+        },
+        {
+          "pattern": "state-machine-approvals"
+        },
+        {
+          "pattern": "evidence-package"
+        },
+        {
+          "pattern": "append-only-audit"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "private-work-fabric-brief",
+          "note": "Private brief; abstracted for this site."
+        }
+      ],
+      "confidentiality": "private-source",
+      "scopeBoundary": "Sanitised blueprint using synthetic scenarios. Client identity, internal materials and confidential implementation details are excluded. Not a deployed system.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "wf-experience",
+      "title": "Enterprise NFR Work Fabric interactive experience",
+      "summary": "A 22-scene guided executive story plus 15 explorer deep dives, built from source data, with tests, accessibility and performance budgets.",
+      "evidenceType": "private-blueprint",
+      "depth": "built-verified",
+      "contribution": "Specified the narrative, information architecture, interaction model, dependency strategy and acceptance tests, directed the AI-assisted build and reviewed every scene.",
+      "organisation": "Private build, client identity removed",
+      "case": "nfr-work-fabric",
+      "capabilities": [
+        "executive-narrative",
+        "information-architecture",
+        "visual-systems",
+        "experience-modes",
+        "source-driven-visualisation",
+        "accessible-interaction",
+        "presentation-communication",
+        "senior-workshops",
+        "frontend-architecture",
+        "schema-validation",
+        "state-routing",
+        "svg-visualisation",
+        "motion-systems",
+        "automated-testing",
+        "visual-qa",
+        "accessibility-checks",
+        "performance-budgets",
+        "typed-schemas",
+        "source-normalisation"
+      ],
+      "roleFamilies": [
+        "solution-design",
+        "deployment",
+        "consulting"
+      ],
+      "domains": [
+        "product-and-experience",
+        "non-financial-risk"
+      ],
+      "patterns": [
+        {
+          "pattern": "source-import-validation",
+          "implementedWith": "Zod schemas over a pinned dataset snapshot"
+        },
+        {
+          "pattern": "url-state",
+          "implementedWith": "TanStack Router"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "private-work-fabric-build",
+          "note": "Final verification record, 2026-11-02."
+        }
+      ],
+      "confidentiality": "private-source",
+      "scopeBoundary": "Private build for an introductory executive conversation. Not published, not a production system, synthetic data only.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "wf-delivery-plan",
+      "title": "Sample first-year plan, joint team and deliverables",
+      "summary": "A three-phase plan from pre-work on processes and systems to a first process cluster, with deliverables and gates per phase and roles on both sides.",
+      "evidenceType": "private-blueprint",
+      "depth": "designed-specified",
+      "contribution": "Designed the phasing, workstreams, gates, deliverables and the joint team model.",
+      "organisation": "Private blueprint, client identity removed",
+      "case": "nfr-work-fabric",
+      "capabilities": [
+        "transformation-roadmaps",
+        "phase-gates",
+        "dependency-management",
+        "team-raci-design",
+        "adoption-change",
+        "workstream-leadership",
+        "data-readiness"
+      ],
+      "roleFamilies": [
+        "consulting",
+        "deployment",
+        "partnerships"
+      ],
+      "domains": [
+        "non-financial-risk",
+        "enterprise-ai"
+      ],
+      "sourceRefs": [
+        {
+          "source": "private-work-fabric-build",
+          "note": "Sample plan and joint-team scenes."
+        }
+      ],
+      "confidentiality": "private-source",
+      "scopeBoundary": "Illustrative plan with indicative months. Roles, not names, headcount or prices.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "pb-ai-economics",
+      "title": "Enterprise AI Economics Simulator",
+      "summary": "Executive cost model for a shared AI platform: allocation across the functions sharing it, maturity, hosting, governance staffing, licences and usage, with a ten-year cash flow.",
+      "evidenceType": "public-build",
+      "depth": "built-verified",
+      "contribution": "Problem framing, scenario logic, cost-model design, interface design, review and deployment, with AI-assisted implementation.",
+      "organisation": "Public prototype",
+      "case": "ai-economics",
+      "capabilities": [
+        "ai-economics",
+        "roi-tco-modelling",
+        "investment-cases",
+        "model-routing",
+        "strategic-options",
+        "commercial-model-design"
+      ],
+      "roleFamilies": [
+        "value-engineering",
+        "builder",
+        "deployment"
+      ],
+      "domains": [
+        "enterprise-ai",
+        "customer-and-gtm"
+      ],
+      "patterns": [
+        {
+          "pattern": "scenario-cost-model",
+          "implementedWith": "JavaScript and hand-built SVG charts"
+        },
+        {
+          "pattern": "weighted-model-selection",
+          "implementedWith": "custom JavaScript scoring"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-ai-economics"
+        }
+      ],
+      "publicLinks": [
+        {
+          "label": "AICostSimulator repository",
+          "href": "https://github.com/tzijlstra-acn/AICostSimulator",
+          "kind": "repo",
+          "repo": "aicostsimulator"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Interactive prototype using illustrative planning assumptions and placeholder benchmarks. Not a client tool, a proposal or a production system.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "pb-dora-control-line",
+      "title": "DORA Article 12 AI Control Line",
+      "summary": "A working prototype that takes one regulatory obligation through guideline, control, infrastructure proposal, policy verification, documentation and evidence, with three human approval gates.",
+      "evidenceType": "public-build",
+      "depth": "built-verified",
+      "contribution": "Regulatory framing, workflow architecture, state-machine and approval-gate design, review, testing and deployment, with AI-assisted implementation.",
+      "organisation": "Prototype",
+      "case": "dora-control-line",
+      "capabilities": [
+        "model-routing",
+        "human-approval",
+        "audit-traceability",
+        "regulatory-frameworks",
+        "regulatory-compliance",
+        "evidence-lineage",
+        "retrieval-document-intelligence",
+        "structured-unstructured",
+        "backend-prototyping",
+        "automated-testing"
+      ],
+      "roleFamilies": [
+        "risk",
+        "solution-design",
+        "deployment"
+      ],
+      "domains": [
+        "regulatory-change",
+        "ai-governance",
+        "enterprise-ai"
+      ],
+      "patterns": [
+        {
+          "pattern": "state-machine-approvals",
+          "implementedWith": "TypeScript, Drizzle ORM and SQLite"
+        },
+        {
+          "pattern": "provider-abstracted-routing",
+          "implementedWith": "a TypeScript provider interface over the OpenAI SDK"
+        },
+        {
+          "pattern": "policy-verification",
+          "implementedWith": "an in-process TypeScript rule engine"
+        },
+        {
+          "pattern": "evidence-package",
+          "implementedWith": "SHA-256 content hashes in a JSONL provenance log"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-dora"
+        }
+      ],
+      "publicLinks": [
+        {
+          "label": "ProReinsuranceAIWorkflow repository",
+          "href": "https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow",
+          "kind": "repo",
+          "repo": "proreinsuranceaiworkflow"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Working prototype on synthetic fixtures. Cloud, deployment and register integrations are simulated. Client context is excluded.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "pb-nfr-agent-platform",
+      "title": "Enterprise NFR Agent Platform",
+      "summary": "Eighteen NFR domain agents on one orchestrator, with role-gated approval, typed write-back to a ServiceNow developer instance, a shared graph and an observability gateway.",
+      "evidenceType": "public-build",
+      "depth": "built-verified",
+      "contribution": "Platform concept, workflow architecture, knowledge graph design, approval pattern design, review and deployment, with AI-assisted implementation.",
+      "organisation": "Public prototype",
+      "case": "nfr-agent-platform",
+      "capabilities": [
+        "agentic-workflow-architecture",
+        "knowledge-graphs",
+        "human-approval",
+        "api-integration-design",
+        "systems-of-record",
+        "observability-failure-handling",
+        "rcsa-tprm",
+        "backend-prototyping"
+      ],
+      "roleFamilies": [
+        "solution-design",
+        "risk",
+        "deployment"
+      ],
+      "domains": [
+        "non-financial-risk",
+        "enterprise-ai"
+      ],
+      "patterns": [
+        {
+          "pattern": "state-machine-approvals",
+          "implementedWith": "custom asyncio and FastAPI"
+        },
+        {
+          "pattern": "knowledge-graph-context",
+          "implementedWith": "NetworkX"
+        },
+        {
+          "pattern": "provider-abstracted-routing",
+          "implementedWith": "LangChain model fallbacks"
+        },
+        {
+          "pattern": "live-state-streaming",
+          "implementedWith": "FastAPI server-sent events"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-nfr-agent-platform"
+        }
+      ],
+      "publicLinks": [
+        {
+          "label": "RealAIInfrastructure repository",
+          "href": "https://github.com/tzijlstra-acn/RealAIInfrastructure",
+          "kind": "repo",
+          "repo": "realaiinfrastructure"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Prototype on synthetic data and a ServiceNow developer instance. No client data or credentials. Not a production deployment.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "pb-airlock-local",
+      "title": "AIRLOCK local foundry",
+      "summary": "A locally runnable 12-stage workflow for a regulated workload: policy-gated tools, a deterministic finance engine, evidence-grounded outputs and approval records, on synthetic data with a scripted model.",
+      "evidenceType": "public-build",
+      "depth": "built-verified",
+      "contribution": "Pattern design, workflow architecture, approval-gate design, review and deployment, with AI-assisted implementation.",
+      "organisation": "Public prototype",
+      "case": "airlock",
+      "capabilities": [
+        "human-approval",
+        "evaluation-release-gates",
+        "audit-traceability",
+        "model-routing",
+        "backend-prototyping"
+      ],
+      "roleFamilies": [
+        "solution-design",
+        "risk"
+      ],
+      "domains": [
+        "enterprise-ai",
+        "ai-governance",
+        "capital-markets"
+      ],
+      "patterns": [
+        {
+          "pattern": "deterministic-engine",
+          "implementedWith": "Python decimal and hashlib"
+        },
+        {
+          "pattern": "policy-gated-tools",
+          "implementedWith": "a custom policy enforcer"
+        },
+        {
+          "pattern": "evaluation-gate",
+          "implementedWith": "pytest release gate, not yet blocking"
+        },
+        {
+          "pattern": "provider-abstracted-routing",
+          "implementedWith": "local and Bedrock adapters (Bedrock is a stub)"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-airlock"
+        }
+      ],
+      "publicLinks": [
+        {
+          "label": "AIRLOCK repository",
+          "href": "https://github.com/tzijlstra-acn/AIRLOCK",
+          "kind": "repo",
+          "repo": "airlock"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Local prototype on synthetic data with a scripted model. No live model calls. Not a deployed environment.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "pb-airlock-reference",
+      "title": "AIRLOCK cloud reference architecture",
+      "summary": "Ten Terraform modules describing how the same workload would run on a controlled AWS environment, with EU data residency by default.",
+      "evidenceType": "public-build",
+      "depth": "designed-specified",
+      "contribution": "Designed the reference architecture and its control points.",
+      "organisation": "Public prototype",
+      "case": "airlock",
+      "capabilities": [
+        "rollout-planning",
+        "contextual-authority",
+        "observability-failure-handling"
+      ],
+      "roleFamilies": [
+        "solution-design"
+      ],
+      "domains": [
+        "cloud",
+        "enterprise-ai"
+      ],
+      "patterns": [
+        {
+          "pattern": "infrastructure-as-code-reference",
+          "implementedWith": "Terraform"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-airlock"
+        }
+      ],
+      "publicLinks": [
+        {
+          "label": "AIRLOCK repository",
+          "href": "https://github.com/tzijlstra-acn/AIRLOCK",
+          "kind": "repo",
+          "repo": "airlock"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Reference architecture only. The modules have never been planned or applied, and do not yet validate.",
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "pb-ai-risk-dashboard",
+      "title": "AI Model Risk Dashboard",
+      "summary": "Illustrative model-risk demonstrator: model inventory, shadow-AI detection, regulatory heat map, vendor risk and an audit trail.",
+      "evidenceType": "public-build",
+      "depth": "built-verified",
+      "contribution": "Problem framing, regulatory framework mapping, dashboard design, review and deployment, with AI-assisted implementation.",
+      "organisation": "Public prototype",
+      "capabilities": [
+        "model-risk",
+        "regulatory-frameworks",
+        "audit-traceability"
+      ],
+      "roleFamilies": [
+        "risk"
+      ],
+      "domains": [
+        "ai-governance",
+        "enterprise-ai"
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-ai-risk-dashboard"
+        }
+      ],
+      "publicLinks": [
+        {
+          "label": "ai-risk-dashboard repository",
+          "href": "https://github.com/tzijlstra-acn/ai-risk-dashboard",
+          "kind": "repo",
+          "repo": "ai-risk-dashboard"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Demonstrator using synthetic data. No client models, credentials or production data.",
+      "status": "blocked",
+      "archive": true
+    },
+    {
+      "id": "pb-autonomous-ops",
+      "title": "Autonomous Operations Control Center",
+      "summary": "A three-minute guided scenario: a backend state machine streams live state to the interface, with a human approval gate at consequential decisions.",
+      "evidenceType": "public-build",
+      "depth": "built-verified",
+      "contribution": "Scenario design, governance-layer design, review and deployment, with AI-assisted implementation.",
+      "organisation": "Public prototype",
+      "capabilities": [
+        "human-approval",
+        "senior-workshops",
+        "backend-prototyping"
+      ],
+      "roleFamilies": [
+        "solution-design",
+        "deployment"
+      ],
+      "domains": [
+        "enterprise-ai"
+      ],
+      "patterns": [
+        {
+          "pattern": "live-state-streaming",
+          "implementedWith": "Server-sent events"
+        },
+        {
+          "pattern": "state-machine-approvals"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-autonomous-ops"
+        }
+      ],
+      "publicLinks": [
+        {
+          "label": "Autonomous-Operations-Control-Center repository",
+          "href": "https://github.com/tzijlstra-acn/Autonomous-Operations-Control-Center",
+          "kind": "repo",
+          "repo": "autonomous-operations-control-center"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Demonstrator using synthetic events. No production system credentials or client data.",
+      "status": "blocked",
+      "archive": true
+    },
+    {
+      "id": "pb-personal-story",
+      "title": "Interactive personal story",
+      "summary": "A single-page interactive narrative combining storytelling, data visualisation and accessibility.",
+      "evidenceType": "public-build",
+      "depth": "built-verified",
+      "contribution": "Content design, visual layout, interaction design, accessibility and deployment.",
+      "organisation": "Personal side project",
+      "capabilities": [
+        "executive-narrative",
+        "accessible-interaction"
+      ],
+      "roleFamilies": [
+        "solution-design"
+      ],
+      "domains": [
+        "product-and-experience"
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-selfcare"
+        }
+      ],
+      "publicLinks": [
+        {
+          "label": "Selfcare repository",
+          "href": "https://github.com/tzijlstra-acn/Selfcare",
+          "kind": "repo",
+          "repo": "selfcare"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Personal project. No enterprise application.",
+      "status": "blocked",
+      "archive": true
+    },
+    {
+      "id": "pb-portfolio",
+      "title": "This portfolio as an evidence system",
+      "summary": "A typed evidence model, role lenses, a capability graph and local search, with schema validation, a claim ledger, accessibility and performance gates.",
+      "evidenceType": "public-build",
+      "depth": "built-verified",
+      "contribution": "Specified the evidence model, narrative, interaction design and acceptance checks, directed the AI-assisted build and reviewed the result.",
+      "organisation": "Independent public build",
+      "capabilities": [
+        "information-architecture",
+        "executive-narrative",
+        "source-driven-visualisation",
+        "experience-modes",
+        "frontend-architecture",
+        "schema-validation",
+        "typed-schemas",
+        "state-routing",
+        "svg-visualisation",
+        "automated-testing",
+        "visual-qa",
+        "accessibility-checks",
+        "performance-budgets",
+        "ci-static-deployment",
+        "audit-traceability"
+      ],
+      "roleFamilies": [
+        "solution-design",
+        "builder"
+      ],
+      "domains": [
+        "product-and-experience"
+      ],
+      "patterns": [
+        {
+          "pattern": "url-state",
+          "implementedWith": "TanStack Router"
+        },
+        {
+          "pattern": "source-import-validation",
+          "implementedWith": "Zod at build time"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "portfolio-build"
+        }
+      ],
+      "publicLinks": [
+        {
+          "label": "CV repository",
+          "href": "https://github.com/tzijlstra-acn/CV",
+          "kind": "repo",
+          "repo": "cv"
+        }
+      ],
+      "confidentiality": "public",
+      "scopeBoundary": "Personal portfolio. Statistics about it are derived from its own source at build time.",
+      "status": "approved"
+    }
+  ]
+}

@@ -1,0 +1,968 @@
+{
+  "cases": [
+    {
+      "id": "nfr-work-fabric",
+      "slug": "nfr-work-fabric",
+      "order": 1,
+      "title": "Enterprise NFR Work Fabric",
+      "shortTitle": "NFR Work Fabric",
+      "subtitle": "A strategic, operating-model, architecture, and experience blueprint for connected non-financial-risk work.",
+      "evidenceType": "private-blueprint",
+      "maturity": "design-blueprint",
+      "story": [
+        "Fragmented work",
+        "One work object",
+        "Role views",
+        "Eight-process network",
+        "Shared fabric",
+        "Security and governance",
+        "Operating model",
+        "Roadmap and value"
+      ],
+      "problem": "Large regulated organisations often have capable systems but fragmented work. Context, evidence, ownership, decisions, and actions break across handoffs, processes, meetings, email, and specialist tools.",
+      "whyItMattered": "Non-financial-risk work spans eight process families that share events, evidence and people. Treating each one as a separate AI use case repeats the build and keeps the fragmentation.",
+      "constraints": [
+        "Systems of record stay authoritative. The fabric connects them and does not replace them.",
+        "Every view and every action is checked against role, case relationship and authority.",
+        "Process ownership stays federated. No single standard process is imposed on all disciplines.",
+        "No value numbers before a baseline exists in the organisation's own context.",
+        "The conversation it supports is introductory: it asks for no scope, funding or architecture decision."
+      ],
+      "role": "Author of the blueprint and product owner of the interactive experience: the thesis, process and work-object model, architecture, security and governance model, operating model, value framework and plan, and the acceptance tests the build had to pass.",
+      "contributions": [
+        {
+          "area": "Strategic thesis and narrative architecture",
+          "depth": "designed-specified",
+          "detail": "The work object as the unit of transformation, five ideas an executive audience should remember, and the guided story built around them."
+        },
+        {
+          "area": "NFR process and work-object model",
+          "depth": "designed-specified",
+          "detail": "Eight process families as one network, the process-module contract and the persistent work object."
+        },
+        {
+          "area": "Operating-model and governance design",
+          "depth": "designed-specified",
+          "detail": "Shared platform team, federated process owners, enterprise control partners and independent oversight, with a nine-step asset lifecycle."
+        },
+        {
+          "area": "Technical and integration blueprint",
+          "depth": "designed-specified",
+          "detail": "Work, shared-service and control planes; Flow Engine, routing, evidence and semantics; systems-of-record boundaries."
+        },
+        {
+          "area": "Security and authority model",
+          "depth": "designed-specified",
+          "detail": "Contextual access, separated read and action rights, bound approvals, controlled write-back and audit receipts."
+        },
+        {
+          "area": "Value and economics framework",
+          "depth": "designed-specified",
+          "detail": "Six value lenses, four cost lenses and cost per completed, controlled process as the unit measure."
+        },
+        {
+          "area": "Interactive experience and visualisation",
+          "depth": "built-verified",
+          "detail": "A 22-scene guided story and 15 explorer deep dives, built with AI assistance from my specification and reviewed scene by scene."
+        },
+        {
+          "area": "Repository and dependency strategy",
+          "depth": "designed-specified",
+          "detail": "An adoption decision for every library, with exact use, licence, bundle impact, risk and fallback recorded before installation."
+        },
+        {
+          "area": "Acceptance tests, accessibility, performance and QA",
+          "depth": "built-verified",
+          "detail": "49 acceptance tests written before the build, end-to-end and accessibility checks on every route, and Lighthouse budgets."
+        }
+      ],
+      "decisions": [
+        {
+          "title": "Transform the work object, not another application",
+          "rationale": "Context survives a handover only if something persistent carries it. Applications change; the case, review or incident is what people actually work on."
+        },
+        {
+          "title": "Derive the process network from source data",
+          "rationale": "Processes, steps and links are imported from a reference dataset at a pinned commit, so the network is data rather than a drawing. ORM and RCSA emerge as the hubs."
+        },
+        {
+          "title": "Work moves horizontally; services and controls run vertically",
+          "rationale": "Identity, security and governance are platform primitives every process uses, not features rebuilt for each use case."
+        },
+        {
+          "title": "Read before write, cluster before scale",
+          "rationale": "Write-back comes only after read, context, approval and recovery patterns are proven. Expansion follows process clusters with the most shared capability."
+        },
+        {
+          "title": "Federated ownership with a shared platform team",
+          "rationale": "The platform team does not own every process, and process owners do not rebuild shared infrastructure."
+        }
+      ],
+      "architecture": [
+        {
+          "id": "work-plane",
+          "label": "Work plane",
+          "detail": "Work objects, process modules, roles, evidence, decisions, actions and monitoring.",
+          "status": "designed"
+        },
+        {
+          "id": "service-plane",
+          "label": "Shared service plane",
+          "detail": "Flow Engine, queues and routing, intelligence, evidence and semantics, integration and observability.",
+          "status": "designed"
+        },
+        {
+          "id": "control-plane",
+          "label": "Control and management plane",
+          "detail": "Contextual identity, authority and segregation, evaluation, governance lifecycle, release management and the Control Tower.",
+          "status": "designed"
+        },
+        {
+          "id": "experience",
+          "label": "Interactive executive experience",
+          "detail": "Guided and explorer modes on one route registry, built from validated source data.",
+          "status": "implemented"
+        }
+      ],
+      "valueModel": [
+        {
+          "lens": "Cost per completed, controlled process",
+          "question": "What does one finished, evidenced and approved piece of work cost, all in?",
+          "signal": "Falls as shared capabilities are reused across modules."
+        },
+        {
+          "lens": "Change latency",
+          "question": "How long does a process or policy change take to reach the people doing the work?",
+          "signal": "Measured per module from request to release."
+        },
+        {
+          "lens": "Onboarding cost per module",
+          "question": "How much net-new build does the next process need?",
+          "signal": "Should fall with each process cluster."
+        }
+      ],
+      "learned": [
+        "An executive audience remembers one idea. Everything else belongs in the explorer.",
+        "Deriving the network from source data ended debates about whether the picture was right.",
+        "Writing the acceptance tests before the scenes kept the build honest about what was finished."
+      ],
+      "evidence": [
+        "wf-blueprint",
+        "wf-experience",
+        "wf-delivery-plan"
+      ],
+      "capabilities": [
+        "problem-framing",
+        "operating-model-design",
+        "agentic-workflow-architecture",
+        "contextual-authority",
+        "evidence-lineage",
+        "executive-narrative",
+        "automated-testing",
+        "transformation-roadmaps"
+      ],
+      "roleFit": [
+        "consulting",
+        "deployment",
+        "risk",
+        "solution-design",
+        "partnerships"
+      ],
+      "scopeBoundary": "Sanitised enterprise solution and experience blueprint using synthetic scenarios. Client identity, internal materials, and confidential implementation details are excluded. The case demonstrates Thomas's strategic framing, process architecture, operating-model design, technical blueprinting, and executive experience design.",
+      "limitations": [
+        "A blueprint, not a deployed system. Nothing on this page has run on an organisation's real data.",
+        "The interactive build and its brief are private. This page describes them; it does not publish them.",
+        "The value lenses carry no numbers until a baseline exists in a real context.",
+        "The operating model and plan are illustrative and would need validation with the organisation."
+      ],
+      "links": [],
+      "sourceRefs": [
+        {
+          "source": "private-work-fabric-brief",
+          "note": "Abstracted concepts only."
+        },
+        {
+          "source": "private-work-fabric-build",
+          "note": "Aggregate QA figures only."
+        },
+        {
+          "source": "dataset-nfr-processes"
+        }
+      ],
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "ai-economics",
+      "slug": "ai-economics",
+      "order": 2,
+      "title": "Enterprise AI Economics Simulator",
+      "shortTitle": "AI Economics",
+      "subtitle": "An executive decision tool that turns a shared AI platform into one all-in annual figure, and shows which choices actually move it.",
+      "evidenceType": "public-build",
+      "maturity": "functional-prototype",
+      "story": [
+        "Investment question",
+        "Usage and workload assumptions",
+        "Model routing",
+        "Hosting choice",
+        "Shared platform and governance cost",
+        "Value scenario",
+        "Decision"
+      ],
+      "problem": "A risk division weighing a shared AI platform needs one all-in figure, not a token price: build, integration, hosting, dashboards, governance staff, licences and usage, and how the costs split when other functions share the platform.",
+      "whyItMattered": "At the illustrative defaults, fixed platform and governance costs are about 96 percent of year-one cost and tokens well under 1 percent. A business case built on token prices answers the wrong question.",
+      "constraints": [
+        "No client data: illustrative list prices and placeholder benchmarks.",
+        "Runs as a static page in an executive conversation, with no account or data feed.",
+        "Every number has to be explainable and printable as a methodology."
+      ],
+      "role": "Product owner and model designer: problem framing, cost and benefit logic, scenario design and interface, with AI-assisted implementation that I reviewed and deployed.",
+      "contributions": [
+        {
+          "area": "Problem framing and scenario logic",
+          "depth": "built-verified",
+          "detail": "Which questions a division needs answered, for which use cases, and in which order."
+        },
+        {
+          "area": "Cost, sharing and benefit model",
+          "depth": "built-verified",
+          "detail": "Allocation across functions sharing the platform, a maturity ladder, hosting as a cost shape, governance staffing and a ten-year cash flow."
+        },
+        {
+          "area": "Interface and methodology export",
+          "depth": "built-verified",
+          "detail": "An interactive static tool with a printable calculation breakdown and its disclaimer."
+        }
+      ],
+      "decisions": [
+        {
+          "title": "Allocate the platform by the functions sharing it",
+          "rationale": "The division pays one over the number of functions sharing the platform, shown next to a standalone figure, so the economics of sharing are visible."
+        },
+        {
+          "title": "Couple maturity to both build cost and efficiency",
+          "rationale": "Higher maturity lowers the cost per request but raises build cost. The ladder makes that trade-off explicit instead of hiding it."
+        },
+        {
+          "title": "Select models by weighted criteria, not by vendor",
+          "rationale": "Each task tier is scored on reasoning, speed, cost, context and safety, with a sovereignty bonus and a pool limited by the hosting choice."
+        },
+        {
+          "title": "Treat hosting as a cost shape",
+          "rationale": "Cloud is priced per token, sovereign hosting adds a fixed commitment, and on-premise is a large fixed cost with a low marginal cost."
+        },
+        {
+          "title": "Make the methodology printable",
+          "rationale": "Every figure is reproduced in a printable breakdown, so the numbers can be challenged line by line."
+        }
+      ],
+      "architecture": [
+        {
+          "id": "inputs",
+          "label": "Context, scope and calibration",
+          "detail": "Sector, country, staff, use cases, hosting and platform maturity.",
+          "status": "implemented"
+        },
+        {
+          "id": "routing",
+          "label": "Model selection per task tier",
+          "detail": "Weighted scoring per complexity tier within the allowed model pool.",
+          "status": "implemented"
+        },
+        {
+          "id": "request",
+          "label": "Cost per request and annual usage",
+          "detail": "Tokens, caching, batching, retries and follow-ups.",
+          "status": "implemented"
+        },
+        {
+          "id": "fixed",
+          "label": "Fixed costs",
+          "detail": "Shared platform allocation, dashboards and governance staffing.",
+          "status": "implemented"
+        },
+        {
+          "id": "all-in",
+          "label": "All-in annual cost",
+          "detail": "Fixed costs plus licences plus usage, with the build amortised.",
+          "status": "implemented"
+        },
+        {
+          "id": "cash-flow",
+          "label": "Ten-year cash flow and ROI",
+          "detail": "Build spend, adoption ramp, growth and break-even.",
+          "status": "implemented"
+        }
+      ],
+      "valueModel": [
+        {
+          "lens": "All-in annual cost",
+          "question": "What does the division pay per year once platform, dashboards and governance are included?",
+          "signal": "Fixed costs are about 96 percent of year one at the illustrative defaults."
+        },
+        {
+          "lens": "Sharing",
+          "question": "How much does each extra function sharing the platform change the division's cost?",
+          "signal": "The division share falls as one over the number of functions."
+        },
+        {
+          "lens": "Break-even",
+          "question": "When does cumulative benefit overtake cumulative cost?",
+          "signal": "Year four at the illustrative defaults."
+        }
+      ],
+      "learned": [
+        "The most useful finding was counter-intuitive: tokens barely move the number, while sharing and governance do.",
+        "Executives trust a model more when every assumption is visible and printable."
+      ],
+      "evidence": [
+        "pb-ai-economics"
+      ],
+      "capabilities": [
+        "ai-economics",
+        "roi-tco-modelling",
+        "investment-cases",
+        "model-routing",
+        "commercial-model-design"
+      ],
+      "roleFit": [
+        "value-engineering",
+        "builder",
+        "deployment"
+      ],
+      "scopeBoundary": "Interactive prototype using illustrative planning assumptions and placeholder benchmarks. Not a client tool, a proposal or a production system.",
+      "limitations": [
+        "Calibrated for a banking risk division only.",
+        "Benefits do not change with maturity level or hosting choice.",
+        "Placeholder prices and benchmarks, and no automated tests.",
+        "Opens behind an access-code page."
+      ],
+      "links": [
+        {
+          "label": "AICostSimulator repository",
+          "href": "https://github.com/tzijlstra-acn/AICostSimulator",
+          "kind": "repo",
+          "repo": "aicostsimulator"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-ai-economics"
+        },
+        {
+          "source": "cv-content",
+          "locator": "/projects/1"
+        }
+      ],
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "dora-control-line",
+      "slug": "dora-control-line",
+      "order": 3,
+      "title": "DORA Article 12 AI Control Line",
+      "shortTitle": "DORA Control Line",
+      "subtitle": "A working prototype that takes one regulatory obligation through guideline, control, infrastructure, verification, documentation and evidence, with human approval gates.",
+      "evidenceType": "public-build",
+      "maturity": "functional-prototype",
+      "story": [
+        "Regulatory input",
+        "Impact analysis",
+        "Control and policy changes",
+        "Technical proposal",
+        "Verification",
+        "Human approval",
+        "Evidence package"
+      ],
+      "problem": "One obligation (DORA Article 12, geographically separate backups) has to become an updated guideline and control, an infrastructure change and its verification, a compliance-register update, documentation and an audit answer. Normally that is a manual hand-over chain across compliance, platform and product teams.",
+      "whyItMattered": "Every hand-over loses traceability. An auditor needs to see why a control changed, who approved it and which evidence supports it.",
+      "constraints": [
+        "Synthetic fixtures only, with no real cloud or compliance-register access.",
+        "Runs locally on SQLite with no infrastructure.",
+        "AI output must be reviewable before it changes any artefact, and must fail visibly rather than invent output."
+      ],
+      "role": "Workflow architect and product owner: regulatory framing, state-machine and approval design, model assignment, verification and evidence design, with AI-assisted implementation that I reviewed and tested.",
+      "contributions": [
+        {
+          "area": "Regulatory framing",
+          "depth": "built-verified",
+          "detail": "Turning one article into a chain of reviewable artefacts."
+        },
+        {
+          "area": "State machine and approval gates",
+          "depth": "built-verified",
+          "detail": "An explicit transition table with reject paths and three human gates."
+        },
+        {
+          "area": "Verification and evidence",
+          "depth": "built-verified",
+          "detail": "Deterministic policy checks and a content-hash provenance log linked to approvals."
+        }
+      ],
+      "decisions": [
+        {
+          "title": "An explicit transition table with reject paths",
+          "rationale": "Every state change, including a rejection back to the previous state, is declared in one table, so the workflow can be tested and audited."
+        },
+        {
+          "title": "Assign models by task",
+          "rationale": "Regulatory reasoning, infrastructure proposals and documentation have different cost and quality needs, so each task has its own model behind one provider interface."
+        },
+        {
+          "title": "No silent fallback",
+          "rationale": "Without a model key the workflow stops with an error rather than producing plausible placeholder output."
+        },
+        {
+          "title": "Deterministic verification, not model judgement",
+          "rationale": "Proposed infrastructure is checked by policy-as-code rules before a human reviews it."
+        },
+        {
+          "title": "Provenance on every file transformation",
+          "rationale": "Source and target hashes are linked to approval and correlation identifiers, and a compliant status requires evidence."
+        }
+      ],
+      "architecture": [
+        {
+          "id": "fixtures",
+          "label": "Source fixtures",
+          "detail": "Regulatory text, guideline, controls and infrastructure configuration, all synthetic.",
+          "status": "implemented"
+        },
+        {
+          "id": "proposals",
+          "label": "AI proposal layer",
+          "detail": "Guideline, control, infrastructure and documentation proposals.",
+          "status": "implemented"
+        },
+        {
+          "id": "state",
+          "label": "State machine with three human gates",
+          "detail": "Explicit transitions, reject paths and approval records.",
+          "status": "implemented"
+        },
+        {
+          "id": "verification",
+          "label": "Policy verification",
+          "detail": "Deterministic rule checks before review.",
+          "status": "implemented"
+        },
+        {
+          "id": "deployment",
+          "label": "Infrastructure write and deployment",
+          "detail": "Simulated, not connected to a cloud account.",
+          "status": "reference"
+        },
+        {
+          "id": "evidence",
+          "label": "Documentation and evidence manifest",
+          "detail": "Generated documents, provenance log and an audit response.",
+          "status": "implemented"
+        }
+      ],
+      "valueModel": [
+        {
+          "lens": "Cycle time",
+          "question": "How long does one obligation take from input to evidence?",
+          "signal": "Seeded workshop estimates of 74 hours manual against 17 assisted, labelled illustrative in the repository."
+        },
+        {
+          "lens": "Audit readiness",
+          "question": "Can each artefact be traced to its input and approval?",
+          "signal": "Hash-linked provenance for each file transformation."
+        }
+      ],
+      "learned": [
+        "Approval gates only help when the reviewer sees a verified proposal rather than a draft to proofread.",
+        "Failing loudly without a model key was worth more than a graceful fallback."
+      ],
+      "evidence": [
+        "pb-dora-control-line"
+      ],
+      "capabilities": [
+        "model-routing",
+        "human-approval",
+        "audit-traceability",
+        "regulatory-frameworks",
+        "evidence-lineage"
+      ],
+      "roleFit": [
+        "risk",
+        "solution-design",
+        "deployment"
+      ],
+      "scopeBoundary": "Working prototype on synthetic fixtures. Cloud, deployment and register integrations are simulated. Client context is excluded.",
+      "limitations": [
+        "Deployment, cloud and register integrations are simulated.",
+        "Approvals are not authenticated, and some routes bypass the gates.",
+        "Only one model provider is implemented behind the abstraction.",
+        "Unit tests only (112 cases), with no end-to-end tests or CI; the audit trail can be reset."
+      ],
+      "links": [
+        {
+          "label": "ProReinsuranceAIWorkflow repository",
+          "href": "https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow",
+          "kind": "repo",
+          "repo": "proreinsuranceaiworkflow"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-dora"
+        },
+        {
+          "source": "cv-content",
+          "locator": "/projects/2"
+        }
+      ],
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "nfr-agent-platform",
+      "slug": "nfr-agent-platform",
+      "order": 4,
+      "title": "Enterprise NFR Agent Platform",
+      "shortTitle": "NFR Agent Platform",
+      "subtitle": "Eighteen NFR domain agents on one orchestrator, sharing a run lifecycle, an approval step, a write-back path and an audit record.",
+      "evidenceType": "public-build",
+      "maturity": "functional-prototype",
+      "story": [
+        "Shared NFR data and knowledge",
+        "Domain workflows",
+        "Agent orchestration",
+        "Approval gates",
+        "Inference abstraction",
+        "Integrations",
+        "Observability"
+      ],
+      "problem": "NFR work spans service-management records, control and policy registers, regulatory publications and analyst judgement, and is usually handled one domain at a time.",
+      "whyItMattered": "When every domain builds its own agent, the control plumbing is rebuilt each time. A shared lifecycle turns each new domain into mostly prompts and data.",
+      "constraints": [
+        "Synthetic data only, with no client systems.",
+        "Consequential writes to a system of record wait for a named role.",
+        "Runs locally, with every model call observable."
+      ],
+      "role": "Platform architect: orchestration model, approval and write-back design, knowledge graph and observability, with AI-assisted implementation that I reviewed and deployed.",
+      "contributions": [
+        {
+          "area": "Orchestration model",
+          "depth": "built-verified",
+          "detail": "One orchestrator and step taxonomy for 18 domain agents, so interface, audit and scheduling are built once."
+        },
+        {
+          "area": "Approval and write-back",
+          "depth": "built-verified",
+          "detail": "Role-restricted approval with a fail-safe timeout, typed write-back to a ServiceNow developer instance and a follow-up outcome check."
+        },
+        {
+          "area": "Observability gateway",
+          "depth": "built-verified",
+          "detail": "An OpenAI-compatible gateway with retries, metrics and tracing, covered by 48 tests."
+        }
+      ],
+      "decisions": [
+        {
+          "title": "One orchestrator for every domain agent",
+          "rationale": "All agents share one step taxonomy and run lifecycle, so the interface, audit and scheduling are built once."
+        },
+        {
+          "title": "Approval as a blocking step with a fail-safe",
+          "rationale": "Decisions are restricted by role, and no decision or a timeout means no write-back."
+        },
+        {
+          "title": "Write-back as typed, re-checked actions",
+          "rationale": "Each write is recorded on its step and checked again later to confirm the outcome."
+        },
+        {
+          "title": "A shared graph, continuously enriched",
+          "rationale": "Service-management records and the record pipeline feed one entity graph that all domains can use."
+        },
+        {
+          "title": "One model client with ordered fallback",
+          "rationale": "Model access goes through a single client, with an optional gateway for metrics and tracing."
+        }
+      ],
+      "architecture": [
+        {
+          "id": "sources",
+          "label": "Sources",
+          "detail": "A ServiceNow developer instance, synthetic registers and public feeds.",
+          "status": "implemented"
+        },
+        {
+          "id": "graph",
+          "label": "Knowledge graph",
+          "detail": "An entity graph enriched from records and documents.",
+          "status": "implemented"
+        },
+        {
+          "id": "agents",
+          "label": "Agent layer",
+          "detail": "18 domain agents, run as direct chains or orchestrated runs.",
+          "status": "implemented"
+        },
+        {
+          "id": "approval",
+          "label": "Approval step",
+          "detail": "Role-gated decisions with a timeout and a notification.",
+          "status": "implemented"
+        },
+        {
+          "id": "write-back",
+          "label": "Write-back and outcome checks",
+          "detail": "Typed actions against the service-management API, re-checked later.",
+          "status": "implemented"
+        },
+        {
+          "id": "gateway",
+          "label": "Inference gateway",
+          "detail": "Metrics, tracing and retries for every model call.",
+          "status": "implemented"
+        }
+      ],
+      "valueModel": [
+        {
+          "lens": "Reuse",
+          "question": "What does the next NFR domain cost to add?",
+          "signal": "Mostly prompts and data: lifecycle, approval, write-back and audit are shared."
+        },
+        {
+          "lens": "Control",
+          "question": "Which writes wait for a human today?",
+          "signal": "Approval is active in 5 of 18 workflows; extending it is the next step."
+        }
+      ],
+      "learned": [
+        "The platform question is about a shared lifecycle and controls, not the number of agents.",
+        "A graph only pays off when the agents query it, and that wiring comes next."
+      ],
+      "evidence": [
+        "pb-nfr-agent-platform"
+      ],
+      "capabilities": [
+        "agentic-workflow-architecture",
+        "knowledge-graphs",
+        "human-approval",
+        "api-integration-design",
+        "observability-failure-handling"
+      ],
+      "roleFit": [
+        "solution-design",
+        "risk",
+        "deployment"
+      ],
+      "scopeBoundary": "Prototype on synthetic data and a ServiceNow developer instance. No client data or credentials. Not a production deployment.",
+      "limitations": [
+        "Approval is active in 5 of 18 workflows, and one self-resolve path writes without approval.",
+        "Approver identity and decisions are not yet stored durably.",
+        "The domain agents do not yet query the knowledge graph.",
+        "The backend has no tests and is not packaged for deployment."
+      ],
+      "links": [
+        {
+          "label": "RealAIInfrastructure repository",
+          "href": "https://github.com/tzijlstra-acn/RealAIInfrastructure",
+          "kind": "repo",
+          "repo": "realaiinfrastructure"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-nfr-agent-platform"
+        },
+        {
+          "source": "cv-content",
+          "locator": "/projects/3"
+        }
+      ],
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "airlock",
+      "slug": "airlock",
+      "order": 5,
+      "title": "AIRLOCK Regulated AI Workload Foundry",
+      "shortTitle": "AIRLOCK",
+      "subtitle": "A pattern for auditable, policy-gated AI workloads, runnable locally, with the AWS layer kept as unapplied reference architecture.",
+      "evidenceType": "public-build",
+      "maturity": "functional-prototype",
+      "story": [
+        "Regulated workload",
+        "Evaluation suite",
+        "Release gate",
+        "Human authority",
+        "Local implementation",
+        "Cloud reference architecture",
+        "Production gaps"
+      ],
+      "problem": "Regulated firms need AI-assisted recommendations where every figure can be traced, tools are restricted by policy and a named person approves before anything is released. Rebuilding those controls for every pilot is slow.",
+      "whyItMattered": "A proof of concept rarely says how it would be evaluated, approved and released. Making those steps reusable is what turns a demonstration into a platform.",
+      "constraints": [
+        "Synthetic data only, with no cloud credentials or spend.",
+        "No claim of regulatory compliance.",
+        "The model must never produce financial figures.",
+        "EU data residency by default."
+      ],
+      "role": "Pattern designer: workflow, policy and approval design, the finance-engine boundary and the reference architecture, with AI-assisted implementation that I reviewed.",
+      "contributions": [
+        {
+          "area": "Workflow and policy pattern",
+          "depth": "built-verified",
+          "detail": "A 12-stage workflow with policy-gated tools and approval records, runnable locally."
+        },
+        {
+          "area": "Deterministic finance boundary",
+          "depth": "built-verified",
+          "detail": "Figures come from a decimal engine and are hashed; the model only narrates."
+        },
+        {
+          "area": "Cloud reference architecture",
+          "depth": "designed-specified",
+          "detail": "Ten Terraform modules for a controlled AWS deployment, never planned or applied."
+        }
+      ],
+      "decisions": [
+        {
+          "title": "A deterministic engine; the model only narrates",
+          "rationale": "Financial figures come from a decimal calculation engine and each result is hashed, so no figure depends on model output."
+        },
+        {
+          "title": "A local mode behind one switch",
+          "rationale": "A scripted adapter runs the whole pattern offline at no cost, with a switch to a cloud model adapter."
+        },
+        {
+          "title": "Policy-gated tools",
+          "rationale": "A hard deny on external sends, per-stage tool permissions, and export only after approval."
+        },
+        {
+          "title": "A modular monolith with workload-agnostic packages",
+          "rationale": "Policy, evidence, finance, adapter and evaluation packages can serve the next workload."
+        },
+        {
+          "title": "Write down what is built and what is reference",
+          "rationale": "A claims ledger and an implementation-status matrix separate the runnable part from the reference architecture."
+        }
+      ],
+      "architecture": [
+        {
+          "id": "ui",
+          "label": "Interface and API",
+          "detail": "A React interface over API routes with background runs.",
+          "status": "implemented"
+        },
+        {
+          "id": "workflow",
+          "label": "12-stage workflow",
+          "detail": "Staged state machine with an approval pause.",
+          "status": "implemented"
+        },
+        {
+          "id": "packages",
+          "label": "Shared packages",
+          "detail": "Policy, evidence, finance, adapter and evaluations.",
+          "status": "implemented"
+        },
+        {
+          "id": "records",
+          "label": "Run and approval records",
+          "detail": "Persisted locally on SQLite.",
+          "status": "implemented"
+        },
+        {
+          "id": "adapter",
+          "label": "Model adapter",
+          "detail": "Scripted locally; the cloud adapter is a stub.",
+          "status": "reference"
+        },
+        {
+          "id": "cloud",
+          "label": "AWS reference layer",
+          "detail": "Ten Terraform modules, never planned or applied.",
+          "status": "reference"
+        }
+      ],
+      "valueModel": [
+        {
+          "lens": "Time to a controlled release",
+          "question": "How quickly can the next workload reach an evaluated, approved release?",
+          "signal": "Reuse of the policy, evidence, approval and evaluation packages."
+        },
+        {
+          "lens": "Audit completeness",
+          "question": "Can every figure and every action be traced?",
+          "signal": "Hashed finance results and evidence-grounded outputs."
+        }
+      ],
+      "learned": [
+        "Writing down what is reference architecture made the implemented part more credible, not less.",
+        "Keeping the model away from the numbers removed a whole class of review risk."
+      ],
+      "evidence": [
+        "pb-airlock-local",
+        "pb-airlock-reference"
+      ],
+      "capabilities": [
+        "human-approval",
+        "evaluation-release-gates",
+        "audit-traceability",
+        "rollout-planning",
+        "model-routing"
+      ],
+      "roleFit": [
+        "solution-design",
+        "risk"
+      ],
+      "scopeBoundary": "Local prototype on synthetic data with a scripted model. The AWS and Terraform layer is reference architecture that has never been applied. No compliance claim.",
+      "limitations": [
+        "Scripted model only; the cloud model adapter is a stub.",
+        "A single approval step without authentication, mutable approval records and a release gate that does not yet block.",
+        "One workload; the second is a placeholder.",
+        "The Terraform has never been planned or applied, and CI currently fails."
+      ],
+      "links": [
+        {
+          "label": "AIRLOCK repository",
+          "href": "https://github.com/tzijlstra-acn/AIRLOCK",
+          "kind": "repo",
+          "repo": "airlock"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "source": "repo-airlock"
+        },
+        {
+          "source": "cv-content",
+          "locator": "/projects/4"
+        }
+      ],
+      "status": "needs-confirmation"
+    },
+    {
+      "id": "data-reporting-transformation",
+      "slug": "data-reporting-transformation",
+      "order": 6,
+      "title": "Regulatory reporting and data transformation",
+      "shortTitle": "Reporting transformation",
+      "subtitle": "Anonymised professional delivery: a FINMA reporting and data-adequacy programme on a Databricks data platform.",
+      "evidenceType": "professional-delivery",
+      "maturity": "delivered",
+      "story": [
+        "Business and regulatory context",
+        "Origination and solution shaping",
+        "Data and reporting transformation",
+        "Stakeholder model",
+        "Adoption and operating use",
+        "Value signals",
+        "Scope boundary"
+      ],
+      "problem": "A Swiss insurer needed regulatory reporting and data adequacy that would meet FINMA expectations, which depends on data that is complete, traceable and produced the same way every cycle.",
+      "whyItMattered": "Regulatory reporting recurs and is examined. A governed data platform makes each cycle repeatable and easier to evidence than manual assembly.",
+      "constraints": [
+        "Regulatory expectations set the scope and the timeline.",
+        "Risk, data and technology workstreams had to move together.",
+        "Client identity, data and reporting content stay confidential."
+      ],
+      "role": "Originated the programme and held end-to-end delivery responsibility: execution, regulatory compliance, and coordination across risk, data and technology workstreams.",
+      "contributions": [
+        {
+          "area": "Origination and solution shaping",
+          "depth": "professional-delivery",
+          "detail": "Originated the programme."
+        },
+        {
+          "area": "Programme delivery",
+          "depth": "professional-delivery",
+          "detail": "End-to-end delivery responsibility across workstreams."
+        },
+        {
+          "area": "Databricks data platform",
+          "depth": "collaborated-applied",
+          "detail": "Platform implementation delivered within the programme."
+        }
+      ],
+      "decisions": [
+        {
+          "title": "Treat reporting and data adequacy as one programme",
+          "rationale": "Reporting quality depends on data adequacy, so both were delivered in one framework."
+        },
+        {
+          "title": "Deliver on a shared data platform",
+          "rationale": "A platform implementation, rather than report-by-report fixes, supports every future reporting cycle."
+        }
+      ],
+      "architecture": [
+        {
+          "id": "sources",
+          "label": "Source data",
+          "detail": "Insurer data feeding the reporting process.",
+          "status": "professional"
+        },
+        {
+          "id": "platform",
+          "label": "Databricks data platform",
+          "detail": "Implemented within the programme.",
+          "status": "professional"
+        },
+        {
+          "id": "adequacy",
+          "label": "Data adequacy",
+          "detail": "Completeness and quality against the reporting framework.",
+          "status": "professional"
+        },
+        {
+          "id": "reporting",
+          "label": "FINMA reporting",
+          "detail": "Regulatory reporting outputs.",
+          "status": "professional"
+        }
+      ],
+      "valueModel": [
+        {
+          "lens": "Repeatability",
+          "question": "Can each reporting cycle run the same way and be evidenced?",
+          "signal": "Detail available in conversation."
+        },
+        {
+          "lens": "Regulatory confidence",
+          "question": "Does the data meet the adequacy expectations?",
+          "signal": "Detail available in conversation."
+        }
+      ],
+      "learned": [
+        "Data adequacy is an operating discipline, not a one-off clean-up."
+      ],
+      "evidence": [
+        "acn-finma-reporting"
+      ],
+      "capabilities": [
+        "databricks-transformation",
+        "regulatory-reporting-data",
+        "workstream-leadership",
+        "opportunity-qualification",
+        "data-quality-reporting"
+      ],
+      "roleFit": [
+        "consulting",
+        "risk",
+        "deployment"
+      ],
+      "scopeBoundary": "Anonymised professional delivery. No client name, data, reporting content or results are published. Further detail is available in conversation.",
+      "limitations": [
+        "Anonymised: the client and its results cannot be shown.",
+        "Adoption and value detail is shared in conversation, not on this site."
+      ],
+      "links": [],
+      "sourceRefs": [
+        {
+          "source": "cv-content",
+          "locator": "/experience/0/items/3"
+        },
+        {
+          "source": "cv-content",
+          "locator": "/delivery/items/2"
+        }
+      ],
+      "status": "needs-confirmation"
+    }
+  ]
+}

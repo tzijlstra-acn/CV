@@ -1,0 +1,125 @@
+.cai {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 32px;
+  align-items: start;
+}
+.cai__stack {
+  display: grid;
+  gap: 6px;
+}
+.cai__layer {
+  display: grid;
+  grid-template-columns: 34px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid var(--tech-line);
+  border-radius: var(--radius);
+  background: var(--tech-2);
+  color: var(--tech-ink);
+  text-align: left;
+  font-size: 15.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--dur-fast), border-color var(--dur-fast), transform var(--dur-fast);
+}
+.cai__layer:hover {
+  border-color: var(--tech-muted);
+}
+.cai__layer[data-state='active'] {
+  background: var(--tech-3);
+  border-color: var(--tech-violet);
+  box-shadow: inset 3px 0 0 var(--tech-violet);
+  transform: translateX(6px);
+}
+.cai__no {
+  font-size: 12px;
+  color: var(--tech-muted);
+}
+.cai__marks {
+  display: inline-flex;
+  gap: 6px;
+}
+.cai__panel {
+  padding: 22px 24px;
+  border: 1px solid var(--tech-line);
+  border-radius: var(--radius-lg);
+  background: var(--tech-2);
+  min-height: 460px;
+}
+.cai__k {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--tech-muted);
+  margin-top: 16px;
+}
+.cai__k:first-child {
+  margin-top: 0;
+}
+.cai__title {
+  font-size: clamp(24px, 2vw, 30px);
+  margin-top: 6px;
+  color: var(--surface);
+}
+.cai__detail {
+  margin-top: 8px;
+  font-size: 18px;
+  color: var(--tech-ink);
+  max-width: 56ch;
+}
+.cai__evidence {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+.cai__evidence li {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+.cai__link {
+  color: var(--surface);
+  text-decoration: underline;
+  text-decoration-color: var(--tech-muted);
+  text-underline-offset: 3px;
+}
+.cai__patterns {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  font-size: 15px;
+  color: var(--tech-ink);
+}
+.cai__patterns b {
+  color: var(--surface);
+}
+.cai__tools {
+  color: var(--tech-cyan);
+  font-size: 12.5px;
+}
+.cai__foot {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--tech-line);
+}
+@media (max-width: 1000px) {
+  .cai {
+    grid-template-columns: 1fr;
+  }
+  .cai__layer {
+    margin-left: 0 !important;
+  }
+  .cai__evidence li {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}

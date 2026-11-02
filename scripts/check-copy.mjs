@@ -21,8 +21,8 @@ const SOURCE_FILES = [
 ];
 
 const GENERATED_FILES = [
-  'index.html',
   'cv.html',
+  'dist/index.html',
 ];
 
 const EM_DASH = '—';

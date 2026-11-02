@@ -2,46 +2,61 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, portfolio-rebuild]
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
-  build:
+  verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Install Playwright Chromium
         run: npx playwright install chromium --with-deps
 
-      - name: Build HTML
-        run: npm run build:html
+      - name: Lint and typecheck
+        run: npm run lint && npm run typecheck
 
-      - name: Check copy (no em dashes)
-        run: npm run check:copy
+      - name: Data, claims and unit tests
+        run: npm run qa:data && npm run qa:claims && npm test
 
-      - name: Generate PDF
-        run: npm run build:pdf
+      - name: Build the CV and the portfolio (bundle budget and dist checks included)
+        run: npm run build
 
-      - name: Verify outputs
-        run: npm run verify
+      - name: Copy, content, confidentiality and links
+        run: npm run check:copy && npm run qa:content && npm run qa:confidential && npm run qa:links && npm run verify
 
-      - name: Upload build artifacts
+      - name: End-to-end and accessibility tests
+        run: npm run test:e2e
+
+      - name: Visual QA
+        run: npm run qa:visual
+
+      - name: Lighthouse
+        run: npm run qa:lighthouse
+
+      - name: Upload QA artefacts
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: build-outputs-${{ github.sha }}
+          name: qa-${{ github.sha }}
           path: |
-            index.html
-            cv.html
-            assets/Thomas_Zijlstra_CV.pdf
+            qa/visual-report.md
+            qa/screenshots/
+            qa/lighthouse/
+            qa/bundle/bundle-report.md
+            qa/playwright-report/
           retention-days: 14

@@ -1,0 +1,228 @@
+.cascade {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.cascade__list {
+  display: grid;
+  gap: 0;
+  position: relative;
+}
+.cascade__list::before {
+  content: '';
+  position: absolute;
+  left: 21px;
+  top: 18px;
+  bottom: 18px;
+  width: 2px;
+  background: var(--line);
+}
+.cascade__step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 10px 0 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 500;
+}
+.cascade__no {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 7px;
+  border-radius: 50%;
+  border: 2px solid var(--line-strong);
+  background: var(--canvas);
+  font-size: 11.5px;
+  color: var(--muted);
+  z-index: 1;
+}
+.cascade__step.is-done .cascade__no {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.cascade__step[data-state='active'] {
+  color: var(--ink);
+  font-weight: 600;
+}
+.cascade__step[data-state='active'] .cascade__no {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--surface);
+}
+.cascade__panel {
+  padding: 22px 26px 26px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  min-height: 420px;
+}
+.cascade__panel:focus-visible {
+  box-shadow: var(--focus);
+}
+.cascade__panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.cascade__title {
+  margin-top: 10px;
+  font-size: clamp(24px, 2vw, 32px);
+}
+.cascade__detail {
+  margin-top: 8px;
+  font-size: 18px;
+  max-width: 62ch;
+  color: var(--ink-2);
+}
+.cascade__progress {
+  margin-top: 16px;
+  height: 3px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.cascade__progress span {
+  display: block;
+  height: 100%;
+  background: var(--violet);
+  transition: width var(--dur);
+}
+
+/* Artefact previews */
+.art {
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.art--chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.art__chip {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font-size: 14.5px;
+  font-weight: 500;
+}
+.art__chip--channel {
+  border-style: dashed;
+}
+.art__chip--person {
+  background: var(--amber-soft);
+  border-color: var(--amber);
+}
+.art__chip--hub {
+  border-width: 2px;
+  border-color: var(--ink);
+  font-weight: 700;
+}
+.art__chip--service {
+  background: var(--violet-soft);
+  border-color: #cfc9f7;
+}
+.art__note {
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.art--grid3,
+.art--grid2,
+.art--cols {
+  display: grid;
+  gap: 10px;
+}
+.art--grid3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.art--grid2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.art--cols {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.art--grid3 li,
+.art--grid2 li,
+.art--cols li,
+.art--stages li {
+  display: grid;
+  gap: 4px;
+  align-content: start;
+  padding: 12px;
+  border-top: 2px solid var(--ink);
+  background: var(--canvas);
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.art b {
+  font-size: 15px;
+  color: var(--ink);
+}
+.art--chain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  counter-reset: c;
+}
+.art--chain li {
+  counter-increment: c;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--tech);
+  color: var(--tech-ink);
+  font-size: 14px;
+}
+.art--chain li::before {
+  content: counter(c);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--tech-violet);
+}
+.art--stages {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+@media (max-width: 1000px) {
+  .cascade {
+    grid-template-columns: 1fr;
+  }
+  .cascade__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .cascade__list::before {
+    display: none;
+  }
+  .art--grid3,
+  .art--stages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .cascade__list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .art--grid3,
+  .art--grid2,
+  .art--stages {
+    grid-template-columns: 1fr;
+  }
+}

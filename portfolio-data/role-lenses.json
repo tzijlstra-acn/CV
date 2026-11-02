@@ -1,0 +1,92 @@
+{
+  "lenses": [
+    {
+      "id": "consulting",
+      "param": "consulting",
+      "label": "Consulting and Transformation",
+      "short": "Consulting",
+      "opening": "Regulated transformation delivery in European financial services, from regulatory reporting and central-bank audit to enterprise AI workflows, with the strategy carried through to an operating model.",
+      "capabilityGroups": ["strategy-value", "transformation-programme", "risk-control"],
+      "evidenceFirst": ["acn-finma-reporting", "wf-blueprint", "acn-reg-change-ai", "acn-oenb-audit"],
+      "startCase": "nfr-work-fabric",
+      "careerFocus": ["regulated-transformation", "enterprise-ai"],
+      "conclusion": "Most useful on transformation work where the strategy has to hold up in front of regulators, data owners and delivery teams."
+    },
+    {
+      "id": "deployment",
+      "param": "deployment",
+      "label": "AI Deployment and Adoption",
+      "short": "Deployment",
+      "opening": "I take AI from a qualified use case to a controlled workflow, and define the baseline and measures that show whether it worked.",
+      "capabilityGroups": ["ai-solution-design", "transformation-programme", "customer-market"],
+      "evidenceFirst": ["acn-reg-change-ai", "pb-dora-control-line", "wf-blueprint", "acn-nfr-workflows"],
+      "startCase": "dora-control-line",
+      "careerFocus": ["enterprise-ai", "commercialisation"],
+      "conclusion": "Most useful where an AI capability has to become a workflow people adopt, with controls the risk function accepts and measures leaders trust.",
+      "honestGap": "Adoption evidence is from programme delivery and designed operating models. I have not held a customer-success role with renewal or consumption targets."
+    },
+    {
+      "id": "value-engineering",
+      "param": "value-engineering",
+      "label": "Value Engineering and Presales",
+      "short": "Value engineering",
+      "opening": "Investment-grade financial judgement applied to AI decisions: cost of inaction, all-in platform economics, routing and rollout logic.",
+      "capabilityGroups": ["strategy-value", "customer-market", "ai-solution-design"],
+      "evidenceFirst": ["pb-ai-economics", "acn-reg-change-ai", "sg-dcm-fig", "sfo-investment"],
+      "startCase": "ai-economics",
+      "careerFocus": ["capital-markets", "investment", "commercialisation"],
+      "conclusion": "Most useful in front of a CFO and CIO at the same table, where the value case and the architecture have to agree."
+    },
+    {
+      "id": "partnerships",
+      "param": "partnerships",
+      "label": "Partnerships and Ecosystem",
+      "short": "Partnerships",
+      "opening": "Proposition and go-to-market building inside a global firm, with capital-markets coordination across banking, legal and syndication teams behind it.",
+      "capabilityGroups": ["customer-market", "strategy-value", "transformation-programme"],
+      "evidenceFirst": ["acn-nfr-practice", "sg-dcm-fig", "acn-ai-maturity", "wf-delivery-plan"],
+      "startCase": "nfr-work-fabric",
+      "careerFocus": ["capital-markets", "commercialisation"],
+      "conclusion": "Most useful where a partnership needs a credible joint proposition, delivery readiness on both sides, and commercial accountability.",
+      "honestGap": "I have not held a formal partner or alliance management role. The closest evidence is internal go-to-market building and multi-party capital-markets execution."
+    },
+    {
+      "id": "builder",
+      "param": "builder",
+      "label": "Business Building and GTM",
+      "short": "Business building",
+      "opening": "I have built a local team and its regional go-to-market, and I build working prototypes to test a market hypothesis before asking anyone to scale it.",
+      "capabilityGroups": ["customer-market", "strategy-value", "product-experience"],
+      "evidenceFirst": ["acn-nfr-practice", "pb-ai-economics", "sfo-investment", "acn-ai-maturity"],
+      "startCase": "ai-economics",
+      "careerFocus": ["investment", "commercialisation"],
+      "conclusion": "Most useful in an early market where the hypothesis, the first customers and the operating model all have to be built at once.",
+      "honestGap": "Market-building evidence is within a global firm and in independent prototypes. I have not owned a regional P&L or a revenue quota."
+    },
+    {
+      "id": "risk",
+      "param": "risk",
+      "label": "Risk and Resilience",
+      "short": "Risk",
+      "opening": "Non-financial risk, regulatory change and AI governance: RCSA, TPRM, DORA and model risk, with human authority designed in from the start.",
+      "capabilityGroups": ["risk-control", "data-platform", "ai-solution-design"],
+      "evidenceFirst": ["pb-dora-control-line", "acn-reg-change-ai", "wf-blueprint", "acn-oenb-audit"],
+      "startCase": "dora-control-line",
+      "careerFocus": ["regulated-transformation", "enterprise-ai"],
+      "conclusion": "Most useful where risk, resilience and AI meet: digitising control work without weakening accountability."
+    },
+    {
+      "id": "solution-design",
+      "param": "solution-design",
+      "label": "Applied AI Solution Design",
+      "short": "Solution design",
+      "opening": "Agentic workflows, model routing, evidence lineage and approval gates, designed and built as inspectable prototypes on synthetic data.",
+      "capabilityGroups": ["ai-solution-design", "data-platform", "engineering-quality"],
+      "evidenceFirst": ["pb-nfr-agent-platform", "pb-dora-control-line", "pb-airlock-local", "wf-experience"],
+      "startCase": "nfr-agent-platform",
+      "careerFocus": ["enterprise-ai", "commercialisation"],
+      "conclusion": "Most useful as the person who turns an enterprise requirement into an architecture engineers can build and risk teams can approve.",
+      "honestGap": "My builds are AI-assisted prototypes. I set the architecture, requirements, tests and review; I do not present myself as a production software engineer."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "$comment": "Hashes of the CV pipeline outputs after the portfolio rebuild. cv.html and the PDF are byte-identical to the pre-rebuild baseline (legacy-hashes.txt). styles.css and script.js lost only the dead target-mode rules and code; cv.html was verified pixel-identical in screen and print media at 1280 px before and after (DECISIONS.md D-012).",
+  "cv.html": "52af69b4e9b94d566532be3cb7b7caad2123a5e70f3720a735b884942382810e",
+  "assets/Thomas_Zijlstra_CV.pdf": "1fcf2f2fd2c90e9e261ddb66201f7bcea4eca3120b3bcab2561f54c9661d73b8",
+  "styles.css": "c80cdb05c15b6873b1b3c2c4dc7a8bf12d036d5a36db8b2fa6ed54e15fb231be",
+  "script.js": "e1f45a79c994d9c7111c1206ff0418bacd9531a950fe2c063f18b36c2fe842e1",
+  "updatedAt": "2026-11-02"
+}

@@ -31,36 +31,6 @@
     applyTheme(next);
   }
 
-  // --- Moonshot Mode ----------------------------------------
-  function initMoonshot() {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get('target') === 'moonshot') {
-      const banner = document.getElementById('moonshot-banner');
-      if (banner) { banner.hidden = false; }
-      // Override hero content
-      const headline = document.getElementById('hero-heading');
-      const sub = document.getElementById('hero-sub');
-      const moonshotHL = document.getElementById('moonshot-headline');
-      const moonshotSub = document.getElementById('moonshot-sub');
-      if (headline && moonshotHL) headline.textContent = moonshotHL.textContent;
-      if (sub && moonshotSub) sub.textContent = moonshotSub.textContent;
-      // Show moonshot statement
-      const stmt = document.getElementById('moonshot-statement');
-      if (stmt) { stmt.hidden = false; }
-      // Show target-specific sections (Delivery, Commercialisation, 90 Days, Role Fit)
-      const targetSections = document.getElementById('target-sections');
-      if (targetSections) {
-        targetSections.hidden = false;
-        targetSections.removeAttribute('aria-hidden');
-        // Move target sections before the footer so they appear after main content
-        const footer = document.querySelector('footer');
-        if (footer) footer.parentNode.insertBefore(targetSections, footer);
-      }
-      // Update page title
-      document.title = 'Thomas Zijlstra, CFA | Business Builder & Ecosystem';
-    }
-  }
-
   // --- Mobile Navigation -----------------------------------
   function initMobileNav() {
     const hamburger = document.getElementById('hamburger');
@@ -347,7 +317,6 @@
   // --- Init ------------------------------------------------
   function init() {
     initTheme();
-    initMoonshot();
     initMobileNav();
     initThesisAccordion();
     initFilterTabs();

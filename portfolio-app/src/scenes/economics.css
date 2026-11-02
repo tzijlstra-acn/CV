@@ -1,0 +1,158 @@
+.econ {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.4fr);
+  gap: 32px;
+  align-items: start;
+}
+.econ__controls {
+  display: grid;
+  gap: 18px;
+}
+.econ__control {
+  display: grid;
+  gap: 6px;
+}
+.econ__levers {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.econ__levers ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  font-size: 14.5px;
+}
+.econ__levers li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.econ__levers b {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  white-space: nowrap;
+}
+.econ__levers b.is-down {
+  color: var(--green-text);
+}
+.econ__levers b.is-up {
+  color: var(--red-text);
+}
+.econ__out {
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.econ__kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 0 18px;
+}
+.econ__kpis div {
+  display: grid;
+}
+.econ__kpis dt {
+  order: 2;
+  font-size: 13px;
+  color: var(--muted);
+}
+.econ__kpis dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(19px, 1.6vw, 26px);
+  font-weight: 600;
+  line-height: 1.15;
+}
+.econ__bar-k {
+  margin: 12px 0 6px;
+}
+.econ__bar {
+  display: flex;
+  height: 26px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--canvas-2);
+}
+.econ__seg-fill {
+  display: block;
+  height: 100%;
+  border-right: 2px solid var(--surface);
+}
+.econ__legend {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+}
+.econ__legend li {
+  display: grid;
+  grid-template-columns: 14px 1fr auto 52px;
+  gap: 10px;
+  align-items: center;
+}
+.econ__legend .t-mono {
+  font-size: 12.5px;
+  text-align: right;
+  color: var(--muted);
+}
+.econ__sw {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+.econ__note {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.econ__chart {
+  width: 100%;
+  height: auto;
+}
+.econ__grid {
+  stroke: var(--line);
+}
+.econ__zero {
+  stroke: var(--ink);
+  stroke-width: 1.2;
+}
+.econ__tick {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  fill: var(--muted);
+}
+.econ__line {
+  fill: none;
+  stroke: var(--violet);
+  stroke-width: 2.5;
+}
+.econ__dot {
+  fill: var(--violet);
+}
+.econ__be {
+  fill: var(--green);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+.econ__context {
+  font-size: 14px;
+  max-width: 90ch;
+}
+@media (max-width: 1100px) {
+  .econ {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .econ__kpis {
+    grid-template-columns: 1fr 1fr;
+  }
+}

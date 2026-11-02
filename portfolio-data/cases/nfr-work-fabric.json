@@ -1,0 +1,732 @@
+{
+  "northStar": "One work object. Many role views. One governed flow.",
+  "workline": [
+    {
+      "id": "signal",
+      "label": "Signal"
+    },
+    {
+      "id": "intake",
+      "label": "Intake"
+    },
+    {
+      "id": "prioritise",
+      "label": "Prioritise"
+    },
+    {
+      "id": "gather",
+      "label": "Gather"
+    },
+    {
+      "id": "analyse",
+      "label": "Analyse"
+    },
+    {
+      "id": "review",
+      "label": "Review"
+    },
+    {
+      "id": "decide",
+      "label": "Decide"
+    },
+    {
+      "id": "act",
+      "label": "Act"
+    },
+    {
+      "id": "acknowledge",
+      "label": "Acknowledge"
+    },
+    {
+      "id": "monitor",
+      "label": "Monitor"
+    }
+  ],
+  "fragments": [
+    {
+      "id": "grc",
+      "label": "GRC tool",
+      "kind": "system"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "kind": "channel"
+    },
+    {
+      "id": "sheets",
+      "label": "Spreadsheets",
+      "kind": "system"
+    },
+    {
+      "id": "meetings",
+      "label": "Meetings",
+      "kind": "channel"
+    },
+    {
+      "id": "documents",
+      "label": "Document store",
+      "kind": "system"
+    },
+    {
+      "id": "tickets",
+      "label": "Service tickets",
+      "kind": "system"
+    },
+    {
+      "id": "chat",
+      "label": "Chat",
+      "kind": "channel"
+    },
+    {
+      "id": "policies",
+      "label": "Policy portal",
+      "kind": "system"
+    },
+    {
+      "id": "analyst",
+      "label": "The analyst connects it all",
+      "kind": "person"
+    }
+  ],
+  "planes": [
+    {
+      "id": "work",
+      "label": "Work plane",
+      "axis": "horizontal",
+      "items": [
+        "Work objects",
+        "Process modules",
+        "Roles and decisions",
+        "Evidence",
+        "Actions and monitoring"
+      ]
+    },
+    {
+      "id": "services",
+      "label": "Shared service plane",
+      "axis": "vertical",
+      "items": [
+        "Flow Engine",
+        "Queues and routing",
+        "Intelligence services",
+        "Evidence and semantics",
+        "Integration",
+        "Observability"
+      ]
+    },
+    {
+      "id": "control",
+      "label": "Control and management plane",
+      "axis": "vertical",
+      "items": [
+        "Contextual identity",
+        "Authority and segregation",
+        "Evaluation",
+        "Governance lifecycle",
+        "Release management",
+        "Control Tower"
+      ]
+    }
+  ],
+  "workObject": {
+    "title": "Vendor cyber incident",
+    "type": "Synthetic third-party case",
+    "fields": [
+      {
+        "id": "state",
+        "label": "State",
+        "value": "Review"
+      },
+      {
+        "id": "owner",
+        "label": "Owner",
+        "value": "TPRM case owner"
+      },
+      {
+        "id": "evidence",
+        "label": "Evidence",
+        "value": "4 attached, 1 requested"
+      },
+      {
+        "id": "decision",
+        "label": "Decision",
+        "value": "Continue, remediate or exit"
+      },
+      {
+        "id": "actions",
+        "label": "Actions",
+        "value": "2 open"
+      },
+      {
+        "id": "controls",
+        "label": "Controls",
+        "value": "Segregated approval required"
+      },
+      {
+        "id": "history",
+        "label": "History",
+        "value": "11 recorded events"
+      }
+    ]
+  },
+  "roles": [
+    {
+      "id": "case-owner",
+      "label": "TPRM case owner",
+      "sees": [
+        "Vendor profile and service tier",
+        "Incident timeline",
+        "Open actions and due dates"
+      ],
+      "hidden": [
+        "Forensic indicators in full"
+      ],
+      "can": [
+        "Request evidence",
+        "Propose a decision"
+      ],
+      "cannot": [
+        "Approve their own proposal"
+      ]
+    },
+    {
+      "id": "security-analyst",
+      "label": "Information security analyst",
+      "sees": [
+        "Technical indicators",
+        "Affected services and data"
+      ],
+      "hidden": [
+        "Commercial contract terms"
+      ],
+      "can": [
+        "Attach a security assessment"
+      ],
+      "cannot": [
+        "Change the vendor risk rating"
+      ]
+    },
+    {
+      "id": "continuity-lead",
+      "label": "Business continuity lead",
+      "sees": [
+        "Critical services affected",
+        "Recovery objectives"
+      ],
+      "hidden": [
+        "Forensic detail"
+      ],
+      "can": [
+        "Trigger a continuity plan review"
+      ],
+      "cannot": [
+        "Close the incident"
+      ]
+    },
+    {
+      "id": "op-risk-analyst",
+      "label": "Operational risk analyst",
+      "sees": [
+        "Loss-event fields",
+        "Linked risks and controls"
+      ],
+      "hidden": [
+        "Personal data inside evidence"
+      ],
+      "can": [
+        "Record an operational-risk event"
+      ],
+      "cannot": [
+        "Edit source evidence"
+      ]
+    },
+    {
+      "id": "approver",
+      "label": "Decision approver",
+      "sees": [
+        "Recommendation and rationale",
+        "Evidence summary and gaps"
+      ],
+      "hidden": [
+        "Draft working notes"
+      ],
+      "can": [
+        "Approve or reject with a reason"
+      ],
+      "cannot": [
+        "Execute the approved action"
+      ]
+    },
+    {
+      "id": "auditor",
+      "label": "Internal audit",
+      "sees": [
+        "Full history",
+        "Approvals and audit receipts"
+      ],
+      "hidden": [],
+      "can": [
+        "Inspect and challenge"
+      ],
+      "cannot": [
+        "Take part in the decision"
+      ]
+    }
+  ],
+  "event": {
+    "title": "Synthetic third-party cyber incident",
+    "summary": "A payment-services vendor reports a cyber incident. One work object carries the case across process boundaries, along links that exist in the source dataset.",
+    "steps": [
+      {
+        "process": "tprm",
+        "action": "The vendor notification opens a third-party case."
+      },
+      {
+        "process": "isrisk",
+        "link": "isrisk-to-tprm",
+        "action": "The security assessment attaches to the same case."
+      },
+      {
+        "process": "bcm",
+        "link": "tprm-to-bcm",
+        "action": "Continuity plans for the affected services are reviewed."
+      },
+      {
+        "process": "orm",
+        "link": "tprm-to-orm",
+        "action": "An operational-risk event is recorded with its evidence."
+      },
+      {
+        "process": "rcsa",
+        "link": "orm-to-rcsa",
+        "action": "A control re-assessment is queued for the next cycle."
+      }
+    ]
+  },
+  "cascade": [
+    {
+      "id": "problem",
+      "label": "Business problem",
+      "detail": "Capable systems, fragmented work: context, evidence and ownership break at every handover."
+    },
+    {
+      "id": "value-thesis",
+      "label": "Value thesis",
+      "detail": "Six value lenses, from professional capacity to management transparency. No numbers before a baseline."
+    },
+    {
+      "id": "process-model",
+      "label": "Process model",
+      "detail": "Eight process families treated as one network, imported from a reference dataset at a pinned commit."
+    },
+    {
+      "id": "contract",
+      "label": "Work-object contract",
+      "detail": "Every process module declares trigger, stages, roles, evidence, tasks, controls, measures and version."
+    },
+    {
+      "id": "role-views",
+      "label": "Role views",
+      "detail": "One work object, with a permissioned view and action set for each role."
+    },
+    {
+      "id": "shared-services",
+      "label": "Shared services",
+      "detail": "Flow Engine, routing, evidence and semantics, integration and observability, built once and reused."
+    },
+    {
+      "id": "controls",
+      "label": "Controls",
+      "detail": "Contextual identity, bound approval, controlled write-back and an audit receipt for every action."
+    },
+    {
+      "id": "roadmap",
+      "label": "Roadmap",
+      "detail": "Understand first, start with one process cluster, then grow by cluster on evidence."
+    },
+    {
+      "id": "operating-model",
+      "label": "Operating model",
+      "detail": "A shared platform team, federated process owners, enterprise control partners and independent oversight."
+    }
+  ],
+  "contract": [
+    {
+      "group": "Identity",
+      "fields": [
+        "Owner",
+        "Purpose",
+        "Version",
+        "Effective date",
+        "Jurisdiction"
+      ]
+    },
+    {
+      "group": "Flow",
+      "fields": [
+        "Trigger",
+        "Stages",
+        "Entry and exit criteria",
+        "Exceptions",
+        "Service levels"
+      ]
+    },
+    {
+      "group": "Roles",
+      "fields": [
+        "Case owner",
+        "Preparer",
+        "Reviewer",
+        "Decision owner",
+        "Approver",
+        "Executor",
+        "Auditor"
+      ]
+    },
+    {
+      "group": "Evidence",
+      "fields": [
+        "Required evidence",
+        "Authoritative source",
+        "Freshness",
+        "Confidence threshold"
+      ]
+    },
+    {
+      "group": "Tasks",
+      "fields": [
+        "Deterministic",
+        "AI-assisted",
+        "Human review",
+        "Human decision",
+        "Approval",
+        "Action"
+      ]
+    },
+    {
+      "group": "Controls",
+      "fields": [
+        "Scope",
+        "Authority",
+        "Segregation",
+        "Escalation",
+        "Override",
+        "Recovery"
+      ]
+    },
+    {
+      "group": "Measures",
+      "fields": [
+        "Cycle time",
+        "Rework",
+        "Evidence quality",
+        "Adoption",
+        "Cost per completed process"
+      ]
+    }
+  ],
+  "securityChain": [
+    {
+      "id": "identity",
+      "label": "Identity",
+      "detail": "Who is acting, from the enterprise identity provider."
+    },
+    {
+      "id": "role-scope",
+      "label": "Role scope",
+      "detail": "Organisational and process role, legal entity and jurisdiction."
+    },
+    {
+      "id": "case-relationship",
+      "label": "Case relationship",
+      "detail": "Owner, preparer, reviewer or outside the case."
+    },
+    {
+      "id": "action-class",
+      "label": "Action class",
+      "detail": "Read, prepare, approve or execute are separate permissions."
+    },
+    {
+      "id": "bound-approval",
+      "label": "Bound approval",
+      "detail": "An approval binds to one specific action and cannot be reused."
+    },
+    {
+      "id": "connector",
+      "label": "Connector",
+      "detail": "Only a governed connector writes to a system of record. No model writes directly."
+    },
+    {
+      "id": "acknowledgement",
+      "label": "Acknowledgement",
+      "detail": "The system of record confirms the change before the work completes."
+    },
+    {
+      "id": "audit-receipt",
+      "label": "Audit receipt",
+      "detail": "Who, what, under which authority and with which evidence, kept for oversight."
+    }
+  ],
+  "lifecycle": [
+    {
+      "id": "register",
+      "label": "Register"
+    },
+    {
+      "id": "classify",
+      "label": "Classify"
+    },
+    {
+      "id": "assess",
+      "label": "Assess"
+    },
+    {
+      "id": "test",
+      "label": "Test"
+    },
+    {
+      "id": "approve",
+      "label": "Approve"
+    },
+    {
+      "id": "release",
+      "label": "Release"
+    },
+    {
+      "id": "monitor",
+      "label": "Monitor"
+    },
+    {
+      "id": "change",
+      "label": "Change"
+    },
+    {
+      "id": "retire",
+      "label": "Retire"
+    }
+  ],
+  "operatingModel": [
+    {
+      "id": "platform-team",
+      "label": "Shared Work Fabric team",
+      "owns": [
+        "Common architecture and Flow Engine",
+        "Work-object standards",
+        "Connector framework",
+        "Reusable workspace patterns",
+        "Control Tower and platform operations"
+      ]
+    },
+    {
+      "id": "process-owners",
+      "label": "Federated process owners",
+      "owns": [
+        "Process outcome and module design",
+        "Roles, decisions and evidence rules",
+        "Change backlog",
+        "Adoption and value realisation"
+      ]
+    },
+    {
+      "id": "control-partners",
+      "label": "Enterprise platform and control partners",
+      "owns": [
+        "Identity and integration",
+        "Source systems and data products",
+        "Cybersecurity and privacy",
+        "Model and AI risk"
+      ]
+    },
+    {
+      "id": "oversight",
+      "label": "Independent oversight",
+      "owns": [
+        "Receives evidence",
+        "Challenges outcomes",
+        "Does not operate delivery"
+      ]
+    }
+  ],
+  "valueLenses": [
+    {
+      "id": "capacity",
+      "label": "Professional capacity",
+      "question": "Is more time available for challenge and decision?",
+      "measure": "Search, coordination, review and queue time"
+    },
+    {
+      "id": "speed",
+      "label": "Speed and continuity",
+      "question": "Does work move faster without losing ownership or state?",
+      "measure": "Cycle time, blocked time, ageing"
+    },
+    {
+      "id": "quality",
+      "label": "Quality and control",
+      "question": "Is evidence more complete and are decisions better controlled?",
+      "measure": "Rework, missing evidence, overrides"
+    },
+    {
+      "id": "adaptability",
+      "label": "Adaptability",
+      "question": "Can process and policy change land faster and safely?",
+      "measure": "Change lead time, regression results"
+    },
+    {
+      "id": "reuse",
+      "label": "Reuse and economics",
+      "question": "Does each new process need less net-new build?",
+      "measure": "Reused capabilities, onboarding effort"
+    },
+    {
+      "id": "transparency",
+      "label": "Management transparency",
+      "question": "Can leaders see health, risk, cost and value?",
+      "measure": "Service levels, incidents, adoption"
+    }
+  ],
+  "costLenses": [
+    {
+      "id": "build",
+      "label": "Build",
+      "detail": "Net-new build for each process module, falling as shared capabilities are reused."
+    },
+    {
+      "id": "run",
+      "label": "Run",
+      "detail": "Platform operations, model usage and support."
+    },
+    {
+      "id": "change",
+      "label": "Change",
+      "detail": "Process-change lead time, regression testing and migration."
+    },
+    {
+      "id": "govern",
+      "label": "Govern",
+      "detail": "Evaluation, monitoring, assurance and oversight."
+    }
+  ],
+  "routes": [
+    {
+      "id": "strategy",
+      "label": "Strategy",
+      "sections": [
+        "journey",
+        "cascade",
+        "value",
+        "roadmap",
+        "operating-model"
+      ]
+    },
+    {
+      "id": "process",
+      "label": "Process",
+      "sections": [
+        "journey",
+        "network",
+        "roles",
+        "contract"
+      ]
+    },
+    {
+      "id": "technology",
+      "label": "Technology",
+      "sections": [
+        "planes",
+        "contract",
+        "cascade",
+        "delivery"
+      ]
+    },
+    {
+      "id": "governance",
+      "label": "Governance",
+      "sections": [
+        "roles",
+        "security",
+        "operating-model",
+        "delivery"
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "understand",
+      "label": "Understand and design",
+      "focus": "Process walkthroughs with owners, a systems and data map, a tested workspace prototype and the fabric blueprint.",
+      "gate": "Process owners confirm the first cluster and how value will be baselined."
+    },
+    {
+      "id": "start-small",
+      "label": "Start small",
+      "focus": "One process cluster, one work-object type, read-only connectors to the first systems of record.",
+      "gate": "Users adopt the workspace and evidence completeness improves against the baseline."
+    },
+    {
+      "id": "first-cluster",
+      "label": "Decide with evidence",
+      "focus": "Decisions and approvals inside the fabric, with recovery patterns proven before any write-back.",
+      "gate": "Approval, recovery and audit patterns hold under real volumes."
+    },
+    {
+      "id": "grow",
+      "label": "Grow by cluster",
+      "focus": "Further clusters reuse the shared capabilities. Onboarding cost and change latency are measured per module.",
+      "gate": "Each new module needs less net-new build than the last."
+    }
+  ],
+  "buildRecord": [
+    {
+      "id": "scenes",
+      "label": "Guided scenes",
+      "value": "22"
+    },
+    {
+      "id": "deep-dives",
+      "label": "Explorer deep dives",
+      "value": "15"
+    },
+    {
+      "id": "processes",
+      "label": "Processes and source steps",
+      "value": "8 and 74"
+    },
+    {
+      "id": "acceptance",
+      "label": "Acceptance tests passing",
+      "value": "49 of 49"
+    },
+    {
+      "id": "unit",
+      "label": "Unit tests",
+      "value": "57"
+    },
+    {
+      "id": "e2e",
+      "label": "End-to-end checks",
+      "value": "159"
+    },
+    {
+      "id": "axe",
+      "label": "Routes with zero axe violations",
+      "value": "38 of 38"
+    },
+    {
+      "id": "visual",
+      "label": "Visual QA captures",
+      "value": "190"
+    },
+    {
+      "id": "lighthouse",
+      "label": "Lighthouse accessibility",
+      "value": "100"
+    },
+    {
+      "id": "decisions",
+      "label": "Recorded design decisions",
+      "value": "37"
+    }
+  ]
+}

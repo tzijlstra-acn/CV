@@ -1,0 +1,403 @@
+{
+  "thesisViews": [
+    {
+      "id": "strategy",
+      "label": "Strategy",
+      "output": "Problem framed",
+      "lenses": [
+        "consulting",
+        "builder"
+      ]
+    },
+    {
+      "id": "commercial",
+      "label": "Commercial",
+      "output": "Economics sized",
+      "lenses": [
+        "value-engineering",
+        "partnerships"
+      ]
+    },
+    {
+      "id": "product",
+      "label": "Product",
+      "output": "Workflow designed",
+      "lenses": [
+        "deployment"
+      ]
+    },
+    {
+      "id": "risk",
+      "label": "Risk",
+      "output": "Authority defined",
+      "lenses": [
+        "risk"
+      ]
+    },
+    {
+      "id": "data",
+      "label": "Data",
+      "output": "Evidence traced",
+      "lenses": [
+        "solution-design"
+      ]
+    },
+    {
+      "id": "technology",
+      "label": "Technology",
+      "output": "Delivery planned",
+      "lenses": [
+        "deployment",
+        "solution-design"
+      ]
+    }
+  ],
+  "thesisResult": "Decision-ready and governed",
+  "controlledAi": [
+    {
+      "id": "routing",
+      "label": "Model and task routing",
+      "detail": "Each task goes to the model that fits its cost and quality need, behind one interface.",
+      "evidence": [
+        "pb-dora-control-line",
+        "pb-ai-economics",
+        "wf-blueprint"
+      ],
+      "patterns": [
+        "provider-abstracted-routing",
+        "weighted-model-selection"
+      ]
+    },
+    {
+      "id": "retrieval",
+      "label": "Retrieval and knowledge context",
+      "detail": "Workflows read shared, sourced context instead of each keeping its own copy.",
+      "evidence": [
+        "pb-nfr-agent-platform",
+        "wf-blueprint"
+      ],
+      "patterns": [
+        "knowledge-graph-context"
+      ]
+    },
+    {
+      "id": "orchestration",
+      "label": "Agent orchestration",
+      "detail": "Explicit steps and states, so every transition can be tested and audited.",
+      "evidence": [
+        "pb-dora-control-line",
+        "pb-nfr-agent-platform",
+        "pb-airlock-local"
+      ],
+      "patterns": [
+        "state-machine-approvals"
+      ]
+    },
+    {
+      "id": "human",
+      "label": "Human decision points",
+      "detail": "Consequential steps wait for a named person, who reviews a verified proposal.",
+      "evidence": [
+        "acn-reg-change-ai",
+        "pb-dora-control-line",
+        "pb-nfr-agent-platform",
+        "pb-airlock-local"
+      ],
+      "patterns": [
+        "state-machine-approvals",
+        "policy-verification"
+      ]
+    },
+    {
+      "id": "lineage",
+      "label": "Evidence lineage",
+      "detail": "Every output links back to its inputs, sources and decisions.",
+      "evidence": [
+        "pb-dora-control-line",
+        "wf-blueprint"
+      ],
+      "patterns": [
+        "evidence-package"
+      ]
+    },
+    {
+      "id": "identity",
+      "label": "Identity and authority",
+      "detail": "What a person can see or do depends on role, case relationship and action class.",
+      "evidence": [
+        "wf-blueprint",
+        "pb-nfr-agent-platform",
+        "pb-airlock-reference"
+      ],
+      "patterns": [
+        "contextual-access",
+        "policy-gated-tools"
+      ]
+    },
+    {
+      "id": "integration",
+      "label": "Integrations and systems of record",
+      "detail": "Systems of record stay authoritative. Only governed connectors write back, after approval.",
+      "evidence": [
+        "pb-nfr-agent-platform",
+        "wf-blueprint",
+        "acn-finma-reporting"
+      ],
+      "patterns": [
+        "policy-verification"
+      ]
+    },
+    {
+      "id": "observability",
+      "label": "Observability",
+      "detail": "Every action is logged, and the running system can be inspected as it works.",
+      "evidence": [
+        "pb-nfr-agent-platform",
+        "pb-airlock-local",
+        "wf-blueprint"
+      ],
+      "patterns": [
+        "live-state-streaming",
+        "evidence-package"
+      ]
+    },
+    {
+      "id": "evaluation",
+      "label": "Evaluation and release gates",
+      "detail": "A workload is released only when its evaluation passes defined thresholds.",
+      "evidence": [
+        "pb-airlock-local",
+        "wf-blueprint"
+      ],
+      "patterns": [
+        "evaluation-gate",
+        "deterministic-engine"
+      ]
+    }
+  ],
+  "execution": [
+    {
+      "id": "origination",
+      "label": "Origination",
+      "evidence": [
+        "sg-dcm-fig",
+        "acn-finma-reporting"
+      ]
+    },
+    {
+      "id": "qualification",
+      "label": "Qualification",
+      "evidence": [
+        "acn-nfr-workflows",
+        "acn-ai-maturity"
+      ]
+    },
+    {
+      "id": "proposition",
+      "label": "Proposition and case",
+      "evidence": [
+        "pb-ai-economics",
+        "acn-reg-change-ai",
+        "sfo-investment"
+      ]
+    },
+    {
+      "id": "alignment",
+      "label": "Senior alignment",
+      "evidence": [
+        "acn-stakeholders",
+        "sg-dcm-fig"
+      ]
+    },
+    {
+      "id": "gtm",
+      "label": "Go-to-market",
+      "evidence": [
+        "acn-nfr-practice"
+      ]
+    },
+    {
+      "id": "capability",
+      "label": "Capability building",
+      "evidence": [
+        "acn-nfr-practice",
+        "acn-ai-maturity"
+      ]
+    },
+    {
+      "id": "partner",
+      "label": "Partner model",
+      "evidence": [
+        "wf-delivery-plan",
+        "sg-dcm-fig"
+      ],
+      "gap": "Thinner: designed joint-team models and multi-party execution, but no formal partner-management role."
+    },
+    {
+      "id": "adoption",
+      "label": "Adoption and expansion",
+      "evidence": [
+        "acn-reg-change-ai",
+        "wf-blueprint"
+      ],
+      "gap": "Thinner: adoption at programme level and in designed operating models, with no renewal or consumption targets held."
+    }
+  ],
+  "discipline": [
+    {
+      "id": "requirements",
+      "label": "Requirements and acceptance tests first",
+      "portfolio": "{acceptanceChecks} acceptance checks written before the build",
+      "workFabric": "49 acceptance tests, all passing"
+    },
+    {
+      "id": "roadmap",
+      "label": "Roadmap with gates",
+      "portfolio": "Build sequence P0 to P5 with a gate per phase",
+      "workFabric": "Three-phase plan, one gate per phase"
+    },
+    {
+      "id": "raci",
+      "label": "Roles and ownership",
+      "portfolio": "Every claim names what I personally did",
+      "workFabric": "Joint team with lead, core, consulted and oversight roles"
+    },
+    {
+      "id": "decisions",
+      "label": "Architecture decisions recorded",
+      "portfolio": "Decision log with a reason for every dependency",
+      "workFabric": "37 recorded design decisions"
+    },
+    {
+      "id": "testing",
+      "label": "Automated tests",
+      "portfolio": "{unitTests} unit and {e2eTests} end-to-end tests",
+      "workFabric": "57 unit tests, 159 end-to-end checks"
+    },
+    {
+      "id": "accessibility",
+      "label": "Accessibility",
+      "portfolio": "Keyboard model, reduced motion and axe checks on every route",
+      "workFabric": "Zero axe violations on 38 routes"
+    },
+    {
+      "id": "performance",
+      "label": "Performance budgets",
+      "portfolio": "Lighthouse budgets, explorer code split",
+      "workFabric": "Lighthouse accessibility 100"
+    },
+    {
+      "id": "publication",
+      "label": "Publication audit",
+      "portfolio": "Every linked repository audited; links stay hidden until approved",
+      "workFabric": "Client identity removed before any reuse"
+    },
+    {
+      "id": "limitations",
+      "label": "Limitations stated",
+      "portfolio": "Every case ends with its limitations and scope boundary",
+      "workFabric": "Illustrative, hypothesis and proof-required labels"
+    },
+    {
+      "id": "open-decisions",
+      "label": "Open decisions surfaced",
+      "portfolio": "What only I can confirm is listed, not assumed",
+      "workFabric": "Exploratory close: no scope or funding ask"
+    }
+  ],
+  "economics": {
+    "context": "Illustrative defaults from my AI Economics Simulator: a banking risk division of 12,000 staff, three use cases (RCSA, control testing and third-party risk), 72 users, 12 connected systems, and a platform that is 30 percent built.",
+    "source": "Re-implemented from the simulator formulas and checked against its default scenario. Not a client model.",
+    "defaults": {
+      "functions": 2,
+      "hosting": "sovereign",
+      "level": 3
+    },
+    "hosting": [
+      {
+        "id": "cloud",
+        "label": "Vendor cloud",
+        "infra": 0,
+        "usage": 0.909
+      },
+      {
+        "id": "sovereign",
+        "label": "EU-sovereign",
+        "infra": 182400,
+        "usage": 1
+      },
+      {
+        "id": "on-prem",
+        "label": "On-premise",
+        "infra": 1114067,
+        "usage": 0.35
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "buildPerYear": 211699,
+        "usage": 2.34
+      },
+      {
+        "level": 2,
+        "buildPerYear": 342765,
+        "usage": 1.55
+      },
+      {
+        "level": 3,
+        "buildPerYear": 527344,
+        "usage": 1
+      },
+      {
+        "level": 4,
+        "buildPerYear": 737417,
+        "usage": 0.66
+      },
+      {
+        "level": 5,
+        "buildPerYear": 1000307,
+        "usage": 0.41
+      }
+    ],
+    "sharedRunBase": 249867,
+    "minShare": 0.05,
+    "dashboards": {
+      "build": 328500,
+      "firstYearRate": 0.2,
+      "upkeepRate": 0.2
+    },
+    "governance": {
+      "base": 0.4,
+      "usersPerFte": 1400,
+      "useCases": 3,
+      "perUseCase": 0.1,
+      "perLevel": 0.2,
+      "costPerFte": 125000
+    },
+    "users": 72,
+    "seatCost": 430,
+    "usageBase": 2799,
+    "benefit": {
+      "labour": 3069000,
+      "risk": 250000
+    },
+    "goLiveYear": 3,
+    "buildWeights": [
+      0.226,
+      0.549,
+      0.226
+    ],
+    "ramp": [
+      0.4,
+      0.75,
+      1
+    ],
+    "growth": {
+      "headcount": 0.02,
+      "usage": 0.06,
+      "price": -0.15
+    },
+    "horizon": 10
+  }
+}

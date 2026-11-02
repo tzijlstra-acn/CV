@@ -76,9 +76,9 @@ async function extractPdfText(relPath) {
   console.log('Running post-build verification...\n');
 
   // --- HTML checks ---
-  check('index.html exists and > 60 KB', () => {
-    const size = fileSize('index.html');
-    if (size < 61440) return `size is ${size} bytes`;
+  // The portfolio is now a Vite application assembled into dist/ (npm run build:portfolio).
+  check('dist/index.html exists (portfolio build)', () => {
+    if (!existsSync(resolve(ROOT, 'dist/index.html'))) return 'run npm run build:portfolio first';
   });
 
   check('cv.html exists and > 15 KB', () => {
@@ -86,16 +86,16 @@ async function extractPdfText(relPath) {
     if (size < 15360) return `size is ${size} bytes`;
   });
 
-  check('index.html contains no U+2014 em dashes', () => {
-    if (fileText('index.html').includes('—')) return 'em dash found';
+  check('dist/index.html contains no U+2014 em dashes', () => {
+    if (fileText('dist/index.html').includes('—')) return 'em dash found';
   });
 
   check('cv.html contains no U+2014 em dashes', () => {
     if (fileText('cv.html').includes('—')) return 'em dash found';
   });
 
-  check('index.html has no duplicate id= values', () => {
-    const ids = [...fileText('index.html').matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
+  check('dist/index.html has no duplicate id= values', () => {
+    const ids = [...fileText('dist/index.html').matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
     const seen = new Set();
     for (const id of ids) {
       if (seen.has(id)) return `duplicate id: "${id}"`;
@@ -103,8 +103,12 @@ async function extractPdfText(relPath) {
     }
   });
 
-  check('PDF link appears in index.html', () => {
-    if (!fileText('index.html').includes('assets/Thomas_Zijlstra_CV.pdf')) return 'link not found';
+  check('PDF link appears in dist/index.html', () => {
+    if (!fileText('dist/index.html').includes('assets/Thomas_Zijlstra_CV.pdf')) return 'link not found';
+  });
+
+  check('dist/cv.html is identical to cv.html', () => {
+    if (fileText('dist/cv.html') !== fileText('cv.html')) return 'dist copy differs';
   });
 
   check('PDF link appears in cv.html', () => {
@@ -120,8 +124,8 @@ async function extractPdfText(relPath) {
     if (fileText('cv.html').includes('production-ready')) return '"production-ready" found in cv.html';
   });
 
-  check('index.html contains no "production-grade"', () => {
-    if (fileText('index.html').includes('production-grade')) return '"production-grade" found in index.html';
+  check('dist/index.html contains no "production-grade"', () => {
+    if (fileText('dist/index.html').includes('production-grade')) return '"production-grade" found in dist/index.html';
   });
 
   // --- PDF binary checks ---

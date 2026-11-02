@@ -1,0 +1,478 @@
+{
+  "groups": [
+    {
+      "id": "strategy-value",
+      "title": "Strategy, value and commercial judgement",
+      "short": "Strategy and value",
+      "summary": "Framing the real problem, the options and the economics before anything is built.",
+      "capabilities": [
+        {
+          "id": "problem-framing",
+          "label": "Problem framing"
+        },
+        {
+          "id": "strategic-options",
+          "label": "Strategic options and trade-offs"
+        },
+        {
+          "id": "market-hypotheses",
+          "label": "Market and customer hypotheses"
+        },
+        {
+          "id": "investment-cases",
+          "label": "Investment cases"
+        },
+        {
+          "id": "cost-of-inaction",
+          "label": "Cost of inaction"
+        },
+        {
+          "id": "roi-tco-modelling",
+          "label": "ROI and total-cost modelling"
+        },
+        {
+          "id": "financial-analysis",
+          "label": "Capital allocation and financial analysis"
+        },
+        {
+          "id": "quantitative-analysis",
+          "label": "Quantitative and statistical analysis"
+        },
+        {
+          "id": "proposition-development",
+          "label": "Proposal and proposition development"
+        },
+        {
+          "id": "commercial-model-design",
+          "label": "Commercial model design"
+        },
+        {
+          "id": "ai-economics",
+          "label": "AI economics and model-routing economics"
+        }
+      ]
+    },
+    {
+      "id": "transformation-programme",
+      "title": "Enterprise transformation and programme leadership",
+      "short": "Transformation",
+      "summary": "Sequencing change across teams, gates and owners so it lands and stays.",
+      "capabilities": [
+        {
+          "id": "transformation-roadmaps",
+          "label": "Transformation roadmaps"
+        },
+        {
+          "id": "workstream-leadership",
+          "label": "Programme and workstream leadership"
+        },
+        {
+          "id": "dependency-management",
+          "label": "Dependency and critical-path management"
+        },
+        {
+          "id": "phase-gates",
+          "label": "Phase gates and decision points"
+        },
+        {
+          "id": "operating-model-design",
+          "label": "Operating-model design"
+        },
+        {
+          "id": "team-raci-design",
+          "label": "Team and RACI design"
+        },
+        {
+          "id": "executive-governance",
+          "label": "Executive governance"
+        },
+        {
+          "id": "adoption-change",
+          "label": "Adoption and change"
+        },
+        {
+          "id": "benefit-ownership",
+          "label": "Benefit ownership"
+        },
+        {
+          "id": "reusable-playbooks",
+          "label": "Reusable methods and playbooks"
+        }
+      ]
+    },
+    {
+      "id": "ai-solution-design",
+      "title": "Enterprise AI solution design",
+      "short": "AI solution design",
+      "summary": "Turning a qualified use case into a workflow with routing, context, approvals and release gates.",
+      "capabilities": [
+        {
+          "id": "use-case-qualification",
+          "label": "Use-case qualification"
+        },
+        {
+          "id": "agentic-workflow-architecture",
+          "label": "Agentic workflow architecture"
+        },
+        {
+          "id": "model-routing",
+          "label": "Model abstraction and routing"
+        },
+        {
+          "id": "retrieval-document-intelligence",
+          "label": "Retrieval and document intelligence"
+        },
+        {
+          "id": "knowledge-graphs",
+          "label": "Knowledge graphs and semantic relationships"
+        },
+        {
+          "id": "api-integration-design",
+          "label": "API and integration design"
+        },
+        {
+          "id": "human-approval",
+          "label": "Human approval and controlled action"
+        },
+        {
+          "id": "evaluation-release-gates",
+          "label": "Evaluation and release gates"
+        },
+        {
+          "id": "observability-failure-handling",
+          "label": "Observability and failure handling"
+        },
+        {
+          "id": "rollout-planning",
+          "label": "Deployment and rollout planning"
+        }
+      ]
+    },
+    {
+      "id": "risk-control",
+      "title": "Risk, control and regulated operating models",
+      "short": "Risk and control",
+      "summary": "Non-financial risk, regulation and authority designed into the work, not added afterwards.",
+      "capabilities": [
+        {
+          "id": "non-financial-risk",
+          "label": "Non-financial risk"
+        },
+        {
+          "id": "rcsa-tprm",
+          "label": "RCSA and third-party risk management"
+        },
+        {
+          "id": "operational-risk",
+          "label": "Operational risk management"
+        },
+        {
+          "id": "business-continuity",
+          "label": "Business continuity"
+        },
+        {
+          "id": "policy-standards",
+          "label": "Policy and standards management"
+        },
+        {
+          "id": "regulatory-compliance",
+          "label": "Regulatory compliance"
+        },
+        {
+          "id": "model-risk",
+          "label": "Model and AI risk"
+        },
+        {
+          "id": "information-security-risk",
+          "label": "Information security risk"
+        },
+        {
+          "id": "regulatory-frameworks",
+          "label": "DORA, NIS2, EU AI Act and Solvency II"
+        },
+        {
+          "id": "audit-traceability",
+          "label": "Audit evidence and traceability"
+        },
+        {
+          "id": "segregation-of-duties",
+          "label": "Segregation of duties"
+        },
+        {
+          "id": "contextual-authority",
+          "label": "Contextual authority and approvals"
+        }
+      ]
+    },
+    {
+      "id": "data-platform",
+      "title": "Data and platform transformation",
+      "short": "Data and platform",
+      "summary": "Getting data ready, keeping systems of record authoritative and evidence traceable.",
+      "capabilities": [
+        {
+          "id": "data-readiness",
+          "label": "Data readiness and source-system mapping"
+        },
+        {
+          "id": "databricks-transformation",
+          "label": "Databricks-based reporting transformation"
+        },
+        {
+          "id": "regulatory-reporting-data",
+          "label": "Regulatory reporting and data adequacy"
+        },
+        {
+          "id": "structured-unstructured",
+          "label": "Structured and unstructured data"
+        },
+        {
+          "id": "typed-schemas",
+          "label": "Typed schemas and validation"
+        },
+        {
+          "id": "source-normalisation",
+          "label": "Source normalisation"
+        },
+        {
+          "id": "systems-of-record",
+          "label": "Systems-of-record boundaries"
+        },
+        {
+          "id": "evidence-lineage",
+          "label": "Evidence lineage"
+        },
+        {
+          "id": "integration-events",
+          "label": "Integration and event patterns"
+        },
+        {
+          "id": "data-quality-reporting",
+          "label": "Data quality and reporting"
+        }
+      ]
+    },
+    {
+      "id": "customer-market",
+      "title": "Customer, partner and market execution",
+      "short": "Customer and market",
+      "summary": "Origination, qualification, propositions and adoption, with the commercial and technical sides aligned.",
+      "capabilities": [
+        {
+          "id": "c-suite-engagement",
+          "label": "C-suite and senior stakeholder engagement"
+        },
+        {
+          "id": "customer-discovery",
+          "label": "Customer discovery"
+        },
+        {
+          "id": "senior-workshops",
+          "label": "Senior workshops and demonstrations"
+        },
+        {
+          "id": "opportunity-qualification",
+          "label": "Origination and opportunity qualification"
+        },
+        {
+          "id": "go-to-market",
+          "label": "Go-to-market development"
+        },
+        {
+          "id": "customer-adoption",
+          "label": "Customer adoption and expansion logic"
+        },
+        {
+          "id": "stakeholder-alignment",
+          "label": "Commercial and technical stakeholder alignment"
+        },
+        {
+          "id": "cross-functional-coordination",
+          "label": "Cross-functional and cross-border coordination"
+        }
+      ]
+    },
+    {
+      "id": "product-experience",
+      "title": "Product, experience and communication design",
+      "short": "Product and experience",
+      "summary": "Making complex systems understandable to executives and usable by the people who do the work.",
+      "capabilities": [
+        {
+          "id": "executive-narrative",
+          "label": "Executive narrative design"
+        },
+        {
+          "id": "information-architecture",
+          "label": "Information architecture"
+        },
+        {
+          "id": "product-specification",
+          "label": "Interactive product specification"
+        },
+        {
+          "id": "visual-systems",
+          "label": "Visual systems and diagram design"
+        },
+        {
+          "id": "role-based-experiences",
+          "label": "Role-based experiences"
+        },
+        {
+          "id": "accessible-interaction",
+          "label": "Accessible interaction design"
+        },
+        {
+          "id": "experience-modes",
+          "label": "Experience modes and deep links"
+        },
+        {
+          "id": "source-driven-visualisation",
+          "label": "Source-driven visualisation"
+        },
+        {
+          "id": "technical-storytelling",
+          "label": "Technical storytelling"
+        },
+        {
+          "id": "presentation-communication",
+          "label": "Presentation-distance communication"
+        }
+      ]
+    },
+    {
+      "id": "engineering-quality",
+      "title": "Engineering and quality discipline",
+      "short": "Engineering and quality",
+      "summary": "AI-assisted builds held to explicit architecture, tests and budgets. I set the requirements and review the result.",
+      "capabilities": [
+        {
+          "id": "frontend-architecture",
+          "label": "React, Vite and TypeScript architecture"
+        },
+        {
+          "id": "schema-validation",
+          "label": "Schema validation"
+        },
+        {
+          "id": "state-routing",
+          "label": "Application state and routing"
+        },
+        {
+          "id": "svg-visualisation",
+          "label": "D3 and SVG visualisation"
+        },
+        {
+          "id": "motion-systems",
+          "label": "Motion systems"
+        },
+        {
+          "id": "backend-prototyping",
+          "label": "API and backend prototyping"
+        },
+        {
+          "id": "automated-testing",
+          "label": "Automated testing"
+        },
+        {
+          "id": "visual-qa",
+          "label": "Playwright visual QA"
+        },
+        {
+          "id": "accessibility-checks",
+          "label": "Accessibility checks"
+        },
+        {
+          "id": "performance-budgets",
+          "label": "Performance budgets"
+        },
+        {
+          "id": "ci-static-deployment",
+          "label": "CI and static deployment"
+        }
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "provider-abstracted-routing",
+      "label": "Provider-abstracted model routing",
+      "description": "Tasks are routed to different models behind one provider interface, so the model choice can change without rewriting the workflow."
+    },
+    {
+      "id": "state-machine-approvals",
+      "label": "State machine with approval gates",
+      "description": "Every workflow transition is explicit, and consequential transitions wait for a named human decision."
+    },
+    {
+      "id": "append-only-audit",
+      "label": "Append-only audit record",
+      "description": "Actions and decisions are written to a record that is added to, never edited."
+    },
+    {
+      "id": "evidence-package",
+      "label": "Traceable evidence package",
+      "description": "Outputs carry links back to the inputs and decisions that produced them."
+    },
+    {
+      "id": "knowledge-graph-context",
+      "label": "Knowledge graph as shared context",
+      "description": "Controls, policies and obligations are related in a graph that several workflows read."
+    },
+    {
+      "id": "policy-verification",
+      "label": "Policy verification before write-back",
+      "description": "Proposed changes are checked against rules before anything reaches a system of record."
+    },
+    {
+      "id": "scenario-cost-model",
+      "label": "Scenario-based cost model",
+      "description": "Usage, routing, hosting and overhead assumptions combine into comparable scenarios."
+    },
+    {
+      "id": "infrastructure-as-code-reference",
+      "label": "Infrastructure-as-code reference modules",
+      "description": "Cloud controls are expressed as reviewable modules, kept separate from the runnable local mode."
+    },
+    {
+      "id": "evaluation-gate",
+      "label": "Evaluation suite as a release gate",
+      "description": "A workload is released only when its evaluation suite passes defined thresholds."
+    },
+    {
+      "id": "live-state-streaming",
+      "label": "Live state streaming",
+      "description": "The interface follows backend state changes as they happen, without polling."
+    },
+    {
+      "id": "source-import-validation",
+      "label": "Validated source import",
+      "description": "External source data is parsed at build time, validated against a schema and pinned to a commit."
+    },
+    {
+      "id": "url-state",
+      "label": "Shareable URL state",
+      "description": "Selections live in the URL, so every view can be deep-linked and the browser history works."
+    },
+    {
+      "id": "contextual-access",
+      "label": "Contextual access and bound approval",
+      "description": "What a person can see or do depends on role, case relationship, purpose and action class, and approvals bind to one action."
+    },
+    {
+      "id": "weighted-model-selection",
+      "label": "Weighted model selection per task tier",
+      "description": "Models are chosen for each task tier by weighted criteria such as reasoning, speed, cost, context, safety and sovereignty, not by vendor."
+    },
+    {
+      "id": "deterministic-engine",
+      "label": "Deterministic engine, model narrates",
+      "description": "Figures come from a deterministic calculation engine and are hashed; the model explains them but never produces them."
+    },
+    {
+      "id": "policy-gated-tools",
+      "label": "Policy-gated tool use",
+      "description": "Each workflow stage may only call the tools its policy allows, with a hard deny list for external sends."
+    }
+  ]
+}

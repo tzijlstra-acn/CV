@@ -292,16 +292,6 @@ section {
   .nav-mobile-menu { position: relative; top: 0; }
 }
 
-/* --- Moonshot Banner ---------------------------------- */
-.moonshot-banner {
-  background: var(--secondary);
-  color: #fff;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  font-size: 0.8125rem;
-  font-weight: 600;
-}
-
 /* --- Hero --------------------------------------------- */
 #hero {
   padding: 5rem 0 4rem;
@@ -1049,18 +1039,6 @@ section {
   border: 1px solid var(--border);
   padding: 0.2rem 0.625rem;
   border-radius: 100px;
-}
-
-/* --- Moonshot Mode ------------------------------------ */
-.moonshot-statement {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--secondary);
-  border-radius: var(--radius-lg);
-  padding: 1.25rem 1.5rem;
-  margin-top: 1.5rem;
-  font-size: 0.9375rem;
-  color: var(--text-muted);
 }
 
 /* --- Contact ------------------------------------------ */

@@ -1,16 +1,9 @@
 {
-  "meta": {
-    "title": "Thomas Zijlstra, CFA | Enterprise AI Commercialisation & Value Engineering",
-    "description": "Enterprise AI commercialisation and value engineering across regulated European financial services. FIG investment banking, AI workflow and pilot experience, C-suite engagement, and European financial-services credibility.",
-    "canonicalUrl": "https://tzijlstra-acn.github.io/CV/",
-    "ogImage": "assets/og-card.svg",
-    "keywords": "AI commercialisation, AI commercialization, enterprise AI, value engineering, business builder, ecosystem development, AI go-to-market, regulated enterprise AI adoption, financial services AI, CFA, non-financial risk, DORA, RCSA, TPRM"
-  },
   "personal": {
     "name": "Thomas Zijlstra, CFA",
     "nameShort": "Thomas Zijlstra",
     "credential": "CFA",
-    "title": "Enterprise AI Commercialisation & Value Engineering",
+    "title": "Enterprise AI Strategy, Deployment & Commercialisation",
     "location": "Zurich, Switzerland",
     "email": "zijlstra.thomas@gmail.com",
     "phone": "+41 79 768 57 45",
@@ -19,269 +12,134 @@
     "workPermit": "EU · Switzerland",
     "photo": "assets/profile-bw.png",
     "languages": [
-      { "name": "English", "level": "Fluent" },
-      { "name": "German", "level": "Fluent" },
-      { "name": "Dutch", "level": "Fluent" }
+      {
+        "name": "English",
+        "level": "Fluent"
+      },
+      {
+        "name": "German",
+        "level": "Fluent"
+      },
+      {
+        "name": "Dutch",
+        "level": "Fluent"
+      }
     ],
     "internationalExperience": [
-      { "code": "ch", "city": "Zurich", "period": "2020-present" },
-      { "code": "gb", "city": "London", "period": "2015-2020" },
-      { "code": "fr", "city": "Paris", "period": "2013-2014" }
+      {
+        "code": "ch",
+        "city": "Zurich",
+        "period": "2020-present"
+      },
+      {
+        "code": "gb",
+        "city": "London",
+        "period": "2015-2020"
+      },
+      {
+        "code": "fr",
+        "city": "Paris",
+        "period": "2013-2014"
+      }
     ],
     "clientCoverage": [
-      { "label": "Alps", "codes": ["ch", "at", "de", "li", "it", "si"] },
-      { "label": "Benelux", "codes": ["be", "nl", "lu"] },
-      { "label": "Nordics", "codes": ["dk", "se", "no", "fi"] },
-      { "label": "GIPS", "codes": ["gr", "it", "pt", "es"] }
-    ]
-  },
-  "hero": {
-    "headline": "I help senior leaders turn AI capabilities into qualified use cases, investment cases, controlled pilots and repeatable enterprise adoption.",
-    "sub": "Ten years across FIG investment banking, investment management and regulated-enterprise transformation in London, Zurich and Paris. At Accenture, I shape AI-enabled workflows, commercial propositions and rollout strategies, working across C-suite, risk, data, technology and governance stakeholders in European financial services.",
-    "processLine": "Identify the problem → establish the economics → shape the workflow → align the stakeholders → keep humans in control → embed and adopt → package for next time.",
-    "targetRoleLine": "Relevant to enterprise AI commercialisation, value engineering, strategic partnerships, ecosystem development and market-building roles.",
-    "ctas": {
-      "primary": { "label": "Explore the evidence", "href": "#evidence" },
-      "secondary": { "label": "Download CV", "href": "assets/Thomas_Zijlstra_CV.pdf", "download": true },
-      "tertiary": [
-        { "label": "View web CV", "href": "cv.html" },
-        { "label": "GitHub", "href": "https://github.com/tzijlstra-acn/", "external": true },
-        { "label": "Email", "href": "mailto:zijlstra.thomas@gmail.com" }
-      ]
-    },
-    "chips": ["Zurich", "European Financial Services", "FIG Capital Markets", "Regulated Enterprise AI", "English / German / Dutch"]
-  },
-  "evidence": [
-    {
-      "title": "Commercial and C-suite",
-      "body": "Capital-markets origination, investment and financing analysis, executive stakeholder engagement, commercial propositions, business cases and go-to-market development."
-    },
-    {
-      "title": "Enterprise AI adoption",
-      "body": "Use-case qualification, workflow design, pilot scope, evaluation, human controls, rollout, adoption and expansion in regulated environments."
-    },
-    {
-      "title": "European financial-services credibility",
-      "body": "DACH and Benelux coverage, regulated-enterprise delivery, financial-services domain knowledge, CFA-backed financial discipline and international experience across London, Zurich and Paris."
-    }
-  ],
-  "evidenceLabel": "Evidence, not self-ratings.",
-  "thesis": {
-    "title": "Approach to AI implementation in regulated enterprise environments",
-    "stages": [
       {
-        "number": 1,
-        "title": "Find the real bottleneck",
-        "question": "Where does time, effort, and coordination overhead actually accumulate?",
-        "method": "Start with the people who do the work. Interview process owners, observe workflows directly, and build a simple model of what the current process actually costs before touching any technology.",
-        "output": "A ranked shortlist of workflow candidates with rough economics attached",
-        "example": "Non-financial-risk teams (RCSA, TPRM, control testing) typically spend most of their time gathering the same information from different systems. The bottleneck is usually coordination and synthesis, not the analysis itself."
+        "label": "Alps",
+        "codes": [
+          "ch",
+          "at",
+          "de",
+          "li",
+          "it",
+          "si"
+        ]
       },
       {
-        "number": 2,
-        "title": "Map who owns the problem and who controls the budget",
-        "question": "Who experiences the pain, who has the authority to act, and who must approve?",
-        "method": "Stakeholder mapping from executive sponsor down through the process owner to the technology team. The key question is whether the person with the problem controls the budget or needs to build a case upward.",
-        "output": "A clear picture of who needs to say yes and what each of them needs to see",
-        "example": "In regulated financial services, the CRO often sponsors, operations owns delivery, and the CIO gates the integration. Alignment across all three is usually a precondition for successful delivery."
+        "label": "Benelux",
+        "codes": [
+          "be",
+          "nl",
+          "lu"
+        ]
       },
       {
-        "number": 3,
-        "title": "Measure the current state before building anything",
-        "question": "What does this process actually cost in analyst time, cycle time, and downstream rework?",
-        "method": "Document analyst hours, cycle times, error rates, and rework. A concrete baseline is what makes the business case credible and sets the performance target the implementation will be measured against.",
-        "output": "A documented baseline and a business case framing that connects current cost to investment threshold",
-        "example": "A DORA evidence-generation cycle that ties up multiple analysts for several weeks has a calculable cost. That number drives the investment conversation before a single line of code is written."
+        "label": "Nordics",
+        "codes": [
+          "dk",
+          "se",
+          "no",
+          "fi"
+        ]
       },
       {
-        "number": 4,
-        "title": "Build the hard part first",
-        "question": "Can a working demonstrator show that the most difficult piece actually functions?",
-        "method": "Prototype the core workflow using realistic synthetic data. The most valuable demonstrators focus on the technically difficult parts (agent orchestration, integration, edge-case handling) and include an honest evaluation of what works and what does not.",
-        "output": "A working demonstrator with an evaluation of capabilities and limitations",
-        "example": "The NFR platform and DORA control-line builds are structured around this: real agent orchestration, real integration patterns, real human-approval gates, evaluated against defined criteria."
-      },
-      {
-        "number": 5,
-        "title": "Wire into real systems with human oversight built in",
-        "question": "Where does the data originate and where do humans stay in control of consequential decisions?",
-        "method": "Map data flows from source systems through agent processing to write-back destinations. Every consequential output needs a human approval gate. The system should support human judgement, not bypass it.",
-        "output": "Integration architecture and documented control framework",
-        "example": "In practice this means ServiceNow for records, Teams or Power Automate for approvals, and policy-engine verification before anything is written back to the systems of record."
-      },
-      {
-        "number": 6,
-        "title": "Measure the result and package the pattern",
-        "question": "Did it work, and can the same approach be applied to the next workflow?",
-        "method": "Define success metrics before go-live. Measure cycle-time reduction, analyst hours saved, output acceptance rate, and human override rate. Then document the architecture and commercial template so the next use case starts from a better base.",
-        "output": "A measured result, a reference architecture, and a reusable template",
-        "example": "One paid engagement should produce a documented baseline, a working integration, a measured outcome, and an architecture that makes the next workflow faster to implement, in the same organisation or a different one."
+        "label": "GIPS",
+        "codes": [
+          "gr",
+          "it",
+          "pt",
+          "es"
+        ]
       }
     ]
   },
   "projects": [
     {
-      "id": "nfr-platform",
-      "title": "Enterprise NFR Workflow Platform",
-      "repo": "https://github.com/tzijlstra-acn/RealAIInfrastrucure",
-      "evidenceType": "Public technical demonstrator",
-      "status": "Published",
+      "id": "nfr-work-fabric",
+      "title": "Enterprise NFR Work Fabric",
       "featured": true,
-      "tags": ["Agentic AI", "Integration", "Governance"],
-      "businessQuestion": "What does a platform look like when multiple AI agent workflows share a knowledge graph, common infrastructure and consistent approval patterns, rather than operating as disconnected pilots?",
-      "contribution": "Platform concept, workflow architecture, knowledge graph design, approval pattern design, review and deployment.",
-      "demonstrates": "Platform and workflow concept, shared data and control patterns, approval design, enterprise integration awareness.",
-      "scopeBoundary": "Synthetic demonstration. No client data, no client credentials. Not a production deployment.",
-      "implementationNotes": "Tools used in this public prototype: Python, FastAPI, LangChain, LangGraph, NetworkX, SQLite, MCP, HTML/CSS/JS.",
-      "problem": "Non-financial-risk work is fragmented across service-management records, controls, policies, regulatory information, documents, and manual analyst workflows.",
-      "summary": "Platform demonstrator built around multiple AI agent workflows for different NFR domains, with a shared knowledge graph, document intelligence, human approval gates and enterprise integration patterns. Built as an enterprise-oriented demonstrator of what a shared platform architecture looks like relative to isolated pilots.",
-      "tech": ["Python", "FastAPI", "LangChain", "LangGraph", "NetworkX", "SQLite", "ServiceNow patterns", "Teams/Power Automate approval patterns", "MCP", "Vanilla HTML/CSS/JS"],
-      "techNote": "executive",
-      "commercial": "Individual AI use cases tend to stay isolated from each other. This platform shows what it looks like when they share a knowledge graph, common agent infrastructure, and consistent approval patterns: the architecture of a platform rather than a collection of disconnected pilots.",
-      "diagram": "Systems of record → documents & data → knowledge graph → agent orchestration → human approval → enterprise write-back",
-      "limitations": "Synthetic demonstration · no client data · not a production deployment",
-      "caseStudy": "Each agent handles a specific NFR domain: RCSA, TPRM, regulatory change. A shared knowledge graph maintains the relationships between controls, policies, and regulatory obligations across domains. Document intelligence processes unstructured content from multiple source types. Every consequential output routes through a human approval gate before anything is written back to systems of record. Integration patterns are modelled on real enterprise environments, ServiceNow for records, Teams for approvals, built entirely on synthetic data without any client credentials."
-    },
-    {
-      "id": "dora-control",
-      "title": "DORA Article 12 AI Control Line",
-      "repo": "https://github.com/tzijlstra-acn/ProReinsuranceAIWorkflow",
-      "evidenceType": "Enterprise workflow demonstrator",
-      "status": "Published",
-      "featured": true,
-      "tags": ["Governance", "Agentic AI", "Integration"],
-      "businessQuestion": "How can an enterprise AI workflow take a regulatory input through control design, infrastructure proposals, policy verification, documentation and evidence generation, with a traceable audit chain and human approval at every consequential step?",
-      "contribution": "Regulatory requirement framing, workflow architecture, state-machine design, human approval gate design, review, testing and deployment.",
-      "demonstrates": "Regulatory workflow design, traceability, human approval, evidence generation, translation between business, regulatory and technical requirements.",
-      "scopeBoundary": "Public prototype using synthetic and anonymised data. No client systems, credentials or confidential information. Integration patterns are illustrative.",
-      "implementationNotes": "Tools used in this public prototype: Next.js, React, TypeScript, SQLite, Drizzle ORM, OpenAI API, Vitest.",
-      "problem": "Regulatory change (DORA Article 12) is typically translated manually through policy, controls, infrastructure, verification, documentation, and audit evidence, a process that spans weeks and multiple teams.",
-      "summary": "A fully functional AI workflow demonstrator built around a real regulatory requirement (DORA Article 12). Uses synthetic and anonymised data throughout. Takes a regulatory input through AI-generated control updates, infrastructure proposals, policy-engine verification, compliance documentation, human approval gates, and a complete traceable evidence chain.",
-      "tech": ["Next.js", "React", "TypeScript", "SQLite", "Drizzle ORM", "OpenAI o3 / GPT-4o", "AI-provider abstraction", "State machine", "Policy engine", "Human approval gates", "Vitest"],
-      "techNote": "technical",
-      "commercial": "Demonstrates the full architecture of an enterprise AI workflow: model integration (OpenAI o3 for regulatory reasoning, GPT-4o for infrastructure, GPT-4o-mini for documentation), an 11-state machine for end-to-end traceability, and human approval gates at every consequential step. Built using only synthetic and anonymised data.",
-      "diagram": "Regulation → AI guideline proposal → AI control design → AI infrastructure change → policy verification → compliance work product → AI documentation → evidence package",
-      "limitations": "Demonstrator using synthetic and anonymised data · no client systems, credentials, or confidential information · integration patterns are illustrative",
-      "caseStudy": "Built around a DORA Article 12 regulatory requirement using synthetic and anonymised data only. The workflow routes through OpenAI o3 for regulatory reasoning and control design, GPT-4o for infrastructure code generation, and GPT-4o-mini for documentation. An 11-state machine provides full traceability from regulatory input to artefact. Human approval gates are embedded at each consequential decision point. The AI provider layer is abstracted so the architecture is not locked to any single model. Tests cover the full workflow including edge cases and human-override paths. The architecture reflects patterns from enterprise delivery experience."
+      "caseUrl": "https://tzijlstra-acn.github.io/CV/case/nfr-work-fabric/",
+      "evidenceType": "Private blueprint and interactive experience, sanitised",
+      "summary": "A strategic, operating-model, architecture and experience blueprint for connected non-financial-risk work across eight process families, built as a 22-scene interactive executive experience with explorer deep dives, acceptance tests and accessibility checks.",
+      "commercial": "Replaces isolated AI use cases with one persistent work object, permissioned role views and a shared, governed fabric, with a federated operating model and a roadmap that grows by process cluster.",
+      "scopeBoundary": "Synthetic scenarios only; client identity and internal materials excluded. A blueprint, not a deployed system."
     },
     {
       "id": "ai-economics",
       "title": "Enterprise AI Economics Simulator",
-      "repo": "https://github.com/tzijlstra-acn/AICostSimulator",
-      "evidenceType": "Public executive decision tool",
-      "status": "Published",
       "featured": true,
-      "tags": ["AI Economics"],
-      "businessQuestion": "What is the full all-in cost of an enterprise AI platform, and how do model selection, hosting scenario and governance overhead affect the economics?",
-      "contribution": "Problem framing, scenario logic, cost-model design, workflow and UI design, review and deployment.",
-      "demonstrates": "AI economics, scenario modelling, model-routing economics, hosting trade-offs, governance cost, executive decision support.",
-      "scopeBoundary": "Interactive public demonstrator using illustrative planning assumptions. Not a client tool or production system.",
-      "implementationNotes": "Tools used in this public prototype: JavaScript, HTML/CSS.",
-      "problem": "Enterprise buyers struggle to connect model usage, hosting, shared-platform costs, governance, and expected gains to an all-in AI business case.",
-      "summary": "Interactive tool for modelling the full economics of an enterprise AI platform: model selection and routing, token costs, cloud vs. sovereign vs. on-premise hosting, shared infrastructure costs, governance overhead, and net value projections. Built for executive decision-making and proposal development.",
-      "tech": ["JavaScript", "HTML/CSS"],
-      "techNote": "executive",
-      "commercial": "Useful for buyers and architects who need to model the full economics of an AI platform investment: not only capability but also what shared infrastructure and governance overhead do to unit economics.",
-      "diagram": "Model selection → usage assumptions → hosting scenario → shared platform costs → governance overhead → net economics",
-      "limitations": "All prices, benchmarks, gains, and allocation values are illustrative planning assumptions.",
-      "caseStudy": "Built for enterprise buyers and architects who need to make defensible investment decisions about AI platforms. Covers model selection and routing strategy, token-cost modelling across providers, hosting scenario comparison (cloud, sovereign, on-premise), shared-platform cost amortization, governance overhead allocation, and projected value gains. Outputs are scenario-comparable and designed to support structured proposal development."
+      "caseUrl": "https://tzijlstra-acn.github.io/CV/case/ai-economics/",
+      "evidenceType": "Interactive decision tool, AI-assisted prototype",
+      "summary": "Executive cost model for a shared AI platform: allocation across the functions sharing it, maturity, hosting, governance staffing, licences and usage, with a ten-year cash flow and break-even.",
+      "commercial": "At its illustrative defaults, fixed platform and governance costs are about 96 percent of year-one cost and tokens under 1 percent, which moves the business case from token prices to sharing, maturity and hosting.",
+      "scopeBoundary": "Illustrative planning assumptions and placeholder benchmarks. Not a client tool, a proposal or a production system."
     },
     {
-      "id": "ai-risk-dashboard",
-      "title": "AI Model Risk Dashboard",
-      "repo": "https://github.com/tzijlstra-acn/ai-risk-dashboard",
-      "evidenceType": "Public technical demonstrator",
-      "status": "Published",
-      "featured": false,
-      "tags": ["AI Governance", "Risk Management"],
-      "businessQuestion": "How can an organisation inventory, monitor and govern AI models across regulatory frameworks, making risk visible before it surfaces in an audit?",
-      "contribution": "Problem framing, regulatory framework mapping, dashboard design, review and deployment.",
-      "demonstrates": "AI governance thinking, regulatory framework literacy (NIST AI RMF, DORA, SR 11-7), inventory and audit-trail design.",
-      "scopeBoundary": "Demonstrator using synthetic data. No client models, credentials or production data.",
-      "implementationNotes": "Tools used in this public prototype: React 18, React Router, Recharts, TanStack Query, Radix UI, Tailwind CSS, Vite.",
-      "problem": "Enterprises adopting AI lack a structured way to inventory, monitor, and govern AI models across regulatory frameworks (NIST AI RMF, DORA, SR 11-7, GDPR) leaving risk invisible until it surfaces in an audit.",
-      "summary": "Illustrative model risk management demonstrator structured around the NIST AI RMF phases (Govern / Map / Measure / Manage). Covers model inventory, shadow AI detection, regulatory heat-mapping across multiple frameworks, vendor risk assessment, and an immutable audit trail.",
-      "tech": ["React 18", "React Router", "Recharts", "TanStack Query", "Radix UI", "Tailwind CSS", "Vite"],
-      "techNote": "technical",
-      "commercial": "AI governance is becoming a board-level topic, but most organisations lack the tooling to operationalise it. This dashboard translates regulatory frameworks (NIST, DORA, SR 11-7) into a manageable inventory with live risk signals, useful for CROs and AI governance functions establishing structured oversight.",
-      "diagram": "Model inventory → regulatory heat-map → shadow AI detection → vendor risk → audit trail",
-      "limitations": "Demonstrator using synthetic data · no client models, credentials, or production data",
-      "caseStudy": "Structured around the NIST AI RMF lifecycle phases. Regulatory mapping covers DORA, SR 11-7, GDPR, and the EU AI Act. Shadow AI detection flags ungoverned model usage across the organisation. Vendor risk module covers third-party model dependencies. Audit trail is append-only and timestamped, supporting audit-readiness requirements."
+      "id": "dora-control-line",
+      "title": "DORA Article 12 AI Control Line",
+      "featured": true,
+      "caseUrl": "https://tzijlstra-acn.github.io/CV/case/dora-control-line/",
+      "evidenceType": "Working workflow prototype, AI-assisted",
+      "summary": "Takes one regulatory obligation through guideline, control, infrastructure proposal, policy verification, documentation and evidence, with an explicit state machine, three human approval gates and hash-linked provenance.",
+      "commercial": "Shows how regulatory change can stay traceable and human-approved end to end, with task-based model assignment and deterministic verification before review.",
+      "scopeBoundary": "Synthetic fixtures; cloud, deployment and register integrations simulated; client context excluded."
     },
     {
-      "id": "autonomous-ops",
-      "title": "Autonomous Operations Control Center",
-      "repo": "https://github.com/tzijlstra-acn/Autonomous-Operations-Control-Center",
-      "evidenceType": "Public technical demonstrator",
-      "status": "Published",
+      "id": "nfr-agent-platform",
+      "title": "Enterprise NFR Agent Platform",
       "featured": false,
-      "tags": ["Agentic AI", "Governance", "Integration"],
-      "businessQuestion": "How can an autonomous AI-driven operations scenario demonstrate a real state machine, live UI updates and a human approval gate in a way that is credible to a non-technical buyer?",
-      "contribution": "Scenario design, governance-layer design, review and deployment.",
-      "demonstrates": "Human-in-the-loop governance design, state-machine thinking, real-time event-driven UI patterns.",
-      "scopeBoundary": "Demonstrator using synthetic events. No production system credentials or client data.",
-      "implementationNotes": "Tools used in this public prototype: TypeScript, Node.js 20, pnpm monorepo.",
-      "problem": "Autonomous AI-driven operations are difficult to demonstrate credibly: the governance layer, real-time state transitions, and human approval gates are invisible in static slides or disconnected prototypes.",
-      "summary": "End-to-end demonstrator of autonomous AI-driven IT operations. A 3-minute guided scenario runs a real backend state machine with SSE-driven live UI updates and a human-in-the-loop governance gate at consequential decision points.",
-      "tech": ["TypeScript", "Node.js 20", "pnpm monorepo"],
-      "techNote": "technical",
-      "commercial": "Demonstrates what a credible autonomous-operations build looks like in practice: a real state machine driving live UI updates, with a human approval gate embedded at decisions that matter. Structured to be walkthroughable in three minutes for an executive audience.",
-      "diagram": "Event ingestion → autonomous triage → state machine → human approval gate → action execution → audit log",
-      "limitations": "Demonstrator using synthetic events · no production system credentials or client data",
-      "caseStudy": "Backend state machine tracks every transition with a full audit log. SSE pushes real-time state to the UI without polling. Human approval gate intercepts consequential decisions before execution, maintaining a clear record of what was approved, by whom, and when. The three-minute guided scenario is designed to make the governance layer visible and credible to a non-technical buyer."
+      "caseUrl": "https://tzijlstra-acn.github.io/CV/case/nfr-agent-platform/",
+      "evidenceType": "Platform prototype, AI-assisted",
+      "summary": "Eighteen NFR domain agents on one orchestrator, sharing a run lifecycle, a role-gated approval step, typed write-back to a ServiceNow developer instance and an observability gateway.",
+      "commercial": "Each additional NFR domain costs mostly prompts and data, because lifecycle, approval, write-back and audit are built once.",
+      "scopeBoundary": "Synthetic data and a developer instance. Not a production deployment."
     },
     {
       "id": "airlock",
-      "title": "AIRLOCK: AWS Regulated AI Workload Foundry",
-      "repo": "https://github.com/tzijlstra-acn/AIRLOCK",
-      "evidenceType": "Reference architecture and demonstrator",
-      "status": "Published",
+      "title": "AIRLOCK Regulated AI Workload Foundry",
       "featured": false,
-      "tags": ["Agentic AI", "Governance", "Integration"],
-      "businessQuestion": "What does a reusable foundry pattern look like for building auditable, human-approved AI agent workflows in a regulated cloud environment?",
-      "contribution": "Pattern design, workflow architecture, human approval gate design, review and deployment.",
-      "demonstrates": "Reference architecture thinking, auditable agent workflow patterns, human approval design, regulated-environment deployment awareness.",
-      "scopeBoundary": "Demo workload uses synthetic data only. AWS/Terraform mode is reference architecture, not a deployed production environment.",
-      "implementationNotes": "Tools used in this public prototype: Python, FastAPI, SQLAlchemy, SQLite, Terraform, AWS architecture patterns.",
-      "problem": "Regulated enterprises need AI agent workflows that are fully auditable, have human approval at every consequential decision, and can be deployed on compliant cloud infrastructure, but no credible reference architecture exists for this combination.",
-      "summary": "Reference implementation for building auditable, human-approved AI agent workflows on AWS for regulated industries. Demo workload is a Primary Markets bond structuring assistant using synthetic data. Includes a fully functional local-mode implementation and infrastructure modules for a compliant AWS deployment.",
-      "tech": ["Python", "FastAPI", "SQLAlchemy", "SQLite", "Terraform", "AWS architecture patterns"],
-      "techNote": "technical",
-      "commercial": "Bridges the gap between an AI proof-of-concept and a structured deployment for regulated environments. Shows the full pattern: auditable agent orchestration, human approval gates, and the Terraform modules for a compliant AWS deployment, structured as a reusable foundry rather than a one-off build.",
-      "diagram": "Workflow trigger → agent orchestration → human approval gate → audit record → AWS deployment layer",
-      "limitations": "Demo workload uses synthetic data only · AWS/Terraform mode is reference architecture, not a deployed production environment",
-      "caseStudy": "Local mode is fully functional and runnable without cloud infrastructure. AWS/Terraform modules define the compliant deployment pattern with the necessary controls for a regulated environment. Every agent action is logged with full provenance. Human approval gates are embedded at consequential steps. Structured as a reusable foundry pattern: a second workload reuses the same orchestration, approval, and audit infrastructure."
-    },
-    {
-      "id": "personal-story",
-      "title": "Interactive Personal Story",
-      "repo": "https://github.com/tzijlstra-acn/Selfcare",
-      "evidenceType": "Personal side project",
-      "status": "Published",
-      "featured": false,
-      "tags": ["Product Design"],
-      "businessQuestion": "Can a personal narrative be translated into an engaging, accessible single-page experience?",
-      "contribution": "Content design, visual layout, interaction design, accessibility, deployment.",
-      "demonstrates": "Product thinking, design sensibility, independent building.",
-      "scopeBoundary": "Personal project. No enterprise application.",
-      "implementationNotes": "Tools used in this public prototype: HTML, CSS, JavaScript.",
-      "problem": "Translating a personal narrative into an engaging, accessible single-page experience.",
-      "summary": "An interactive single-page experience combining personal storytelling, data visualisation, accessibility, and lightweight product design.",
-      "tech": ["HTML", "CSS", "JavaScript"],
-      "techNote": "executive",
-      "commercial": "Demonstrates product thinking, design sensibility, and the ability to work across the full stack independently.",
-      "diagram": "Content design → visual layout → interaction design → accessibility → deployment",
-      "limitations": "Personal project · no enterprise application",
-      "caseStudy": "A personal side project exploring the intersection of storytelling and product design. Built entirely in vanilla web technologies with attention to accessibility, motion, and visual hierarchy. Demonstrates independent product thinking outside of an enterprise context."
+      "caseUrl": "https://tzijlstra-acn.github.io/CV/case/airlock/",
+      "evidenceType": "Local prototype and cloud reference architecture",
+      "summary": "A pattern for auditable, policy-gated AI workloads: a deterministic finance engine, a 12-stage workflow and approval records, with the AWS layer kept as reference architecture.",
+      "commercial": "Makes evaluation, approval and release reusable for the next regulated workload instead of rebuilding controls per pilot.",
+      "scopeBoundary": "Synthetic data and a scripted model; the Terraform layer has never been applied."
     }
   ],
-  "projectsMethodologyNote": "These are independently developed, AI-assisted public prototypes using synthetic or illustrative data. I owned the problem framing, requirements, workflow design, commercial logic, review and deployment. They demonstrate my ability to turn enterprise requirements into testable artefacts. They are not production client systems or claims of specialist engineering mastery across every tool used.",
   "delivery": {
     "title": "Delivery in regulated environments",
     "items": [
       {
         "title": "End-to-end AI compliance workflow",
-        "client": "Major European reinsurer",
+        "client": "European reinsurer",
         "body": "Full ownership from strategy and economics through roadmap and pilot delivery: AI-enabled workflow for the regulatory change lifecycle across DORA, NIS2, EU AI Act, and Solvency II. Covers regulatory ingestion, AI-generated control and policy updates, human approval gates, evidence generation, and audit packaging.",
         "badge": "Anonymised client delivery"
       },
@@ -311,120 +169,6 @@
       }
     ]
   },
-  "commercialization": {
-    "title": "Approach to a first commercial engagement",
-    "label": "Commercial engagement hypothesis",
-    "icp": "Bank, insurer, or regulated financial institution · significant operational-risk, compliance, or regulatory function · data distributed across documents, GRC systems, service-management platforms, and spreadsheets · active transformation around DORA, AI governance, RCSA, TPRM, or regulatory change · CRO, COO, or Head of NFR with sponsorship authority",
-    "wedge": "Start with one specific, measurable workflow (DORA evidence generation, RCSA refresh, control-gap analysis, or third-party-risk change triage) where the current cost is documentable and the improvement is demonstrable.",
-    "offer": "A six-to-eight-week paid engagement covering baseline measurement, data readiness, workflow design, a working integrated demonstrator, human approval gates, evaluation criteria, economic modelling, and a production roadmap.",
-    "path": [
-      "Confirm the problem and measure the baseline",
-      "Establish data access and environment readiness",
-      "Integrate one system of record",
-      "Design and build the core workflow",
-      "Add human approval gates",
-      "Measure against the baseline",
-      "Develop a production proposal",
-      "Expand to adjacent workflows",
-      "Package the pattern as a reusable asset",
-      "Develop ecosystem relationships"
-    ],
-    "structures": [
-      "Fixed-fee discovery",
-      "Paid design partnership",
-      "Production implementation",
-      "API/platform consumption",
-      "Integration services",
-      "Annual support",
-      "Expansion",
-      "Partner delivery"
-    ],
-    "metrics": [
-      { "name": "Cycle-time reduction", "note": "per workflow" },
-      { "name": "Analyst effort", "note": "hours per output" },
-      { "name": "Output acceptance rate", "note": "human review" },
-      { "name": "Human override rate", "note": "control signal" },
-      { "name": "Evidence completeness", "note": "audit readiness" },
-      { "name": "Exception detection", "note": "vs. manual" },
-      { "name": "Active-user adoption", "note": "weekly actives" },
-      { "name": "Time to production", "note": "weeks from pilot" },
-      { "name": "Pilot-to-production conversion", "note": "rate" },
-      { "name": "Expansion pipeline", "note": "adjacent workflows" },
-      { "name": "Annual contract value", "note": "ACV" }
-    ],
-    "metricsLabel": "Proposed measurement dimensions, not historical performance claims"
-  },
-  "ninetyDays": {
-    "title": "First 90 days",
-    "periods": [
-      {
-        "label": "Days 1-30",
-        "heading": "Listen, map, and orient",
-        "items": [
-          "Understand the product boundaries and market positioning",
-          "Build a picture of existing customers and ecosystem relationships",
-          "Define an initial target customer profile and qualification criteria",
-          "Identify the most credible near-term commercial entry point",
-          "Agree with stakeholders on what good looks like by day 90"
-        ]
-      },
-      {
-        "label": "Days 31-60",
-        "heading": "Engage and test",
-        "items": [
-          "Run customer discovery conversations with target accounts",
-          "Develop and refine initial commercial proposals",
-          "Build or adapt a demonstrator that speaks to buyer priorities",
-          "Progress toward initial engagement commitments",
-          "Document blockers and open questions transparently"
-        ]
-      },
-      {
-        "label": "Days 61-90",
-        "heading": "Deliver, measure, and document",
-        "items": [
-          "Begin or complete first paid design engagement",
-          "Establish workflow baselines to measure against",
-          "Produce first reusable commercial and technical templates",
-          "Document reference architecture and patterns",
-          "Map adjacent workflows and expansion opportunities"
-        ]
-      }
-    ]
-  },
-  "roleFit": {
-    "title": "How my background maps to this type of role",
-    "rows": [
-      {
-        "requirement": "AI implementation",
-        "evidence": "Working builds published: agents, knowledge graphs, workflow orchestration, document intelligence, human approval gates, enterprise integrations, AI economics tools"
-      },
-      {
-        "requirement": "Enterprise credibility",
-        "evidence": "Delivery in regulated banks, insurers, and financial-services technology environments across Switzerland, UK, and Europe"
-      },
-      {
-        "requirement": "Commercial and financial judgement",
-        "evidence": "Capital-markets origination, investment and financing analysis, financial modelling, and buyer-facing business-case development"
-      },
-      {
-        "requirement": "Stakeholder engagement",
-        "evidence": "Direct experience working with regulators, CROs, COOs, risk owners, technology gatekeepers, and operational delivery teams"
-      },
-      {
-        "requirement": "Applied technical fluency",
-        "evidence": "Independently built public prototypes demonstrating agent workflow design, enterprise integration patterns, model evaluation and routing, and human-approval workflow design. See Selected Public Work."
-      },
-      {
-        "requirement": "Proposal and go-to-market capability",
-        "evidence": "Architecture frameworks, implementation roadmaps, AI economics tools, and executive-facing demonstrations built for proposal and commercial contexts"
-      },
-      {
-        "requirement": "Measurement and accountability",
-        "evidence": "Consistent use of baselines, workflow metrics, evaluation criteria, delivery milestones, and conversion targets"
-      }
-    ]
-  },
   "experience": [
     {
       "company": "Accenture",
@@ -434,10 +178,10 @@
       "end": "Present",
       "current": true,
       "items": [
-        "Strategy, economics, roadmap and pilot delivery for an AI-enabled regulatory-change workflow at a leading European reinsurer, covering DORA, NIS2, EU AI Act and Solvency II.",
+        "Strategy, economics, roadmap and pilot delivery for an AI-enabled regulatory-change workflow at a European reinsurer, covering DORA, NIS2, EU AI Act and Solvency II.",
         "AI use-case and workflow shaping across RCSA, TPRM and regulatory change: translating business and control requirements into executable pilot designs with technical teams.",
         "Switzerland NFR Capabilities Team Lead: built and led the local AI and NFR practice, defining go-to-market for the DACH region within the CFO&EV division.",
-        "Led origination and end-to-end delivery of a FINMA regulatory reporting and data adequacy programme at a leading Swiss insurer, including Databricks data-platform implementation.",
+        "Led origination and end-to-end delivery of a FINMA regulatory reporting and data adequacy programme at a Swiss insurer, including Databricks data-platform implementation.",
         "Stream Lead for an OeNB central-bank audit at a European core banking provider.",
         "LIBOR and interest-rate-transition delivery at a European GSIB, drawing on capital-markets experience across derivatives, valuation, and trading-desk structures.",
         "Coordination across CRO, COO, risk, data, technology, governance, and regulatory stakeholders in regulated financial-services environments."
@@ -539,7 +283,7 @@
         "model and workflow evaluation",
         "human oversight",
         "governance and controls",
-        "production-readiness planning"
+        "deployment and rollout planning"
       ]
     },
     {
@@ -567,22 +311,12 @@
       ]
     }
   ],
-  "moonshot": {
-    "targetParam": "moonshot",
-    "applicationLabel": "Application focus: Business Builder & Ecosystem",
-    "headline": "Building the commercial bridge between AI capability and enterprise adoption.",
-    "sub": "Combines regulated-industry experience, applied AI fluency, and commercial judgement, from the original customer problem and business case through workflow design, systems integration, human controls, and an expansion path.",
-    "statement": "Primary role interest: Business Builder & Ecosystem."
-  },
   "contact": {
     "headline": "Happy to discuss how this applies to your context.",
     "copy": "Particularly interested in roles that combine customer engagement, applied technical work, ecosystem development and commercial accountability.",
     "availability": "Available within 3 months of confirmation."
   },
-  "footer": {
-    "text": "This is a personal portfolio. Views are my own. Public demonstrations use synthetic, anonymised, mock, or illustrative data and do not represent client systems. No confidential client or employer information is presented."
-  },
   "cv": {
-    "summary": "Financial services professional with a decade of international experience across London, Zurich and Paris. Early career in FIG Debt Capital Markets at Societe Generale, covering DACH and Benelux financial institutions, followed by investment and financing work at a London family office. Since 2020, based in Zurich delivering enterprise AI strategy and workflow programmes for regulated financial-services organisations at Accenture. Currently leading the strategy, economics and pilot delivery of an AI-enabled regulatory-change workflow at a leading European reinsurer. Prior work spans FINMA regulatory reporting, OeNB central-bank audit, and NFR AI practice leadership and go-to-market across the DACH region. CFA charterholder."
+    "summary": "Financial services professional with ten years of international experience across London, Zurich and Paris. Early career in FIG Debt Capital Markets at Societe Generale, covering DACH and Benelux financial institutions, followed by investment and financing work at a London family office. At Accenture in Zurich since 2020: regulated financial-services transformation (FINMA regulatory reporting and data adequacy, an OeNB central-bank audit stream, LIBOR transition), then enterprise AI strategy and workflow programmes. Currently leading the strategy, economics and pilot delivery of an AI-enabled regulatory-change workflow at a European reinsurer, and the Swiss NFR and AI capabilities team and its DACH go-to-market. CFA charterholder."
   }
 }
