@@ -189,7 +189,7 @@
           "source": "dataset-nfr-processes"
         }
       ],
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "ai-economics",
@@ -354,7 +354,7 @@
           "locator": "/projects/1"
         }
       ],
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "dora-control-line",
@@ -514,7 +514,7 @@
           "locator": "/projects/2"
         }
       ],
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "nfr-agent-platform",
@@ -674,7 +674,7 @@
           "locator": "/projects/3"
         }
       ],
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "airlock",
@@ -835,7 +835,7 @@
           "locator": "/projects/4"
         }
       ],
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "data-reporting-transformation",
@@ -962,7 +962,7 @@
           "locator": "/delivery/items/2"
         }
       ],
-      "status": "needs-confirmation"
+      "status": "approved"
     }
   ]
 }

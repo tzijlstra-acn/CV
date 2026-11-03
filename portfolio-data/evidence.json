@@ -47,7 +47,7 @@
       ],
       "confidentiality": "anonymised",
       "scopeBoundary": "Anonymised client engagement. No client name, materials or results are published.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "acn-nfr-workflows",
@@ -90,7 +90,7 @@
       ],
       "confidentiality": "anonymised",
       "scopeBoundary": "Anonymised client work. I shaped and specified the workflows; I do not claim the engineering.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "acn-ai-maturity",
@@ -125,7 +125,7 @@
       ],
       "confidentiality": "anonymised",
       "scopeBoundary": "Internal practice asset. Its content is not published.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "acn-nfr-practice",
@@ -164,7 +164,7 @@
       ],
       "confidentiality": "public",
       "scopeBoundary": "Team size, revenue and pipeline figures are not published.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "acn-finma-reporting",
@@ -209,7 +209,7 @@
       ],
       "confidentiality": "anonymised",
       "scopeBoundary": "Anonymised client programme. The client, data and reporting content are not published.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "acn-oenb-audit",
@@ -249,7 +249,7 @@
       ],
       "confidentiality": "anonymised",
       "scopeBoundary": "Anonymised client engagement. Audit content is not published.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "acn-ibor",
@@ -287,7 +287,7 @@
       ],
       "confidentiality": "anonymised",
       "scopeBoundary": "Anonymised client engagement.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "acn-stakeholders",
@@ -324,7 +324,7 @@
       ],
       "confidentiality": "anonymised",
       "scopeBoundary": "Roles only. No people or clients are named.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "sfo-investment",
@@ -359,7 +359,7 @@
       ],
       "confidentiality": "anonymised",
       "scopeBoundary": "The family office and its investments are not named.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "sg-dcm-fig",
@@ -562,7 +562,7 @@
       ],
       "confidentiality": "private-source",
       "scopeBoundary": "Sanitised blueprint using synthetic scenarios. Client identity, internal materials and confidential implementation details are excluded. Not a deployed system.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "wf-experience",
@@ -621,7 +621,7 @@
       ],
       "confidentiality": "private-source",
       "scopeBoundary": "Private build for an introductory executive conversation. Not published, not a production system, synthetic data only.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "wf-delivery-plan",
@@ -658,7 +658,7 @@
       ],
       "confidentiality": "private-source",
       "scopeBoundary": "Illustrative plan with indicative months. Roles, not names, headcount or prices.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "pb-ai-economics",
@@ -711,7 +711,7 @@
       ],
       "confidentiality": "public",
       "scopeBoundary": "Interactive prototype using illustrative planning assumptions and placeholder benchmarks. Not a client tool, a proposal or a production system.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "pb-dora-control-line",
@@ -777,7 +777,7 @@
       ],
       "confidentiality": "public",
       "scopeBoundary": "Working prototype on synthetic fixtures. Cloud, deployment and register integrations are simulated. Client context is excluded.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "pb-nfr-agent-platform",
@@ -840,7 +840,7 @@
       ],
       "confidentiality": "public",
       "scopeBoundary": "Prototype on synthetic data and a ServiceNow developer instance. No client data or credentials. Not a production deployment.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "pb-airlock-local",
@@ -900,7 +900,7 @@
       ],
       "confidentiality": "public",
       "scopeBoundary": "Local prototype on synthetic data with a scripted model. No live model calls. Not a deployed environment.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "pb-airlock-reference",
@@ -944,7 +944,7 @@
       ],
       "confidentiality": "public",
       "scopeBoundary": "Reference architecture only. The modules have never been planned or applied, and do not yet validate.",
-      "status": "needs-confirmation"
+      "status": "approved"
     },
     {
       "id": "pb-ai-risk-dashboard",

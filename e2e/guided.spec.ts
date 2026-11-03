@@ -6,10 +6,10 @@ test.describe('guided story', () => {
     const errors = await open(page)
     await expect(page.getByRole('heading', { level: 1 })).toContainText('I turn complex AI opportunities into decisions')
     await expect(page.locator('.hero__name')).toHaveText('Thomas Zijlstra, CFA')
-    await expect(page.locator('.hero__title')).toContainText('Enterprise AI Strategy, Deployment & Commercialisation')
+    await expect(page.locator('.hero__title')).toContainText('Financial Services Strategy, Transformation & Enterprise AI')
     await expect(page.getByTestId('cta-evidence')).toBeVisible()
     await expect(page.getByTestId('cta-pdf')).toHaveAttribute('href', '/CV/assets/Thomas_Zijlstra_CV.pdf')
-    await expect(page).toHaveTitle(/Thomas Zijlstra, CFA \| Enterprise AI Strategy/)
+    await expect(page).toHaveTitle(/Thomas Zijlstra, CFA \| Financial Services Strategy/)
     expect(errors).toEqual([])
   })
 

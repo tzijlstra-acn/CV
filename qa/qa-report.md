@@ -15,7 +15,7 @@ Final verification of the portfolio rebuild on 2026-11-02, against the productio
 | End-to-end and accessibility | `npm run test:e2e` | 88 of 88 pass (axe suite also stable over two repeats) |
 | Visual QA | `npm run qa:visual` | 72 renders at 6 viewports, 0 problems; 17 key screenshots and a montage |
 | Lighthouse | `npm run qa:lighthouse` | Pass on all 5 URLs (see below) |
-| Release gate | `npm run qa:release-gate` | Fails by design until Thomas confirms the items in NEEDS_CONFIRMATION.md |
+| Release gate | `npm run qa:release-gate` | Pass: every displayed item confirmed by Thomas on 2026-11-03 (D-033) |
 
 ## Accessibility
 

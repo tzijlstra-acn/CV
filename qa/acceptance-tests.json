@@ -360,7 +360,7 @@
       "requirement": "Release gate: nothing awaiting confirmation can be deployed",
       "brief": "section 32",
       "check": "npm run qa:release-gate",
-      "status": "pending-thomas"
+      "status": "pass"
     },
     {
       "id": "AT-46",

@@ -2,7 +2,7 @@
 
 Portfolio rebuild per `CLAUDE_PORTFOLIO_MARKET_REBUILD.md`. Work is committed on the branch `portfolio-rebuild` and pushed to GitHub; `main` and the live site are unchanged (DECISIONS.md D-030).
 
-## Status (2026-11-02)
+## Status (2026-11-03)
 
 | Phase | State |
 |---|---|
@@ -11,7 +11,7 @@ Portfolio rebuild per `CLAUDE_PORTFOLIO_MARKET_REBUILD.md`. Work is committed on
 | P2 Design system and proof scenes | Done. Executive systems studio tokens, depth labels, twelve scenes reviewed at 1920, 1440, 1366, 1024, 768 and 390 |
 | P3 Flagship case | Done. Enterprise NFR Work Fabric with eleven interactive modules and four reading routes |
 | P4 Remaining evidence | Done. Five further cases, evidence explorer with local search, capability map, seven lenses, career arc, contact |
-| P5 QA and deployment | Done locally: unit, end-to-end, accessibility, visual, Lighthouse, bundle, content, claims, links, confidentiality. Deployment awaits Thomas (NEEDS_CONFIRMATION.md section 5) |
+| P5 QA and deployment | Done locally: unit, end-to-end, accessibility, visual, Lighthouse, bundle, content, claims, links, confidentiality. All displayed content confirmed and the release gate passes (D-033). Going live awaits the Pages source switch, then the merge into `main` (NEEDS_CONFIRMATION.md section 5) |
 
 ## What changed in the repository
 

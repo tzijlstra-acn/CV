@@ -18,7 +18,7 @@ The first visit loads the shell, the router, Motion, the shell's Radix primitive
 | S08Economics | 11.4 KB |
 | dist | 5.2 KB |
 | Evidence | 4.1 KB |
-| Overlays | 4.1 KB |
+| Overlays | 4.0 KB |
 | NfrBlueprint | 3.1 KB |
 | react | 2.8 KB |
 | ProcessNetwork | 2.3 KB |

@@ -6,7 +6,7 @@ An evidence-driven portfolio: a guided story for a five-minute read, and an expl
 - Web CV: https://tzijlstra-acn.github.io/CV/cv.html
 - PDF: https://tzijlstra-acn.github.io/CV/assets/Thomas_Zijlstra_CV.pdf
 
-> Before the rebuild goes live, read `NEEDS_CONFIRMATION.md`. The deployment's release gate fails until every displayed item is confirmed, and GitHub Pages must be switched to "GitHub Actions" as its source.
+> Before the rebuild goes live, read `NEEDS_CONFIRMATION.md`. The deployment's release gate fails whenever a displayed item is awaiting confirmation (all were confirmed on 2026-11-03), and GitHub Pages must be switched to "GitHub Actions" as its source.
 
 ## Quick start
 

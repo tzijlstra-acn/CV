@@ -3,16 +3,17 @@
     {
       "id": "profile-title",
       "locator": "profile.title",
-      "wording": "Enterprise AI Strategy, Deployment & Commercialisation",
+      "wording": "Financial Services Strategy, Transformation & Enterprise AI",
       "evidence": [
+        "acn-finma-reporting",
+        "acn-ibor",
         "acn-reg-change-ai",
-        "acn-nfr-practice",
-        "pb-ai-economics"
+        "acn-nfr-practice"
       ],
       "depth": "professional-delivery",
-      "personal": "AI strategy and pilot delivery at Accenture; go-to-market for the Swiss NFR and AI team; public economics and workflow builds.",
+      "personal": "Financial Services strategy and regulated transformation at Accenture (reporting and data adequacy, regulatory audit, benchmark transition); AI strategy and pilot delivery; go-to-market for the Swiss NFR and AI team.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "profile-headline",
@@ -27,7 +28,7 @@
       "depth": "professional-delivery",
       "personal": "Use-case qualification, economics and roadmap for AI workflows; governed workflow design in professional work and public builds.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "profile-supporting",
@@ -42,7 +43,7 @@
       "depth": "professional-delivery",
       "personal": "Ten years: Societe Generale 2015 to 2018, family office 2018 to 2020, Accenture 2020 to present.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "proof-line-1",
@@ -55,7 +56,7 @@
       "depth": "professional-delivery",
       "personal": "Strategy and economics through to pilot delivery.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "proof-line-2",
@@ -68,7 +69,7 @@
       "depth": "professional-delivery",
       "personal": "Senior stakeholder coordination and hands-on direction of AI-assisted builds.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "proof-line-3",
@@ -81,7 +82,7 @@
       "depth": "professional-delivery",
       "personal": "FIG capital markets, then enterprise AI in financial services.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "proof-line-4",
@@ -95,7 +96,7 @@
       "depth": "professional-delivery",
       "personal": "Delivery for Swiss, Austrian-supervised and pan-European clients; cities London, Zurich, Paris.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "target-roles",
@@ -109,7 +110,7 @@
       "depth": "professional-delivery",
       "personal": "A statement of fit, not a claim of having held these titles.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "thesis",
@@ -122,7 +123,7 @@
       "depth": "designed-specified",
       "personal": "Point of view, evidenced by the blueprint and economics work.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "conclusion",
@@ -136,7 +137,7 @@
       "depth": "professional-delivery",
       "personal": "Self-assessment of fit; supported by the evidence trail.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "lens-consulting-opening",
@@ -150,7 +151,7 @@
       "depth": "professional-delivery",
       "personal": "Lens opening statement; emphasis only, no new facts.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "lens-deployment-opening",
@@ -164,7 +165,7 @@
       "depth": "professional-delivery",
       "personal": "Lens opening statement; emphasis only, no new facts.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "lens-value-engineering-opening",
@@ -178,7 +179,7 @@
       "depth": "professional-delivery",
       "personal": "Lens opening statement; emphasis only, no new facts.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "lens-partnerships-opening",
@@ -192,7 +193,7 @@
       "depth": "professional-delivery",
       "personal": "Lens opening statement; emphasis only, no new facts.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "lens-builder-opening",
@@ -206,7 +207,7 @@
       "depth": "professional-delivery",
       "personal": "Lens opening statement; emphasis only, no new facts.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "lens-risk-opening",
@@ -220,7 +221,7 @@
       "depth": "professional-delivery",
       "personal": "Lens opening statement; emphasis only, no new facts.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "lens-solution-design-opening",
@@ -234,7 +235,7 @@
       "depth": "professional-delivery",
       "personal": "Lens opening statement; emphasis only, no new facts.",
       "decision": "qualify",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "career-analytics",
@@ -246,7 +247,7 @@
       "depth": "professional-delivery",
       "personal": "Taken from the CV entries for this stage.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "career-capital-markets",
@@ -258,7 +259,7 @@
       "depth": "professional-delivery",
       "personal": "Taken from the CV entries for this stage.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "career-investment",
@@ -270,7 +271,7 @@
       "depth": "professional-delivery",
       "personal": "Taken from the CV entries for this stage.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "career-regulated-transformation",
@@ -284,7 +285,7 @@
       "depth": "professional-delivery",
       "personal": "Taken from the CV entries for this stage.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "career-enterprise-ai",
@@ -298,7 +299,7 @@
       "depth": "professional-delivery",
       "personal": "Taken from the CV entries for this stage.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "career-commercialisation",
@@ -312,7 +313,7 @@
       "depth": "professional-delivery",
       "personal": "Taken from the CV entries for this stage.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-nfr-work-fabric-subtitle",
@@ -326,7 +327,7 @@
       "depth": "designed-specified",
       "personal": "Author of the blueprint and product owner of the interactive experience: the thesis, process and work-object model, architecture, security and governance model, operating model, value framework and plan, and the acceptance tests the build had to pass.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-nfr-work-fabric-boundary",
@@ -340,7 +341,7 @@
       "depth": "designed-specified",
       "personal": "Scope boundary; must stay visible.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-ai-economics-subtitle",
@@ -352,7 +353,7 @@
       "depth": "built-verified",
       "personal": "Product owner and model designer: problem framing, cost and benefit logic, scenario design and interface, with AI-assisted implementation that I reviewed and deployed.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-ai-economics-boundary",
@@ -364,7 +365,7 @@
       "depth": "built-verified",
       "personal": "Scope boundary; must stay visible.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-dora-control-line-subtitle",
@@ -376,7 +377,7 @@
       "depth": "built-verified",
       "personal": "Workflow architect and product owner: regulatory framing, state-machine and approval design, model assignment, verification and evidence design, with AI-assisted implementation that I reviewed and tested.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-dora-control-line-boundary",
@@ -388,7 +389,7 @@
       "depth": "built-verified",
       "personal": "Scope boundary; must stay visible.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-nfr-agent-platform-subtitle",
@@ -400,7 +401,7 @@
       "depth": "built-verified",
       "personal": "Platform architect: orchestration model, approval and write-back design, knowledge graph and observability, with AI-assisted implementation that I reviewed and deployed.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-nfr-agent-platform-boundary",
@@ -412,7 +413,7 @@
       "depth": "built-verified",
       "personal": "Scope boundary; must stay visible.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-airlock-subtitle",
@@ -425,7 +426,7 @@
       "depth": "built-verified",
       "personal": "Pattern designer: workflow, policy and approval design, the finance-engine boundary and the reference architecture, with AI-assisted implementation that I reviewed.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-airlock-boundary",
@@ -438,7 +439,7 @@
       "depth": "built-verified",
       "personal": "Scope boundary; must stay visible.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-data-reporting-transformation-subtitle",
@@ -450,7 +451,7 @@
       "depth": "professional-delivery",
       "personal": "Originated the programme and held end-to-end delivery responsibility: execution, regulatory compliance, and coordination across risk, data and technology workstreams.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     },
     {
       "id": "case-data-reporting-transformation-boundary",
@@ -462,7 +463,7 @@
       "depth": "professional-delivery",
       "personal": "Scope boundary; must stay visible.",
       "decision": "retain",
-      "publication": "needs-confirmation"
+      "publication": "approved"
     }
   ]
 }

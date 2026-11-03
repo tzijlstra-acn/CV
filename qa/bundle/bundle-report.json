@@ -6,151 +6,151 @@
     "largestLazyGzip": 61440
   },
   "initial": {
-    "jsGzip": 170523,
+    "jsGzip": 170503,
     "cssGzip": 5563,
     "files": [
-      "app/index-CDsqLLDk.js",
+      "app/index-BDEe0nSq.js",
       "app/rolldown-runtime-WkwZ5CU-.js",
       "app/react-BbggMMhK.js",
-      "app/dist-D26BZ_Y0.js",
-      "app/site-CgO7BbO6.js",
-      "app/arrow-right-buUIoJ9w.js",
+      "app/dist-Doeiutt_.js",
+      "app/site-Ds_M0MS4.js",
+      "app/arrow-right-BX38gfKM.js",
       "app/icons-BbUn2JFs.js",
-      "app/useRouterState--Yr538F-.js",
-      "app/useNavigate-MFsAoisf.js",
+      "app/useRouterState-DqJ8xXUe.js",
+      "app/useNavigate-CvFhxy4c.js",
       "app/index-CERgaGH_.css"
     ]
   },
   "lazy": [
     {
       "name": "motion-features",
-      "file": "app/motion-features-BFAdyXYc.js",
-      "gzip": 17441
+      "file": "app/motion-features-DwxvcY-H.js",
+      "gzip": 17439
     },
     {
       "name": "S08Economics",
-      "file": "app/S08Economics-DfXIEeth.js",
-      "gzip": 11720
+      "file": "app/S08Economics-Cu46QtfY.js",
+      "gzip": 11722
     },
     {
       "name": "dist",
-      "file": "app/dist-BOSiOGht.js",
-      "gzip": 5289
+      "file": "app/dist-B4C29g1b.js",
+      "gzip": 5283
     },
     {
       "name": "Evidence",
-      "file": "app/Evidence-BME3PAxq.js",
-      "gzip": 4159
+      "file": "app/Evidence-DLHpAADL.js",
+      "gzip": 4164
     },
     {
       "name": "Overlays",
-      "file": "app/Overlays-CeFRrpRM.js",
-      "gzip": 4149
+      "file": "app/Overlays-BweIwsqW.js",
+      "gzip": 4147
     },
     {
       "name": "NfrBlueprint",
-      "file": "app/NfrBlueprint-DbHYlOH8.js",
-      "gzip": 3176
+      "file": "app/NfrBlueprint-BLcSRDxn.js",
+      "gzip": 3175
     },
     {
       "name": "react",
-      "file": "app/react-CrcdoA20.js",
+      "file": "app/react-DRmyrkwn.js",
       "gzip": 2831
     },
     {
       "name": "ProcessNetwork",
-      "file": "app/ProcessNetwork-DNsyVwRL.js",
-      "gzip": 2401
+      "file": "app/ProcessNetwork-BmDWuf4I.js",
+      "gzip": 2400
     },
     {
       "name": "Case",
-      "file": "app/Case-CBmhlA9r.js",
-      "gzip": 2363
+      "file": "app/Case-DGJdv2gz.js",
+      "gzip": 2361
     },
     {
       "name": "WorkFabricCompare",
-      "file": "app/WorkFabricCompare-DOOXHd5d.js",
-      "gzip": 1925
+      "file": "app/WorkFabricCompare-Ct-6Btxi.js",
+      "gzip": 1924
     },
     {
       "name": "FabricGraph",
-      "file": "app/FabricGraph-CsIgYfKz.js",
-      "gzip": 1675
+      "file": "app/FabricGraph-AcRX4g86.js",
+      "gzip": 1676
     },
     {
       "name": "is-svg-component",
-      "file": "app/is-svg-component-kw1Fwxbz.js",
-      "gzip": 1658
+      "file": "app/is-svg-component-nR3GC8SH.js",
+      "gzip": 1657
     },
     {
       "name": "Cascade",
-      "file": "app/Cascade-t2VSlhv5.js",
-      "gzip": 1463
+      "file": "app/Cascade-D2x-l0lk.js",
+      "gzip": 1469
     },
     {
       "name": "S02Career",
-      "file": "app/S02Career-acwY9QP-.js",
-      "gzip": 1392
+      "file": "app/S02Career-BN4Cmc9E.js",
+      "gzip": 1393
     },
     {
       "name": "Evidence",
-      "file": "app/Evidence-CoiFkOmk.js",
-      "gzip": 1276
+      "file": "app/Evidence-C15Lq3WI.js",
+      "gzip": 1277
     },
     {
       "name": "Capabilities",
-      "file": "app/Capabilities-D8OK5fCy.js",
-      "gzip": 1253
+      "file": "app/Capabilities-BiGHv833.js",
+      "gzip": 1256
     },
     {
       "name": "S07ControlledAi",
-      "file": "app/S07ControlledAi-CMpW-_Az.js",
-      "gzip": 1153
+      "file": "app/S07ControlledAi-CzTwuwko.js",
+      "gzip": 1155
     },
     {
       "name": "S09Execution",
-      "file": "app/S09Execution-DYdGCOv2.js",
-      "gzip": 937
+      "file": "app/S09Execution-QlqaZKNL.js",
+      "gzip": 940
     },
     {
       "name": "S12RoleFit",
-      "file": "app/S12RoleFit-Z4XApauJ.js",
-      "gzip": 930
+      "file": "app/S12RoleFit-DFlTEiN2.js",
+      "gzip": 932
     },
     {
       "name": "S11Selected",
-      "file": "app/S11Selected-CXA8YErz.js",
-      "gzip": 792
+      "file": "app/S11Selected-BrQ1pDYN.js",
+      "gzip": 796
     },
     {
       "name": "S10Discipline",
-      "file": "app/S10Discipline-D7NXB-e3.js",
-      "gzip": 592
+      "file": "app/S10Discipline-M__Azdjn.js",
+      "gzip": 593
     },
     {
       "name": "S03Fabric",
-      "file": "app/S03Fabric-IQjcG-Uj.js",
-      "gzip": 540
+      "file": "app/S03Fabric-CsjgYyFG.js",
+      "gzip": 544
     },
     {
       "name": "S04WorkFabric",
-      "file": "app/S04WorkFabric-l3g8RoX_.js",
-      "gzip": 534
+      "file": "app/S04WorkFabric-B3GhVzNP.js",
+      "gzip": 537
     },
     {
       "name": "SceneFrame",
-      "file": "app/SceneFrame-Bo6u-iHa.js",
-      "gzip": 476
+      "file": "app/SceneFrame-CcPkHhvS.js",
+      "gzip": 474
     },
     {
       "name": "S05Network",
-      "file": "app/S05Network-BmKJTIXb.js",
-      "gzip": 202
+      "file": "app/S05Network-tcSrgVhE.js",
+      "gzip": 201
     },
     {
       "name": "S06Blueprint",
-      "file": "app/S06Blueprint-CjdIawvK.js",
-      "gzip": 185
+      "file": "app/S06Blueprint-BhJLV1pV.js",
+      "gzip": 186
     },
     {
       "name": "search",
