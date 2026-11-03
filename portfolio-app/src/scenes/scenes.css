@@ -308,6 +308,10 @@
 }
 .thesis-dot {
   fill: var(--muted);
+  transition: transform var(--dur-scene) var(--ease), opacity var(--dur-scene) var(--ease);
+}
+.thesis-object-group {
+  transition: transform 500ms var(--ease), opacity var(--dur) var(--ease);
 }
 .thesis-label {
   font-family: var(--font-mono);
@@ -395,6 +399,10 @@
   width: 100%;
   height: auto;
   margin-bottom: 8px;
+}
+.career-strand {
+  stroke-dasharray: 1;
+  transition: stroke-dashoffset 900ms var(--ease), opacity 200ms var(--ease);
 }
 .career-baseline {
   stroke: var(--line-strong);
@@ -544,4 +552,12 @@
   margin-top: 12px;
   font-size: 14px;
   max-width: 100ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thesis-dot,
+  .thesis-object-group,
+  .career-strand {
+    transition: none;
+  }
 }

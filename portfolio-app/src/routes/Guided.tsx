@@ -3,10 +3,10 @@ import { useUi } from '@/app/ui-store'
 import { sceneScroll, scrollToScene } from '@/app/useShortcuts'
 import { site } from '@/data/site'
 import { S01Thesis } from '@/scenes/S01Thesis'
-import { S02Career } from '@/scenes/S02Career'
 
 /** Scenes below the fold load as separate chunks once the visitor approaches them. */
 const LAZY: Record<string, React.LazyExoticComponent<ComponentType>> = {
+  career: lazy(() => import('@/scenes/S02Career').then((m) => ({ default: m.S02Career }))),
   fabric: lazy(() => import('@/scenes/S03Fabric').then((m) => ({ default: m.S03Fabric }))),
   'work-fabric': lazy(() => import('@/scenes/S04WorkFabric').then((m) => ({ default: m.S04WorkFabric }))),
   'process-network': lazy(() => import('@/scenes/S05Network').then((m) => ({ default: m.S05Network }))),
@@ -18,7 +18,7 @@ const LAZY: Record<string, React.LazyExoticComponent<ComponentType>> = {
   'selected-evidence': lazy(() => import('@/scenes/S11Selected').then((m) => ({ default: m.S11Selected }))),
   'role-fit': lazy(() => import('@/scenes/S12RoleFit').then((m) => ({ default: m.S12RoleFit }))),
 }
-const EAGER: Record<string, ComponentType> = { thesis: S01Thesis, career: S02Career }
+const EAGER: Record<string, ComponentType> = { thesis: S01Thesis }
 
 function ScenePlaceholder({ id }: { id: string }) {
   const s = site.story.find((x) => x.id === id)!
@@ -39,14 +39,17 @@ function ScenePlaceholder({ id }: { id: string }) {
   )
 }
 
-/** Mounts a lazy scene when it comes within two screens of the viewport (or on direct link). */
+/**
+ * Mounts a lazy scene only when it enters the viewport (or at once for a direct link). The first visit renders the opening scene and nothing else, which keeps the main
+ * thread free while the page loads; each later scene loads as a small chunk just before it is seen.
+ */
 function LazyScene({ id, eager }: { id: string; eager: boolean }) {
   const Comp = LAZY[id]
   const ref = useRef<HTMLDivElement>(null)
   const [mounted, setMounted] = useState(eager)
   useEffect(() => {
     if (mounted || !ref.current) return
-    const io = new IntersectionObserver((entries) => entries.some((e) => e.isIntersecting) && setMounted(true), { rootMargin: '200% 0px' })
+    const io = new IntersectionObserver((entries) => entries.some((e) => e.isIntersecting) && setMounted(true), { rootMargin: '0px' })
     io.observe(ref.current)
     return () => io.disconnect()
   }, [mounted])

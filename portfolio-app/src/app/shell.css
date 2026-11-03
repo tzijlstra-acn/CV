@@ -9,8 +9,7 @@
   align-items: center;
   gap: 16px;
   padding: 0 var(--gutter);
-  background: color-mix(in srgb, var(--canvas) 92%, transparent);
-  backdrop-filter: saturate(140%) blur(10px);
+  background: var(--canvas);
   border-bottom: 1px solid var(--line);
 }
 .topbar__id {

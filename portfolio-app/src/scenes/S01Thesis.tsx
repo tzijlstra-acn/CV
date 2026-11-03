@@ -1,9 +1,8 @@
 import { Link } from '@tanstack/react-router'
-import { m } from 'motion/react'
 import { useActiveLens } from '@/app/hooks'
 import { asset, CV_HREF, mailto, PDF_HREF, site } from '@/data/site'
 import { ArrowRight, Download, ICON, RotateCcw } from '@/design-system/icons'
-import { useCompact, useInView, useSequence } from '@/lib/hooks'
+import { useCompact, useIdle, useInView, useSequence } from '@/lib/hooks'
 
 const scene = site.story[0]
 const VIEWS = site.scenes.thesisViews
@@ -50,7 +49,14 @@ function OpportunityVisual({ start }: { start: boolean }) {
           {/* Ambiguous signal */}
           {!compact
             ? DOTS.map((d, i) => (
-                <m.circle key={i} r={3} className="thesis-dot" initial={false} animate={step === 0 ? { cx: d.x, cy: d.y, opacity: 1 } : { cx: origin.x, cy: origin.y, opacity: 0 }} transition={{ duration: 0.55, delay: i * 0.012 }} />
+                <circle
+                  key={i}
+                  cx={d.x}
+                  cy={d.y}
+                  r={3}
+                  className="thesis-dot"
+                  style={{ transform: step === 0 ? undefined : `translate(${origin.x - d.x}px, ${origin.y - d.y}px)`, opacity: step === 0 ? 1 : 0, transitionDelay: `${i * 12}ms` }}
+                />
               ))
             : null}
           {!compact ? (
@@ -92,12 +98,12 @@ function OpportunityVisual({ start }: { start: boolean }) {
             )
           })}
           {/* The work object */}
-          <m.g initial={false} animate={{ x: objectAt.x, y: objectAt.y, opacity: step === 0 ? 0 : 1 }} transition={{ type: 'tween', duration: 0.5, ease: [0.2, 0.7, 0.2, 1] }}>
+          <g className="thesis-object-group" style={{ transform: `translate(${objectAt.x}px, ${objectAt.y}px)`, opacity: step === 0 ? 0 : 1 }}>
             <rect x={-17} y={-17} width={34} height={34} rx={7} className={`thesis-object${done ? ' is-done' : ''}`} />
             {Array.from({ length: Math.min(VIEWS.length, Math.max(0, step - 1)) }, (_, i) => (
               <rect key={i} x={-11 + (i % 3) * 8} y={-9 + Math.floor(i / 3) * 10} width={6} height={6} rx={1.5} className="thesis-object__facet" />
             ))}
-          </m.g>
+          </g>
           {/* Result */}
           <g className={`thesis-result${done ? ' is-on' : ''}`}>
             {compact ? (
@@ -131,6 +137,7 @@ function OpportunityVisual({ start }: { start: boolean }) {
 export function S01Thesis() {
   const lens = useActiveLens()
   const [ref, inView] = useInView<HTMLElement>(0.2)
+  const idle = useIdle()
   const p = site.profile
   const person = site.person
   return (
@@ -186,7 +193,7 @@ export function S01Thesis() {
             {person.location} | {person.languages.map((l) => l.name).join(', ')} | {person.international.map((x) => x.city).join(', ')}
           </p>
         </div>
-        <OpportunityVisual start={inView} />
+        <OpportunityVisual start={inView && idle} />
       </div>
     </section>
   )

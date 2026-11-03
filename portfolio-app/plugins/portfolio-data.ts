@@ -18,7 +18,8 @@ export function portfolioData(): Plugin {
       if (id !== RESOLVED) return undefined
       for (const f of WATCH_FILES) this.addWatchFile(f)
       const site = buildSiteData()
-      return `export default ${JSON.stringify(site)}`
+      // A JSON.parse of a string literal parses far faster than the same data as an object literal.
+      return `export default JSON.parse(${JSON.stringify(JSON.stringify(site))})`
     },
     configureServer(server) {
       server.watcher.add(WATCH_FILES)

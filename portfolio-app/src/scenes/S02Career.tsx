@@ -1,5 +1,4 @@
 import { Link } from '@tanstack/react-router'
-import { m } from 'motion/react'
 import { useState } from 'react'
 import { useActiveLens } from '@/app/hooks'
 import { SceneFrame } from '@/components/SceneFrame'
@@ -25,16 +24,16 @@ function Strands({ start, focus }: { start: boolean; focus: number }) {
       {STAGES.map((s, i) => {
         const d = `M ${x(i)} ${H - 24} C ${x(i)} ${y(i) + 40}, ${x(i) + 40} ${y(i)}, ${x(i) + 90} ${y(i)} L ${W - 20} ${y(i)}`
         return (
-          <m.path
+          <path
             key={s.id}
             d={d}
+            pathLength={1}
             fill="none"
             stroke={STRAND_COLOURS[i]}
             strokeWidth={focus === i ? 4 : 2.5}
             strokeLinecap="round"
-            initial={{ pathLength: reduced ? 1 : 0, opacity: 0.9 }}
-            animate={start ? { pathLength: 1, opacity: focus === -1 || focus === i ? 1 : 0.35 } : undefined}
-            transition={{ pathLength: { duration: reduced ? 0 : 0.9, delay: reduced ? 0 : 0.15 * i }, opacity: { duration: 0.2 } }}
+            className="career-strand"
+            style={{ strokeDashoffset: start || reduced ? 0 : 1, opacity: focus === -1 || focus === i ? 1 : 0.35, transitionDelay: `${0.15 * i}s, 0s` }}
           />
         )
       })}

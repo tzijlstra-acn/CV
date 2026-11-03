@@ -14,6 +14,20 @@ export function useReducedMotion(): boolean {
   )
 }
 
+/** True once the browser has been idle after the first render (for work that can wait). */
+export function useIdle(timeout = 2000): boolean {
+  const [idle, setIdle] = useState(false)
+  useEffect(() => {
+    if ('requestIdleCallback' in window) {
+      const id = window.requestIdleCallback(() => setIdle(true), { timeout })
+      return () => window.cancelIdleCallback(id)
+    }
+    const t = setTimeout(() => setIdle(true), 600)
+    return () => clearTimeout(t)
+  }, [timeout])
+  return idle
+}
+
 /** True once the element has been at least `threshold` visible. */
 export function useInView<T extends Element>(threshold = 0.35) {
   const ref = useRef<T>(null)

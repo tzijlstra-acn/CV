@@ -11,6 +11,7 @@ import { useUi } from './ui-store'
 /** Overlays (palette, help, overview, menu) load on first use, keeping Radix Dialog out of the first download. */
 const Overlays = lazy(() => import('./Overlays').then((m) => ({ default: m.Overlays })))
 
+/** Motion's features load as a separate chunk, in parallel with the first render. */
 const loadMotionFeatures = () => import('./motion-features').then((r) => r.default)
 
 function ModeSwitch() {

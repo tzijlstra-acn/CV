@@ -30,7 +30,7 @@ Issues found and fixed during QA: accessible names that did not contain their vi
 
 ## Performance
 
-- Initial JavaScript 170.8 KB gzip against a 175 KB budget; CSS 5.5 KB. Motion's features, the overlays, scenes 3 to 12, the explorer, the case pages and the d3 chart are lazy.
+- Initial JavaScript 166.3 KB gzip against a 175 KB budget; CSS 5.4 KB (after D-031). Motion's features, the overlays, scenes 3 to 12, the explorer, the case pages and the d3 chart are lazy.
 - Lighthouse (desktop preset, median of three runs):
 
 | URL | Performance | Accessibility | Best practices | SEO |
@@ -41,7 +41,7 @@ Issues found and fixed during QA: accessible names that did not contain their vi
 | `/CV/evidence/` | 98 | 100 | 100 | 100 |
 | `/CV/capabilities/` | 99 | 100 | 100 | 100 |
 
-- Fonts: three self-hosted families (latin subsets, eight weights), two preloaded. The hero portrait is a 1.5 KB WebP.
+- Fonts: three self-hosted families (latin subsets, five faces), two preloaded. The hero portrait is a 1.5 KB WebP.
 
 ## Visual inspection
 
