@@ -13,8 +13,19 @@ import { createRoot } from 'react-dom/client'
 import { RouterProvider } from '@tanstack/react-router'
 import { router } from './app/router'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+/**
+ * The first render waits for the five faces, which the page preloads, so they are usually here already. Laying out with the
+ * fallback stacks first costs a system font lookup and then a second full layout when the faces arrive. A slow font never
+ * holds the page back for long.
+ */
+const FACES = ['400 1em Inter', '500 1em Inter', '600 1em Inter', '600 1em "Space Grotesk"', '400 1em "JetBrains Mono"']
+const fontsReady = Promise.all(FACES.map((f) => document.fonts.load(f))).catch(() => undefined)
+const cap = new Promise((resolve) => setTimeout(resolve, 500))
+
+void Promise.race([fontsReady, cap]).then(() =>
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>,
+  ),
 )

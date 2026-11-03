@@ -14,6 +14,9 @@ export function useReducedMotion(): boolean {
   )
 }
 
+/** True when the page was opened with a fragment, so content that may hold its target should not wait. */
+export const hasHash = () => typeof location !== 'undefined' && location.hash.length > 1
+
 /** True once the browser has been idle after the first render (for work that can wait). */
 export function useIdle(timeout = 2000): boolean {
   const [idle, setIdle] = useState(false)

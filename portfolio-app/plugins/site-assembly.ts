@@ -157,8 +157,8 @@ export function siteAssembly(): Plugin {
         let out = swap(html, HEAD_START, HEAD_END, headFor(home, site))
         out = swap(out, BODY_START, BODY_END, fallbackFor(home, site))
         if (!ctx.bundle) return out
-        // Production only: strict same-origin CSP and preloads for the two essential fonts.
-        const fonts = Object.keys(ctx.bundle).filter((f) => /(inter-latin-400-normal|space-grotesk-latin-600-normal)-[^/]+\.woff2$/.test(f))
+        // Production only: strict same-origin CSP and preloads for the five faces, which the first render waits for.
+        const fonts = Object.keys(ctx.bundle).filter((f) => /(inter-latin-[456]00-normal|space-grotesk-latin-600-normal|jetbrains-mono-latin-400-normal)-[^/]+\.woff2$/.test(f))
         const tags: HtmlTagDescriptor[] = [
           {
             tag: 'meta',

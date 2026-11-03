@@ -1,7 +1,7 @@
 import { expect, type Page } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 
-/** Opens a path under /CV/ and fails the test on any console error or page error. */
+/** Opens a path under /CV/, waits for the blocks that mount after the first paint, and fails the test on any console error or page error. */
 export async function open(page: Page, path = '') {
   const errors: string[] = []
   page.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`))
@@ -10,6 +10,7 @@ export async function open(page: Page, path = '') {
   })
   await page.goto(path)
   await expect(page.locator('#main')).toBeVisible()
+  await page.waitForFunction(() => !document.querySelector('[data-deferred]'))
   return errors
 }
 

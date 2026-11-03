@@ -21,7 +21,7 @@ test.describe('evidence explorer and capability map (brief section 16)', () => {
     await page.goto('evidence/?type=public-build')
     await page.goBack()
     await expect(page).toHaveURL(/depth=professional-delivery/)
-    expect(await page.locator('article[data-depth]').count()).toBe(filtered)
+    await expect(page.locator('article[data-depth]')).toHaveCount(filtered)
   })
 
   test('invalid filter values are dropped', async ({ page }) => {

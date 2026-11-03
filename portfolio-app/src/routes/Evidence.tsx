@@ -7,6 +7,7 @@ import { FabricGraph } from '@/components/FabricGraph'
 import { DEPTH_LABEL, DEPTH_ORDER, orderEvidence, site, TYPE_LABEL, type Depth, type EvidenceType, type RoleFamily } from '@/data/site'
 import { searchEvidence } from '@/data/search'
 import { ICON, Search, X } from '@/design-system/icons'
+import { Deferred } from '@/lib/Deferred'
 import type { Domain } from '@data/site-types'
 import './explorer.css'
 
@@ -40,6 +41,9 @@ const PRESETS: { label: string; search: EvidenceSearch }[] = [
   { label: 'Technical depth', search: { group: ['ai-solution-design', 'engineering-quality'] } },
   { label: 'Product and programme', search: { group: ['product-experience', 'transformation-programme'] } },
 ]
+
+/** Rows that render with the page; the rest of the list follows a frame later. */
+const FIRST_ROWS = 4
 
 function Toggle<T extends string>({ label, values, options, render, onChange }: { label: string; values: T[]; options: T[]; render: (v: T) => string; onChange: (v: T[]) => void }) {
   return (
@@ -170,9 +174,14 @@ export function Evidence() {
             <FabricGraph key={`${lens?.id}-${visible.length}`} lens={lens} evidence={visible} full />
           ) : (
             <div className="explorer__list">
-              {visible.map((e) => (
+              {visible.slice(0, FIRST_ROWS).map((e) => (
                 <EvidenceRow key={e.id} item={e} emphasis={search.focus === e.id} />
               ))}
+              <Deferred now={!!search.focus}>
+                {visible.slice(FIRST_ROWS).map((e) => (
+                  <EvidenceRow key={e.id} item={e} emphasis={search.focus === e.id} />
+                ))}
+              </Deferred>
               {!visible.length ? <p className="explorer__empty">Nothing matches. Try fewer filters, or one of the quick views above.</p> : null}
             </div>
           )}

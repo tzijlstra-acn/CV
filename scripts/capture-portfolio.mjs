@@ -97,6 +97,7 @@ for (const [w, h] of VIEWPORTS) {
     page.on('pageerror', (e) => errors.push(e.message))
     page.on('console', (m) => m.type() === 'error' && errors.push(m.text()))
     await page.goto(BASE + route.path, { waitUntil: 'networkidle' })
+    await page.waitForFunction(() => !document.querySelector('[data-deferred]'))
     if (route.id.startsWith('home')) await mountAll(page)
     if (route.id === 'case-nfr-work-fabric') await page.getByTestId('nfr-blueprint').scrollIntoViewIfNeeded()
     await page.evaluate(() => document.fonts.ready)
@@ -146,6 +147,7 @@ for (const motion of ['no-preference', 'reduce']) {
     const ctx = await browser.newContext({ viewport: { width: w, height: h }, reducedMotion: motion })
     const page = await ctx.newPage()
     await page.goto(BASE + p, { waitUntil: 'networkidle' })
+    await page.waitForFunction(() => !document.querySelector('[data-deferred]'))
     if (p === '' || p.startsWith('?')) await mountAll(page)
     if (anchor) {
       await page.evaluate((a) => document.getElementById(a)?.scrollIntoView({ block: 'start' }), anchor)

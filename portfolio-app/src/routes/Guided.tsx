@@ -2,9 +2,10 @@ import { lazy, Suspense, useEffect, useRef, useState, type ComponentType } from 
 import { useUi } from '@/app/ui-store'
 import { sceneScroll, scrollToScene } from '@/app/useShortcuts'
 import { site } from '@/data/site'
+import { Deferred } from '@/lib/Deferred'
 import { S01Thesis } from '@/scenes/S01Thesis'
 
-/** Scenes below the fold load as separate chunks once the visitor approaches them. */
+/** The opening scene ships with the page; the scenes below the fold load as separate chunks once the visitor approaches them. */
 const LAZY: Record<string, React.LazyExoticComponent<ComponentType>> = {
   career: lazy(() => import('@/scenes/S02Career').then((m) => ({ default: m.S02Career }))),
   fabric: lazy(() => import('@/scenes/S03Fabric').then((m) => ({ default: m.S03Fabric }))),
@@ -18,7 +19,6 @@ const LAZY: Record<string, React.LazyExoticComponent<ComponentType>> = {
   'selected-evidence': lazy(() => import('@/scenes/S11Selected').then((m) => ({ default: m.S11Selected }))),
   'role-fit': lazy(() => import('@/scenes/S12RoleFit').then((m) => ({ default: m.S12RoleFit }))),
 }
-const EAGER: Record<string, ComponentType> = { thesis: S01Thesis }
 
 function ScenePlaceholder({ id }: { id: string }) {
   const s = site.story.find((x) => x.id === id)!
@@ -133,10 +133,11 @@ export function Guided() {
     <div className="guided">
       <StoryRail />
       <div id="story" className="story">
-        {site.story.map((s, i) => {
-          const Eager = EAGER[s.id]
-          return Eager ? <Eager key={s.id} /> : <LazyScene key={s.id} id={s.id} eager={targetIndex >= 0 && i <= targetIndex + 1} />
-        })}
+        <S01Thesis />
+        {/* The rest of the story follows the opening scene by a frame, unless the visitor is headed for one of its scenes. */}
+        <Deferred now={targetIndex >= 0}>
+          {site.story.map((s, i) => (i === 0 ? null : <LazyScene key={s.id} id={s.id} eager={targetIndex >= 0 && i <= targetIndex + 1} />))}
+        </Deferred>
       </div>
     </div>
   )
