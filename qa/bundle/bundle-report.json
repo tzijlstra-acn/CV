@@ -6,10 +6,10 @@
     "largestLazyGzip": 61440
   },
   "initial": {
-    "jsGzip": 170503,
+    "jsGzip": 170506,
     "cssGzip": 5563,
     "files": [
-      "app/index-BDEe0nSq.js",
+      "app/index-BkPWlcwc.js",
       "app/rolldown-runtime-WkwZ5CU-.js",
       "app/react-BbggMMhK.js",
       "app/dist-Doeiutt_.js",
@@ -24,12 +24,12 @@
   "lazy": [
     {
       "name": "motion-features",
-      "file": "app/motion-features-DwxvcY-H.js",
+      "file": "app/motion-features-D0ZRez52.js",
       "gzip": 17439
     },
     {
       "name": "S08Economics",
-      "file": "app/S08Economics-Cu46QtfY.js",
+      "file": "app/S08Economics--R_Epwo8.js",
       "gzip": 11722
     },
     {
@@ -39,38 +39,38 @@
     },
     {
       "name": "Evidence",
-      "file": "app/Evidence-DLHpAADL.js",
-      "gzip": 4164
+      "file": "app/Evidence-DxOuWWFi.js",
+      "gzip": 4163
     },
     {
       "name": "Overlays",
-      "file": "app/Overlays-BweIwsqW.js",
+      "file": "app/Overlays--aBXbV0p.js",
       "gzip": 4147
     },
     {
       "name": "NfrBlueprint",
-      "file": "app/NfrBlueprint-BLcSRDxn.js",
-      "gzip": 3175
+      "file": "app/NfrBlueprint-DJ5MGfPC.js",
+      "gzip": 3182
     },
     {
       "name": "react",
-      "file": "app/react-DRmyrkwn.js",
-      "gzip": 2831
+      "file": "app/react-C67WlBQj.js",
+      "gzip": 2828
     },
     {
       "name": "ProcessNetwork",
-      "file": "app/ProcessNetwork-BmDWuf4I.js",
-      "gzip": 2400
+      "file": "app/ProcessNetwork-BS9lUFKh.js",
+      "gzip": 2401
     },
     {
       "name": "Case",
-      "file": "app/Case-DGJdv2gz.js",
-      "gzip": 2361
+      "file": "app/Case-DWiYf659.js",
+      "gzip": 2364
     },
     {
       "name": "WorkFabricCompare",
-      "file": "app/WorkFabricCompare-Ct-6Btxi.js",
-      "gzip": 1924
+      "file": "app/WorkFabricCompare-SWmtY59U.js",
+      "gzip": 1925
     },
     {
       "name": "FabricGraph",
@@ -79,18 +79,18 @@
     },
     {
       "name": "is-svg-component",
-      "file": "app/is-svg-component-nR3GC8SH.js",
+      "file": "app/is-svg-component-Bnxsig4z.js",
       "gzip": 1657
     },
     {
       "name": "Cascade",
-      "file": "app/Cascade-D2x-l0lk.js",
-      "gzip": 1469
+      "file": "app/Cascade-c6tPBQsM.js",
+      "gzip": 1470
     },
     {
       "name": "S02Career",
-      "file": "app/S02Career-BN4Cmc9E.js",
-      "gzip": 1393
+      "file": "app/S02Career-BcznMro9.js",
+      "gzip": 1392
     },
     {
       "name": "Evidence",
@@ -99,43 +99,43 @@
     },
     {
       "name": "Capabilities",
-      "file": "app/Capabilities-BiGHv833.js",
+      "file": "app/Capabilities-BYjkiLrF.js",
       "gzip": 1256
     },
     {
       "name": "S07ControlledAi",
-      "file": "app/S07ControlledAi-CzTwuwko.js",
-      "gzip": 1155
+      "file": "app/S07ControlledAi-DScTECvG.js",
+      "gzip": 1137
     },
     {
       "name": "S09Execution",
-      "file": "app/S09Execution-QlqaZKNL.js",
+      "file": "app/S09Execution-DXOmBcVf.js",
       "gzip": 940
     },
     {
       "name": "S12RoleFit",
-      "file": "app/S12RoleFit-DFlTEiN2.js",
+      "file": "app/S12RoleFit-IPQOA6oC.js",
       "gzip": 932
     },
     {
       "name": "S11Selected",
-      "file": "app/S11Selected-BrQ1pDYN.js",
+      "file": "app/S11Selected-DNRjG409.js",
       "gzip": 796
     },
     {
       "name": "S10Discipline",
-      "file": "app/S10Discipline-M__Azdjn.js",
-      "gzip": 593
+      "file": "app/S10Discipline-AZ6q1Vqg.js",
+      "gzip": 592
     },
     {
       "name": "S03Fabric",
-      "file": "app/S03Fabric-CsjgYyFG.js",
+      "file": "app/S03Fabric-DQNTjImp.js",
       "gzip": 544
     },
     {
       "name": "S04WorkFabric",
-      "file": "app/S04WorkFabric-B3GhVzNP.js",
-      "gzip": 537
+      "file": "app/S04WorkFabric-XwfJc5Sv.js",
+      "gzip": 539
     },
     {
       "name": "SceneFrame",
@@ -144,12 +144,12 @@
     },
     {
       "name": "S05Network",
-      "file": "app/S05Network-tcSrgVhE.js",
-      "gzip": 201
+      "file": "app/S05Network-DFU7tqBw.js",
+      "gzip": 202
     },
     {
       "name": "S06Blueprint",
-      "file": "app/S06Blueprint-BhJLV1pV.js",
+      "file": "app/S06Blueprint-DMhUpr02.js",
       "gzip": 186
     },
     {

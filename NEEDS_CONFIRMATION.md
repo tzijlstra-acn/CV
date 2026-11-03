@@ -41,6 +41,6 @@ _Last updated: 2026-11-03. Thomas approved all displayed content as drafted (DEC
 ## 5. Going live
 
 - [x] Committed and pushed to the `portfolio-rebuild` branch (not `main`; see D-030).
-- [ ] Settings > Pages > Build and deployment > Source: **GitHub Actions** (the new `pages.yml` deploys `dist/`). Do this before anything reaches `main`: the old branch-root deployment would no longer find an `index.html`.
-- [ ] Merge `portfolio-rebuild` into `main` (pull request or fast-forward) once the confirmations above are done. The deployment runs lint, tests, the release gate, the build, content, confidentiality and link checks, end-to-end tests and Lighthouse first.
+- [x] Settings > Pages > Build and deployment > Source: **GitHub Actions** (switched by Thomas on 2026-11-03) (the new `pages.yml` deploys `dist/`). Do this before anything reaches `main`: the old branch-root deployment would no longer find an `index.html`.
+- [x] Merge `portfolio-rebuild` into `main`: fast-forwarded on 2026-11-03 and deployed by `pages.yml` (D-034). The deployment runs lint, tests, the release gate, the build, content, confidentiality and link checks, end-to-end tests and Lighthouse first.
 - [ ] Repository settings: description "Evidence-driven portfolio and CV spanning Financial Services, enterprise AI strategy, governed agent workflows, value engineering, risk transformation, and commercialisation.", the topics listed in README.md, and `assets/og-portfolio.png` as the social preview image.

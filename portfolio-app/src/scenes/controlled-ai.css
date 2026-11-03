@@ -15,10 +15,10 @@
   gap: 10px;
   min-height: 46px;
   padding: 0 14px;
-  border: 1px solid var(--tech-line);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--tech-2);
-  color: var(--tech-ink);
+  background: var(--surface);
+  color: var(--ink);
   text-align: left;
   font-size: 15.5px;
   font-weight: 500;
@@ -26,17 +26,17 @@
   transition: background var(--dur-fast), border-color var(--dur-fast), transform var(--dur-fast);
 }
 .cai__layer:hover {
-  border-color: var(--tech-muted);
+  border-color: var(--line-strong);
 }
 .cai__layer[data-state='active'] {
-  background: var(--tech-3);
-  border-color: var(--tech-violet);
-  box-shadow: inset 3px 0 0 var(--tech-violet);
+  background: var(--violet-soft);
+  border-color: var(--violet);
+  box-shadow: inset 3px 0 0 var(--violet);
   transform: translateX(6px);
 }
 .cai__no {
   font-size: 12px;
-  color: var(--tech-muted);
+  color: var(--muted);
 }
 .cai__marks {
   display: inline-flex;
@@ -44,16 +44,16 @@
 }
 .cai__panel {
   padding: 22px 24px;
-  border: 1px solid var(--tech-line);
+  border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  background: var(--tech-2);
+  background: var(--surface);
   min-height: 460px;
 }
 .cai__k {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--tech-muted);
+  color: var(--muted);
   margin-top: 16px;
 }
 .cai__k:first-child {
@@ -62,12 +62,12 @@
 .cai__title {
   font-size: clamp(24px, 2vw, 30px);
   margin-top: 6px;
-  color: var(--surface);
+  color: var(--ink);
 }
 .cai__detail {
   margin-top: 8px;
   font-size: 18px;
-  color: var(--tech-ink);
+  color: var(--ink-2);
   max-width: 56ch;
 }
 .cai__evidence {
@@ -85,9 +85,9 @@
   font-size: 15px;
 }
 .cai__link {
-  color: var(--surface);
+  color: var(--ink);
   text-decoration: underline;
-  text-decoration-color: var(--tech-muted);
+  text-decoration-color: var(--line-strong);
   text-underline-offset: 3px;
 }
 .cai__patterns {
@@ -97,19 +97,19 @@
   display: grid;
   gap: 8px;
   font-size: 15px;
-  color: var(--tech-ink);
+  color: var(--ink-2);
 }
 .cai__patterns b {
-  color: var(--surface);
+  color: var(--ink);
 }
 .cai__tools {
-  color: var(--tech-cyan);
+  color: var(--cyan-text);
   font-size: 12.5px;
 }
 .cai__foot {
   margin-top: 24px;
   padding-top: 16px;
-  border-top: 1px solid var(--tech-line);
+  border-top: 1px solid var(--line);
 }
 @media (max-width: 1000px) {
   .cai {

@@ -17,7 +17,7 @@ export function S07ControlledAi() {
   const lens = useActiveLens()
   const [value, setValue] = useState(lens?.id === 'risk' ? 'human' : LAYERS[0].id)
   return (
-    <SceneFrame id="controlled-ai" tone="dark">
+    <SceneFrame id="controlled-ai">
       <Tabs.Root className="cai" orientation="vertical" value={value} onValueChange={setValue}>
         <Tabs.List className="cai__stack" aria-label="Layers of a controlled AI workflow">
           {LAYERS.map((l, i) => {
@@ -28,7 +28,7 @@ export function S07ControlledAi() {
                 <span className="cai__label">{l.label}</span>
                 <span className="cai__marks" aria-hidden="true">
                   {depths.map((d) => (
-                    <DepthGlyph key={d} depth={d} onDark />
+                    <DepthGlyph key={d} depth={d} />
                   ))}
                 </span>
               </Tabs.Trigger>
@@ -47,7 +47,7 @@ export function S07ControlledAi() {
                   const e = getEvidence(id)!
                   return (
                     <li key={id}>
-                      <DepthLabel depth={e.depth} onDark />
+                      <DepthLabel depth={e.depth} />
                       {e.case ? (
                         <Link to="/case/$slug" params={{ slug: e.case }} search={(p) => ({ lens: p.lens })} className="cai__link">
                           {e.title}
@@ -83,7 +83,7 @@ export function S07ControlledAi() {
         ))}
       </Tabs.Root>
       <div className="cai__foot">
-        <DepthLegend onDark />
+        <DepthLegend />
       </div>
     </SceneFrame>
   )
